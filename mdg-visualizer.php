@@ -15,7 +15,7 @@
 .mdg-text{
   border: solid 2px black;
   background-color: #fff;
-  height:550px;
+  height:650px;
 }
 .mdg-anim{
   border: solid 2px black;
@@ -94,7 +94,7 @@ background-color: white;
     margin-top: -5%;
     width: 20%;
     background-color:white;
-    padding-top: 11px;
+    padding: 15px;
 }
 .mdg-viz-container{
   float:left;
@@ -137,7 +137,7 @@ iframe{
     $(".mdg-anime").css("display","none");
     $("."+id).toggle("fade in");
     $('html,body').animate({
-        scrollTop: $("."+id).offset().top},
+        scrollTop: $("."+id).offset().top - 25},
         'slow');
   }
 
@@ -156,47 +156,48 @@ iframe{
        <div class="content-mdg-wrapper">
            <div class="mdg-container">
                <h3> Milenium Development Goals</h3>
-               <div class="row">
+               <div class="row" style="margin-left: -17px;">
                  <div class="col-xs-12">
-                   <div class="mdg-btn active" data-color="#FCDB32" id="eradicate-extreme-poverty-and-hunger" style="width:12.5%;float:left;">
+                   <div class="mdg-btn active" data-color="#FFDD00" id="eradicate-extreme-poverty-and-hunger" style="width:12.5%;float:left;">
                      <img alt="MDG 1" src="<?php bloginfo('template_url'); ?>/logos/1.jpg" />
                    </div>
-                   <div class="mdg-btn" data-color="#D6DD3A" id="achieve-universal-primary-education" style="width:12.5%;float:left;">
+                   <div class="mdg-btn" data-color="#D8DF20" id="achieve-universal-primary-education" style="width:12.5%;float:left;">
                    <img alt="MDG 2" src="<?php bloginfo('template_url'); ?>/logos/2.jpg" />
                    </div>
-                   <div class="mdg-btn" data-color="#F3941D" id="promote-gender-equality-and-empower-women" style="width:12.5%;float:left;">
+                   <div class="mdg-btn" data-color="#F7941D" id="promote-gender-equality-and-empower-women" style="width:12.5%;float:left;">
                      <img alt="MDG 3" src="<?php bloginfo('template_url'); ?>/logos/3.jpg" />
                    </div>
-                   <div class="mdg-btn" data-color="#C7EBFC" id="reduce-child-mortality" style="width:12.5%;float:left;">
+                   <div class="mdg-btn" data-color="#C7EAFD" id="reduce-child-mortality" style="width:12.5%;float:left;">
                      <img alt="MDG 4" src="<?php bloginfo('template_url'); ?>/logos/4.jpg" />
                    </div>
-                   <div class="mdg-btn" data-color="#F6C2DA" id="improve-maternal-health" style="width:12.5%;float:left;">
+                   <div class="mdg-btn" data-color="#F8C0D9" id="improve-maternal-health" style="width:12.5%;float:left;">
                      <img alt="MDG 5" src="<?php bloginfo('template_url'); ?>/logos/5.jpg" />
                    </div>
-                   <div class="mdg-btn" data-color="#EE5B45" id="combat-hiv-aids-malria-and-other-desease" style="width:12.5%;float:left;">
+                   <div class="mdg-btn" data-color="#F15A3F" id="combat-hiv-aids-malria-and-other-desease" style="width:12.5%;float:left;">
                     <img alt="MDG 6" src="<?php bloginfo('template_url'); ?>/logos/6.jpg" />
                    </div>
-                   <div class="mdg-btn" data-color="#8CC449" id="ensure-environmental-sustainability" style="width:12.5%;float:left;">
+                   <div class="mdg-btn" data-color="#8CC63E" id="ensure-environmental-sustainability" style="width:12.5%;float:left;">
                    <img alt="MDG 7" src="<?php bloginfo('template_url'); ?>/logos/7.jpg" />
                    </div>
-                   <div class="mdg-btn" data-color="#29B1E6" id="global-partnership-for-development" style="width:12.5%;float:left;">
+                   <div class="mdg-btn" data-color="#1BB0E8" id="internet-penetration" style="width:12.5%;float:left;">
                      <img alt="MDG 8" src="<?php bloginfo('template_url'); ?>/logos/8.jpg" />
                    </div>
                  </div>
              </div>
+             <br>
              <p>Description/title of the MDG sliderDescription/title of the MDG sliderDescription/title of the MDG sliderDescription/title of the MDG sliderDescription/title of the MDG slider</p>
-
+             <br>
          </div>
-
                       <div class="mdg-viz-container">
                         <div class="row">
                           <div class="mdg-anime eradicate-extreme-poverty-and-hunger">
 
-                            <div class="mdg-anim col-xs-12">
+                            <div class="mdg-anim col-xs-12" style="background-color: #FFDD00;">
                               <h1 class="mdg-slider-title"></h1>
                               <div class="row">
+                                <br>
                                 <div class="mdg-slide-content" id="slide-content">
-                                  <embed style="width:100%; height:550px; overflow:hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
+                                  <embed style="width:100%; height:650px; overflow:hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
                                 </div>
                               </div>
 
@@ -207,9 +208,10 @@ iframe{
                           </div>
                           <div class="mdg-anime achieve-universal-primary-education">
 
-                            <div class="mdg-anim col-xs-12">
+                            <div class="mdg-anim col-xs-12" style="background-color: #D8DF20;" >
                               <div class="mdg-slide-content" id="slide-content">
-                                <embed style="width:100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/total-primary-and-lower-secondary-enrollments/index.html">
+                                <br>
+                                <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/total-primary-and-lower-secondary-enrollments/index.html">
                               </div>
 
                               <div class="mdg-sliders" id="achieve-universal-primary-education-slider"></div>
@@ -220,9 +222,10 @@ iframe{
                           </div>
                           <div class="mdg-anime promote-gender-equality-and-empower-women">
 
-                            <div class="mdg-anim col-xs-12">
+                            <div class="mdg-anim col-xs-12" style="background-color: #F7941D;">
                               <div class="mdg-slide-content" id="slide-content">
-                                <embed style="width:100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
+                                <br>
+                                <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
                               </div>
                               <button type="button" class="mdg-show-more-btn btn btn-warning btn-default">
                                 Show more
@@ -231,9 +234,10 @@ iframe{
                           </div>
                           <div class="mdg-anime reduce-child-mortality">
 
-                            <div class="mdg-anim col-xs-12">
+                            <div class="mdg-anim col-xs-12" style="background-color: #C7EAFD;">
                               <div class="mdg-slide-content" id="slide-content">
-                                <embed style="width:100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
+                                <br>
+                                <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
                               </div>
                               <button type="button" class="mdg-show-more-btn btn btn-warning btn-default">
                                 Show more
@@ -241,9 +245,10 @@ iframe{
                             </div>
                           </div>
                           <div class="mdg-anime improve-maternal-health">
-                            <div class="mdg-anim col-xs-12">
+                            <div class="mdg-anim col-xs-12" style="background-color: #F8C0D9;">
                               <div class="mdg-slide-content" id="slide-content">
-                                <embed style="width:100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
+                                <br>
+                                <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
                               </div>
                               <button type="button" class="mdg-show-more-btn btn btn-warning btn-default">
                                 Show more
@@ -252,39 +257,43 @@ iframe{
                           </div>
                           <div class="mdg-anime combat-hiv-aids-malria-and-other-desease">
 
-                            <div class="mdg-anim col-xs-12">
+                            <div class="mdg-anim col-xs-12" style="background-color: #F15A3F;">
                               <div class="mdg-slide-content" id="slide-content">
-                                <embed style="width:100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
+                                <br>
+                                <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
                               </div>
                               <button type="button" class="mdg-show-more-btn btn btn-warning btn-default">
                                 Show more
                               </button>
                             </div>
                           </div>
+
                           <div class="mdg-anime ensure-environmental-sustainability">
 
 
-                            <div class="mdg-anim col-xs-12">
+                            <div class="mdg-anim col-xs-12" style="background-color: #8CC63E;">
                               <div class="mdg-slide-content" id="slide-content">
-                                <embed style="width:100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/afforested-areas/index.html">
+                                <br>
+                                <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/afforested-areas/index.html">
                               </div>
                               <button type="button" class="mdg-show-more-btn btn btn-warning btn-default">
                                 Show more
                               </button>
                             </div>
                           </div>
-                          <div class="mdg-anime global-partnership">
+                          <div class="mdg-anime internet-penetration">
 
-
-                            <div class="mdg-anim col-xs-12">
+                            <div class="mdg-anim col-xs-12" style="background-color: #1BB0E8;">
                               <div class="mdg-slide-content" id="slide-content">
-                                <embed style="width:100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/internet-penetration/index.html">
+                                <br>
+                                <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/internet-penetration/index.html">
                               </div>
                               <button type="button" class="mdg-show-more-btn btn btn-warning btn-default">
                                 Show more
                               </button>
                             </div>
                           </div>
+
 
                         </div>
                         <div class="row">
