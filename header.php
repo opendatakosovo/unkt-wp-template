@@ -1,97 +1,85 @@
-<?php
-/**
- * The template for displaying the header
- *
- * Displays all of the head element and everything up until the "site-content" div.
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
- */
-
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<?php endif; ?>
-	<?php wp_head(); ?>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+  <title><?php wp_title(); ?></title>
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/dist/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/dist/css/style.css">
+	<meta name="description" content="<?php if ( is_single() ) {
+        single_post_title('', true);
+    } else {
+        bloginfo('name'); echo " - "; bloginfo('description');
+    }
+    ?>" />
+  <?php wp_enqueue_script("jquery"); ?>
+  <?php wp_head(); ?>
 </head>
+<body>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<div class="site-inner">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
+	<!-- <div class="loader">
+		<div class="loader-inner">
+			<img class="logo-loader logo-1" src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo1.svg" alt="" />
+			<img class="logo-loader logo-2" src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo_text.svg" alt="" />
+		</div>
+	</div> -->
 
-		<header id="masthead" class="site-header" role="banner">
-			<div class="site-header-main">
-				<div class="site-branding">
-					<?php if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif;
+	<div style="display:none;" class="subscribe subscribe-small">
+		<div class="subscribe-label">
+			<p>Subscribe for the latest news and updates:</p>
+		</div>
+		<div class="subscribe-form">
+			<form name="subscribe-small" method="post" action="">
+				<input type="text" placeholder="your@email.here" />
+				<button type="submit" class="icon-arrow-right"></button>
+			</form>
+		</div>
+	</div>
 
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
-					<?php endif; ?>
-				</div><!-- .site-branding -->
+	<div class="header">
+		<a href="#" class="search-box">
+			<img src="<?php bloginfo('template_url'); ?>/dist/img/search.svg" alt=""/>
+			Search
+		</a>
+		<ul class="language">
+			<li class="active">
+				<?php get_bloginfo();?>
+				<a href="<?php get_bloginfo();?>/unkt/en">EN</a>
+			</li>
+			<li>
+				<a href="<?php get_bloginfo();?>/unkt/sq">AL</a>
+			</li>
+			<li>
+				<a href="<?php get_bloginfo();?>/unkt/sr">SRB</a>
+			</li>
+		</ul>
+		<a href="<?php get_bloginfo();?>" class="logo">
+			<img src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo.svg" alt="UNKT Logo" />
+		</a>
+		<a href="#" class="menu-bar">Menu</a>
+		<ul class="menu">
+			<?php
+					$menu_name = 'main_menu';
 
-				<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
-					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
+					if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+					$menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
 
-					<div id="site-header-menu" class="site-header-menu">
-						<?php if ( has_nav_menu( 'primary' ) ) : ?>
-							<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
-								<?php
-									wp_nav_menu( array(
-										'theme_location' => 'primary',
-										'menu_class'     => 'primary-menu',
-									 ) );
-								?>
-							</nav><!-- .main-navigation -->
-						<?php endif; ?>
+					$menu_items = wp_get_nav_menu_items($menu->term_id);
 
-						<?php if ( has_nav_menu( 'social' ) ) : ?>
-							<nav id="social-navigation" class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'twentysixteen' ); ?>">
-								<?php
-									wp_nav_menu( array(
-										'theme_location' => 'social',
-										'menu_class'     => 'social-links-menu',
-										'depth'          => 1,
-										'link_before'    => '<span class="screen-reader-text">',
-										'link_after'     => '</span>',
-									) );
-								?>
-							</nav><!-- .social-navigation -->
-						<?php endif; ?>
-					</div><!-- .site-header-menu -->
-				<?php endif; ?>
-			</div><!-- .site-header-main -->
+					$menu_list = '<ul id="menu-' . $menu_name . '">';
 
-			<?php if ( get_header_image() ) : ?>
-				<?php
-					/**
-					 * Filter the default twentysixteen custom header sizes attribute.
-					 *
-					 * @since Twenty Sixteen 1.0
-					 *
-					 * @param string $custom_header_sizes sizes attribute
-					 * for Custom Header. Default '(max-width: 709px) 85vw,
-					 * (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px'.
-					 */
-					$custom_header_sizes = apply_filters( 'twentysixteen_custom_header_sizes', '(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px' );
-				?>
-				<div class="header-image">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php header_image(); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id ) ); ?>" sizes="<?php echo esc_attr( $custom_header_sizes ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-					</a>
-				</div><!-- .header-image -->
-			<?php endif; // End header image check. ?>
-		</header><!-- .site-header -->
+					foreach ( (array) $menu_items as $key => $menu_item ) {
+						 $title = $menu_item->title;
+						 $url = $menu_item->url;
+						 $menu_list .= '<li><a href="' . $url . '">' . $title . '</a></li>';
+					}
+					$menu_list .= '</ul>';
+					} else {
+					$menu_list = '<ul><li>Menu "' . $menu_name . '" not defined.</li></ul>';
+					}
 
-		<div id="content" class="site-content">
+					echo $menu_list;
+					?>
+		</ul>
+	</div>
