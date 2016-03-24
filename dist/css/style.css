@@ -7986,8 +7986,6 @@ body.overflow {
   font-size: 18px;
   color: #000f3d;
   text-transform: none;
-  word-break: break-all;
-  word-wrap: break-word;
 }
 .article-content .section {
   position: relative;
@@ -8033,7 +8031,7 @@ body.overflow {
   letter-spacing: .04px;
 }
 .article-content img {
-  width: 100%;
+  width: 80%;
   max-width: 100%;
   height: auto;
   margin-bottom: 60px;
@@ -8248,7 +8246,10 @@ body.overflow {
 .banner img {
   width: 100%;
   max-width: 100%;
+  object-fit: cover;
   height: auto;
+  max-height:623px;
+  overflow: hidden;
 }
 
 .banner-content {
@@ -8363,7 +8364,7 @@ body.overflow {
 .sidebar.sidebar-nav ul li a:after {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0;.
   z-index: 1;
   width: 0;
   height: 100%;
@@ -8426,7 +8427,7 @@ body.overflow {
 .read-next .read-next-label span {
   margin-left: 100px;
 }
-.read-next .read-next-title {
+.read-next a {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -8435,11 +8436,11 @@ body.overflow {
   -webkit-transition: color .25s;
           transition: color .25s;
 }
-.read-next .read-next-title span {
+.read-next a span {
   position: relative;
   z-index: 2;
 }
-.read-next .read-next-title:after {
+.read-next a:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -8451,21 +8452,21 @@ body.overflow {
   -webkit-transition: all .25s;
           transition: all .25s;
 }
-.read-next .read-next-title:hover {
+.read-next a:hover {
   color: #fff;
 }
-.read-next .read-next-title:hover:after {
+.read-next a:hover:after {
   width: 100%;
 }
 
-.gallery-next .read-next-title {
+.gallery-next a {
   position: relative;
   min-height: 360px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.gallery-next .read-next-title:after {
+.gallery-next a:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -8488,7 +8489,7 @@ body.overflow {
     width: 26%;
     padding: 78px 20px;
   }
-  .read-next .read-next-title {
+  .read-next a {
     width: 74%;
     padding: 78px 5%;
   }
@@ -8703,3 +8704,14 @@ body.overflow {
     padding: 20px 10.25% 0 10.25%;
   }
 }
+.category-media-posts-container {
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: white;
+}
+/*.article-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 73.5%;
+}*/

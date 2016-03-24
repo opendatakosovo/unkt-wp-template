@@ -1,19 +1,25 @@
 
 $(document).ready(function() {
-  var ppp = 3; // Post per page
-  var cat = 8;
+  $(".category-media-posts-container").isotope({
+    itemSelector: '.item',
+    layoutMode : 'fitRows'
+  });
   var pageNumber = 1;
-
   // Load more on click
 	$(document).on("click",".load-more",function(){ // When btn is pressed.
     $(".load-more").attr("disabled",true); // Disable the button, temp.
-    load_posts(ppp, cat, pageNumber);
+    var ppp = $(".load-more").data('posts-per-page');
+    var cat = $(".load-more").data('category');
+    var grid = $(".load-more").data('grid');
+    var post_type = $(".load-more").data('post-type');
     pageNumber++;
+    load_posts(ppp, cat, pageNumber, grid, post_type);
+
 	});
 });
 
-function load_posts(ppp, cat, pageNumber){
-    var str = '&cat=' + cat + '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax';
+function load_posts(ppp, cat, pageNumber, grid, post_type){
+    var str = '&cat=' + cat + '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax'+'&grid=' + grid+'&post_type=' + post_type ;
     $.ajax({
         type: "POST",
         dataType: "html",
@@ -31,6 +37,10 @@ function load_posts(ppp, cat, pageNumber){
             if($posts.length){
               if($(".article-container").hasClass('filterize')){
                 $(".article-container").isotope('insert',$posts);
+              }
+              else if($(".article-container").hasClass('media')){
+
+                $(".category-media-posts-container").isotope('insert',$posts);
               }else{
                 $(".article-container").append($posts);
               }

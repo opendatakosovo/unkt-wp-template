@@ -60,16 +60,10 @@
 					<h5>Social Media</h5>
 					<ul class="social-media">
 						<li>
-							<a href="#" class="icon-twitter"></a>
+							<a target="_blank" href="http://www.youtube.com/channel/UCxaw3b7cL_8fE2I4XwQvUgA" class="icon-youtube"></a>
 						</li>
 						<li>
-							<a href="#" class="icon-youtube"></a>
-						</li>
-						<li>
-							<a href="#" class="icon-instagram"></a>
-						</li>
-						<li>
-							<a href="#" class="icon-facebook"></a>
+							<a target="_blank" href="http://www.facebook.com/UNKosovoTeam" class="icon-facebook"></a>
 						</li>
 					</ul>
 				</li>
@@ -82,12 +76,15 @@
 			<a href="#" class="logo">
 				<img src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo.svg" alt="UNKT Logo" />
 			</a>
-			<form>
-				<button type="submit" class="icon-search"></button>
-				<input type="text" placeholder="Search for News, Un Agencies, Publications, Jobs, Tenders, FAQ" />
+			<form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
+			    <input type="text" value="<?php the_search_query(); ?>" placeholder="Search for News, Un Agencies, Publications, Jobs, Tenders, FAQ"  />
+			    <input class="icon-search" type="submit" id="searchsubmit" value="Search" />
 			</form>
+
 		</div>
 		<div class="search-content">
+		<!-- <?php $search_query = get_search_query(); ?>
+		<!-- <?php var_dump($search_query); ?> --> -->
 			<ul>
 				<li>
 					<div class="category">News</div>

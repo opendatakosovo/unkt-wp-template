@@ -1,8 +1,5 @@
-<?php /* Template Name: Media */ ?>
+<?php /* Template Name: Blog */ ?>
 <?php get_header(); ?>
-<?php
-         query_posts( array( 'category_name' => 'news' ), array( 'category_name' => 'media' ) );
-    ?>
   <div class="content content-gallery">
 		<div class="container-fluid">
       <div class="article-wrapper">
@@ -12,7 +9,8 @@
                   $postsPerPage = 4;
                   $args = array(
                           'post_type' => 'post',
-                          'posts_per_page' => $postsPerPage
+                          'posts_per_page' => $postsPerPage,
+                          'category_name' => 'blog'
                   );
 
                   $loop = new WP_Query($args);
@@ -37,9 +35,6 @@
              ?>
              <div class="col-xs-12 col-lg-3 item">
                <?php echo do_shortcode('[total-poll id=235]')?>
-             </div>
-             <div class="col-xs-12 col-lg-3 item">
-               <?php echo do_shortcode('[viralQuiz id=1]')?>
              </div>
 
           </div>

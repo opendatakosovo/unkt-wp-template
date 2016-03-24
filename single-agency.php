@@ -31,7 +31,7 @@
             <div class="agencies-top">
 
               <div class="un">
-                <img src="dist/img/un.svg" alt="United Nations" />
+                <img src="<?php bloginfo('template_url'); ?>/dist/img/un.svg" alt="United Nations" />
                 <h3>UN Agencies</h3>
               </div>
             </div>
