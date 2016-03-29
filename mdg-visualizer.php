@@ -125,6 +125,8 @@ background-color: white;
     height: 100%;
     background-color:white;
     padding: 15px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .p {
@@ -132,10 +134,28 @@ background-color: white;
     text-transform: none;
 }
 
+
 .mdg-viz-container{
   float:left;
   width:79%;
+  text-align: justify;
+  text-justify: inter-word;
 }
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .mdg-viz-container {
+    float: left;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .sidebar{
+    display: none;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
 iframe{
     overflow:hidden;
 }
@@ -225,7 +245,7 @@ iframe{
              </div>
              <br>
              <div class="mdg-description" id="eradicate-extreme-poverty-and-hunger" style="display:block;">
-               <h5 class="p" style="color:#fff;">Millennium Development Goal 1 - To eradicate extreme poverty and hunger</h5>
+               <h4 style="color:#fff;">Millennium Development Goal 1 - To eradicate extreme poverty and hunger</h5>
                <p class="p">
                 Target 1.A - Halve, between 1990 and 2015, the proportion of people whose income is less than $1.25 a day
                 </p>
@@ -237,28 +257,28 @@ iframe{
                  <br>
              </div>
              <div class="mdg-description" id="achieve-universal-primary-education" style="display:none;">
-               <h5 class="p" style="color:#fff;">MDG 2 - To achieve universal primary education</h5>
+               <h4  style="color:#fff;">MDG 2 - To achieve universal primary education</h5>
                <p class="p">
                  Target 2.A - Ensure that, by 2015, children everywhere, boys and girls alike, will be able to complete a full course of primary schooling
                </p>
                  <br>
              </div>
              <div class="mdg-description" id="promote-gender-equality-and-empower-women" style="display:none;">
-               <h5 class="p" style="color:#fff;">MDG 3 - To promote gender equality and empower women</h5>
+               <h4  style="color:#fff;">MDG 3 - To promote gender equality and empower women</h5>
                <p class="p">
                 Target 3.A - Eliminate gender disparity in primary and secondary education, preferably by 2005, and in all levels of education no later than 2015</h5>
                </p>
                  <br>
              </div>
              <div class="mdg-description" id="reduce-child-mortality" style="display:none;">
-               <h5 class="p" style="color:#fff;">MDG 4 - To reduce child mortality</h5>
+               <h4  style="color:#fff;">MDG 4 - To reduce child mortality</h5>
                <p class="p">
                 Target 4.A - Reduce by two thirds, between 1990 and 2015, the under-five mortality rate
                </p>
                  <br>
              </div>
              <div class="mdg-description" id="improve-maternal-health" style="display:none;">
-               <h5 class="p" style="color:#fff;">MDG 5 – Improve maternal health</h5>
+               <h4  style="color:#fff;">MDG 5 – Improve maternal health</h5>
                <p class="p">
                  Target 5.A - Reduce by three quarters, between 1990 and 2015, the maternal mortality ratio
                </p>
@@ -268,7 +288,7 @@ iframe{
                  <br>
              </div>
              <div class="mdg-description" id="combat-hiv-aids-malria-and-other-desease" style="display:none;">
-               <h5 class="p" style="color:#fff;">MDG 6 – Combat HIV/AIDS, Malaria and other diseases </5>
+               <h4  style="color:#fff;">MDG 6 – Combat HIV/AIDS, Malaria and other diseases </5>
                  <p class="p">
                    Target 6.A - Have halted by 2015 and begun to reverse the spread of HIV/AIDS
                  </p>
@@ -281,7 +301,7 @@ iframe{
                  <br>
              </div>
              <div class="mdg-description" id="ensure-environmental-sustainability" style="display:none;">
-               <h5 class="p" style="color:#fff;">MDG 7 – Ensure Environmental Sustainability</h5>
+               <h4  style="color:#fff;">MDG 7 – Ensure Environmental Sustainability</h5>
 
                  <p class="p">
                    Target 7.A - Integrate the principles of sustainable development into country policies and programmes and reverse the loss of environmental resources
@@ -298,7 +318,7 @@ iframe{
                  <br>
              </div>
              <div class="mdg-description" id="internet-penetration" style="display:none;">
-               <h5 class="p" style="color:#fff;">MDG 8 – Develop a global partnership for development</h5>
+               <h4  style="color:#fff;">MDG 8 – Develop a global partnership for development</h5>
 
                  <p class="p">
                    Target 8.A - Develop further an open, rule-based, predictable, non-discriminatory trading and financial system
@@ -499,7 +519,7 @@ iframe{
                                 <embed style="width:100%; height:600px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/internet-penetration/index.html">
                               </div>
 
-                               <div style="margin-top: -200px; padding: 10px 100px 10px 100px;">
+                               <div style="margin-top: -150px; padding: 10px 100px 10px 100px;">
                                  <h3 style="color:#000;">Internet Penetration</h3>
                                  <p class="p" style="color:#000;">
                                    The penetration of internet in Kosovo is one of the good news stories in Kosovo. As recently as 2004, it is estimated that 6% of households had access to the internet. By 2014, it was estimated that 84% of households had access to the internet.
