@@ -63,7 +63,7 @@ function drawLineChart(div, tab){
         chart: {
 			backgroundColor: background, // Background color
             style: {
-                fontFamily: 'Eurostile'
+                fontFamily: "UniversLTStd-Cn"
             }
         },
 		xAxis: {
@@ -172,7 +172,7 @@ function drawBarChart(div, tab, stacked){
 			type: 'column',
 			backgroundColor: background, // Background color
             style: {
-                fontFamily: 'Eurostile'
+                fontFamily: 'UniversLTStd-Cn'
             }
 		},
 		plotOptions: {
