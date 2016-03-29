@@ -1563,6 +1563,13 @@ $(document).ready(function() {
 	});
 	sr.reveal('.gallery-slider');
 
+	// Radio button is checked
+	$('.tp-choices input:radio').change(function(e) {
+		e.preventDefault();
+		$(".choice-content-selected").removeClass("choice-content-selected");
+		$(this).parent().next().addClass("choice-content-selected");
+	});
+
 });
 
 $(window).load(function() {

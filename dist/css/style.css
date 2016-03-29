@@ -8709,9 +8709,49 @@ body.overflow {
     padding-top: 50px;
     background-color: white;
 }
-/*.article-header {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 73.5%;
-}*/
+
+// New Style
+
+.widget-title { display: none !important; }
+
+.widget_totalpoll {
+    position: relative;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    overflow: hidden;
+    background-color: #00acee;
+    min-height: 360px;
+    max-height: 360px;
+    padding: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    letter-spacing: .06px;
+}
+
+.tp-poll-container form { padding-top: 15px !important; }
+
+.article-content .tp-poll-container {
+    background-color: #00acee;
+    padding: 25px 25px 50px 25px;
+    position: relative;
+}
+
+.article-content .tp-poll-container form { padding-bottom: 50px !important; }
+
+.article-content .tp-poll-container .choice-content {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.current-score {
+  background-color: #a5194c !important;
+  background: -webkit-gradient(linear,left top,right top,color-stop(0%,#a5194c),color-stop(100%,#a5194c)) !important;
+  background: -webkit-linear-gradient(left,#a5194c0%,#a5194c100%) !important;
+  background: -moz-linear-gradient(left,#a5194c0%,#a5194c100%) !important;
+  background: -o-linear-gradient(left,#a5194c0%,#a5194c100%) !important;
+  background: -ms-linear-gradient(left,#a5194c0%,#a5194c100%) !important;
+  background: linear-gradient(to right,#a5194c0%,#a5194c100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( color:startstr='#a5194c',color:endstr='#a5194c',GradientType=1 ) !important;
+}
