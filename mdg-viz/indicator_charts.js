@@ -8,24 +8,26 @@ function drawLineChart(div, tab){
 	var background = allData['meta']['bg_color'][tab];
 	var rounding = '';
 	var legend = false;
-	
+
 	// Get Suffixes and Prefixes
 	var prefix = allData['meta']['prefix'][tab];
 	var suffix = allData['meta']['suffix'][tab];
+
 	if (prefix == '_'){
 		prefix = '';
 	}
 	if (suffix == '_'){
 		suffix = '';
-	} else if (suffix = '%'){
+	} else if (suffix == '%'){
 		rounding = 1;
 	}
-	
+
+	console.log(tab + ": " + suffix);
 	// Get values for charts
 	var data = [];
 	var lineColors = [];
 	var i = 1;
-	
+
 	for (keyOne in allData[tab]){
 		var entry = {};
 		var values = [];
@@ -34,18 +36,18 @@ function drawLineChart(div, tab){
 		var indices = allData[tab][keyOne];
 		var xAxis = [];
 		colName = colName.concat(i);
-		
+
 		for (keyTwo in indices){
-			value = Number(Number(allData[tab][keyOne][keyTwo]).toFixed(rounding));	
+			value = Number(Number(allData[tab][keyOne][keyTwo]).toFixed(rounding));
 			values.push(value);
 			xAxis.push(keyTwo);
 		}
-		
+
 		entry['name'] = seriesName;
 		entry['data'] = values;
 		entry['color'] = allData['meta'][colName][tab];
 		data.push(entry);
-		
+
 		// Check if Legend is needed (i.e. there is more than 1 series)
 		if (i > 1){
 			legend = true;
@@ -110,7 +112,7 @@ function drawBarChart(div, tab, stacked){
 	var background = allData['meta']['bg_color'][tab];
 	var rounding = '';
 	var legend = false;
-	
+
 	// Get Suffixes and Prefixes
 	var prefix = allData['meta']['prefix'][tab];
 	var suffix = allData['meta']['suffix'][tab];
@@ -119,21 +121,21 @@ function drawBarChart(div, tab, stacked){
 	}
 	if (suffix == '_'){
 		suffix = '';
-	} else if (suffix = '%'){
+	} else if (suffix == '%'){
 		rounding = 1;
 	}
-	
+
 	// Determine if columns are stacked
 	var chartType = null;
-	if (stacked) { 
+	if (stacked) {
 		chartType = 'normal';
 	}
-	
+
 	// Get values for charts
 	var data = [];
 	var lineColors = [];
 	var i = 1;
-	
+
 	for (keyOne in allData[tab]){
 		var entry = {};
 		var values = [];
@@ -142,18 +144,18 @@ function drawBarChart(div, tab, stacked){
 		var indices = allData[tab][keyOne];
 		var xAxis = [];
 		colName = colName.concat(i);
-		
+
 		for (keyTwo in indices){
-			value = Number(Number(allData[tab][keyOne][keyTwo]).toFixed(rounding));	
+			value = Number(Number(allData[tab][keyOne][keyTwo]).toFixed(rounding));
 			values.push(value);
 			xAxis.push(keyTwo);
 		}
-		
+
 		entry['name'] = seriesName;
 		entry['data'] = values;
 		entry['color'] = allData['meta'][colName][tab];
 		data.push(entry);
-		
+
 		// Check if Legend is needed (i.e. there is more than 1 series)
 		if (i > 1){
 			legend = true;
@@ -239,13 +241,15 @@ $(document).ready(function(){
 		$("#bar-chart-div1").append("<div id='bar-chart1' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
 		$("#bar-chart-div2").append("<div id='bar-chart2' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
 		$("#bar-chart-div3").append("<div id='bar-chart3' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
+		$("#bar-chart-div5").append("<div id='bar-chart5' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
 		$("#line-chart-div12").append("<div id='line-chart12' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
 		$("#line-chart-div13").append("<div id='line-chart13' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
 		$("#bar-chart-div4").append("<div id='bar-chart4' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
 		$("#line-chart-div14").append("<div id='line-chart14' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div15").append("<div id='line-chart15' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
+		$("#bar-chart-div7").append("<div id='bar-chart7' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
+		$("#bar-chart-div6").append("<div id='bar-chart6' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
     }
-	
+
 	// Draw Charts
 	drawLineChart('line-chart1', '1_1');
 	drawLineChart('line-chart2', '1_2');
@@ -255,15 +259,17 @@ $(document).ready(function(){
 	drawLineChart('line-chart6', '3_1');
 	drawLineChart('line-chart7', '3_2');
 	drawLineChart('line-chart8', '3_3');
+	drawBarChart('bar-chart6', '3_4', true);
 	drawLineChart('line-chart9', '4_1');
 	drawLineChart('line-chart10', '4_2');
 	drawLineChart('line-chart11', '5_1');
 	drawBarChart('bar-chart1', '5_2', false);
 	drawBarChart('bar-chart2', '5_3', false);
 	drawBarChart('bar-chart3', '6_1', true);
+	drawBarChart('bar-chart5', '6_2', true);
 	drawLineChart('line-chart12', '7_1');
 	drawLineChart('line-chart13', '7_2');
-	drawBarChart('bar-chart4', '7_3', false);
+	drawBarChart('bar-chart4', '7_3', true);
+	drawBarChart('bar-chart7', '7_4', true);
 	drawLineChart('line-chart14', '8_1');
-	drawLineChart('line-chart15', '8_2');
 })

@@ -26,7 +26,6 @@ hr.hr-style {
     color: #333;
     text-align: center;
 }
-
 hr.hr-style:after {
     content: "§";
     display: inline-block;
@@ -613,6 +612,18 @@ iframe{
                             </div>
                             <br>
                             <hr class="hr-style">
+                            <div class="row" id="bar-chart-div6" style="margin: auto;"></div>
+                            <br>
+                            <div class="row" style="padding: 0 15% 10px 20%;">
+                              <h3 style="color:#000;">Representation in Parliament</h3>
+                              <p class="p" style="color:#000;">
+                                Women remain underrepresented both quantitatively and qualitatively in decision-making processes at all levels. The target defined by the law on gender equality of 40% representation for all levels of decision-making has not yet been achieved with women currently holding only 33.3% of the seats in the Kosovo Assembly (40 of 120 seats). On the other hand, only 14 of these women were elected, while 24 received their positions due to a quota. Women also remain underrepresented among ministers, deputy ministers, and chairs of assembly committees.
+                              </p><br>
+                              <p class="p" style="color:#000;">
+                                Similarly, women are severely underrepresented in decision-making positions within municipalities; leading only 14 directorates in all of Kosovo (4.4%) and with only one municipality having a female mayor - Gjakova/Djakovica. Finally, among Kosovo’s public employees only 38% are women – however it should be noted that due to the low participation rate of women in Kosovo, this actually means women are being overrepresented when the relative availability of men and women is taken into account.
+                              </p><br>
+                            </div>
+                            <hr class="hr-style">
                             <div class="row" id="line-chart-div8" style="margin: auto;"></div>
                             <br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
@@ -621,6 +632,8 @@ iframe{
                                 Like many countries, female life expectancy at birth (73.0 years) is higher than male life expectancy (68.7 years) in Kosovo. Additionally, the life expectancy for both males and females in increasing in Kosovo, with both sexes adding approximately 3 years since 2001. However, the life expectancy in Kosovo is significantly lower than other countries in the region. In Kosovo the life expectancy at birth is 9 years lower than Albania, 5 years lower then Macedonia and Serbia, and 11 years lower than the EU average.
                               </p><br>
                             </div>
+                            <br>
+
                           </div>
 
                           <div class="chart-div" style="background-color: #C7EAFD;" id="reduce-child-mortality-more" >
@@ -695,6 +708,14 @@ iframe{
                               <p class="p" style="color:#000;">
                                 Kosovo is currently categorised in the group of states with a low rate of HIV. The infection rate is below 1% of the general population and below 5 percent of all groups threatened by the growing risk of HIV.
                               </p><br>
+                            </div>
+                            <br>
+                            <hr class="hr-style">
+                            <br>
+                            <div class="row" id="bar-chart-div5" style="margin: auto;"></div>
+                            <br>
+                            <div class="row" style="padding: 0 15% 10px 20%;">
+                              <h3 style="color:#000;">Rate of Tuberculosis</h3>
                               <p class="p" style="color:#000;">
                                 On the other hand, the prevalence of tuberculosis (TB) is much more widespread in Kosovo when compared to other countries in the region and the EU. While in Albania the incidence of TB is 16 per 100,000 people, in Macedonia 18, and 8 in the EU, in Kosovo the incidence of TB is 53 per 100,000 people.
                               </p><br>
@@ -748,13 +769,25 @@ iframe{
                             <div class="row" id="bar-chart-div4" style="margin: auto;"></div>
                             <br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
-                              <h3 style="color:#000;">iodiversity</h3>
+                              <h3 style="color:#000;">Biodiversity</h3>
                               <p class="p" style="color:#000;">
                                 Kosovo has about 1,800 species of flora classified into 139 kingdoms, 63 phyla, 35 orders and 20 classes. More recent data shows there could be as many as 2,500 species. What makes Kosovo flora and fauna important and attractive is the large number (over 200) of endemic, endemic-relict and sub-endemic species. Especially important is a local endemic group of 13 plant species, found only on the mountains. There are also about 250 species of wild vertebrates. Although data is sparse for invertebrate species, about 200 species of butterflies and 500 species of aquatic macrobentos have been recorded. The richest areas with fauna are in Malet e Sharrit and Bjeshkët e Nemuna where it is estimated that there are 8 fish species, 13 terraqueos, 12 species of elusory, 180 bird species, 37 species of mammals and 147 butterfly species.
                               </p><br>
                             </div>
-
+                            <br>
+                            <hr class="hr-style">
+                            <br>
+                            <div class="row" id="bar-chart-div7" style="margin: auto;"></div>
+                            <br>
+                            <div class="row" style="padding: 0 15% 10px 20%;">
+                              <h3 style="color:#000;">Land Use By Municipality in 2002</h3>
+                              <p class="p" style="color:#000;">
+                                Land Use by Municipality in 2002.
+                              </p><br>
+                            </div>
                           </div>
+
+
                           <div class="chart-div" style="background-color: #1BB0E8;" id="internet-penetration-more">
                             <div class="row" id="line-chart-div14" style="margin: auto;"></div>
                             <br>
@@ -762,17 +795,6 @@ iframe{
                               <h3 style="color:#000;">Internet Penetration</h3>
                               <p class="p" style="color:#000;">
                                 The penetration of internet in Kosovo is one of the good news stories in Kosovo. As recently as 2004, it is estimated that 6% of households had access to the internet. By 2014, it was estimated that 84% of households had access to the internet.
-                              </p><br>
-                            </div>
-                            <br>
-                            <hr class="hr-style">
-                            <br>
-                            <div class="row" id="line-chart-div15" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
-                              <h3 style="color:#000;">Internet Penetration</h3>
-                              <p class="p" style="color:#000;">
-                                The penetration of internet in Kosovo is one of the good news stories in Kosovo. As recently as 2004, it is estimated that only 6% of households had access to the internet. By 2014, it was estimated that 84% of households had access to the internet.
                               </p><br>
                             </div>
                           </div>
