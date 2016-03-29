@@ -13,7 +13,7 @@
     background-color: #5B92E5;
 }
 
-ol, ul, dl {
+.ul {
   list-style-type: circle;
   margin-left: 5%;
 }
@@ -747,7 +747,7 @@ iframe{
                               <p class="p" style="color:#000;">
                                 The lack of investment in renewables is concerning as air pollution is a critical environmental problem in urban areas in Kosovo. Ambient air quality is particularly poor in Prishtine/Pristina, the Obiliq/Obilic area, the Drenas area, and Mitrovice/a. The principal contaminants are sulfur dioxide (SO2), nitrogen oxides NO and NO2 (NOx), ozone (O3), lead (Pb), carbon dioxide (CO2), particulate matter (PM or dust), and dioxin. The main sources of air pollution in Kosovo are:
                               </p>
-                              <ul style="color: #000;">
+                              <ul class="ul" style="color: #000;">
                                 <li class="p">
                                   the relatively old two coal-fired power plants of the Kosovo Energy Corporation (KEK) and its coal-mining area
                                 </li>
