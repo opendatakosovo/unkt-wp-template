@@ -26,6 +26,7 @@ hr.hr-style {
     color: #333;
     text-align: center;
 }
+
 hr.hr-style:after {
     content: "§";
     display: inline-block;
