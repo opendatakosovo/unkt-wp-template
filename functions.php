@@ -372,4 +372,3 @@ if ( function_exists( 'add_theme_support')){
 }
 add_image_size( 'admin-list-thumb', 80, 80, true); //admin thumbnail preview
 add_image_size( 'album-grid', 450, 450, true );
-?>

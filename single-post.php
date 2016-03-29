@@ -10,13 +10,16 @@
 	<p><?php _e('Sorry, this page does not exist.'); ?></p>
 <?php endif; ?>
 
+<?php
+$prev_post = get_previous_post(true,'0');
+if (!empty( $prev_post )): ?>
 	<div class="read-next">
 		<div class="read-next-label">
 			<p>READ NEXT ARTICLE <span class="icon-arrow-right"></span></p>
 		</div>
-			<?php next_post_link('%link','<span>%title</span>','',True) ?>
-
+			<a href="<?php echo $prev_post->guid ?>"><span><?php echo $prev_post->post_title ?></span></a>
 	</div>
+<?php endif ?>
 	<div class="content">
 		<div class="container">
 			<div class="row">

@@ -17,7 +17,7 @@
 					<div class="sidebar sidebar-articles">
 						<?php $category = get_the_category( $post );
 								$category_id = get_cat_ID($category[0]->cat_name); ?>
-						<?php $args = array(
+						<?php $recent_posts_query_args = array(
 						    'numberposts' => 3,
 						    'offset' => 0,
 						    'category' => $category_id,
@@ -28,7 +28,7 @@
 						    'post_status' => 'draft, publish, future, pending, private',
 						    'suppress_filters' => true );
 
-						    $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
+						    $recent_posts = wp_get_recent_posts( $recent_posts_query_args, ARRAY_A );
 						?>
 						<?php foreach ($recent_posts as $post){?>
 							<a href="<? echo get_permalink($post['ID']) ?>" class="article article-blue-light">
