@@ -18,6 +18,15 @@
   margin-left: 5%;
 }
 
+.p a{
+  color: #337AB7;
+}
+
+.p a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
 hr.hr-style {
     padding: 0;
     border: none;
@@ -149,6 +158,12 @@ background-color: white;
     text-align: justify;
     text-justify: inter-word;
   }
+
+  .mdg-amin-description {
+    margin-top:10% !important;
+    padding: 10px 20px 10px 20px !important;
+  }
+
   .sidebar{
     display: none;
     text-align: justify;
@@ -358,7 +373,7 @@ iframe{
                                   <embed style="width:100%; height:650px; overflow:hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
                                 </div>
                               </div>
-                              <div style="margin-top: -250px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Poverty Headcount</h3>
                                 <p class="p" style="color:#000;">
                                    Poverty remains a persistent and widespread issue in Kosovo as of 2015. A report produced by the Kosovo Agency of Statistics (KAS) on Consumption Poverty found that, in 2011, 29.7% of the population in Kosovo was unable to meet human needs and 10.0% were unable to meet even basic survival needs. These poverty rates are very high compared to neighbouring countries and, while decreasing, have remained persistently high over the past 10 years. Reports from the World Bank and UNDP also identify that poverty and vulnerability levels would be much higher without the safety net provided through migration and remittances.
@@ -382,7 +397,7 @@ iframe{
                               </div>
 
                               <div class="mdg-sliders" id="achieve-universal-primary-education-slider"></div>
-                              <div style="margin-top: -200px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -200px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Gross Primary School enrolments</h3>
                                 <p class="p" style="color:#000;">
                                   Since at least 2009-10, enrolments in primary and lower secondary school have been high in Kosovo, with no less than 96% of eligible students being enrolled in any given year. This would suggest that very few children in Kosovo are missing out on this basic education, helping to ensure basic literacy, mathematics and English tuition for young people.
@@ -408,7 +423,7 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
                               </div>
-                              <div style="margin-top: -150px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -120px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Gender Enrolment Ratios</h3>
                                 <p class="p" style="color:#000;">
                                   Ensuring access to education for both sexes plays an important role in providing women with opportunities to help themselves and become influencers for the next generation. In Kosovo, the enrolment ratios for women (the number of women enrolled as a percentage of the number of men) have been increasing across the board, but have been relatively high for all years with available data. The biggest improvement has been seen in the enrolment ratio for high secondary school. In 2005-06 there were 75 women for every 100 men in high secondary school. By 2014-15 there were 89 women for every 100 men.
@@ -427,7 +442,7 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
                               </div>
-                              <div style="margin-top: -300px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -300px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Infant mortality rate</h3>
                                 <p class="p" style="color:#000;">
                                   The infant mortality rate in Kosovo is relative low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate has been stable for much of the past 15 years, with the infant mortality rate in 2002 almost exactly the same as for 2012 at 11.2.
@@ -449,7 +464,7 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
                               </div>
-                              <div style="margin-top: -350px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -300px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Maternal Mortality</h3>
                                 <p class="p" style="color:#000;">
                                   The maternal mortality rate in Kosovo has varied significantly over the past 10-15 years. From a low of 6.9 deaths per 100,000 live births in 2005 to a high of 43.3 deaths per 100,000 live births in 2009. As of 2012, the maternal mortality rate stood at 16.2.
@@ -472,7 +487,7 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
                               </div>
-                              <div style="margin-top: -250px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">HIV and AIDS</h3>
                                 <p class="p" style="color:#000;">
                                   Kosovo is currently categorised in the group of states with a low rate of HIV. The infection rate is below 1% of the general population and below 5 percent of all groups threatened by the growing risk of HIV.
@@ -495,7 +510,7 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/afforested-areas/index.html">
                               </div>
-                              <div style="margin-top: -300px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Greening Kosovo</h3>
                                 <p class="p" style="color:#000;">
                                   Kosovo has made some progress in afforesting (planting forests). Between 2004 and 2010, 2,253 hectares of forest were planted. However, while this sounds like a lot, when the total land area of Kosovo is taken into account (1,090,800 hectares), this area represents only 0.2%. In addition, parts of the forests, which cover roughly 44 percent of Kosovo’s territory, are in bad condition due to inadequate management and illegal logging, leading also to increased soil erosion and landslides. The costs of forest degradation are estimated to be around 0.4% of GDP.
@@ -519,7 +534,7 @@ iframe{
                                 <embed style="width:100%; height:600px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/internet-penetration/index.html">
                               </div>
 
-                               <div style="margin-top: -150px; padding: 10px 100px 10px 100px;">
+                               <div class="mdg-amin-description" style="margin-top: -100px; padding: 10px 100px 10px 100px;">
                                  <h3 style="color:#000;">Internet Penetration</h3>
                                  <p class="p" style="color:#000;">
                                    The penetration of internet in Kosovo is one of the good news stories in Kosovo. As recently as 2004, it is estimated that 6% of households had access to the internet. By 2014, it was estimated that 84% of households had access to the internet.
@@ -534,8 +549,12 @@ iframe{
                         <div class="row">
                           <div tabindex="0" style="background-color: #FFDD00; margin-top-20px;" class="chart-div" id="eradicate-extreme-poverty-and-hunger-more">
                             <div class="row" id="line-chart-div1" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="http://data.worldbank.org/data-catalog/world-development-indicators">
+                                World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Poverty Headcount</h3>
                               <p class="p" style="color:#000;">
                                  Poverty remains a persistent and widespread issue in Kosovo as of 2015. A report produced by the Kosovo Agency of Statistics (KAS) on Consumption Poverty found that, in 2011, 29.7% of the population in Kosovo was unable to meet human needs and 10.0% were unable to meet even basic survival needs. These poverty rates are very high compared to neighbouring countries and, while decreasing, have remained persistently high over the past 10 years. Reports from the World Bank and UNDP also identify that poverty and vulnerability levels would be much higher without the safety net provided through migration and remittances. </p>
@@ -547,8 +566,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div2" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="http://data.worldbank.org/data-catalog/world-development-indicators">
+                                World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Employment to population ratio</h3>
                               <p class="p" style="color:#000;">
                                 One of the keys to alleviating poverty is employment. Unfortunately, in Kosovo, the rates of labour force participation remain low and the unemployment rate remains high – particularly for women. In 2013, only 28.4% of the working age population was employed. This measure, and the labour force participation rate (40.6%) are the lowest in the Western Balkan region and far lower than the average for the EU. For women in particular these measures are extremely low with the employment rate in 2013 standing at 12.9% and labour force participation at 21.1%.
@@ -562,8 +585,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div3" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="http://data.worldbank.org/data-catalog/world-development-indicators">
+                                World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">GDP per Capita</h3>
                               <p class="p" style="color:#000;">
                                 Economic growth is also a powerful instrument for reducing poverty and improving standards of living. The Kosovo economy grew at a very high average rate of 6.3 percent per annum between 2006 and 2008, but it has not been able to sustain this high growth rate in the wake of economic downturn in 2008-09. During the 2009-2013 period, the Kosovo economy grew at a much lower pace - averaging 3.3% per annum. The main contributors to this economic growth also changed after the 2009 period. While before, the main contributor of this growth was the private sector (consumption and investment), in the period after the economic downturn, the economic growth rate was driven primarily by growing government expenditures.
@@ -578,8 +605,13 @@ iframe{
 
                           <div class="chart-div" style="background-color: #D8DF20;" id="achieve-universal-primary-education-more">
                             <div class="row" id="line-chart-div4" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="http://masht.rks-gov.net/en/statistikat">
+                                Ministry of Education, Science and Technology</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Gross Primary School enrolments</h3>
                               <p class="p" style="color:#000;">
                                 Since at least 2009-10, enrolments in primary and lower secondary school have been high in Kosovo, with no less than 96% of eligible students being enrolled in any given year. This would suggest that very few children in Kosovo are missing out on this basic education, helping to ensure basic literacy, mathematics and English tuition for young people.
@@ -595,7 +627,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div5" style="margin: auto;"></div>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="http://masht.rks-gov.net/en/statistikat">
+                                Ministry of Education, Science and Technology</a>
+                            </p><br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Total Primary School enrolments</h3>
                               <p class="p" style="color:#000;">
                                 The absolute number of children enrolled has been falling since 2007-08, with over 50,000 less children enrolled in primary and lower secondary school in 2014-15 than in 2007-08. However, as reflected in the gross enrolments rates, this does not represent parents pulling children out of school, but simply the changing demographics in Kosovo.
@@ -606,8 +643,13 @@ iframe{
                           </div>
                           <div class="chart-div" style="background-color: #F7941D;" id="promote-gender-equality-and-empower-women-more" >
                             <div class="row" id="line-chart-div6" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="http://masht.rks-gov.net/en/statistikat">
+                                Ministry of Education, Science and Technology</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Gender Enrolment Ratios</h3>
                               <p class="p" style="color:#000;">
                                 Ensuring access to education for both sexes plays an important role in providing women with opportunities to help themselves and become influencers for the next generation. In Kosovo, the enrolment ratios for women (the number of women enrolled as a percentage of the number of men) have been increasing across the board, but have been relatively high for all years with available data. The biggest improvement has been seen in the enrolment ratio for high secondary school. In 2005-06 there were 75 women for every 100 men in high secondary school. By 2014-15 there were 89 women for every 100 men.
@@ -617,8 +659,13 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div7" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="http://data.worldbank.org/data-catalog/world-development-indicators">
+                                World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Labour Force Participation</h3>
                               <p class="p" style="color:#000;">
                                 One of the main hurdles that must be overcome if Kosovo is to have gender equality is the very low labour participation rate for females. This rate, representing the number of women who are either currently employed or unemployed but actively looking for work as a percentage of all working age women, stood at 21.1% in 2013. That corresponds to about 2 out of every 10 women in Kosovo. By comparison, around 6 of every 10 men are either working or looking for work. This low rate of female labour participation is also extremely low for the region. Macedonia, Serbia and Albania all have female labour participation rates over 40%.
@@ -633,8 +680,13 @@ iframe{
                             <br>
                             <hr class="hr-style">
                             <div class="row" id="bar-chart-div6" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                            href="http://www.unkt.org/development-goals/progress-by-goal-for-kosovo/">
+                            United Nations Kosovo Team</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Representation in Parliament</h3>
                               <p class="p" style="color:#000;">
                                 Women remain underrepresented both quantitatively and qualitatively in decision-making processes at all levels. The target defined by the law on gender equality of 40% representation for all levels of decision-making has not yet been achieved with women currently holding only 33.3% of the seats in the Kosovo Assembly (40 of 120 seats). On the other hand, only 14 of these women were elected, while 24 received their positions due to a quota. Women also remain underrepresented among ministers, deputy ministers, and chairs of assembly committees.
@@ -645,8 +697,12 @@ iframe{
                             </div>
                             <hr class="hr-style">
                             <div class="row" id="line-chart-div8" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="http://data.worldbank.org/data-catalog/world-development-indicators">
+                                World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Life Expectancy at Birth</h3>
                               <p class="p" style="color:#000;">
                                 Like many countries, female life expectancy at birth (73.0 years) is higher than male life expectancy (68.7 years) in Kosovo. Additionally, the life expectancy for both males and females in increasing in Kosovo, with both sexes adding approximately 3 years since 2001. However, the life expectancy in Kosovo is significantly lower than other countries in the region. In Kosovo the life expectancy at birth is 9 years lower than Albania, 5 years lower then Macedonia and Serbia, and 11 years lower than the EU average.
@@ -658,8 +714,12 @@ iframe{
 
                           <div class="chart-div" style="background-color: #C7EAFD;" id="reduce-child-mortality-more" >
                             <div class="row" id="line-chart-div9" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="http://ec.europa.eu/eurostat/data/database">
+                                Eurostat</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Infant mortality rate</h3>
                               <p class="p" style="color:#000;">
                                 The infant mortality rate in Kosovo is relative low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate has been stable for much of the past 15 years, with the infant mortality rate in 2002 almost exactly the same as for 2012 at 11.2.
@@ -672,8 +732,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div10" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="http://ec.europa.eu/eurostat/data/database">
+                                Eurostat</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Infant mortality rate</h3>
                               <p class="p" style="color:#000;">
                                 The infant mortality rate in Kosovo is relative low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate has been stable for much of the past 15 years, with the infant mortality rate in 2002 almost exactly the same as for 2012 at 11.2.
@@ -686,8 +750,11 @@ iframe{
 
                           <div class="chart-div" style="background-color: #F8C0D9;" id="improve-maternal-health-more">
                             <div class="row" id="line-chart-div11" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: Report on Perinatal Situation in Kosovo - 2014
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Maternal Mortality</h3>
                               <p class="p" style="color:#000;">
                                 The maternal mortality rate in Kosovo has varied significantly over the past 10-15 years. From a low of 6.9 deaths per 100,000 live births in 2005 to a high of 43.3 deaths per 100,000 live births in 2009. As of 2012, the maternal mortality rate stood at 16.2.
@@ -700,8 +767,14 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="bar-chart-div1" style="margin: auto;"></div>
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="https://ask.rks-gov.net/ENG/publikimet/doc_details/967-demographic-social-and-reproductive-health-survey-in-kosovo-">
+                                Demographic Social and Reproductive Health Survey in Kosovo</a>
+                            </p>
                             <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Aware of Modern Contraception</h3>
                               <p class="p" style="color:#000;">
                                 Awareness of modern contraception in Kosovo decreased between 2003 and 2009, but still remains generally high. This awareness also varies with age, with women aged between 25 and 45 having the highest levels of awareness.
@@ -711,8 +784,14 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="bar-chart-div2" style="margin: auto;"></div>
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                    href="https://ask.rks-gov.net/ENG/publikimet/doc_details/967-demographic-social-and-reproductive-health-survey-in-kosovo-">
+                                Demographic Social and Reproductive Health Survey in Kosovo</a>
+                            </p>
                             <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Using Modern Contraception</h3>
                               <p class="p" style="color:#000;">
                                 The usage of contraception however remains at fairly low rates, particularly amongst women aged 25 or younger. This is likely to be at least partially explainable by the relative young age of marriage for many women in Kosovo, but could be evidence that a cultural stigma around the use of contraception exists.
@@ -722,8 +801,14 @@ iframe{
 
                           <div class="chart-div" style="background-color: #F15A3F;" id="combat-hiv-aids-malria-and-other-desease-more">
                             <div class="row" id="bar-chart-div3" style="margin: auto;"></div>
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                      href="http://www.unaids.org/sites/default/files/country/documents/KOSOVO_narrative_report_2015.pdf">
+                                  UNAIDS Kosovo Narrative Report 2015</a>
+                            </p>
                             <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">HIV and AIDS</h3>
                               <p class="p" style="color:#000;">
                                 Kosovo is currently categorised in the group of states with a low rate of HIV. The infection rate is below 1% of the general population and below 5 percent of all groups threatened by the growing risk of HIV.
@@ -733,8 +818,13 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="bar-chart-div5" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                      href="http://www.unkt.org/development-goals/progress-by-goal-for-kosovo/">
+                                  United Nations Kosovo Team</a> and <a href="http://data.worldbank.org/data-catalog/world-development-indicators">World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Rate of Tuberculosis</h3>
                               <p class="p" style="color:#000;">
                                 On the other hand, the prevalence of tuberculosis (TB) is much more widespread in Kosovo when compared to other countries in the region and the EU. While in Albania the incidence of TB is 16 per 100,000 people, in Macedonia 18, and 8 in the EU, in Kosovo the incidence of TB is 53 per 100,000 people.
@@ -744,8 +834,13 @@ iframe{
 
                           <div class="chart-div" style="background-color: #8CC63E;" id="ensure-environmental-sustainability-more" >
                             <div class="row" id="line-chart-div12" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                      href="https://ask.rks-gov.net/ENG/enviroment/publications/doc_download/1295-some-facts-on-the-environment-2015">Some
+                                  Facts on the Environment 2015</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Greening Kosovo</h3>
                               <p class="p" style="color:#000;">
                                 Kosovo has made some progress in afforesting (planting forests). Between 2004 and 2010, 2,253 hectares of forest were planted. However, while this sounds like a lot, when the total land area of Kosovo is taken into account (1,090,800 hectares), this area represents only 0.2%. In addition, parts of the forests, which cover roughly 44 percent of Kosovo’s territory, are in bad condition due to inadequate management and illegal logging, leading also to increased soil erosion and landslides. The costs of forest degradation are estimated to be around 0.4% of GDP.
@@ -758,8 +853,13 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div13" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                      href="http://data.worldbank.org/data-catalog/world-development-indicators">Some
+                                  World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Renewable Energy Output/Usage</h3>
                               <p class="p" style="color:#000;">
                                 Kosovo has a very low rate of renewable energy output. Between 2001 and 2012, the output of renewable energy averaged just 2% of total energy output. While renewable energy consumption was significantly higher, averaging 22.1% over the same period, the lack of growth in output suggests little investment is being made into renewable energy in Kosovo. What is more, emissions of all greenhouse gases in Kosovo are increasing annually by approximately about 10 percent.
@@ -787,8 +887,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="bar-chart-div4" style="margin: auto;"></div>
-                            <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                      href="http://www.kryeministri-ks.net/repository/docs/REVISING_and_UPDATING_the_KOSOVO_ENVIRONMENTAL_STRATEGY_(KES).pdf">Some
+                                  Kosovo Environmental Strategy and National Environmental Action Plan</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Biodiversity</h3>
                               <p class="p" style="color:#000;">
                                 Kosovo has about 1,800 species of flora classified into 139 kingdoms, 63 phyla, 35 orders and 20 classes. More recent data shows there could be as many as 2,500 species. What makes Kosovo flora and fauna important and attractive is the large number (over 200) of endemic, endemic-relict and sub-endemic species. Especially important is a local endemic group of 13 plant species, found only on the mountains. There are also about 250 species of wild vertebrates. Although data is sparse for invertebrate species, about 200 species of butterflies and 500 species of aquatic macrobentos have been recorded. The richest areas with fauna are in Malet e Sharrit and Bjeshkët e Nemuna where it is estimated that there are 8 fish species, 13 terraqueos, 12 species of elusory, 180 bird species, 37 species of mammals and 147 butterfly species.
@@ -798,8 +902,14 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="bar-chart-div7" style="margin: auto;"></div>
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                      href="https://ask.rks-gov.net/ENG/enviroment/publications/doc_download/990-some-facts-on-environment-2011">Some
+                                      Some Facts on the Environment 2011</a>
+                            </p>
+                            <br><br>
                             <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Land Use By Municipality in 2002</h3>
                               <p class="p" style="color:#000;">
                                 Land Use by Municipality in 2002.
@@ -809,9 +919,15 @@ iframe{
 
 
                           <div class="chart-div" style="background-color: #1BB0E8;" id="internet-penetration-more">
-                            <div class="row" id="line-chart-div14" style="margin: auto;"></div>
+                            <div class="row" id="line-chart-div14" style="margin: auto;"></div
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                      href="http://www.lr.undp.org/content/dam/kosovo/docs/Mozaik/Kosovo_Mosaic_2012_Eng_735317.pdf">Some
+                                      Kosovo Mosaic 2012</a>
+                            </p>
+                            <br><br>
                             <br>
-                            <div class="row" style="padding: 0 15% 10px 20%;">
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Internet Penetration</h3>
                               <p class="p" style="color:#000;">
                                 The penetration of internet in Kosovo is one of the good news stories in Kosovo. As recently as 2004, it is estimated that 6% of households had access to the internet. By 2014, it was estimated that 84% of households had access to the internet.
