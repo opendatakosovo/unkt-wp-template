@@ -43,48 +43,60 @@ input.vq-css-checkbox + label.vq-css-label {
 
 }
 </style>
+
+
   <?php
    $sliderPostsCounter = $options['number_of_slides'];
    $filteringCategoriesCounter = 5;
    $args = array(
-    	'post_status' => 'published',
-    	'posts_per_page' => 3,
-      'tag_slug__and' => 'slider'
+      'numberposts'	=> -1,
+     	'post_type'		=> 'post',
+      'meta_query' => array(
+        array(
+            'key' => 'post_visibility_value', // name of custom field
+            'value' => '"slider"', // matches exactly "red"
+            'compare' => 'LIKE'
+        )
+      )
     );
-   $recentPosts = new WP_Query($args);
+   $the_query = new WP_Query($args);
 
 	 $recentFilteredPosts = new WP_Query();
 	 $recentFilteredPosts->query('showposts=10');
   ?>
   	<div class="slider">
-  		<ul>
-  			<?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
-  			<?php $sliderPostsCounter--; ?>
-  			<li>
-          <?php if ( has_post_thumbnail() ) {
-          the_post_thumbnail();
-        } ?>
+      <?php if( $the_query->have_posts() ): ?>
+    		<ul>
+    			<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+            <?php get_field('gallery_pictures'); ?>
+    			<?php $sliderPostsCounter--; ?>
+    			<li>
+            <?php if ( has_post_thumbnail() ) {
+            the_post_thumbnail();
+          } ?>
 
 
-  				<div class="caption">
-  					<div class="container">
-  						<div class="row">
-  							<div class="date col-lg-1 col-xs-12">
-  								<?php the_date(); ?>
-  							</div>
-  							<div class="col-lg-10 col-xs-12">
-  								<h2><?php the_title(); ?></h2>
-  								<p><?php the_excerpt(); ?></p>
-  							</div>
-  						</div>
-  					</div>
-  					<a class="read-more" href="<?php  the_permalink(); ?>">
-  						<span>Read more</span>
-  					</a>
-  				</div>
-  			</li>
-  			<?php endwhile; ?>
-  		</ul>
+    				<div class="caption">
+    					<div class="container">
+    						<div class="row">
+    							<div class="date col-lg-1 col-xs-12">
+    								<?php the_date(); ?>
+    							</div>
+    							<div class="col-lg-10 col-xs-12">
+    								<h2><?php the_title(); ?></h2>
+    								<p><?php the_excerpt(); ?></p>
+    							</div>
+    						</div>
+    					</div>
+    					<a class="read-more" href="<?php  the_permalink(); ?>">
+    						<span>Read more</span>
+    					</a>
+    				</div>
+    			</li>
+    			<?php endwhile; ?>
+    		</ul>
+      <?php endif; ?>
+      <?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
   	</div>
 
   	<div class="content">
