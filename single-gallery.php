@@ -55,7 +55,7 @@
 						<div class="content">
 							<h2><?php the_title(); ?></h2>
 							<?php the_content(); ?>
-              <? if(count($gallery_images) > 0){ ?>
+              <?php if(count($gallery_images) > 0){ ?>
                 <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
   								<?php
   								foreach ($gallery_images as $picture) {
