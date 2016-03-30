@@ -47,10 +47,10 @@ setup_postdata( $post );
 						    $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
 						?>
 						<?php foreach ($recent_posts as $post){?>
-							<a href="<? echo get_permalink($post['ID']) ?>" class="article article-blue-light">
+							<a href="<?php echo get_permalink($post['ID']) ?>" class="article article-blue-light">
 								<div class="category"><?php echo $category[0]->cat_name ?></div>
 								<div class="date"><?php echo $post['post_date']?></div>
-								<h3><? echo $post['post_name']?></h3>
+								<h3><?php echo $post['post_name']?></h3>
 								<div class="read-more">More <span class="icon-arrow-right"></span></div>
 							</a>
 							<?php } ?>
