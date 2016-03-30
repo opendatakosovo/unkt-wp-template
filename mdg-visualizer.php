@@ -149,6 +149,12 @@ background-color: white;
     text-align: justify;
     text-justify: inter-word;
   }
+
+  .mdg-amin-description {
+    margin-top:10% !important;
+    padding: 10px 20px 10px 20px !important;
+  }
+
   .sidebar{
     display: none;
     text-align: justify;
@@ -358,7 +364,7 @@ iframe{
                                   <embed style="width:100%; height:650px; overflow:hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
                                 </div>
                               </div>
-                              <div style="margin-top: -250px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Poverty Headcount</h3>
                                 <p class="p" style="color:#000;">
                                    Poverty remains a persistent and widespread issue in Kosovo as of 2015. A report produced by the Kosovo Agency of Statistics (KAS) on Consumption Poverty found that, in 2011, 29.7% of the population in Kosovo was unable to meet human needs and 10.0% were unable to meet even basic survival needs. These poverty rates are very high compared to neighbouring countries and, while decreasing, have remained persistently high over the past 10 years. Reports from the World Bank and UNDP also identify that poverty and vulnerability levels would be much higher without the safety net provided through migration and remittances.
@@ -382,7 +388,7 @@ iframe{
                               </div>
 
                               <div class="mdg-sliders" id="achieve-universal-primary-education-slider"></div>
-                              <div style="margin-top: -200px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -200px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Gross Primary School enrolments</h3>
                                 <p class="p" style="color:#000;">
                                   Since at least 2009-10, enrolments in primary and lower secondary school have been high in Kosovo, with no less than 96% of eligible students being enrolled in any given year. This would suggest that very few children in Kosovo are missing out on this basic education, helping to ensure basic literacy, mathematics and English tuition for young people.
@@ -408,7 +414,7 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
                               </div>
-                              <div style="margin-top: -150px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -120px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Gender Enrolment Ratios</h3>
                                 <p class="p" style="color:#000;">
                                   Ensuring access to education for both sexes plays an important role in providing women with opportunities to help themselves and become influencers for the next generation. In Kosovo, the enrolment ratios for women (the number of women enrolled as a percentage of the number of men) have been increasing across the board, but have been relatively high for all years with available data. The biggest improvement has been seen in the enrolment ratio for high secondary school. In 2005-06 there were 75 women for every 100 men in high secondary school. By 2014-15 there were 89 women for every 100 men.
@@ -427,7 +433,7 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
                               </div>
-                              <div style="margin-top: -300px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -300px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Infant mortality rate</h3>
                                 <p class="p" style="color:#000;">
                                   The infant mortality rate in Kosovo is relative low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate has been stable for much of the past 15 years, with the infant mortality rate in 2002 almost exactly the same as for 2012 at 11.2.
@@ -449,7 +455,7 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
                               </div>
-                              <div style="margin-top: -350px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -300px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Maternal Mortality</h3>
                                 <p class="p" style="color:#000;">
                                   The maternal mortality rate in Kosovo has varied significantly over the past 10-15 years. From a low of 6.9 deaths per 100,000 live births in 2005 to a high of 43.3 deaths per 100,000 live births in 2009. As of 2012, the maternal mortality rate stood at 16.2.
@@ -472,7 +478,7 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
                               </div>
-                              <div style="margin-top: -250px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">HIV and AIDS</h3>
                                 <p class="p" style="color:#000;">
                                   Kosovo is currently categorised in the group of states with a low rate of HIV. The infection rate is below 1% of the general population and below 5 percent of all groups threatened by the growing risk of HIV.
@@ -495,7 +501,7 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/afforested-areas/index.html">
                               </div>
-                              <div style="margin-top: -300px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Greening Kosovo</h3>
                                 <p class="p" style="color:#000;">
                                   Kosovo has made some progress in afforesting (planting forests). Between 2004 and 2010, 2,253 hectares of forest were planted. However, while this sounds like a lot, when the total land area of Kosovo is taken into account (1,090,800 hectares), this area represents only 0.2%. In addition, parts of the forests, which cover roughly 44 percent of Kosovo’s territory, are in bad condition due to inadequate management and illegal logging, leading also to increased soil erosion and landslides. The costs of forest degradation are estimated to be around 0.4% of GDP.
@@ -519,7 +525,7 @@ iframe{
                                 <embed style="width:100%; height:600px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/internet-penetration/index.html">
                               </div>
 
-                               <div style="margin-top: -150px; padding: 10px 100px 10px 100px;">
+                               <div class="mdg-amin-description" style="margin-top: -100px; padding: 10px 100px 10px 100px;">
                                  <h3 style="color:#000;">Internet Penetration</h3>
                                  <p class="p" style="color:#000;">
                                    The penetration of internet in Kosovo is one of the good news stories in Kosovo. As recently as 2004, it is estimated that 6% of households had access to the internet. By 2014, it was estimated that 84% of households had access to the internet.
