@@ -222,32 +222,37 @@ function drawBarChart(div, tab, stacked){
 
 $(document).ready(function(){
     $("#line-chart-div").empty();
+		var max_width = 800;
+		if (screen_resolution >= 1920){
+			max_width = 1150;
+		}
+		console.log(screen_resolution);
     if (screen_resolution <= 480){
         $("#line-chart-div").append("<div id='line-chart1' style='margin: auto; width: 320px; height: 350px;'></div>");
     } else if (screen_resolution > 480 && screen_resolution < 1200) {
         $("#line-chart-div").append("<div id='line-chart1' style='margin: auto; min-width: 310px; max-width: 550px; width: 100%; height: 300px;'></div>");
     } else {
-        $("#line-chart-div1").append("<div id='line-chart1' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div2").append("<div id='line-chart2' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div3").append("<div id='line-chart3' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div4").append("<div id='line-chart4' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div5").append("<div id='line-chart5' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div6").append("<div id='line-chart6' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div7").append("<div id='line-chart7' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div8").append("<div id='line-chart8' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div9").append("<div id='line-chart9' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div10").append("<div id='line-chart10' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div11").append("<div id='line-chart11' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#bar-chart-div1").append("<div id='bar-chart1' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#bar-chart-div2").append("<div id='bar-chart2' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#bar-chart-div3").append("<div id='bar-chart3' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#bar-chart-div5").append("<div id='bar-chart5' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div12").append("<div id='line-chart12' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div13").append("<div id='line-chart13' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#bar-chart-div4").append("<div id='bar-chart4' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#line-chart-div14").append("<div id='line-chart14' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#bar-chart-div7").append("<div id='bar-chart7' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
-		$("#bar-chart-div6").append("<div id='bar-chart6' style='margin: auto; min-width: 310px; max-width: 800px; width: 100%; height: 400px;'></div>");
+        $("#line-chart-div1").append("<div id='line-chart1' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div2").append("<div id='line-chart2' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div3").append("<div id='line-chart3' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div4").append("<div id='line-chart4' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div5").append("<div id='line-chart5' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div6").append("<div id='line-chart6' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div7").append("<div id='line-chart7' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div8").append("<div id='line-chart8' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div9").append("<div id='line-chart9' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div10").append("<div id='line-chart10' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div11").append("<div id='line-chart11' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#bar-chart-div1").append("<div id='bar-chart1' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#bar-chart-div2").append("<div id='bar-chart2' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#bar-chart-div3").append("<div id='bar-chart3' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#bar-chart-div5").append("<div id='bar-chart5' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div12").append("<div id='line-chart12' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div13").append("<div id='line-chart13' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#bar-chart-div4").append("<div id='bar-chart4' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div14").append("<div id='line-chart14' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#bar-chart-div7").append("<div id='bar-chart7' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#bar-chart-div6").append("<div id='bar-chart6' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
     }
 
 	// Draw Charts
