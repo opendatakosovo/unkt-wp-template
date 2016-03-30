@@ -8755,3 +8755,25 @@ body.overflow {
   background: linear-gradient(to right,#a5194c0%,#a5194c100%) !important;
   filter: progid:DXImageTransform.Microsoft.gradient( color:startstr='#a5194c',color:endstr='#a5194c',GradientType=1 ) !important;
 }
+.my-gallery {
+  width: 100%;
+  float: left;
+  background-color: #000F3D;
+  padding: 10px;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+  border: 5px solid white;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px;
+}
+.my-gallery figcaption {
+  display: none;
+}
