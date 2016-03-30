@@ -296,7 +296,7 @@ $gallery_args = array(
     'menu_position' => null,
     'capability_type' => 'post',
     'supports' => array('title', 'excerpt', 'editor', 'thumbnail'),
-    'menu_icon' => get_bloginfo('template_directory') . '/images/photo-album.png' //16x16 png if you want an icon
+    'menu_icon' => get_bloginfo('template_directory') . '/dist/img/photo-album.png' //16x16 png if you want an icon
 );
 register_post_type('gallery', $gallery_args);
 
@@ -372,4 +372,3 @@ if ( function_exists( 'add_theme_support')){
 }
 add_image_size( 'admin-list-thumb', 80, 80, true); //admin thumbnail preview
 add_image_size( 'album-grid', 450, 450, true );
-?>

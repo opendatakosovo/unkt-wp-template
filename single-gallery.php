@@ -1,14 +1,10 @@
 
 <?php get_header(); ?>
+<style>
+
+</style>
 	<div class="gallery-slider">
 		<?php
-				//setup new WP_Query
-				$wp_query = new WP_Query(
-						array(
-								'posts_per_page'    =>    9,
-								'post_type'            =>    'gallery'
-						)
-				);
 
 				//begine loop
 				while ($wp_query->have_posts()) : $wp_query->the_post();
@@ -17,6 +13,7 @@
 			<?php
 			$photo_by = get_field('photo_by');
 			$gallery_images = get_field('gallery_pictures');
+			// echo var_dump($gallery_images);
 			foreach ($gallery_images as $picture) {
 				?>
 				<li>
@@ -27,7 +24,7 @@
 			?>
 		</ul>
 
-
+<?php endwhile; // end of the loop. ?>
 		<div class="gallery-bar">
 
 			<ul>
@@ -40,9 +37,7 @@
 				<li class="photo-by">Photo: <?php echo $photo_by ?></li>
 				<li class="gallery-title">Gallery : <?php the_title() ?></li>
 				<li class="back">
-					<a href="#">
-						<img src="dist/img/x.svg">
-					</a>
+
 				</li>
 			</ul>
 		</div>
@@ -60,21 +55,27 @@
 						<div class="content">
 							<h2><?php the_title(); ?></h2>
 							<?php the_content(); ?>
+              <?php if(count($gallery_images) > 0){ ?>
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+  								<?php
+  								foreach ($gallery_images as $picture) {
+  									?>
+  										<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  								      <a href="<?php echo $picture['sizes']['medium_large']?>" itemprop="contentUrl" data-size="768x512">
+  								          <img src="<?php echo $picture['sizes']['thumbnail']?>" itemprop="thumbnail" alt="Image description" />
+  								      </a>
+  								      <figcaption itemprop="caption description"><?php echo $picture['caption']?></figcaption>
+  								    </figure>
+  								<?php }?>
+
+  							</div>
+              <?php }?>
+
 						</div><!--end content-->
 
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-<?php endwhile; // end of the loop. ?>
-	<div class="read-next gallery-next">
-		<div class="read-next-label">
-			<p>OPEN NEXT GALLERY<span class="icon-arrow-right"></span></p>
-		</div>
-		<a href="#" class="read-next-title" style="background-image: url(dist/img/gallery-next.jpg);">
-			<span>UN Kosovo team and the associaation of Kosovo journalists mark the 10th anniversary of the journalism poverty prize for 2015
-		</span>
-		</a>
 	</div>
 <?php get_footer();?>

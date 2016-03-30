@@ -1,3 +1,8 @@
+<?php
+global $post;
+setup_postdata( $post );
+?>
+
   <div class="banner">
     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
     <img src="<?php echo $image[0]; ?>" alt="" />
@@ -42,10 +47,10 @@
 						    $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
 						?>
 						<?php foreach ($recent_posts as $post){?>
-							<a href="<? echo get_permalink($post['ID']) ?>" class="article article-blue-light">
+							<a href="<?php echo get_permalink($post['ID']) ?>" class="article article-blue-light">
 								<div class="category"><?php echo $category[0]->cat_name ?></div>
-								<div class="date"><? echo $post['post_date']?></div>
-								<h3><? echo $post['post_name']?></h3>
+								<div class="date"><?php echo $post['post_date']?></div>
+								<h3><?php echo $post['post_name']?></h3>
 								<div class="read-more">More <span class="icon-arrow-right"></span></div>
 							</a>
 							<?php } ?>

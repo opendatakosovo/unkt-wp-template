@@ -13,6 +13,48 @@
         bloginfo('name'); echo " "; bloginfo('description');
     }
     ?>" />
+		<!-- Place this data between the <head> tags of your website -->
+<title>Page Title. Maximum length 60-70 characters</title>
+<meta name="description" content="Page description. No longer than 155 characters." />
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@publisher_handle">
+<meta name="twitter:title" content="?php if ( is_single() ) {
+			single_post_title('', true);
+	}else{
+		bloginfo('name');
+	} ?>">
+<meta name="twitter:description" content="<?php if ( is_single() ) {
+			single_post_title('', true);
+	} else {
+			bloginfo('name'); echo " "; bloginfo('description');
+	}
+	?>">
+<meta name="twitter:creator" content="@author_handle">
+<meta name="twitter:image" content="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo1.svg">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="<?php if ( is_single() ) {
+			single_post_title('', true);
+	}else{
+		bloginfo('name');
+	} ?>" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="<?php get_bloginfo();?>" />
+<meta property="og:image" content="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo1.svg" />
+<meta property="og:description" content="<?php if ( is_single() ) {
+			single_post_title('', true);
+	} else {
+			bloginfo('name'); echo " "; bloginfo('description');
+	}
+	?>" />
+<meta property="og:site_name" content="<?php bloginfo('name') ?>" />
+<meta property="fb:admins" content="Facebook numeric ID" />
+<script src="http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js"></script>
+<script src="http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe-ui-default.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://photoswipe.s3.amazonaws.com/pswp/dist/photoswipe.css">
+<link rel="stylesheet" type="text/css" href="http://photoswipe.s3.amazonaws.com/pswp/dist/default-skin/default-skin.css">
   <?php wp_enqueue_script("jquery"); ?>
   <?php wp_head(); ?>
 </head>
