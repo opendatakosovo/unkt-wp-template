@@ -223,10 +223,16 @@ function drawBarChart(div, tab, stacked){
 $(document).ready(function(){
     $("#line-chart-div").empty();
 		var max_width = 800;
-		if (screen_resolution >= 1920){
+		if (screen_resolution <= 480) {
+			max_width = 320
+		} else if (screen_resolution > 480 && screen_resolution < 1200) {
+			max_width = 550;
+		} else if (screen_resolution > 1200 && screen_resolution < 1920){
+			max_width = 800;
+		} else if (screen_resolution >= 1920){
 			max_width = 1150;
 		}
-		console.log(screen_resolution);
+
     if (screen_resolution <= 480){
         $("#line-chart-div").append("<div id='line-chart1' style='margin: auto; width: 320px; height: 350px;'></div>");
     } else if (screen_resolution > 480 && screen_resolution < 1200) {
