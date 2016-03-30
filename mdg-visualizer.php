@@ -18,6 +18,15 @@
   margin-left: 5%;
 }
 
+.p a{
+  color: #337AB7;
+}
+
+.p a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
 hr.hr-style {
     padding: 0;
     border: none;
@@ -540,7 +549,11 @@ iframe{
                         <div class="row">
                           <div tabindex="0" style="background-color: #FFDD00; margin-top-20px;" class="chart-div" id="eradicate-extreme-poverty-and-hunger-more">
                             <div class="row" id="line-chart-div1" style="margin: auto;"></div>
-                            <br>
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="http://data.worldbank.org/data-catalog/world-development-indicators">
+                                World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Poverty Headcount</h3>
                               <p class="p" style="color:#000;">
@@ -553,7 +566,11 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div2" style="margin: auto;"></div>
-                            <br>
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="http://data.worldbank.org/data-catalog/world-development-indicators">
+                                World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Employment to population ratio</h3>
                               <p class="p" style="color:#000;">
@@ -568,7 +585,11 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div3" style="margin: auto;"></div>
-                            <br>
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="http://data.worldbank.org/data-catalog/world-development-indicators">
+                                World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">GDP per Capita</h3>
                               <p class="p" style="color:#000;">
@@ -584,7 +605,12 @@ iframe{
 
                           <div class="chart-div" style="background-color: #D8DF20;" id="achieve-universal-primary-education-more">
                             <div class="row" id="line-chart-div4" style="margin: auto;"></div>
-                            <br>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="http://masht.rks-gov.net/en/statistikat">
+                                Ministry of Education, Science and Technology</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Gross Primary School enrolments</h3>
                               <p class="p" style="color:#000;">
@@ -601,6 +627,11 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div5" style="margin: auto;"></div>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="http://masht.rks-gov.net/en/statistikat">
+                                Ministry of Education, Science and Technology</a>
+                            </p><br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Total Primary School enrolments</h3>
                               <p class="p" style="color:#000;">
@@ -612,7 +643,12 @@ iframe{
                           </div>
                           <div class="chart-div" style="background-color: #F7941D;" id="promote-gender-equality-and-empower-women-more" >
                             <div class="row" id="line-chart-div6" style="margin: auto;"></div>
-                            <br>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="http://masht.rks-gov.net/en/statistikat">
+                                Ministry of Education, Science and Technology</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Gender Enrolment Ratios</h3>
                               <p class="p" style="color:#000;">
@@ -623,7 +659,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div7" style="margin: auto;"></div>
-                            <br>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="http://data.worldbank.org/data-catalog/world-development-indicators">
+                                World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Labour Force Participation</h3>
                               <p class="p" style="color:#000;">
@@ -639,7 +680,12 @@ iframe{
                             <br>
                             <hr class="hr-style">
                             <div class="row" id="bar-chart-div6" style="margin: auto;"></div>
-                            <br>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                            href="http://www.unkt.org/development-goals/progress-by-goal-for-kosovo/">
+                            United Nations Kosovo Team</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Representation in Parliament</h3>
                               <p class="p" style="color:#000;">
@@ -651,7 +697,11 @@ iframe{
                             </div>
                             <hr class="hr-style">
                             <div class="row" id="line-chart-div8" style="margin: auto;"></div>
-                            <br>
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="http://data.worldbank.org/data-catalog/world-development-indicators">
+                                World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Life Expectancy at Birth</h3>
                               <p class="p" style="color:#000;">
@@ -664,7 +714,11 @@ iframe{
 
                           <div class="chart-div" style="background-color: #C7EAFD;" id="reduce-child-mortality-more" >
                             <div class="row" id="line-chart-div9" style="margin: auto;"></div>
-                            <br>
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="http://ec.europa.eu/eurostat/data/database">
+                                Eurostat</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Infant mortality rate</h3>
                               <p class="p" style="color:#000;">
@@ -678,7 +732,11 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div10" style="margin: auto;"></div>
-                            <br>
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="http://ec.europa.eu/eurostat/data/database">
+                                Eurostat</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Infant mortality rate</h3>
                               <p class="p" style="color:#000;">
@@ -692,7 +750,10 @@ iframe{
 
                           <div class="chart-div" style="background-color: #F8C0D9;" id="improve-maternal-health-more">
                             <div class="row" id="line-chart-div11" style="margin: auto;"></div>
-                            <br>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: Report on Perinatal Situation in Kosovo - 2014
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Maternal Mortality</h3>
                               <p class="p" style="color:#000;">
@@ -706,6 +767,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="bar-chart-div1" style="margin: auto;"></div>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="https://ask.rks-gov.net/ENG/publikimet/doc_details/967-demographic-social-and-reproductive-health-survey-in-kosovo-">
+                                Demographic Social and Reproductive Health Survey in Kosovo</a>
+                            </p>
+                            <br>
                             <br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Aware of Modern Contraception</h3>
@@ -717,6 +784,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="bar-chart-div2" style="margin: auto;"></div>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                    href="https://ask.rks-gov.net/ENG/publikimet/doc_details/967-demographic-social-and-reproductive-health-survey-in-kosovo-">
+                                Demographic Social and Reproductive Health Survey in Kosovo</a>
+                            </p>
+                            <br>
                             <br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Using Modern Contraception</h3>
@@ -728,6 +801,12 @@ iframe{
 
                           <div class="chart-div" style="background-color: #F15A3F;" id="combat-hiv-aids-malria-and-other-desease-more">
                             <div class="row" id="bar-chart-div3" style="margin: auto;"></div>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                      href="http://www.unaids.org/sites/default/files/country/documents/KOSOVO_narrative_report_2015.pdf">
+                                  UNAIDS Kosovo Narrative Report 2015</a>
+                            </p>
+                            <br>
                             <br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">HIV and AIDS</h3>
@@ -739,7 +818,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="bar-chart-div5" style="margin: auto;"></div>
-                            <br>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                      href="http://www.unkt.org/development-goals/progress-by-goal-for-kosovo/">
+                                  United Nations Kosovo Team</a> and <a href="http://data.worldbank.org/data-catalog/world-development-indicators">World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Rate of Tuberculosis</h3>
                               <p class="p" style="color:#000;">
@@ -750,7 +834,12 @@ iframe{
 
                           <div class="chart-div" style="background-color: #8CC63E;" id="ensure-environmental-sustainability-more" >
                             <div class="row" id="line-chart-div12" style="margin: auto;"></div>
-                            <br>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                      href="https://ask.rks-gov.net/ENG/enviroment/publications/doc_download/1295-some-facts-on-the-environment-2015">Some
+                                  Facts on the Environment 2015</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Greening Kosovo</h3>
                               <p class="p" style="color:#000;">
@@ -764,7 +853,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div13" style="margin: auto;"></div>
-                            <br>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                      href="http://data.worldbank.org/data-catalog/world-development-indicators">Some
+                                  World Bank World Development Indicators</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Renewable Energy Output/Usage</h3>
                               <p class="p" style="color:#000;">
@@ -793,7 +887,11 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="bar-chart-div4" style="margin: auto;"></div>
-                            <br>
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                      href="http://www.kryeministri-ks.net/repository/docs/REVISING_and_UPDATING_the_KOSOVO_ENVIRONMENTAL_STRATEGY_(KES).pdf">Some
+                                  Kosovo Environmental Strategy and National Environmental Action Plan</a>
+                            </p>
+                            <br><br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Biodiversity</h3>
                               <p class="p" style="color:#000;">
@@ -804,6 +902,12 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="bar-chart-div7" style="margin: auto;"></div>
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                      href="https://ask.rks-gov.net/ENG/enviroment/publications/doc_download/990-some-facts-on-environment-2011">Some
+                                      Some Facts on the Environment 2011</a>
+                            </p>
+                            <br><br>
                             <br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Land Use By Municipality in 2002</h3>
@@ -815,7 +919,13 @@ iframe{
 
 
                           <div class="chart-div" style="background-color: #1BB0E8;" id="internet-penetration-more">
-                            <div class="row" id="line-chart-div14" style="margin: auto;"></div>
+                            <div class="row" id="line-chart-div14" style="margin: auto;"></div
+
+                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: <a
+                                      href="http://www.lr.undp.org/content/dam/kosovo/docs/Mozaik/Kosovo_Mosaic_2012_Eng_735317.pdf">Some
+                                      Kosovo Mosaic 2012</a>
+                            </p>
+                            <br><br>
                             <br>
                             <div class="row" style="padding: 0 15% 10px 20%;">
                               <h3 style="color:#000;">Internet Penetration</h3>
