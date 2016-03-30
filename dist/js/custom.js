@@ -18,8 +18,18 @@ $(document).ready(function() {
 	});
   // execute above function
   initPhotoSwipeFromDOM('.my-gallery');
-});
 
+  buildSubscribeForm();
+});
+function buildSubscribeForm(){
+
+  $('.es_lablebox').html("");
+  $('.es_textbox_class').attr('placeholder','your@email.here');
+  $('.es_textbox_button').attr('value','');
+  $('.es_textbox_button').attr('class','icon-arrow-right');
+
+
+}
 function load_posts(ppp, cat, pageNumber, grid, post_type){
     var str = '&cat=' + cat + '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax'+'&grid=' + grid+'&post_type=' + post_type ;
     $.ajax({

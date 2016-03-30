@@ -5,10 +5,7 @@
 			<p>Subscribe for the latest news and updates:</p>
 		</div>
 		<div class="subscribe-form">
-			<form name="subscribe-big" method="post" action="">
-				<input type="text" placeholder="your@email.here" />
-				<button type="submit" class="icon-arrow-right"></button>
-			</form>
+				<?php es_subbox( $namefield = "NO", $desc = "", $group = "Public" ); ?>
 		</div>
 	</div>
 	<!-- Root element of PhotoSwipe. Must have class pswp. -->
