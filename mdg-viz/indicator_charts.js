@@ -1,28 +1,25 @@
 var screen_resolution = window.screen.availWidth;
 var allData = getData();
 var lineColor = '#000000'
+var font = 'Helvetica'
 
 function drawLineChart(div, tab){
 	var chartTitle = allData['meta']['chart_title'][tab];
 	var yAxis = allData['meta']['y_axis'][tab];
 	var background = allData['meta']['bg_color'][tab];
-	var rounding = '';
+	var rounding = allData['meta']['rounding'][tab];
 	var legend = false;
 
 	// Get Suffixes and Prefixes
 	var prefix = allData['meta']['prefix'][tab];
 	var suffix = allData['meta']['suffix'][tab];
-
 	if (prefix == '_'){
 		prefix = '';
 	}
 	if (suffix == '_'){
 		suffix = '';
-	} else if (suffix == '%'){
-		rounding = 1;
 	}
 
-	console.log(tab + ": " + suffix);
 	// Get values for charts
 	var data = [];
 	var lineColors = [];
@@ -37,12 +34,28 @@ function drawLineChart(div, tab){
 		var xAxis = [];
 		colName = colName.concat(i);
 
-		for (keyTwo in indices){
-			value = Number(Number(allData[tab][keyOne][keyTwo]).toFixed(rounding));
-			values.push(value);
-			xAxis.push(keyTwo);
+		// Ensure keys are sorted correctly
+	    var keys = [];
+	    var k, j, len;
+
+	  	for (k in indices) {
+	    	if (indices.hasOwnProperty(k)) {
+				keys.push(k);
+	    	}
 		}
 
+		keys.sort();
+		len = keys.length;
+
+		// Cycle through keys in order
+		for (j = 0; j < len; j++) {
+		  	k = keys[j];
+			value = Number(Number(indices[k]).toFixed(rounding));
+			values.push(value);
+			xAxis.push(k);
+		}
+
+		// Get meta data
 		entry['name'] = seriesName;
 		entry['data'] = values;
 		entry['color'] = allData['meta'][colName][tab];
@@ -63,7 +76,7 @@ function drawLineChart(div, tab){
         chart: {
 			backgroundColor: background, // Background color
             style: {
-                fontFamily: "UniversLTStd-Cn"
+                fontFamily: font
             }
         },
 		xAxis: {
@@ -110,7 +123,7 @@ function drawBarChart(div, tab, stacked){
 	var chartTitle = allData['meta']['chart_title'][tab];
 	var yAxis = allData['meta']['y_axis'][tab];
 	var background = allData['meta']['bg_color'][tab];
-	var rounding = '';
+	var rounding = allData['meta']['rounding'][tab];
 	var legend = false;
 
 	// Get Suffixes and Prefixes
@@ -121,8 +134,6 @@ function drawBarChart(div, tab, stacked){
 	}
 	if (suffix == '_'){
 		suffix = '';
-	} else if (suffix == '%'){
-		rounding = 1;
 	}
 
 	// Determine if columns are stacked
@@ -145,10 +156,25 @@ function drawBarChart(div, tab, stacked){
 		var xAxis = [];
 		colName = colName.concat(i);
 
-		for (keyTwo in indices){
-			value = Number(Number(allData[tab][keyOne][keyTwo]).toFixed(rounding));
+		// Ensure keys are sorted correctly
+	    var keys = [];
+	    var k, j, len;
+
+	  	for (k in indices) {
+	    	if (indices.hasOwnProperty(k)) {
+				keys.push(k);
+	    	}
+		}
+
+		keys.sort();
+		len = keys.length;
+
+		// Cycle through keys in order
+		for (j = 0; j < len; j++) {
+		  	k = keys[j];
+			value = Number(Number(indices[k]).toFixed(rounding));
 			values.push(value);
-			xAxis.push(keyTwo);
+			xAxis.push(k);
 		}
 
 		entry['name'] = seriesName;
@@ -172,7 +198,7 @@ function drawBarChart(div, tab, stacked){
 			type: 'column',
 			backgroundColor: background, // Background color
             style: {
-                fontFamily: 'UniversLTStd-Cn'
+                fontFamily: font
             }
 		},
 		plotOptions: {

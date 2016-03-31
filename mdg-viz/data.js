@@ -665,7 +665,7 @@ function getData() {return {
             "3_3": "Life Expectancy at Birth",
             "3_4": "Women in Parliament",
             "4_1": "Infant Mortality Rate",
-            "4_2": "Neonatal Mortality Rate",
+            "4_2": "Early Neonatal Mortality Rate",
             "4_3": "Stillbirth Rate",
             "5_1": "Maternal Mortality",
             "5_2": "Aware of Modern Contraception",

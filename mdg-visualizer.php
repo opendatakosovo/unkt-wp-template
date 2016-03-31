@@ -403,7 +403,7 @@ iframe{
                                   Since at least 2009-10, enrolments in primary and lower secondary school have been high in Kosovo, with no less than 96% of eligible students being enrolled in any given year. This would suggest that very few children in Kosovo are missing out on this basic education, helping to ensure basic literacy, mathematics and English tuition for young people.
                                 </p><br>
                                 <p class="p" style="color:#000;">
-                                   There has also been steady growth in the total number of students attending upper secondary and tertiary education. Gross enrolments in upper secondary education (general and VET) in 2011-12 was 92.1%, 5.2% points higher than in 2009-10. Additionally, the gross enrolment rate in Kosovo is significantly higher than other countries in the region such as Croatia (87%), Bosnia & Herzegovina (86%), Serbia (86%) and Macedonia (78%). The percentage of students dropping out of upper secondary education is also decreasing. By the end of the 2011-12 year the dropout rate from upper secondary schools was 2.5%, compared to 3.1% for 2009-2010.
+                                  There has also been steady growth in the total number of students attending upper secondary and tertiary education. The gross enrolment rate in upper secondary education (general and VET) in 2011-12 was 92.1%, 5.2% points higher than in 2009-10. Additionally, the gross enrolment rate in Kosovo is significantly higher than other countries in the region such as Croatia (87%), Bosnia & Herzegovina (86%), Serbia (86%) and Macedonia (78%). The percentage of students dropping out of upper secondary education is also decreasing. By the end of the 2011-12 year the dropout rate from upper secondary schools was 2.5%, compared to 3.1% for 2009-2010.
                                 </p><br>
                                 <p class="p" style="color:#000;">
                                   Similarly, there has been steady growth in the total number of students attending tertiary education in Kosovo due to the increasing number of private and public higher education institutions combined with a limited number of employment opportunities. The enrolment rate in tertiary education in 2010-2011 is estimated to be around 57% of the eligible population based on age, and 67% of those who graduated from upper secondary schools and were able to pursue tertiary education.
@@ -445,7 +445,7 @@ iframe{
                               <div class="mdg-amin-description" style="margin-top: -300px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Infant mortality rate</h3>
                                 <p class="p" style="color:#000;">
-                                  The infant mortality rate in Kosovo is relative low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate has been stable for much of the past 15 years, with the infant mortality rate in 2002 almost exactly the same as for 2012 at 11.2.
+                                  The infant mortality rate in Kosovo is relatively low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate showed significant variation between 2002 and 2012, ranging between 15.1 and 8.8, but has generally exhibited a downward trend.
                                 </p><br>
                                 <p class="p" style="color:#000;">
                                   That said, the infant mortality rate in Kosovo is significantly higher than most western countries, and many of the ex-Yugoslav nations. Most countries in the EU, for example, have infant mortality rates below 5, while Serbia, Macedonia and Montenegro all have infant mortality rates around or just over 5. Albania on the other hand also has a slightly higher infant mortality rate, estimated to be 12.75 in 2015.
@@ -464,13 +464,13 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
                               </div>
-                              <div class="mdg-amin-description" style="margin-top: -300px; padding: 10px 100px 10px 100px;">
+                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Maternal Mortality</h3>
                                 <p class="p" style="color:#000;">
-                                  The maternal mortality rate in Kosovo has varied significantly over the past 10-15 years. From a low of 6.9 deaths per 100,000 live births in 2005 to a high of 43.3 deaths per 100,000 live births in 2009. As of 2012, the maternal mortality rate stood at 16.2.
+                                  The maternal mortality rate in Kosovo has varied significantly over the past 10-15 years - from a high of 43.3 deaths per 100,000 live births in 2009 to 0 deaths in 2013 and 2014.
                                 </p><br>
                                 <p class="p" style="color:#000;">
-                                  Although the rate is closer to the low end in recent years, it places Kosovo close to the average for countries in the region. Macedonia, for example was estimated average a maternal mortality rate of 8 deaths per 100,000 live births between 2010 and 2015, Serbia averaged 17 for the same period, and Albania averaged 29. The average for the EU currently stands at 4 deaths per 100,000 live births.
+                                  If we look past the spike in deaths in 2008 and 2009, there has been a clear downwards trend throughout the past 15 years. Looking at data for more recent years, Kosovo also compares well with most countries in the region. Macedonia, for example was estimated average a maternal mortality rate of 8 deaths per 100,000 live births between 2010 and 2015, Serbia averaged 17 for the same period, and Albania averaged 29. The average for the EU currently stands at approximately 4 deaths per 100,000 live births.
                                 </p>
                               </div>
                             </div>
@@ -492,9 +492,6 @@ iframe{
                                 <p class="p" style="color:#000;">
                                   Kosovo is currently categorised in the group of states with a low rate of HIV. The infection rate is below 1% of the general population and below 5 percent of all groups threatened by the growing risk of HIV.
                                 </p><br>
-                                <p class="p" style="color:#000;">
-                                  On the other hand, the prevalence of tuberculosis (TB) is much more widespread in Kosovo when compared to other countries in the region and the EU. While in Albania the incidence of TB is 16 per 100,000 people, in Macedonia 18, and 8 in the EU, in Kosovo the incidence of TB is 53 per 100,000 people.
-                                </p>
                               </div>
                             </div>
                           </div>
@@ -557,7 +554,9 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Poverty Headcount</h3>
                               <p class="p" style="color:#000;">
-                                 Poverty remains a persistent and widespread issue in Kosovo as of 2015. A report produced by the Kosovo Agency of Statistics (KAS) on Consumption Poverty found that, in 2011, 29.7% of the population in Kosovo was unable to meet human needs and 10.0% were unable to meet even basic survival needs. These poverty rates are very high compared to neighbouring countries and, while decreasing, have remained persistently high over the past 10 years. Reports from the World Bank and UNDP also identify that poverty and vulnerability levels would be much higher without the safety net provided through migration and remittances. </p>
+                                 Poverty remains a persistent and widespread issue in Kosovo as of 2015. A report produced by the Kosovo Agency of Statistics (KAS) on Consumption Poverty found that, in 2011, 29.7% of the population in Kosovo was unable to meet human needs and 10.0% were unable to meet even basic survival needs. These poverty rates are very high compared to neighbouring countries and, while decreasing, have remained persistently high over the past 10 years. Reports from the World Bank and UNDP also identify that poverty and vulnerability levels would be much higher without the safety net provided through migration and remittances.
+                               </p>
+                               <br>
                               <p class="p" style="color:#000;">
                                  Another measure of poverty, the poverty gap, which measures the ‘depth’ of poverty and takes into account both the percentage of the population below the poverty line and how far below the poverty line those people are, has also slightly decreased. From 2009 to 2011 the depth of poverty based on the full poverty line declined from 9.6% to 7.8%. Similar falls have been seen the extreme poverty gap measure, declining from 3.0% to 2.1% over the same period.
                               </p>
@@ -574,11 +573,11 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Employment to population ratio</h3>
                               <p class="p" style="color:#000;">
-                                One of the keys to alleviating poverty is employment. Unfortunately, in Kosovo, the rates of labour force participation remain low and the unemployment rate remains high – particularly for women. In 2013, only 28.4% of the working age population was employed. This measure, and the labour force participation rate (40.6%) are the lowest in the Western Balkan region and far lower than the average for the EU. For women in particular these measures are extremely low with the employment rate in 2013 standing at 12.9% and labour force participation at 21.1%.
+                                One of the keys to alleviating poverty is employment. Unfortunately, in Kosovo, the rates of labour force participation remain low and the unemployment rate remains high – particularly for women. In 2013, only 28.4% of the working age population was employed. This measure, and the labour force participation rate (40.6%) are the lowest in the Western Balkan region and far lower than the average for the EU. For women in particular these measures are extremely low, with the employment rate in 2013 standing at 12.9% and labour force participation at 21.1%.
                               </p>
                               <br>
                               <p class="p" style="color:#000;">
-                                There has been a low improvement in the rate of employment in Kosovo since 2002, albeit from a very low base. In 2002 the percentage of the working age population employed was just 23.8% and the same figure for women was just 8.8%.
+                                That said, there has been some improvement in the rate of employment in Kosovo since 2002, albeit from a very low base. In 2002 the percentage of the working age population employed was just 23.8% and the same figure for women was just 8.8%.
                               </p>
                             <br><br>
                             </div>
@@ -593,11 +592,11 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">GDP per Capita</h3>
                               <p class="p" style="color:#000;">
-                                Economic growth is also a powerful instrument for reducing poverty and improving standards of living. The Kosovo economy grew at a very high average rate of 6.3 percent per annum between 2006 and 2008, but it has not been able to sustain this high growth rate in the wake of economic downturn in 2008-09. During the 2009-2013 period, the Kosovo economy grew at a much lower pace - averaging 3.3% per annum. The main contributors to this economic growth also changed after the 2009 period. While before, the main contributor of this growth was the private sector (consumption and investment), in the period after the economic downturn, the economic growth rate was driven primarily by growing government expenditures.
+                                Economic growth is also a powerful instrument for reducing poverty and improving standards of living. The Kosovo economy grew at a very high average rate of 6.3 percent per annum between 2006 and 2008, but it has not been able to sustain this high growth rate in the wake of the economic downturn in 2008-09. During the 2009-2013 period, the Kosovo economy grew at a much lower pace - averaging 3.3% per annum. The main contributors to this economic growth also changed after the 2009 period. Previously, the main contributor of this growth was the private sector (consumption and investment), in the period after the economic downturn, the economic growth rate was driven primarily by growing government expenditures.
                               </p>
                               <br>
                               <p class="p" style="color:#000;">
-                                That said, in countries with growing populations, increases in human welfare and standards of living are better measured with growth in real GDP per capita, which shows the expansion in output due to growth in the population. When economic growth is measured with real GDP per capita, economic growth rates in Kosovo further decline. Income in Kosovo, when the population growth rate is taking into account, declines to 4.8 percent per annum during the period 2006-2008 and 1.8 percent per annum from 2009 to 2013. If the Kosovo economy continued to grow at 1.8 percent per annum, it would take the citizens of Kosovo 39 years to reach the same level of income of an average citizen of Montenegro.
+                                In countries with growing populations, increases in human welfare and standards of living are often better measured with growth in real GDP per capita, which shows the expansion in output not due simply to the growth in the population. When economic growth is measured with real GDP per capita, economic growth rates in Kosovo further decline. Growth in real GDP per capita averaged 4.8 percent per annum during the period 2006-2008 and 1.8 percent per annum from 2009 to 2013. To put this in perspective, if real GDP per capita in Kosovo continued to grow at 1.8 percent per annum, it would take the citizens of Kosovo 39 years to reach the same level as the average citizen of Montenegro.
                               </p>
                             <br><br>
                             </div>
@@ -617,7 +616,7 @@ iframe{
                                 Since at least 2009-10, enrolments in primary and lower secondary school have been high in Kosovo, with no less than 96% of eligible students being enrolled in any given year. This would suggest that very few children in Kosovo are missing out on this basic education, helping to ensure basic literacy, mathematics and English tuition for young people.
                               </p><br>
                               <p class="p" style="color:#000;">
-                                There has also been steady growth in the total number of students attending upper secondary and tertiary education. Gross enrolments in upper secondary education (general and VET) in 2011-12 was 92.1%, 5.2% points higher than in 2009-10. Additionally, the gross enrolment rate in Kosovo is significantly higher than other countries in the region such as Croatia (87%), Bosnia & Herzegovina (86%), Serbia (86%) and Macedonia (78%). The percentage of students dropping out of upper secondary education is also decreasing. By the end of the 2011-12 year the dropout rate from upper secondary schools was 2.5%, compared to 3.1% for 2009-2010.
+                                There has also been steady growth in the total number of students attending upper secondary and tertiary education. The gross enrolment rate in upper secondary education (general and VET) in 2011-12 was 92.1%, 5.2% points higher than in 2009-10. Additionally, the gross enrolment rate in Kosovo is significantly higher than other countries in the region such as Croatia (87%), Bosnia & Herzegovina (86%), Serbia (86%) and Macedonia (78%). The percentage of students dropping out of upper secondary education is also decreasing. By the end of the 2011-12 year the dropout rate from upper secondary schools was 2.5%, compared to 3.1% for 2009-2010.
                               </p><br>
                               <p class="p" style="color:#000;">
                                 Similarly, there has been steady growth in the total number of students attending tertiary education in Kosovo due to the increasing number of private and public higher education institutions combined with a limited number of employment opportunities. The enrolment rate in tertiary education in 2010-2011 is estimated to be around 57% of the eligible population based on age, and 67% of those who graduated from upper secondary schools and were able to pursue tertiary education.
@@ -722,7 +721,7 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Infant mortality rate</h3>
                               <p class="p" style="color:#000;">
-                                The infant mortality rate in Kosovo is relative low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate has been stable for much of the past 15 years, with the infant mortality rate in 2002 almost exactly the same as for 2012 at 11.2.
+                                The infant mortality rate in Kosovo is relatively low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate showed significant variation between 2002 and 2012, ranging between 15.1 and 8.8, but has generally exhibited a downward trend.
                               </p><br>
                               <p class="p" style="color:#000;">
                                 That said, the infant mortality rate in Kosovo is significantly higher than most western countries, and many of the ex-Yugoslav nations. Most countries in the EU, for example, have infant mortality rates below 5, while Serbia, Macedonia and Montenegro all have infant mortality rates around or just over 5. Albania on the other hand also has a slightly higher infant mortality rate, estimated to be 12.75 in 2015.
@@ -732,33 +731,26 @@ iframe{
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div10" style="margin: auto;"></div>
-                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
-                                    href="http://ec.europa.eu/eurostat/data/database">
-                                Eurostat</a>
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: Report on Perinatal Situation in Kosovo - 2014
                             </p>
                             <br><br>
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Early neonatal mortality rate</h3>
                               <p class="p" style="color:#000;">
-                                The infant mortality rate in Kosovo is relative low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate has been stable for much of the past 15 years, with the infant mortality rate in 2002 almost exactly the same as for 2012 at 11.2.
-                              </p><br>
-                              <p class="p" style="color:#000;">
-                                That said, the infant mortality rate in Kosovo is significantly higher than most western countries, and many of the ex-Yugoslav nations. Most countries in the EU, for example, have infant mortality rates below 5, while Serbia, Macedonia and Montenegro all have infant mortality rates around or just over 5. Albania on the other hand also has a slightly higher infant mortality rate, estimated to be 12.75 in 2015.
+                                A subset of infant mortality, the early neonatal mortality rate represents the deaths of children within 6 days of birth, whereas the infant mortality rate represents deaths of children less than one year old. What this data reveals better than the infant mortality rate is the strong improvements being made in postnatal care. From an early neonatal mortality rate of 14.8 in 2000, this rate had fallen to 3.7 in 2014.
                               </p><br>
                             </div>
                             <br>
                             <hr class="hr-style">
                             <br>
                             <div class="row" id="line-chart-div15" style="margin: auto;"></div>
-                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
-                                    href="http://ec.europa.eu/eurostat/data/database">
-                                Eurostat</a>
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: Report on Perinatal Situation in Kosovo - 2014
                             </p>
                             <br><br>
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Stillbirth rate</h3>
                               <p class="p" style="color:#000;">
-                                .
+                                The positive downtrend in the early neonatal mortality rate can also be seen in the decreased number of stillbirths. Typically taken to mean late fetal death (death between 22 weeks gestation and birth), the rate has almost halved between 2000 and 2014, falling from a high of 15.9 in 2003 to 8.4 in 2014. Combined with the improvement in the early neonatal mortality rate, this data would seem to suggest improvements continue be made in both pre and postnatal care in Kosovo.
                               </p><br>
                             </div>
                           </div>
@@ -766,16 +758,16 @@ iframe{
                           <div class="chart-div" style="background-color: #F8C0D9;" id="improve-maternal-health-more">
                             <div class="row" id="line-chart-div11" style="margin: auto;"></div>
 
-                            <p class="p" style="float: right; font-size:13px; margin-right: 20%;">Source: Report on Perinatal Situation in Kosovo - 2014
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: Report on Perinatal Situation in Kosovo - 2014
                             </p>
                             <br><br>
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Maternal Mortality</h3>
                               <p class="p" style="color:#000;">
-                                The maternal mortality rate in Kosovo has varied significantly over the past 10-15 years. From a low of 6.9 deaths per 100,000 live births in 2005 to a high of 43.3 deaths per 100,000 live births in 2009. As of 2012, the maternal mortality rate stood at 16.2.
+                                The maternal mortality rate in Kosovo has varied significantly over the past 10-15 years - from a high of 43.3 deaths per 100,000 live births in 2009 to 0 deaths in 2013 and 2014.
                               </p><br>
                               <p class="p" style="color:#000;">
-                                Although the rate is closer to the low end in recent years, it places Kosovo close to the average for countries in the region. Macedonia, for example was estimated average a maternal mortality rate of 8 deaths per 100,000 live births between 2010 and 2015, Serbia averaged 17 for the same period, and Albania averaged 29. The average for the EU currently stands at 4 deaths per 100,000 live births.
+                                If we look past the spike in deaths in 2008 and 2009, there has been a clear downwards trend throughout the past 15 years. Looking at data for more recent years, Kosovo also compares well with most countries in the region. Macedonia, for example was estimated average a maternal mortality rate of 8 deaths per 100,000 live births between 2010 and 2015, Serbia averaged 17 for the same period, and Albania averaged 29. The average for the EU currently stands at approximately 4 deaths per 100,000 live births.
                               </p><br>
                             </div>
                             <br>
@@ -809,7 +801,7 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Using Modern Contraception</h3>
                               <p class="p" style="color:#000;">
-                                The usage of contraception however remains at fairly low rates, particularly amongst women aged 25 or younger. This is likely to be at least partially explainable by the relative young age of marriage for many women in Kosovo, but could be evidence that a cultural stigma around the use of contraception exists.
+                                The usage of contraception remains at fairly low rates, particularly amongst women aged 25 or younger. This is likely to be at least partially explainable by the relatively young age of marriage for many women in Kosovo, but could also be evidence that a cultural stigma around the use of contraception still exists.
                               </p><br>
                             </div>
                           </div>
@@ -925,9 +917,9 @@ iframe{
                             <br><br>
                             <br>
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
-                              <h3 style="color:#000;">Land Use By Municipality in 2002</h3>
+                              <h3 style="color:#000;">Land Use By Municipality</h3>
                               <p class="p" style="color:#000;">
-                                Land Use by Municipality in 2002.
+                                As can be seen from the data, most land in Kosovo is split between agricultural land and forested land. The municipalities with largest amounts of forested land are Prishtinë/Priština, Leposaviç/Leposavić and Gjakovë/Đakovica. At the other end of the spectrum, the smaller (geographically) municipalities of Obiliq/Obilić and Fushë Kosovë/Kosovo Polje have little forested land and mainly consist of agricultural land.
                               </p><br>
                             </div>
                           </div>
