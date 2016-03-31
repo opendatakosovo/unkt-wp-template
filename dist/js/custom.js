@@ -20,13 +20,39 @@ $(document).ready(function() {
   initPhotoSwipeFromDOM('.my-gallery');
 
   buildSubscribeForm();
+
+  var cookie = document.cookie;
+  document.cookie = 'visited=0;expires=;path=/';
+  // if (getCookie('visited')!=1) {
+  //     var expiration = new Date();
+  //     expiration.setDate(expiration.getDate()+1);
+  //     document.cookie = 'visited=1;expires=' + expiration + ';path=/';
+  //
+  //     var loader = document.getElementById('loader');
+  //
+  //     loader.style.display = 'block';
+  //
+  //     setTimeout(function(){
+  //       var subscribe = document.getElementById('subscribe-header');
+  //       subscribe.style.display = 'none';
+  //     }, 5000);
+  //
+  // }
+
 });
+function getCookie(name)
+  {
+    var re = new RegExp(name + "=([^;]+)");
+    var value = re.exec(document.cookie);
+    return (value != null) ? unescape(value[1]) : null;
+  }
 function buildSubscribeForm(){
 
-  $('.es_lablebox').html("");
+  $('.es_lablebox').html('');
   $('.es_textbox_class').attr('placeholder','your@email.here');
   $('.es_textbox_button').attr('value','');
-  $('.es_textbox_button').attr('class','icon-arrow-right');
+  $('.es_button').addClass('icon-arrow-right');
+  $('.es_textbox_button').addClass('icon-arrow-right');
 
 
 }

@@ -7575,6 +7575,7 @@ body.overflow {
 }
 .subscribe .subscribe-form {
   display: inline-block;
+  height: 93px;
 }
 .subscribe .subscribe-form input {
   float: left;
@@ -7654,6 +7655,7 @@ body.overflow {
     width: 60%;
     padding-right: 0;
     padding-left: 0;
+    padding-top:36px;
   }
   .subscribe.subscribe-big .subscribe-form {
     width: 40%;
@@ -7667,7 +7669,7 @@ body.overflow {
     display: inline-block;
   }
   .subscribe.subscribe-big > div {
-    padding: 74px 0 85px 0;
+    padding: 21px 0 34px 0;
     font-size: 25px;
   }
   .subscribe.subscribe-big .subscribe-label {
@@ -8776,4 +8778,43 @@ body.overflow {
 }
 .my-gallery figcaption {
   display: none;
+}
+.es_textbox{
+  width:85%;
+  float:left;
+
+}
+.es_textbox_class{
+  width:100%;
+}
+.es_button{
+  width:15%;
+  float:left;
+  padding-top: 3px !important;
+}
+input#es_txt_button_pg {
+  margin-top:-30px;
+  z-index: 4;
+  position:relative;
+}
+#es_msg_pg{
+  color:white;
+}
+#subscribe-header {
+    display: inline-block;
+    height: 70px !important;
+}
+.subscribe.subscribe-small .subscribe-label {
+    width: 35%;
+    height: 70px;
+}
+.subscribe.subscribe-small .subscribe-label p {
+    margin-top: 13px;
+    float: right;
+    margin-right: 10px;
+}
+.subscribe.subscribe-small input#es_txt_button_pg {
+    margin-top: -10px;
+    z-index: 4;
+    position: relative;
 }

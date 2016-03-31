@@ -5,7 +5,10 @@
 			<p>Subscribe for the latest news and updates:</p>
 		</div>
 		<div class="subscribe-form">
+
 				<?php es_subbox( $namefield = "NO", $desc = "", $group = "Public" ); ?>
+
+			</form>
 		</div>
 	</div>
 	<!-- Root element of PhotoSwipe. Must have class pswp. -->

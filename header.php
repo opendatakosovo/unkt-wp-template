@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<?php $image = '';
+	if ( has_post_thumbnail() ) {
+		$image = wp_get_attachment_url( get_post_thumbnail_id( $post->ID, 'full', false ) );
+	} ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
   <title><?php wp_title(); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -20,7 +24,7 @@
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@publisher_handle">
-<meta name="twitter:title" content="?php if ( is_single() ) {
+<meta name="twitter:title" content="<?php if ( is_single() ) {
 			single_post_title('', true);
 	}else{
 		bloginfo('name');
@@ -32,7 +36,11 @@
 	}
 	?>">
 <meta name="twitter:creator" content="@author_handle">
-<meta name="twitter:image" content="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo1.svg">
+<meta name="twitter:image" content="<?php if ( is_single() ) {
+			single_post_title('', true);
+	}else{
+		bloginfo('name');
+	} ?>">
 
 <!-- Open Graph data -->
 <meta property="og:title" content="<?php if ( is_single() ) {
@@ -42,7 +50,11 @@
 	} ?>" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="<?php get_bloginfo();?>" />
-<meta property="og:image" content="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo1.svg" />
+<meta property="og:image" content="<?php if ( is_single() ) {
+			echo $image;
+	}else{
+		echo $image;;
+	} ?>" />
 <meta property="og:description" content="<?php if ( is_single() ) {
 			single_post_title('', true);
 	} else {
@@ -59,22 +71,21 @@
   <?php wp_head(); ?>
 </head>
 <body>
-
-	<!-- <div class="loader">
+	<div style="display:none;" id="loader" class="loader">
 		<div class="loader-inner">
 			<img class="logo-loader logo-1" src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo1.svg" alt="" />
 			<img class="logo-loader logo-2" src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo_text.svg" alt="" />
 		</div>
-	</div> -->
+	</div>
 
-	<div style="display:none;" class="subscribe subscribe-small">
+	<div style="" id="subscribe-header" class="subscribe subscribe-small">
 		<div class="subscribe-label">
 			<p>Subscribe for the latest news and updates:</p>
 		</div>
 		<div class="subscribe-form">
 			<form name="subscribe-small" method="post" action="">
-				<input type="text" placeholder="your@email.here" />
-				<button type="submit" class="icon-arrow-right"></button>
+				<?php es_subbox( $namefield = "NO", $desc = "", $group = "Public" ); ?>
+
 			</form>
 		</div>
 	</div>

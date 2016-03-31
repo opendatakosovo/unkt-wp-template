@@ -54,7 +54,7 @@ input.vq-css-checkbox + label.vq-css-label {
       'meta_query' => array(
         array(
             'key' => 'post_visibility_value', // name of custom field
-            'value' => '"slider"', // matches exactly "red"
+            'value' => '"slider"', // matches exactly "feed"
             'compare' => 'LIKE'
         )
       )
@@ -149,6 +149,13 @@ input.vq-css-checkbox + label.vq-css-label {
                     $args = array(
                             'post_type' => 'post',
                             'posts_per_page' => $postsPerPage,
+                            'meta_query' => array(
+                              array(
+                                  'key' => 'post_visibility_value', // name of custom field
+                                  'value' => '"feed"', // matches exactly "feed"
+                                  'compare' => 'LIKE'
+                              )
+                            )
 
                     );
 
