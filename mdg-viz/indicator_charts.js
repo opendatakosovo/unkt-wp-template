@@ -257,6 +257,7 @@ $(document).ready(function(){
 		$("#line-chart-div13").append("<div id='line-chart13' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
 		$("#bar-chart-div4").append("<div id='bar-chart4' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
 		$("#line-chart-div14").append("<div id='line-chart14' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
+		$("#line-chart-div15").append("<div id='line-chart15' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
 		$("#bar-chart-div7").append("<div id='bar-chart7' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
 		$("#bar-chart-div6").append("<div id='bar-chart6' style='margin: auto; min-width: 310px; max-width: "+max_width+"px; width: 100%; height: 400px;'></div>");
     }
@@ -273,6 +274,7 @@ $(document).ready(function(){
 	drawBarChart('bar-chart6', '3_4', true);
 	drawLineChart('line-chart9', '4_1');
 	drawLineChart('line-chart10', '4_2');
+	drawLineChart('line-chart15', '4_3');
 	drawLineChart('line-chart11', '5_1');
 	drawBarChart('bar-chart1', '5_2', false);
 	drawBarChart('bar-chart2', '5_3', false);
