@@ -22,22 +22,22 @@ $(document).ready(function() {
   buildSubscribeForm();
 
   var cookie = document.cookie;
-  document.cookie = 'visited=0;expires=;path=/';
-  // if (getCookie('visited')!=1) {
-  //     var expiration = new Date();
-  //     expiration.setDate(expiration.getDate()+1);
-  //     document.cookie = 'visited=1;expires=' + expiration + ';path=/';
-  //
-  //     var loader = document.getElementById('loader');
-  //
-  //     loader.style.display = 'block';
-  //
-  //     setTimeout(function(){
-  //       var subscribe = document.getElementById('subscribe-header');
-  //       subscribe.style.display = 'none';
-  //     }, 5000);
-  //
-  // }
+  // document.cookie = 'visited=0;expires=;path=/';
+  if (getCookie('visited')!=1) {
+      var expiration = new Date();
+      expiration.setDate(expiration.getDate()+1);
+      document.cookie = 'visited=1;expires=' + expiration + ';path=/';
+
+      var loader = document.getElementById('loader');
+
+      loader.style.display = 'block';
+
+      setTimeout(function(){
+        var subscribe = document.getElementById('subscribe-header');
+        subscribe.style.display = 'none';
+      }, 5000);
+
+  }
 
 });
 function getCookie(name)
