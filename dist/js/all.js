@@ -1544,17 +1544,17 @@ $(document).ready(function() {
 	sr.reveal('.header');
 	sr.reveal('.slider');
 	sr.reveal('.filter');
-	sr.reveal('.article-container > div', {
-		duration: 1000,
-		scale: 0.8
-	});
+	// sr.reveal('.article-container > div', {
+	// 	duration: 1000,
+	// 	scale: 0.8
+	// });
 	sr.reveal('.load-more');
 	sr.reveal('.agencies-top');
 	sr.reveal('.agencies-bottom');
 	sr.reveal('.agencies-logos li a');
 	sr.reveal('.footer');
 	sr.reveal('.banner');
-	sr.reveal('.article-content');
+	// sr.reveal('.article-content');
 	sr.reveal('.sidebar');
 	sr.reveal('.read-next');
 	sr.reveal('.content-gallery .row > div', {
