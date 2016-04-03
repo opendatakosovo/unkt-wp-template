@@ -141,7 +141,7 @@ input.vq-css-checkbox + label.vq-css-label {
   			</div>
 
         <div class="row">
-          <div id="ajax-more-posts" class="article-container filterize">
+          <div id="ajax-more-posts" class="article-container container filterize">
             <div class="row ">
               <div class="col-xs-12 col-lg-9 posts">
                 <?php
@@ -206,7 +206,7 @@ input.vq-css-checkbox + label.vq-css-label {
            </div>
           </div>
 
-          <div class="load-more col-xs-12 btn" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">Load more content</div>
+          <div class="load-more col-xs-12 btn" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load more content</div>
         </div>
 
   		</div>

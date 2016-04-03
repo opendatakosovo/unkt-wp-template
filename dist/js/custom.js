@@ -12,8 +12,13 @@ $(document).ready(function() {
     var cat = $(".load-more").data('category');
     var grid = $(".load-more").data('grid');
     var post_type = $(".load-more").data('post-type');
+    if($(".load-more").data('filter') != undefined){
+      var filter = $(".load-more").data('filter');
+    }else{
+      var filter = "";
+    }
     pageNumber++;
-    load_posts(ppp, cat, pageNumber, grid, post_type);
+    load_posts(ppp, cat, pageNumber, grid, post_type, filter);
 
 	});
   // execute above function
@@ -52,12 +57,12 @@ function buildSubscribeForm(){
   $('.es_textbox_class').attr('placeholder','your@email.here');
   $('.es_textbox_button').attr('value','');
   $('.es_button').addClass('icon-arrow-right');
-  $('.es_textbox_button').addClass('icon-arrow-right');
+  // $('.es_textbox_button').addClass('icon-arrow-right');
 
 
 }
-function load_posts(ppp, cat, pageNumber, grid, post_type){
-    var str = '&cat=' + cat + '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax'+'&grid=' + grid+'&post_type=' + post_type ;
+function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
+    var str = '&cat=' + cat + '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax'+'&grid=' + grid+'&post_type=' + post_type +'&filter=' + filter;
     $.ajax({
         type: "POST",
         dataType: "html",
@@ -77,7 +82,6 @@ function load_posts(ppp, cat, pageNumber, grid, post_type){
                 $(".article-container").isotope('insert',$posts);
               }
               else if($(".article-container").hasClass('media')){
-
                 $(".category-media-posts-container").isotope('insert',$posts);
               }else{
                 $(".article-container").append($posts);

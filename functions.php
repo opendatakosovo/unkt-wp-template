@@ -193,73 +193,88 @@ function more_post_ajax(){
     $page = (isset($_POST['pageNumber'])) ? $_POST['pageNumber'] : 0;
 		$cat = (isset($_POST['cat'])) ? $_POST['cat'] : '';
     $grid = (isset($_POST['grid'])) ? $_POST['grid'] : '';
+    $filterTag = (isset($_POST['filter'])) ? $_POST['filter'] : '';
     $post_type = (isset($_POST['page_name'])) ? $_POST['post_type'] : 'post';
 		$slider_id = get_category_by_slug( "slider" );
-    $is_first_load = 0 ;
-		$uncategorized_id = get_category_by_slug( "uncategorized" );
+    $is_first_load = 0;
     $excluded_categories = array(0, $slider_id->cat_ID);
     $offset = 0;
 
     header("Content-Type: text/html");
-    if($is_first_load == 0){
-      $args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, 0);
-    }else{
-      $offset = $offset*2;
-      $args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, $offset);
-    }
+
+    $args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, $offset, $filterTag);
+
 
 
     $loop = new WP_Query($args);
-
+    $numberOfPosts = $loop->post_count;
     $out = '';
+    if($numberOfPosts > 0 ){
+      if ($loop -> have_posts()) :  while ($loop -> have_posts()) : $loop -> the_post();
+        $category = get_the_category();
+        $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 
-    if ($loop -> have_posts()) :  while ($loop -> have_posts()) : $loop -> the_post();
-  		$category = get_the_category();
-  		$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+        if($featured_image_url != ""){
+          $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$category[0]->slug.'">
+                  <a href="'.get_permalink().'" class="article-full-img">
+                  <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
+                    <div class="article">
+                      <div class="category">'.$category[0]->cat_name.'</div>
+                      <div class="date">'.get_the_date().'</div>
+                      <h3>'.get_the_title().'</h3>
+                      <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+                    </div>
+                  </a>
+           </div>';
+        }else{
+          $out .= '<div class="col-xs-12 col-lg-'.$grid.' item '.$category[0]->slug.'">
+                  <a href="'.get_permalink().'" >
+                    <div class="article">
+                      <div class="category">'.$category[0]->cat_name.'</div>
+                      <div class="date">'.get_the_date().'</div>
+                      <h3>'.get_the_title().'</h3>
+                      <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+                    </div>
+                  </a>
+           </div>';
+        }
+      endwhile;
+      endif;
+      wp_reset_postdata();
+      die($out);
+    }else{
+      die("<div> No more posts. </div>");
+    }
 
-      if($featured_image_url != ""){
-  			$out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$category[0]->slug.'">
-  							<a href="'.get_permalink().'" class="article-full-img">
-  							<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
-  								<div class="article">
-  									<div class="category">'.$category[0]->cat_name.'ppp'.$ppp.'</div>
-  									<div class="date">'.get_the_date().'</div>
-  									<h3>'.get_the_title().'</h3>
-  									<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
-  								</div>
-  							</a>
-         </div>';
-  		}else{
-  			$out .= '<div class="col-xs-12 col-lg-'.$grid.' item '.$category[0]->slug.'">
-  							<a href="'.get_permalink().'" >
-  								<div class="article">
-  									<div class="category">'.$category[0]->cat_name.'</div>
-  									<div class="date">'.get_the_date().'</div>
-  									<h3>'.get_the_title().'</h3>
-  									<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
-  								</div>
-  							</a>
-         </div>';
-  		}
-
-
-
-    endwhile;
-    endif;
-    wp_reset_postdata();
-    die($out);
 }
 // Returns the array of properties to query for posts when we click Load More
-function build_load_more_query($ppp, $page, $categories, $excluded_categories, $post_type, $offset){
-  $args = array(
-      'suppress_filters' => true,
-      'post_type' => 'post',
-      'posts_per_page' => $ppp,
-      'paged'    => $page,
-      'cat' => $categories,
-      'category__not_in' => $excluded_categories,
-      'offset' => $offset
-  );
+function build_load_more_query($ppp, $page, $categories, $excluded_categories, $post_type, $offset, $filterTag){
+  if($filterTag != ""){
+    $args = array(
+        'suppress_filters' => true,
+        'post_type' => 'post',
+        'posts_per_page' => $ppp,
+        'paged'    => $page,
+        'cat' => $categories,
+        'category__not_in' => $excluded_categories,
+        'meta_query' => array(
+          array(
+            'key' => 'post_visibility_value', // name of custom field
+            'value' => '"feed"', // matches exactly "feed"
+            'compare' => 'LIKE'
+          )
+        )
+    );
+  }else{
+    $args = array(
+        'suppress_filters' => true,
+        'post_type' => 'post',
+        'posts_per_page' => $ppp,
+        'paged'    => $page,
+        'cat' => $categories,
+        'category__not_in' => $excluded_categories,
+    );
+  }
 
   return $args;
 }
