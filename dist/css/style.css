@@ -7687,7 +7687,7 @@ body.overflow {
     width: 27.5%;
   }
   .subscribe.subscribe-small .subscribe-form {
-    width: 72.5%;
+    width: 65.5%;
   }
 }
 .bx-wrapper {
@@ -8805,7 +8805,7 @@ input#es_txt_button_pg {
     height: 70px !important;
 }
 .subscribe.subscribe-small .subscribe-label {
-    width: 35%;
+    width: 27.5%;
     height: 70px;
 }
 .subscribe.subscribe-small .subscribe-label p {

@@ -1540,7 +1540,7 @@ $(document).ready(function() {
 		scale: 1,
 		reset: false
 	});
-	sr.reveal('.subscribe');
+	// sr.reveal('.subscribe');
 	sr.reveal('.header');
 	sr.reveal('.slider');
 	sr.reveal('.filter');

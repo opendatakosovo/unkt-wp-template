@@ -39,18 +39,23 @@ $(document).ready(function() {
 
       setTimeout(function(){
         var subscribe = document.getElementById('subscribe-header');
-        subscribe.style.display = 'none';
+        subscribe.style.display = 'block';
       }, 5000);
 
+  }else{
+    var subscribe = document.getElementById('subscribe-header');
+    subscribe.remove();
   }
 
 });
+
 function getCookie(name)
   {
     var re = new RegExp(name + "=([^;]+)");
     var value = re.exec(document.cookie);
     return (value != null) ? unescape(value[1]) : null;
   }
+
 function buildSubscribeForm(){
 
   $('.es_lablebox').html('');

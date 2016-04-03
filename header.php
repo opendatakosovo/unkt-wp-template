@@ -78,14 +78,13 @@
 		</div>
 	</div>
 
-	<div style="" id="subscribe-header" class="subscribe subscribe-small">
+	<div style="display:none;" id="subscribe-header" class="subscribe subscribe-small">
 		<div class="subscribe-label">
 			<p>Subscribe for the latest news and updates:</p>
 		</div>
 		<div class="subscribe-form">
 			<form name="subscribe-small" method="post" action="">
 				<?php es_subbox( $namefield = "NO", $desc = "", $group = "Public" ); ?>
-
 			</form>
 		</div>
 	</div>
