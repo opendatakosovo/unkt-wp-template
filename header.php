@@ -100,39 +100,66 @@
 				<?php get_bloginfo();?>
 				<a href="<?php get_bloginfo();?>/unkt/en">EN</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a href="<?php get_bloginfo();?>/unkt/sq">AL</a>
 			</li>
 			<li>
 				<a href="<?php get_bloginfo();?>/unkt/sr">SRB</a>
-			</li>
+			</li> -->
 		</ul>
 		<a href="<?php get_bloginfo();?>" class="logo">
 			<img src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo.svg" alt="UNKT Logo" />
 		</a>
 		<a href="#" class="menu-bar">Menu</a>
+
+		<?php
+		  $menu_name = 'main_menu';
+		  $locations = get_nav_menu_locations();
+		  $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+		  $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
+		?>
+
 		<ul class="menu">
-			<?php
-					$menu_name = 'main_menu';
+		    <?php
+		    $count = 0;
+		    $submenu = false;
+		    foreach( $menuitems as $item ):
+		        $link = $item->url;
+		        $title = $item->title;
+		        // item does not have a parent so menu_item_parent equals 0 (false)
+		        if ( !$item->menu_item_parent ):
+		        // save this id for later comparison with sub-menu items
+		        $parent_id = $item->ID;
+		    ?>
 
-					if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
-					$menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+		    <li class="item">
+		        <a href="<?php echo $link; ?>" class="title">
+		            <?php echo $title; ?>
+		        </a>
+		    <?php endif; ?>
 
-					$menu_items = wp_get_nav_menu_items($menu->term_id);
+		        <?php if ( $parent_id == $item->menu_item_parent ): ?>
 
-					$menu_list = '<ul id="menu-' . $menu_name . '">';
+		            <?php if ( !$submenu ): $submenu = true; ?>
+		            <ul class="sub-menu">
+		            <?php endif; ?>
 
-					foreach ( (array) $menu_items as $key => $menu_item ) {
-						 $title = $menu_item->title;
-						 $url = $menu_item->url;
-						 $menu_list .= '<li><a href="' . $url . '">' . $title . '</a></li>';
-					}
-					$menu_list .= '</ul>';
-					} else {
-					$menu_list = '<ul><li>Menu "' . $menu_name . '" not defined.</li></ul>';
-					}
+		                <li class="item">
+		                    <a href="<?php echo $link; ?>" class="title"><?php echo $title; ?></a>
+		                </li>
 
-					echo $menu_list;
-					?>
+		            <?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ): ?>
+		            </ul>
+		            <?php $submenu = false; endif; ?>
+
+		        <?php endif; ?>
+
+		    <?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id ): ?>
+		    </li>
+		    <?php $submenu = false; endif; ?>
+
+		<?php $count++; endforeach; ?>
+
 		</ul>
+
 	</div>
