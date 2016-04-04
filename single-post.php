@@ -53,7 +53,7 @@ if (!empty( $prev_post )): ?>
 					 ?>
 
 				</div>
-				<div class="load-more col-xs-12 btn">Load more content</div></div>
+				<div class="load-more col-xs-12 btn" data-grid="3" data-posts-per-page="<?php echo $postsPerPage ?>">Load more content</div></div>
 		</div>
 	</div>
 <?php get_footer(); ?>
