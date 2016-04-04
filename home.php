@@ -80,7 +80,7 @@ input.vq-css-checkbox + label.vq-css-label {
     					<div class="container">
     						<div class="row">
     							<div class="date col-lg-1 col-xs-12">
-    								<?php the_date(); ?>
+    								<?php the_date('j M Y'); ?>
     							</div>
     							<div class="col-lg-10 col-xs-12">
     								<h2><?php the_title(); ?></h2>
@@ -169,7 +169,7 @@ input.vq-css-checkbox + label.vq-css-label {
                           <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
                           <div class="article">
                             <div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
-                            <div class="date"><?php echo get_the_date();?></div>
+                            <div class="date"><?php echo get_the_date('j M Y');?></div>
                             <h3><?php the_title(); ?></h3>
                             <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
                           </div>
@@ -182,7 +182,7 @@ input.vq-css-checkbox + label.vq-css-label {
                           <a href="<?php  the_permalink(); ?>" >
                             <div class="article">
                               <div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
-                              <div class="date"><?php echo get_the_date();?></div>
+                              <div class="date"><?php echo get_the_date('j M Y');?></div>
                               <h3><?php the_title(); ?></h3>
                               <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
                             </div>

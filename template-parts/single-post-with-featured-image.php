@@ -9,7 +9,7 @@ setup_postdata( $post );
     <div class="banner-content">
       <div class="banner-info">
         <div class="category"><?php the_category(); ?></div>
-        <div class="date"><?php the_time('l, F jS, Y'); ?></div>
+        <div class="date"><?php the_time('j M Y'); ?></div>
       </div>
       <div class="banner-title">
         <h2><?php the_title(); ?></h2>

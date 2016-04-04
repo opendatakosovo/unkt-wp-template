@@ -6,7 +6,7 @@
 				<div class="article-wrapper">
 					<div class="article-inner">
 						<div class="category"><?php the_category(); ?></div><br>
-						<div class="date"><?php the_time('l, F jS, Y'); ?></div><br>
+						<div class="date"><?php the_time('j M Y'); ?></div><br>
 
 						<div class="article-content">
 							<h2><?php the_title(); ?></h2>

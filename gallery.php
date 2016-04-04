@@ -21,7 +21,7 @@
                         <!-- <div class="article" style="background-image: url('dist/img/article-1.jpg');"></div> -->
                         <div class="article">
                           <div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
-                          <div class="date"><?php echo get_the_date();?></div>
+                          <div class="date"><?php echo get_the_date('j M Y');?></div>
                           <h3><?php the_title(); ?></h3>
                           <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
                         </div>
