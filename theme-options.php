@@ -90,7 +90,7 @@ function theme_options_do_page() {
 				 * Homepage slides(number)
 				 */
 				?>
-				<tr valign="top"><th scope="row"><?php _e( 'Number of slides in the homepage:', 'unkttheme' ); ?></th>
+				<tr valign="top"><th scope="row"><?php _e( 'Site offline:', 'unkttheme' ); ?></th>
 					<td>
 						<input id="unkt_theme_options[site_under_construction]" name="unkt_theme_options[site_under_construction]" type="checkbox" value="1" <?php checked( '1', $options['site_under_construction'] ); ?> />
 						<label class="description" for="unkt_theme_options[site_under_construction]"><?php _e( 'Check only if you want to put your site offline and display under construction message.', 'unkttheme' ); ?></label>
@@ -102,10 +102,10 @@ function theme_options_do_page() {
 				 * A sample text input option
 				 */
 				?>
-				<tr valign="top"><th scope="row"><?php _e( 'Tittle of the website:', 'unkttheme' ); ?></th>
+				<tr valign="top"><th scope="row"><?php _e( 'Title of the Website:', 'unkttheme' ); ?></th>
 					<td>
 						<input id="unkt_theme_options[page_title]" class="regular-text" type="text" name="unkt_theme_options[page_title]" value="<?php esc_attr_e( $options['page_title'] ); ?>" />
-						<label class="description" for="unkt_theme_options[page_title]"><?php _e( 'Sample text input', 'unkttheme' ); ?></label>
+						<label class="description" for="unkt_theme_options[page_title]"><?php _e( '', 'unkttheme' ); ?></label>
 					</td>
 				</tr>
 
@@ -132,7 +132,7 @@ function theme_options_do_page() {
 								echo $p . $r;
 							?>
 						</select>
-						<label class="description" for="unkt_theme_options[number_of_slides]"><?php _e( 'Sample select input', 'unkttheme' ); ?></label>
+						<label class="description" for="unkt_theme_options[number_of_slides]"><?php _e( '', 'unkttheme' ); ?></label>
 					</td>
 				</tr>
 
@@ -141,7 +141,7 @@ function theme_options_do_page() {
 				 * A sample of radio buttons
 				 */
 				?>
-				<tr valign="top"><th scope="row"><?php _e( 'Radio buttons', 'unkttheme' ); ?></th>
+				<!-- <tr valign="top"><th scope="row"><?php _e( 'Radio buttons', 'unkttheme' ); ?></th>
 					<td>
 						<fieldset><legend class="screen-reader-text"><span><?php _e( 'Radio buttons', 'unkttheme' ); ?></span></legend>
 						<?php
@@ -164,19 +164,19 @@ function theme_options_do_page() {
 						?>
 						</fieldset>
 					</td>
-				</tr>
+				</tr> -->
 
 				<?php
 				/**
 				 * A sample textarea option
 				 */
 				?>
-				<tr valign="top"><th scope="row"><?php _e( 'A textbox', 'unkttheme' ); ?></th>
+				<!-- <tr valign="top"><th scope="row"><?php _e( 'A textbox', 'unkttheme' ); ?></th>
 					<td>
 						<textarea id="unkt_theme_options[page_titlearea]" class="large-text" cols="50" rows="10" name="unkt_theme_options[page_titlearea]"><?php echo esc_textarea( $options['page_titlearea'] ); ?></textarea>
 						<label class="description" for="unkt_theme_options[page_titlearea]"><?php _e( 'Sample text box', 'unkttheme' ); ?></label>
 					</td>
-				</tr>
+				</tr> -->
 			</table>
 
 			<p class="submit">
