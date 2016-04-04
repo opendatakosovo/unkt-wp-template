@@ -43,13 +43,12 @@ input.vq-css-checkbox + label.vq-css-label {
 
 }
 </style>
+<?php
+    $options = get_option('unkt_theme_options');
 
-
-  <?php
-   $sliderPostsCounter = $options['number_of_slides'];
    $filteringCategoriesCounter = 5;
    $args = array(
-      'numberposts'	=> -1,
+      'posts_per_page'	=> $options['number_of_slides'] ,
      	'post_type'		=> 'post',
       'meta_query' => array(
         array(
@@ -69,7 +68,6 @@ input.vq-css-checkbox + label.vq-css-label {
     		<ul>
     			<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
             <?php get_field('gallery_pictures'); ?>
-    			<?php $sliderPostsCounter--; ?>
     			<li>
             <?php if ( has_post_thumbnail() ) {
             the_post_thumbnail();
@@ -100,13 +98,7 @@ input.vq-css-checkbox + label.vq-css-label {
   	</div>
 
   	<div class="content">
-      <?php
-          $options = get_option('unkt_theme_options');
-          // echo $options['page_title'];
-          // echo $options['number_of_slides'];
-          // echo gettype($options['site_under_construction']);
-          // echo $options['site_under_construction'];
-      ?>
+
   		<div class="container">
   			<div class="row">
   				<div class="filter">
