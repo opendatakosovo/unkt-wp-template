@@ -8853,7 +8853,7 @@ input#es_txt_button_pg {
     border-style:none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .menu li ul{
       display:block;
       position: relative;
