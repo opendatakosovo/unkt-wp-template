@@ -20,7 +20,7 @@
               <div class="row">
                <div class="col-xs-12 col-lg-12 category-posts-container">
                  <?php
-                     $postsPerPage = 3;
+                     $postsPerPage = 9;
 
                      $categories = get_the_category();
                      $cat_id = $categories[0]->cat_ID;
