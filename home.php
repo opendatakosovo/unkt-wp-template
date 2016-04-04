@@ -110,9 +110,7 @@ input.vq-css-checkbox + label.vq-css-label {
   						<li>
   							<a href="#" data-filter=".news">News</a>
   						</li>
-  						<li>
-  							<a href="#" data-filter=".media">Media</a>
-  						</li>
+
   						<li>
   							<a href="#" data-filter=".publications">Publications</a>
   						</li>
@@ -121,12 +119,6 @@ input.vq-css-checkbox + label.vq-css-label {
   						</li>
   						<li>
   							<a href="#" data-filter=".tender">Tenders</a>
-  						</li>
-  						<li>
-  							<a href="#" data-filter=".events">Events</a>
-  						</li>
-  						<li>
-  							<a href="#" data-filter=".press-release">Press Release</a>
   						</li>
   					</ul>
   				</div>
