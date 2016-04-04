@@ -19,7 +19,6 @@ $(document).ready(function() {
     }
     pageNumber++;
     load_posts(ppp, cat, pageNumber, grid, post_type, filter);
-
 	});
   // execute above function
   initPhotoSwipeFromDOM('.my-gallery');

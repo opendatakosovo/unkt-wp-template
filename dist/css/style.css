@@ -8821,28 +8821,44 @@ input#es_txt_button_pg {
     position: relative;
 }
 /*--- DROPDOWN ---*/
-.menu ul{
-    /*list-style:none;*/
-    position:absolute;
-    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+.menu ul {
+    padding:1;
+    margin:1;
+    list-style-type: none; de off-screen when not needed (this is more accessible than display:none;) */
 }
-.menu ul li{
+
+.menu li {
     padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
     float:none;
 }
-.menu ul a{
-    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+
+.menu li ul {
+    display:none;
+    position: absolute;
 }
-.menu li:hover ul{ /* Display the dropdown on hover */
-    left:30%; /* Bring back on-screen when needed */
-}
-.menu li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
-    /*background:#6b0c36;*/
-    /*text-decoration:underline;*/
+.menu li:hover ul{
+    display:block;
+    position: absolute;
+    background:#000F3D;
+    height:auto;
 }
 .menu li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
-    text-decoration:none;
+    color:#fff;
 }
 .menu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
-    /*background:#333;*/
+    color:#D21C55;
+}
+.menu li ul li{
+    clear:both;
+    border-style:none;
+}
+
+@media screen and (max-width: 480px) {
+  .menu li ul{
+      display:block;
+      position: relative;
+  }
+  .menu li:hover ul{
+      display:none;
+  }
 }

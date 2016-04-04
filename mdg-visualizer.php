@@ -550,7 +550,8 @@ iframe{
                                     href="http://data.worldbank.org/data-catalog/world-development-indicators">
                                 World Bank World Development Indicators</a>
                             </p>
-                            <br><br>
+                            <br>
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">* data for this year is extrapolated from other years</h6><br><br>
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Poverty Headcount</h3>
                               <p class="p" style="color:#000;">
@@ -569,7 +570,8 @@ iframe{
                                     href="http://data.worldbank.org/data-catalog/world-development-indicators">
                                 World Bank World Development Indicators</a>
                             </p>
-                            <br><br>
+                            <br>
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">* data for this year is extrapolated from other years</h6><br><br>
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Employment to population ratio</h3>
                               <p class="p" style="color:#000;">
@@ -932,7 +934,8 @@ iframe{
                                       href="http://www.lr.undp.org/content/dam/kosovo/docs/Mozaik/Kosovo_Mosaic_2012_Eng_735317.pdf">Some
                                       Kosovo Mosaic 2012</a>
                             </p>
-                            <br><br>
+                            <br>
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">* data for this year is extrapolated from other years</h6><br><br>
                             <br>
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Internet Penetration</h3>
