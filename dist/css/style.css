@@ -8344,7 +8344,8 @@ body.overflow {
 .sidebar.sidebar-nav {
   display: block;
   width: 100%;
-  padding-top: 90px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .sidebar.sidebar-nav ul li a {
   position: relative;
@@ -8710,6 +8711,7 @@ body.overflow {
     margin-top: 50px;
     padding-top: 50px;
     background-color: white;
+    min-height: 656px;
 }
 
 // New Style
