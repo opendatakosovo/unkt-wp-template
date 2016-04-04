@@ -1,6 +1,6 @@
 <style>
 .sidebar-nav {
-    width: 17.5% !important;
+    /*width: 17.5% !important;*/
     padding-bottom: 0px !important;
 }
 .sidebar.sidebar-nav ul li a {
@@ -10,17 +10,36 @@
 }
 </style>
   <div class="content">
-		<div class="container">
-         <div class="row">
-           <div class="col-xs-12 col-lg-12 category-media-posts-container">
+		<div class="container ">
+           <div class="row article-container category-media-posts-container">
+             <div class="sidebar sidebar-nav col-xs-10 col-md-3">
+               <?php
+                   $menu_name = 'media_sidebar_menu';
+
+                   if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+                   $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+
+                   $menu_items = wp_get_nav_menu_items($menu->term_id);
+
+                   $menu_list = '<ul id="menu-' . $menu_name . '">';
+
+                   foreach ( (array) $menu_items as $key => $menu_item ) {
+                      $title = $menu_item->title;
+                      $url = $menu_item->url;
+                      $menu_list .= '<li><a href="' . $url . '"><span>' . $title . '</span></a></li>';
+                   }
+                   $menu_list .= '</ul>';
+                   } else {
+                   $menu_list = '<ul><li>Menu "' . $menu_name . '" not defined.</li></ul>';
+                   }
+                   echo $menu_list;
+                   ?>
+             </div>
              <?php
                  $postsPerPage = 9;
-
                  $categories = get_the_category();
                  $cat_id = $categories[0]->cat_ID;
                  if($cat_id != ""){
-
-
                        $args = array(
                                'post_type' => 'post',
                                'posts_per_page' => $postsPerPage,
@@ -45,7 +64,7 @@
 
                        <?php }else{ ?>
 
-                           <div class="col-xs-12 col-lg-3 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
+                           <div class="col-xs-12 col-md-3 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
                              <a href="<?php  the_permalink(); ?>" >
                                <div class="article">
                                  <div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
@@ -65,32 +84,6 @@
                   <?php }
 
             ?>
-            <div class="sidebar sidebar-nav col-lg-2">
-              <?php
-                  $menu_name = 'media_sidebar_menu';
-
-                  if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
-                  $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
-
-                  $menu_items = wp_get_nav_menu_items($menu->term_id);
-
-                  $menu_list = '<ul id="menu-' . $menu_name . '">';
-
-                  foreach ( (array) $menu_items as $key => $menu_item ) {
-                     $title = $menu_item->title;
-                     $url = $menu_item->url;
-                     $menu_list .= '<li><a href="' . $url . '">' . $title . '</a></li>';
-                  }
-                  $menu_list .= '</ul>';
-                  } else {
-                  $menu_list = '<ul><li>Menu "' . $menu_name . '" not defined.</li></ul>';
-                  }
-
-                  echo $menu_list;
-                  ?>
-
-            </div>
-          </div>
 
         </div>
           <div class="load-more col-xs-12 btn" data-category="<?php echo $cat_id; ?>" data-grid="3" data-post-type="post" data-posts-per-page="<?php echo $postsPerPage ?>">Load more content</div>
