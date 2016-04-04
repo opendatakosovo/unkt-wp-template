@@ -49,7 +49,8 @@ setup_postdata( $post );
 						<?php foreach ($recent_posts as $post){?>
 							<a href="<?php echo get_permalink($post['ID']) ?>" class="article article-blue-light">
 								<div class="category"><?php echo $category[0]->cat_name ?></div>
-								<div class="date"><?php echo $post['post_date']?></div>
+								<div class="date"><?php $date = new DateTime($post['post_date']);
+                                        echo $date->format('d M Y'); ?></div>
 								<h3><?php echo $post['post_title']?></h3>
 								<div class="read-more">More <span class="icon-arrow-right"></span></div>
 							</a>
