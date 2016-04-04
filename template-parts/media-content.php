@@ -9,9 +9,6 @@
     font-size: 18px;
 }
 </style>
-<?php
-         query_posts( array( 'category_name' => 'news' ), array( 'category_name' => 'media' ) );
-    ?>
   <div class="content">
 		<div class="container">
          <div class="row">

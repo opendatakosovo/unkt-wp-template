@@ -249,33 +249,26 @@ function more_post_ajax(){
 }
 // Returns the array of properties to query for posts when we click Load More
 function build_load_more_query($ppp, $page, $categories, $excluded_categories, $post_type, $offset, $filterTag){
-  if($filterTag != ""){
-    $args = array(
-        'suppress_filters' => true,
-        'post_type' => 'post',
-        'posts_per_page' => $ppp,
-        'paged'    => $page,
-        'cat' => $categories,
-        'category__not_in' => $excluded_categories,
-        'meta_query' => array(
-          array(
-            'key' => 'post_visibility_value', // name of custom field
-            'value' => '"feed"', // matches exactly "feed"
-            'compare' => 'LIKE'
-          )
-        )
-    );
-  }else{
-    $args = array(
-        'suppress_filters' => true,
-        'post_type' => 'post',
-        'posts_per_page' => $ppp,
-        'paged'    => $page,
-        'cat' => $categories,
-        'category__not_in' => $excluded_categories,
+  if($filterTag=="feed"){
+    $metaQuery = array(
+      array(
+        'key' => 'post_visibility_value', // name of custom field
+        'value' => '"feed"', // matches exactly "feed"
+        'compare' => 'LIKE'
+      )
     );
   }
 
+  $args = array(
+      'suppress_filters' => true,
+      'post_type' => 'post',
+      'posts_per_page' => $ppp,
+      'paged'    => $page,
+      'cat' => $categories,
+      'category__not_in' => $excluded_categories,
+      'meta_query' => $metaQuery
+  );
+  // echo var_dump($category_in);
   return $args;
 }
 

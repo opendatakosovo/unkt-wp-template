@@ -14,9 +14,7 @@
          width: 100% !important;
 }
 </style>
-<?php
-         query_posts( array( 'category_name' => 'news' ), array( 'category_name' => 'media' ) );
-    ?>
+
 <div class="container">
       <div id="ajax-more-posts" class="article-container media">
         <div class="row">
@@ -24,12 +22,30 @@
             <?php
                 $postsPerPage = 9;
 
+                $news_term = get_category_by_slug('news');
+                $news_id = $news_term->term_id;
+
+                $blogs_term = get_category_by_slug('blogs');
+                $blogs_id = $blogs_term->term_id;
+
+                $user_content_term = get_category_by_slug('user-content');
+                $user_content_id = $user_content_term->term_id;
+
+                $visualizations_term = get_category_by_slug('visualizations');
+                $visualizations_id = $visualizations_term->term_id;
+
+                $media_term = get_category_by_slug('media');
+                $media_id = $media_term->term_id;
+
+                $in_category = array($news_id,$blogs_id, $user_content_id, $visualizations_id);
+
                 $categories = get_the_category();
-                $cat_id = "";
+                $cat_id = $media_id;
                 $args = array(
                         'post_type' => 'post',
                         'posts_per_page' => $postsPerPage,
-                        'cat'=>$cat_id
+                        'cat'=>$cat_id,
+                        'category__in'=>$in_category
                 );
 
                 $loop = new WP_Query($args);
@@ -95,7 +111,7 @@
 
        </div>
      </div>
-    <div class="load-more col-xs-12 btn" data-category="<?php echo $cat_id; ?>" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">Load more content</div>
+    <div class="load-more col-xs-12 btn" data-category="<?php echo implode(', ', $in_category); ?>" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">Load more content</div>
 </div>
 
 <?php get_footer(); ?>
