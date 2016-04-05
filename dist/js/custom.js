@@ -91,7 +91,7 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
                 $(".article-container").append($posts);
               }
 
-                  $(".load-more").text("No more posts available");
+                  // $(".load-more").text("No more posts available");
             } else{
                 $(".load-more").text("No more posts available");
             }
