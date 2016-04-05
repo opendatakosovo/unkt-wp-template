@@ -24,10 +24,11 @@
 								$loop = new WP_Query($args);
 
 								while ($loop->have_posts()) : $loop->the_post();
+								$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 						?>
 						<div class="col-xs-12 col-lg-3 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
 							<a href="<?php  the_permalink(); ?>" >
-								<!-- <div class="article" style="background-image: url('dist/img/article-1.jpg');"></div> -->
+								<div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
 								<div class="article">
 									<div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
 									<div class="date"><?php echo get_the_date('j M Y');?></div>

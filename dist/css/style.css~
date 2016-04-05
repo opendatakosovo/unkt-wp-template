@@ -8397,8 +8397,7 @@ body.overflow {
   }
 
   .sidebar-nav {
-    width: 23.5% !important;
-    clear: both;
+    width: 26.5% !important;
   }
   .sidebar-nav ul li a {
     width: 85%;
@@ -8860,17 +8859,6 @@ input#es_txt_button_pg {
       position: relative;
   }
   .menu li:hover ul{
-      display:block;
-      position: relative;
+      display:none;
   }
-
-  .sidebar-nav {
-    display:none !important;
-     width: 100% !important;
-    padding-bottom: 0px !important;
-}
-
-}
-@media screen and (min-width: 720px) {
-
 }

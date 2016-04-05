@@ -110,9 +110,7 @@ input.vq-css-checkbox + label.vq-css-label {
   						<li>
   							<a href="#" data-filter=".news">News</a>
   						</li>
-  						<li>
-  							<a href="#" data-filter=".media">Media</a>
-  						</li>
+
   						<li>
   							<a href="#" data-filter=".publications">Publications</a>
   						</li>
@@ -121,12 +119,6 @@ input.vq-css-checkbox + label.vq-css-label {
   						</li>
   						<li>
   							<a href="#" data-filter=".tender">Tenders</a>
-  						</li>
-  						<li>
-  							<a href="#" data-filter=".events">Events</a>
-  						</li>
-  						<li>
-  							<a href="#" data-filter=".press-release">Press Release</a>
   						</li>
   					</ul>
   				</div>
@@ -155,35 +147,35 @@ input.vq-css-checkbox + label.vq-css-label {
 
                     while ($loop->have_posts()) : $loop->the_post();
                     $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-                    if($featured_image_url != ""){ ?>
+                    $outside_link =get_field('external_source_link'); ?>
+                    <?php if($outside_link == ""){ ?>
+                    <div class="col-xs-12 col-lg-4 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
+                      <a href="<?php  the_permalink(); ?>" class="article-full-img">
+                        <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
+                        <div class="article">
+                          <div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
+                          <div class="date"><?php echo get_the_date('j M Y');?></div>
+                          <h3><?php the_title(); ?></h3>
+                          <div class="read-more" >Read More <span class="icon-arrow-right"></span></div>
+                        </div>
+                      </a>
+                    </div>
+                    <?php }else{ ?>
                       <div class="col-xs-12 col-lg-4 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
-                        <a href="<?php the_permalink()?>" class="article-full-img">
+                        <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img">
                           <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
                           <div class="article">
                             <div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
                             <div class="date"><?php echo get_the_date('j M Y');?></div>
                             <h3><?php the_title(); ?></h3>
-                            <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+                            <div class="read-more" >Read More <span class="icon-arrow-right"></span></div>
                           </div>
                         </a>
                       </div>
 
-                    <?php }else{ ?>
+                     <?php } ?>
 
-                        <div class="col-xs-12 col-lg-4 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
-                          <a href="<?php  the_permalink(); ?>" >
-                            <div class="article">
-                              <div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
-                              <div class="date"><?php echo get_the_date('j M Y');?></div>
-                              <h3><?php the_title(); ?></h3>
-                              <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
-                            </div>
-                          </a>
-                        </div>
-
-                      <?php
-                        }
-                      endwhile;
+                      <?php endwhile;
               wp_reset_postdata();
                ?>
              </div>

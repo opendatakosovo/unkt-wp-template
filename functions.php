@@ -7,35 +7,35 @@ add_theme_support( 'post-thumbnails' );
 // add post-formats to post_type 'page'
 add_post_type_support( 'page', 'post-formats' );
 
-// register custom post type 'my_custom_post_type'
-add_action( 'init', 'create_my_post_type' );
-function create_my_post_type() {
-    register_post_type( 'my_custom_post_type',
-      array(
-        'labels' => array( 'name' => __( 'Jobs' ) ),
-        'public' => true,
-        'supports' => array('title', 'editor', 'post-formats')
-    )
-  );
-}
-
-//add post-formats to post_type 'my_custom_post_type'
-add_post_type_support( 'create_my_post_type', 'post-formats' );
-
-// register custom post type 'my_custom_post_type'
-add_action( 'init', 'create_my_post_type' );
-function publications_post_type() {
-    register_post_type( 'create_my_post_type',
-      array(
-        'labels' => array( 'name' => __( 'Publications' ) ),
-        'public' => true,
-        'supports' => array('title', 'editor', 'post-formats')
-    )
-  );
-}
-
-//add post-formats to post_type 'my_custom_post_type'
-add_post_type_support( 'publications_post_type', 'post-formats' );
+// // register custom post type 'my_custom_post_type'
+// add_action( 'init', 'create_my_post_type' );
+// function create_my_post_type() {
+//     register_post_type( 'my_custom_post_type',
+//       array(
+//         'labels' => array( 'name' => __( 'Jobs' ) ),
+//         'public' => true,
+//         'supports' => array('title', 'editor', 'post-formats')
+//     )
+//   );
+// }
+//
+// //add post-formats to post_type 'my_custom_post_type'
+// add_post_type_support( 'create_my_post_type', 'post-formats' );
+//
+// // register custom post type 'my_custom_post_type'
+// add_action( 'init', 'create_my_post_type' );
+// function publications_post_type() {
+//     register_post_type( 'create_my_post_type',
+//       array(
+//         'labels' => array( 'name' => __( 'Publications' ) ),
+//         'public' => true,
+//         'supports' => array('title', 'editor', 'post-formats')
+//     )
+//   );
+// }
+//
+// //add post-formats to post_type 'my_custom_post_type'
+// add_post_type_support( 'publications_post_type', 'post-formats' );
 
 
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'feed','slider' ) );
@@ -209,42 +209,41 @@ function more_post_ajax(){
     $loop = new WP_Query($args);
     $numberOfPosts = $loop->post_count;
     $out = '';
-    if($numberOfPosts > 0 ){
-      if ($loop -> have_posts()) :  while ($loop -> have_posts()) : $loop -> the_post();
-        $category = get_the_category();
-        $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+    if ($loop -> have_posts()) :  while ($loop -> have_posts()) : $loop -> the_post();
+      $category = get_the_category();
+      $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+      $outside_link =get_field('external_source_link');
 
-        if($featured_image_url != ""){
-          $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$category[0]->slug.'">
-                  <a href="'.get_permalink().'" class="article-full-img">
-                  <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
-                    <div class="article">
-                      <div class="category">'.$category[0]->cat_name.'</div>
-                      <div class="date">'.get_the_date().'</div>
-                      <h3>'.get_the_title().'</h3>
-                      <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
-                    </div>
-                  </a>
-           </div>';
-        }else{
-          $out .= '<div class="col-xs-12 col-lg-'.$grid.' item '.$category[0]->slug.'">
-                  <a href="'.get_permalink().'" >
-                    <div class="article">
-                      <div class="category">'.$category[0]->cat_name.'</div>
-                      <div class="date">'.get_the_date().'</div>
-                      <h3>'.get_the_title().'</h3>
-                      <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
-                    </div>
-                  </a>
-           </div>';
-        }
-      endwhile;
-      endif;
-      wp_reset_postdata();
-      die($out);
-    }else{
-      die("<div> No more posts. </div>");
-    }
+      if($outside_link == ""){
+        $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$category[0]->slug.'">
+                <a href="'.get_permalink().'" class="article-full-img">
+                <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
+                  <div class="article">
+                    <div class="category">'.$category[0]->cat_name.'</div>
+                    <div class="date">'.get_the_date().'</div>
+                    <h3>'.get_the_title().'</h3>
+                    <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+                  </div>
+                </a>
+         </div>';
+      }else{
+        $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$category[0]->slug.'">
+                <a href="'.$outside_link.'" target="_blank" class="article-full-img">
+                <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
+                  <div class="article">
+                    <div class="category">'.$category[0]->cat_name.'</div>
+                    <div class="date">'.get_the_date().'</div>
+                    <h3>'.get_the_title().'</h3>
+                    <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+                  </div>
+                </a>
+         </div>';
+      }
+    endwhile;
+    endif;
+    wp_reset_postdata();
+    die($out);
+
 
 }
 // Returns the array of properties to query for posts when we click Load More

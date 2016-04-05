@@ -91,9 +91,9 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
                 $(".article-container").append($posts);
               }
 
-                $(".load-more").attr("disabled",false);
+                  // $(".load-more").text("No more posts available");
             } else{
-                $(".load-more").attr("disabled",true);
+                $(".load-more").text("No more posts available");
             }
         },
         error : function(jqXHR, textStatus, errorThrown) {
