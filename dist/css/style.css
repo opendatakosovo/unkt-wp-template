@@ -8859,10 +8859,12 @@ input#es_txt_button_pg {
       display:block;
       position: relative;
   }
-  .menu li:hover ul{
-      display:none;
-  }
 
+  .menu li:hover ul{
+      display:block;
+      position: relative;
+  }
+  
   .sidebar-nav {
     display:none !important;
      width: 100% !important;
