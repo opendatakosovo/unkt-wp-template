@@ -7,35 +7,35 @@ add_theme_support( 'post-thumbnails' );
 // add post-formats to post_type 'page'
 add_post_type_support( 'page', 'post-formats' );
 
-// register custom post type 'my_custom_post_type'
-add_action( 'init', 'create_my_post_type' );
-function create_my_post_type() {
-    register_post_type( 'my_custom_post_type',
-      array(
-        'labels' => array( 'name' => __( 'Jobs' ) ),
-        'public' => true,
-        'supports' => array('title', 'editor', 'post-formats')
-    )
-  );
-}
-
-//add post-formats to post_type 'my_custom_post_type'
-add_post_type_support( 'create_my_post_type', 'post-formats' );
-
-// register custom post type 'my_custom_post_type'
-add_action( 'init', 'create_my_post_type' );
-function publications_post_type() {
-    register_post_type( 'create_my_post_type',
-      array(
-        'labels' => array( 'name' => __( 'Publications' ) ),
-        'public' => true,
-        'supports' => array('title', 'editor', 'post-formats')
-    )
-  );
-}
-
-//add post-formats to post_type 'my_custom_post_type'
-add_post_type_support( 'publications_post_type', 'post-formats' );
+// // register custom post type 'my_custom_post_type'
+// add_action( 'init', 'create_my_post_type' );
+// function create_my_post_type() {
+//     register_post_type( 'my_custom_post_type',
+//       array(
+//         'labels' => array( 'name' => __( 'Jobs' ) ),
+//         'public' => true,
+//         'supports' => array('title', 'editor', 'post-formats')
+//     )
+//   );
+// }
+//
+// //add post-formats to post_type 'my_custom_post_type'
+// add_post_type_support( 'create_my_post_type', 'post-formats' );
+//
+// // register custom post type 'my_custom_post_type'
+// add_action( 'init', 'create_my_post_type' );
+// function publications_post_type() {
+//     register_post_type( 'create_my_post_type',
+//       array(
+//         'labels' => array( 'name' => __( 'Publications' ) ),
+//         'public' => true,
+//         'supports' => array('title', 'editor', 'post-formats')
+//     )
+//   );
+// }
+//
+// //add post-formats to post_type 'my_custom_post_type'
+// add_post_type_support( 'publications_post_type', 'post-formats' );
 
 
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'feed','slider' ) );
