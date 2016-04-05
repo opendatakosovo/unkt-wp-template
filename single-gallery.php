@@ -34,7 +34,7 @@
 				</li>
 				<li class="info">Info</li>
 				<li class="date"><?php the_time('d M Y') ?></li>
-				<li class="photo-by">Photo: <?php echo $photo_by ?></li>
+				<li class="photo-by">Photo by: <?php echo $photo_by ?></li>
 				<li class="gallery-title">Gallery : <?php the_title() ?></li>
 				<li class="back">
 
