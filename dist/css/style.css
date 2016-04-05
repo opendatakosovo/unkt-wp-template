@@ -8854,7 +8854,7 @@ input#es_txt_button_pg {
     border-style:none;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 850px) {
   .menu li ul{
       display:block;
       position: relative;
