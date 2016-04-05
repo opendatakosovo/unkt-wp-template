@@ -60,8 +60,9 @@
   								<?php
   								foreach ($gallery_images as $picture) {
   									?>
+
   										<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-  								      <a href="<?php echo $picture['sizes']['medium_large']?>" itemprop="contentUrl" data-size="768x512">
+  								      <a href="<?php echo $picture['url']?>" itemprop="contentUrl" data-size="<?php echo $picture['width']?>x<?php echo $picture['height']?>">
   								          <img src="<?php echo $picture['sizes']['thumbnail']?>" itemprop="thumbnail" alt="Image description" />
   								      </a>
   								      <figcaption itemprop="caption description"><?php echo $picture['caption']?></figcaption>
