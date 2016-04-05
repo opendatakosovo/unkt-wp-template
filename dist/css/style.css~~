@@ -7411,7 +7411,7 @@ body.overflow {
 }
 .gallery-bar ul li.photo-by {
   display: none;
-  width: 25%;
+  width: 15%;
   padding: 35px 0;
   color: #fff;
   text-align: center;
@@ -8864,7 +8864,7 @@ input#es_txt_button_pg {
       display:block;
       position: relative;
   }
-
+  
   .sidebar-nav {
     display:none !important;
      width: 100% !important;

@@ -16,8 +16,8 @@
 			// echo var_dump($gallery_images);
 			foreach ($gallery_images as $picture) {
 				?>
-				<li>
-					<img style="max-height:622px !important;" src="<?php echo $picture['url']?>" alt="<?php echo $picture['alt']?>" />
+				<li style="max-height:622px; overflow:hidden;">
+					<img style="" src="<?php echo $picture['url']?>" alt="<?php echo $picture['alt']?>" />
 					<h2 class='caption'><?php echo $picture['caption'] ?></h2>
 				</li>
 			<?php }
@@ -34,7 +34,7 @@
 				</li>
 				<li class="info">Info</li>
 				<li class="date"><?php the_time('d M Y') ?></li>
-				<li class="photo-by">Photo by: <?php echo $photo_by ?></li>
+				<li class="photo-by">Photos by: <?php echo $photo_by ?></li>
 				<li class="gallery-title">Gallery : <?php the_title() ?></li>
 				<li class="back">
 
