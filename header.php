@@ -145,7 +145,7 @@
 
 		                <li class="item">
 		                    <a href="<?php echo $link; ?>" class="title"><?php echo $title; ?></a>
-		                </li>
+		                </li><br>
 
 		            <?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ): ?>
 		            </ul>
