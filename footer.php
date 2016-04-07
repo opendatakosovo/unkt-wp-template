@@ -134,21 +134,41 @@
 			</ul>
 		</div>
 	</div>
-
+<script>
+	jQuery( function( $ ) {
+	    // search filed
+	    var $s = $( '#s' );
+	    // the search form
+	    var $sForm = $s.closest( 'form' );
+	    console.log( $sForm );
+	    $sForm.on( 'submit', function( event) {
+	        event.preventDefault();
+	        $.post(
+	            T5Ajax.ajaxurl,
+	            {
+	                action:     T5Ajax.action,
+	                search_term: $s.val()
+	            },
+	            function( response ) {
+	                // just append the result to the search form.
+	                $sForm.append( response );
+	            }
+	        );
+	    });
+	});
+</script>
 	<div class="search">
 		<div class="search-header">
 			<a href="#" class="logo">
 				<img src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo.svg" alt="UNKT Logo" />
 			</a>
 			<form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
-			    <input type="text" value="<?php the_search_query(); ?>" placeholder="Search for News, Un Agencies, Publications, Jobs, Tenders, FAQ"  />
+			    <input type="text" value="" name="s" placeholder="Search for News, Un Agencies, Publications, Jobs, Tenders, FAQ"  />
 			    <input class="icon-search" type="submit" id="searchsubmit" value="Search" />
 			</form>
 
 		</div>
 		<div class="search-content">
-		<!-- <?php $search_query = get_search_query(); ?>
-		<!-- <?php var_dump($search_query); ?> --> -->
 			<ul>
 				<li>
 					<div class="category">News</div>
