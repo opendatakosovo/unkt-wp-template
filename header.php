@@ -140,15 +140,15 @@
 		        <?php if ( $parent_id == $item->menu_item_parent ): ?>
 
 		            <?php if ( !$submenu ): $submenu = true; ?>
-		            <ul class="sub-menu">
-		            <?php endif; ?>
+			            <ul class="sub-menu">
+			            <?php endif; ?>
 
-		                <li class="item">
-		                    <a href="<?php echo $link; ?>" class="title"><?php echo $title; ?></a>
-		                </li><br>
+			                <li class="item">
+			                    <a href="<?php echo $link; ?>" class="title"><?php echo $title; ?></a>
+			                </li><br>
 
-		            <?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ): ?>
-		            </ul>
+			            <?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ): ?>
+			            </ul>
 		            <?php $submenu = false; endif; ?>
 
 		        <?php endif; ?>

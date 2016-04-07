@@ -151,12 +151,9 @@ background-color: white;
   text-justify: inter-word;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+ @media (max-width: 800px) {
   .mdg-viz-container {
-    float: left;
-    width: 100%;
-    text-align: justify;
-    text-justify: inter-word;
+    width: 100% !important;
   }
 
   .mdg-amin-description {
@@ -165,9 +162,9 @@ background-color: white;
   }
 
   .sidebar{
-    display: none;
-    text-align: justify;
-    text-justify: inter-word;
+    display: none !important;
+    text-align: justify !important;
+    text-justify: inter-word !important;
   }
 }
 
@@ -370,17 +367,8 @@ iframe{
                               <div class="row">
                                 <br>
                                 <div class="mdg-slide-content" id="slide-content">
-                                  <embed style="width:100%; height:650px; overflow:hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
+                                  <embed style="width:100%; height:780px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
                                 </div>
-                              </div>
-                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
-                                <h3 style="color:#000;">Poverty Headcount</h3>
-                                <p class="p" style="color:#000;">
-                                   Poverty remains a persistent and widespread issue in Kosovo as of 2015. A report produced by the Kosovo Agency of Statistics (KAS) on Consumption Poverty found that, in 2011, 29.7% of the population in Kosovo was unable to meet human needs and 10.0% were unable to meet even basic survival needs. These poverty rates are very high compared to neighbouring countries and, while decreasing, have remained persistently high over the past 10 years. Reports from the World Bank and UNDP also identify that poverty and vulnerability levels would be much higher without the safety net provided through migration and remittances.
-                                </p><br>
-                                <p class="p" style="color:#000;">
-                                   Another measure of poverty, the poverty gap, which measures the ‘depth’ of poverty and takes into account both the percentage of the population below the poverty line and how far below the poverty line those people are, has also slightly decreased. From 2009 to 2011 the depth of poverty based on the full poverty line declined from 9.6% to 7.8%. Similar falls have been seen the extreme poverty gap measure, declining from 3.0% to 2.1% over the same period.
-                                </p>
                               </div>
                             </div>
                           </div>
@@ -393,22 +381,10 @@ iframe{
                               <div class="mdg-animation" id="mdg-achieve-universal-primary-education">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/total-primary-and-lower-secondary-enrollments/index.html">
+                                <embed style="width:100%; height:940px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/total-primary-and-lower-secondary-enrollments/index.html">
                               </div>
 
                               <div class="mdg-sliders" id="achieve-universal-primary-education-slider"></div>
-                              <div class="mdg-amin-description" style="margin-top: -200px; padding: 10px 100px 10px 100px;">
-                                <h3 style="color:#000;">Gross Primary School enrolments</h3>
-                                <p class="p" style="color:#000;">
-                                  Since at least 2009-10, enrolments in primary and lower secondary school have been high in Kosovo, with no less than 96% of eligible students being enrolled in any given year. This would suggest that very few children in Kosovo are missing out on this basic education, helping to ensure basic literacy, mathematics and English tuition for young people.
-                                </p><br>
-                                <p class="p" style="color:#000;">
-                                  There has also been steady growth in the total number of students attending upper secondary and tertiary education. The gross enrolment rate in upper secondary education (general and VET) in 2011-12 was 92.1%, 5.2% points higher than in 2009-10. Additionally, the gross enrolment rate in Kosovo is significantly higher than other countries in the region such as Croatia (87%), Bosnia & Herzegovina (86%), Serbia (86%) and Macedonia (78%). The percentage of students dropping out of upper secondary education is also decreasing. By the end of the 2011-12 year the dropout rate from upper secondary schools was 2.5%, compared to 3.1% for 2009-2010.
-                                </p><br>
-                                <p class="p" style="color:#000;">
-                                  Similarly, there has been steady growth in the total number of students attending tertiary education in Kosovo due to the increasing number of private and public higher education institutions combined with a limited number of employment opportunities. The enrolment rate in tertiary education in 2010-2011 is estimated to be around 57% of the eligible population based on age, and 67% of those who graduated from upper secondary schools and were able to pursue tertiary education.
-                                </p>
-                              </div>
                             </div>
                           </div>
                           </div>
@@ -421,13 +397,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-promote-gender-equality-and-empower-women">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
-                              </div>
-                              <div class="mdg-amin-description" style="margin-top: -120px; padding: 10px 100px 10px 100px;">
-                                <h3 style="color:#000;">Gender Enrolment Ratios</h3>
-                                <p class="p" style="color:#000;">
-                                  Ensuring access to education for both sexes plays an important role in providing women with opportunities to help themselves and become influencers for the next generation. In Kosovo, the enrolment ratios for women (the number of women enrolled as a percentage of the number of men) have been increasing across the board, but have been relatively high for all years with available data. The biggest improvement has been seen in the enrolment ratio for high secondary school. In 2005-06 there were 75 women for every 100 men in high secondary school. By 2014-15 there were 89 women for every 100 men.
-                                </p>
+                                <embed style="width:100%; height:760px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
                               </div>
                             </div>
                           </div>

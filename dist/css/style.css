@@ -8826,8 +8826,6 @@ input#es_txt_button_pg {
 }
 /*--- DROPDOWN ---*/
 .menu ul {
-    padding:1;
-    margin:1;
     list-style-type: none; de off-screen when not needed (this is more accessible than display:none;) */
 }
 
@@ -8837,14 +8835,14 @@ input#es_txt_button_pg {
 }
 
 .menu li ul {
-    display:none;
+    display: none;
     position: absolute;
 }
 .menu li:hover ul{
     display:block;
     position: absolute;
     background:#000F3D;
-    height:auto;
+    height: auto;
 }
 .menu li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
     color:#fff;
@@ -8855,6 +8853,10 @@ input#es_txt_button_pg {
 .menu li ul li{
     clear:both;
     border-style:none;
+}
+
+.menu li.item {
+  padding-left: -10px;
 }
 
 @media screen and (max-width: 850px) {
