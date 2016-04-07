@@ -16,7 +16,7 @@
         <ul>
         <?php
             $args = array(
-                  'post_type' => 'gallery',
+                  'post_type' => 'post',
                   'posts_per_page' => 5,
                   'cat'=>$cat_id
             );
@@ -65,7 +65,7 @@
                 <?php
                     $postsPerPage = 4;
                     $args = array(
-                            'post_type' => 'gallery',
+                            'post_type' => 'post',
                             'posts_per_page' => $postsPerPage
                     );
 

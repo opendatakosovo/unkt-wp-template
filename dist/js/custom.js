@@ -84,9 +84,6 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
             if($posts.length){
               if($(".article-container").hasClass('filterize')){
                 $(".article-container").isotope('insert',$posts);
-              }
-              else if($(".article-container").hasClass('media')){
-                $(".category-media-posts-container").isotope('insert',$posts);
               }else{
                 $(".article-container").append($posts);
               }

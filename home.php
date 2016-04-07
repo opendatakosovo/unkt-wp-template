@@ -49,7 +49,7 @@ input.vq-css-checkbox + label.vq-css-label {
    $filteringCategoriesCounter = 5;
    $args = array(
       'posts_per_page'	=> $options['number_of_slides'] ,
-     	'post_type'		=> 'post',
+     	'post_type'		=> array( 'post'),
       'meta_query' => array(
         array(
             'key' => 'post_visibility_value', // name of custom field
@@ -131,7 +131,7 @@ input.vq-css-checkbox + label.vq-css-label {
                 <?php
                     $postsPerPage = 6;
                     $args = array(
-                            'post_type' => 'post',
+                            'post_type' => array('post','Gallery'),
                             'posts_per_page' => $postsPerPage,
                             'meta_query' => array(
                               array(

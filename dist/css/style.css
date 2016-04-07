@@ -7788,8 +7788,11 @@ body.overflow {
 }
 .filter {
   padding-top: 65px;
-  padding-bottom: 65px;
+  /*padding-bottom: 65px;*/
   text-align: center;
+}
+.media-filter{
+   padding-top:140px;  
 }
 .filter ul li {
   display: inline-block;
@@ -7964,7 +7967,7 @@ body.overflow {
 .article-container {
   float: left;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 50px;
   height:auto;
 }
 

@@ -1,8 +1,5 @@
 
 <?php get_header(); ?>
-<style>
-
-</style>
 	<div class="gallery-slider">
 		<?php
 
@@ -24,7 +21,7 @@
 			?>
 		</ul>
 
-<?php endwhile; // end of the loop. ?>
+	<?php endwhile; // end of the loop. ?>
 		<div class="gallery-bar">
 
 			<ul>
