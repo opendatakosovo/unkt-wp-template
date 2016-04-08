@@ -15,6 +15,9 @@
       <div class="gallery-slider">
         <ul>
         <?php
+
+            $categories = get_category_by_slug('gallery');
+            $cat_id = $categories->term_id;
             $args = array(
                   'post_type' => 'post',
                   'posts_per_page' => 5,
@@ -32,7 +35,7 @@
             ?>
             <li style="max-height:622px; overflow:hidden;">
               <img style="" src="<?php echo $featured_image_url; ?>"/>
-              <h2 class='caption'><?php the_title(); ?></h2>
+              <a href="<?php  the_permalink(); ?>"><h2 class='caption'><?php the_title(); ?></h2></a>
             </li>
           <?php endwhile; // end of the loop. ?>
           wp_reset_postdata();
@@ -63,10 +66,13 @@
           <div class="row">
             <div id="ajax-more-posts" class="article-container filterize">
                 <?php
+                    $categories = get_category_by_slug('gallery');
+                    $cat_id = $categories->term_id;
                     $postsPerPage = 4;
                     $args = array(
                             'post_type' => 'post',
-                            'posts_per_page' => $postsPerPage
+                            'posts_per_page' => $postsPerPage,
+                            'cat'=>$cat_id,
                     );
 
                     $loop = new WP_Query($args);
@@ -78,7 +84,7 @@
                   <a href="<?php  the_permalink(); ?>" class="article-full-img">
                     <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
                     <div class="article">
-                      <div class="category">Gallery</div>
+                      <div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
                       <div class="date"><?php echo get_the_date('j M Y');?></div>
                       <h3><?php the_title(); ?></h3>
                       <div class="read-more" >Read More <span class="icon-arrow-right"></span></div>
