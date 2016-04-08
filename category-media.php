@@ -42,7 +42,7 @@
         $blogs_term = get_category_by_slug('blogs');
         $blogs_id = $blogs_term->term_id;
 
-        $user_content_term = get_category_by_slug('user-content');
+        $user_content_term = get_category_by_slug('community-contributions');
         $user_content_id = $user_content_term->term_id;
 
         $visualizations_term = get_category_by_slug('visualizations');
