@@ -20,7 +20,7 @@
           foreach ( (array) $menu_items as $key => $menu_item ) {
              $title = $menu_item->title;
              $url = $menu_item->url;
-             $menu_list .= '<li><a href="#" data-filter=".' . str_replace("-"," ",strtolower($title)) . '">' . $title . '</a></li>';
+             $menu_list .= '<li><a href="#" data-filter=".' . str_replace(" ","-",strtolower($title)) . '">' . $title . '</a></li>';
           }
           } else {
           $menu_list = '<ul><li>Menu "' . $menu_name . '" not defined.</li></ul>';
