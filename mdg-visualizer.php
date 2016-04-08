@@ -592,7 +592,7 @@ iframe{
                               <div class="row">
                                 <br>
                                 <div class="mdg-slide-content" id="slide-content">
-                                  <embed style="width:100%; height:780px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
+                                  <embed style="width:102%; height:780px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
                                 </div>
                               </div>
                             </div>
@@ -606,7 +606,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-achieve-universal-primary-education">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:100%; height:940px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/total-primary-and-lower-secondary-enrollments/index.html">
+                                <embed style="width:102%; height:940px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/total-primary-and-lower-secondary-enrollments/index.html">
                               </div>
 
                               <div class="mdg-sliders" id="achieve-universal-primary-education-slider"></div>
@@ -622,7 +622,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-promote-gender-equality-and-empower-women">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:100%; height:760px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
+                                <embed style="width:103%; height:760px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
                               </div>
                             </div>
                           </div>
@@ -635,16 +635,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-reduce-child-mortality">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
-                              </div>
-                              <div class="mdg-amin-description" style="margin-top: -300px; padding: 10px 100px 10px 100px;">
-                                <h3 style="color:#000;">Infant mortality rate</h3>
-                                <p class="p" style="color:#000;">
-                                  The infant mortality rate in Kosovo is relatively low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate showed significant variation between 2002 and 2012, ranging between 15.1 and 8.8, but has generally exhibited a downward trend.
-                                </p><br>
-                                <p class="p" style="color:#000;">
-                                  That said, the infant mortality rate in Kosovo is significantly higher than most western countries, and many of the ex-Yugoslav nations. Most countries in the EU, for example, have infant mortality rates below 5, while Serbia, Macedonia and Montenegro all have infant mortality rates around or just over 5. Albania on the other hand also has a slightly higher infant mortality rate, estimated to be 12.75 in 2015.
-                                </p>
+                                <embed style="width:102%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
                               </div>
                             </div>
                           </div>
@@ -657,7 +648,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-improve-maternal-health">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
+                                <embed style="width:102%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
                               </div>
                               <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Maternal Mortality</h3>
@@ -680,7 +671,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-combat-hiv-aids-malria-and-other-desease">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
+                                <embed style="width:102%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
                               </div>
                               <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">HIV and AIDS</h3>
