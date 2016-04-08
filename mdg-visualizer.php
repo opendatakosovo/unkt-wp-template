@@ -73,6 +73,7 @@ hr.hr-style:after {
 .mdg-btn{
   cursor: pointer;
   padding-left:5px;
+  border-radius: 10px;
 }
 .not-active-mdg{
   display:none;
@@ -121,6 +122,10 @@ background-color: white;
   text-align: center;
 }
 
+.mdg-slide-content embed {
+  width: 100%;
+}
+
 .mdg-container-responsive p,
 .mdg-container-responsive h1,
 .mdg-container-responsive h2,
@@ -164,6 +169,11 @@ background-color: white;
 }
 
 @media (max-width: 480px) {
+
+  .mdg-slide-content embed {
+    width: 102% !important;
+  }
+
   .mdg-viz-container {
     width: 96.5% !important;
   }
@@ -200,6 +210,10 @@ background-color: white;
 @media only screen and (min-width: 480px) and (max-width: 990px) {
   .mdg-viz-container {
     width: 98% !important;
+  }
+
+  .mdg-slide-content embed {
+    width: 102% !important;
   }
 
   .mdg-btn img {
@@ -592,7 +606,7 @@ iframe{
                               <div class="row">
                                 <br>
                                 <div class="mdg-slide-content" id="slide-content">
-                                  <embed style="width:102%; height:780px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
+                                  <embed style="width: 100%; height:780px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
                                 </div>
                               </div>
                             </div>
@@ -606,7 +620,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-achieve-universal-primary-education">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:102%; height:940px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/total-primary-and-lower-secondary-enrollments/index.html">
+                                <embed style="width: 100%; height:940px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/total-primary-and-lower-secondary-enrollments/index.html">
                               </div>
 
                               <div class="mdg-sliders" id="achieve-universal-primary-education-slider"></div>
@@ -635,7 +649,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-reduce-child-mortality">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:102%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
+                                <embed style="width: 100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
                               </div>
                             </div>
                           </div>
@@ -648,7 +662,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-improve-maternal-health">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:102%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
+                                <embed style="width: 100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
                               </div>
                               <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">Maternal Mortality</h3>
@@ -671,7 +685,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-combat-hiv-aids-malria-and-other-desease">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:102%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
+                                <embed style="width: 100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
                               </div>
                               <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
                                 <h3 style="color:#000;">HIV and AIDS</h3>
