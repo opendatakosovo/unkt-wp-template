@@ -32,7 +32,30 @@
       </div>
     </div>
     <div class="row">
+      <?php
+
+        //get terms (e.g. categories or post tags), then display all posts in each retrieved term
+        $taxonomy = 'category';//  e.g. post_tag, category
+        $param_type = 'category__in'; //  e.g. tag__in, category__in
+        $categories = get_the_category();
+        $cat_id = $categories[0]->category_parent;
+        $query_by_cats = array();
+
+        $term_args=array(
+          'orderby' => 'name',
+          'order' => 'ASC',
+          'child_of' => $cat_id
+        );
+        $terms = get_terms($taxonomy,$term_args);
+
+
+        foreach($terms as $term){
+          $query_by_cats[]=$term->term_id;
+        }
+
+      ?>
       <div class="article-container filterize">
+
         <?php
         $postsPerPage = 9;
 
