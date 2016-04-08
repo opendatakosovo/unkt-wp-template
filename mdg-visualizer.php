@@ -116,6 +116,18 @@ background-color: white;
 .mdg-container h3{
   color:white;
 }
+
+.responsive-btn {
+  text-align: center;
+}
+
+.mdg-container-responsive p,
+.mdg-container-responsive h1,
+.mdg-container-responsive h2,
+.mdg-container-responsive h3{
+  color:white;
+}
+
 .mdg-btn img {
     height: 80px;
 }
@@ -151,9 +163,26 @@ background-color: white;
   text-justify: inter-word;
 }
 
- @media (max-width: 800px) {
+ @media (max-width: 990px) {
   .mdg-viz-container {
     width: 100% !important;
+  }
+
+  .mdg-btn img {
+      height: 100% !important;
+  }
+
+  .mdg-container-responsive {
+    display: block !important;
+  }
+
+  .mdg-buttons-img {
+    width:100%;
+    height: 100%;
+  }
+
+  .mdg-container {
+    display: none;
   }
 
   .mdg-amin-description {
@@ -178,7 +207,7 @@ iframe{
       $(".mdg-show-more-btn").html("View stats");
       $(".mdg-btn").removeClass('active');
       var id = this.id;
-      $(".mdg-description").each(function(){
+      $(".mdg-description, .mdg-description-responsive").each(function(){
         if (id == $(this).attr("id")){
             $(this).css("display", "block");
         } else {
@@ -225,6 +254,168 @@ iframe{
    <div class="container-fluid">
      <div class="row">
        <div class="content-mdg-wrapper">
+         <div class="mdg-container-responsive" style="display: none; padding: 10px 10px 10px 20px; text-align: center;">
+             <div class="row">
+                 <div class="col-xs-12 col-md-12">
+                   <br>
+                   <h3 style="color: #fff;"> Millennium Development Goals</h3>
+                   <br>
+                   <div class="col-xs-3 col-md-3 mdg-btn active responsive-btn" data-color="#FFDD00" id="eradicate-extreme-poverty-and-hunger"
+                        style="float:left;">
+                       <img alt="MDG 1" class="mdg-buttons-img" src="<?php bloginfo('template_url'); ?>/logos/1.jpg"/>
+                   </div>
+                   <div class="col-xs-3 col-md-3 mdg-btn responsive-btn" data-color="#D8DF20" id="achieve-universal-primary-education"
+                        style="float:left;">
+                       <img alt="MDG 2" class="mdg-buttons-img" src="<?php bloginfo('template_url'); ?>/logos/2.jpg"/>
+                   </div>
+                   <div class="col-xs-3 col-md-3 mdg-btn responsive-btn" data-color="#F7941D" id="promote-gender-equality-and-empower-women"
+                        style="float:left;">
+                       <img alt="MDG 3" class="mdg-buttons-img" src="<?php bloginfo('template_url'); ?>/logos/3.jpg"/>
+                   </div>
+                   <div class="col-xs-3 col-md-3 mdg-btn responsive-btn" data-color="#C7EAFD" id="reduce-child-mortality"
+                        style="float:left;">
+                       <img alt="MDG 4" class="mdg-buttons-img" src="<?php bloginfo('template_url'); ?>/logos/4.jpg"/>
+                   </div>
+                 </div>
+             </div>
+             <br>
+             <div class="row">
+                 <div class="col-xs-12 col-md-12">
+                     <div class="col-xs-3 col-md-3 mdg-btn responsive-btn" data-color="#F8C0D9" id="improve-maternal-health"
+                          style="">
+                         <img alt="MDG 5" class="mdg-buttons-img" src="<?php bloginfo('template_url'); ?>/logos/5.jpg"/>
+                     </div>
+                     <div class="col-xs-3 col-md-3 mdg-btn responsive-btn" data-color="#F15A3F" id="combat-hiv-aids-malria-and-other-desease"
+                          style="">
+                         <img alt="MDG 6" class="mdg-buttons-img" src="<?php bloginfo('template_url'); ?>/logos/6.jpg"/>
+                     </div>
+                     <div class="col-xs-3 col-md-3 mdg-btn responsive-btn" data-color="#8CC63E" id="ensure-environmental-sustainability"
+                          style="">
+                         <img alt="MDG 7" class="mdg-buttons-img" src="<?php bloginfo('template_url'); ?>/logos/7.jpg"/>
+                     </div>
+                     <div class="col-xs-3 col-md-3 mdg-btn responsive-btn" data-color="#1BB0E8" id="internet-penetration"
+                          style="">
+                         <img alt="MDG 8" class="mdg-buttons-img" src="<?php bloginfo('template_url'); ?>/logos/8.jpg"/>
+                     </div>
+                 </div>
+             </div>
+             <br><br>
+             <div class="row" style="padding: 0 20px 0 20px;">
+               <div class="mdg-description-responsive" id="eradicate-extreme-poverty-and-hunger" style="display:block;">
+                   <h4 style="color:#fff;">Millennium Development Goal 1 - To eradicate extreme poverty and
+                       hunger</h5>
+                       <p class="p">
+                           Target 1.A - Halve, between 1990 and 2015, the proportion of people whose income is less
+                           than $1.25 a day
+                       </p>
+                       <p class="p">
+                           Target 1.B - Achieve full and productive employment and decent work for all, including
+                           women and young people
+                       </p>
+                       <p class="p">
+                           Target 1.C - Halve, between 1990 and 2015, the proportion of people who suffer from
+                           hunger</p>
+                       <br>
+               </div>
+               <div class="mdg-description-responsive" id="achieve-universal-primary-education" style="display:none;">
+                   <h4 style="color:#fff;">MDG 2 - To achieve universal primary education</h5>
+                       <p class="p">
+                           Target 2.A - Ensure that, by 2015, children everywhere, boys and girls alike, will be
+                           able to complete a full course of primary schooling
+                       </p>
+                       <br>
+               </div>
+               <div class="mdg-description-responsive" id="promote-gender-equality-and-empower-women" style="display:none;">
+                   <h4 style="color:#fff;">MDG 3 - To promote gender equality and empower women</h5>
+                       <p class="p">
+                           Target 3.A - Eliminate gender disparity in primary and secondary education, preferably
+                           by 2005, and in all levels of education no later than 2015</h5>
+                       </p>
+                       <br>
+               </div>
+               <div class="mdg-description-responsive" id="reduce-child-mortality" style="display:none;">
+                   <h4 style="color:#fff;">MDG 4 - To reduce child mortality</h5>
+                       <p class="p">
+                           Target 4.A - Reduce by two thirds, between 1990 and 2015, the under-five mortality rate
+                       </p>
+                       <br>
+               </div>
+               <div class="mdg-description-responsive" id="improve-maternal-health" style="display:none;">
+                   <h4 style="color:#fff;">MDG 5 – Improve maternal health</h5>
+                       <p class="p">
+                           Target 5.A - Reduce by three quarters, between 1990 and 2015, the maternal mortality
+                           ratio
+                       </p>
+                       <p class="p">
+                           Target 5.B - Achieve, by 2015, universal access to reproductive health
+                       </p>
+                       <br>
+               </div>
+               <div class="mdg-description-responsive" id="combat-hiv-aids-malria-and-other-desease" style="display:none;">
+                   <h4 style="color:#fff;">MDG 6 – Combat HIV/AIDS, Malaria and other diseases </5>
+                   <p class="p">
+                       Target 6.A - Have halted by 2015 and begun to reverse the spread of HIV/AIDS
+                   </p>
+                   <p class="p">
+                       Target 6.B - Achieve, by 2010, universal access to treatment for HIV/AIDS for all those who
+                       need it
+                   </p>
+                   <p class="p">
+                       Target 6.C - Have halted by 2015 and begun to reverse the incidence of malaria and other
+                       major diseases
+                   </p>
+                   <br>
+               </div>
+               <div class="mdg-description-responsive" id="ensure-environmental-sustainability" style="display:none;">
+                   <h4 style="color:#fff;">MDG 7 – Ensure Environmental Sustainability</h5>
+
+                       <p class="p">
+                           Target 7.A - Integrate the principles of sustainable development into country policies
+                           and programmes and reverse the loss of environmental resources
+                       </p>
+                       <p class="p">
+                           Target 7.B - Reduce biodiversity loss, achieving, by 2010, a significant reduction in
+                           the rate of loss
+                       </p>
+                       <p class="p">
+                           Target 7.C - Halve, by 2015, the proportion of the population without sustainable access
+                           to safe drinking water and basic sanitation
+                       </p>
+                       <p class="p">
+                           Target 7.D - Achieve, by 2020, a significant improvement in the lives of at least 100
+                           million slum dwellers
+                       </p>
+                       <br>
+               </div>
+               <div class="mdg-description-responsive" id="internet-penetration" style="display:none;">
+                   <h4 style="color:#fff;">MDG 8 – Develop a global partnership for development</h5>
+
+                       <p class="p">
+                           Target 8.A - Develop further an open, rule-based, predictable, non-discriminatory
+                           trading and financial system
+                       </p>
+                       <p class="p">
+                           Target 8.B - Address the special needs of least developed countries
+                       </p>
+                       <p class="p">
+                           Target 8.C - Address the special needs of landlocked developing countries and small
+                           island developing States
+                       </p>
+                       <p class="p">
+                           Target 8.D - Deal comprehensively with the debt problems of developing countries
+                       </p>
+                       <p class="p">
+                           Target 8.E - In cooperation with pharmaceutical companies, provide access to affordable
+                           essential drugs in developing countries
+                       </p>
+                       <p class="p">
+                           Target 8.F - In cooperation with the private sector, make available benefits of new
+                           technologies, especially information and communications
+                       </p>
+                       <br>
+               </div>
+             </div>
+         </div>
            <div class="mdg-container">
                <h3> Millennium Development Goals</h3>
                <div class="row" style="margin-left: -17px;">
