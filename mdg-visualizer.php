@@ -163,7 +163,7 @@ background-color: white;
   text-justify: inter-word;
 }
 
-@media (max-width: 330px) {
+@media (max-width: 370px) {
   .mdg-viz-container {
     width: 100% !important;
   }
@@ -197,7 +197,7 @@ background-color: white;
   }
 }
 
-@media only screen and (min-width: 330px) and (max-width: 990px) {
+@media only screen and (min-width: 370px) and (max-width: 990px) {
   .mdg-viz-container {
     width: 100% !important;
   }
