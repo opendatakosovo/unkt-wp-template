@@ -692,16 +692,6 @@ iframe{
                                 <br>
                                 <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/afforested-areas/index.html">
                               </div>
-                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
-                                <h3 style="color:#000;">Greening Kosovo</h3>
-                                <p class="p" style="color:#000;">
-                                  Kosovo has made some progress in afforesting (planting forests). Between 2004 and 2010, 2,253 hectares of forest were planted. However, while this sounds like a lot, when the total land area of Kosovo is taken into account (1,090,800 hectares), this area represents only 0.2%. In addition, parts of the forests, which cover roughly 44 percent of Kosovo’s territory, are in bad condition due to inadequate management and illegal logging, leading also to increased soil erosion and landslides. The costs of forest degradation are estimated to be around 0.4% of GDP.
-                                </p><br>
-                                <p class="p" style="color:#000;">
-                                  Kosovo also struggles with land degradation from unplanned extension of settlements, industrial and sanitary landfills, and erosion. According to estimates from the Ministry of Agriculture, Forestry and Rural Development (MAFRD), each year about 400 hectares of agricultural land is converted into construction land.
-                                </p>
-                                <br>
-                              </div>
                               </div>
                             </div>
                           </div>
