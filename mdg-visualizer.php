@@ -664,15 +664,6 @@ iframe{
                                 <br>
                                 <embed style="width: 100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
                               </div>
-                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
-                                <h3 style="color:#000;">Maternal Mortality</h3>
-                                <p class="p" style="color:#000;">
-                                  The maternal mortality rate in Kosovo has varied significantly over the past 10-15 years - from a high of 43.3 deaths per 100,000 live births in 2009 to 0 deaths in 2013 and 2014.
-                                </p><br>
-                                <p class="p" style="color:#000;">
-                                  If we look past the spike in deaths in 2008 and 2009, there has been a clear downwards trend throughout the past 15 years. Looking at data for more recent years, Kosovo also compares well with most countries in the region. Macedonia, for example was estimated average a maternal mortality rate of 8 deaths per 100,000 live births between 2010 and 2015, Serbia averaged 17 for the same period, and Albania averaged 29. The average for the EU currently stands at approximately 4 deaths per 100,000 live births.
-                                </p>
-                              </div>
                             </div>
                           </div>
                           </div>
@@ -686,12 +677,6 @@ iframe{
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
                                 <embed style="width: 100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
-                              </div>
-                              <div class="mdg-amin-description" style="margin-top: -250px; padding: 10px 100px 10px 100px;">
-                                <h3 style="color:#000;">HIV and AIDS</h3>
-                                <p class="p" style="color:#000;">
-                                  Kosovo is currently categorised in the group of states with a low rate of HIV. The infection rate is below 1% of the general population and below 5 percent of all groups threatened by the growing risk of HIV.
-                                </p><br>
                               </div>
                             </div>
                           </div>
