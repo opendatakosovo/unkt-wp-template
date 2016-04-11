@@ -649,7 +649,9 @@ iframe{
                               <div class="mdg-animation" id="mdg-reduce-child-mortality">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width: 100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
+                                <embed style="width: 100%; height:950px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
+
+                                <br><br><br><br>
                               </div>
                             </div>
                           </div>
@@ -662,7 +664,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-improve-maternal-health">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width: 100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
+                                <embed style="width: 100%; height:800px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
                               </div>
                             </div>
                           </div>
@@ -690,7 +692,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-ensure-environmental-sustainability">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:100%; height:650px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/afforested-areas/index.html">
+                                <embed style="width:100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/afforested-areas/index.html">
                               </div>
                               </div>
                             </div>
@@ -705,14 +707,6 @@ iframe{
                                   <br>
                                   <embed style="width:100%; height:600px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/internet-penetration/index.html">
                                 </div>
-
-                                <div class="mdg-amin-description" style="margin-top: -100px; padding: 10px 100px 10px 100px;">
-                                  <h3 style="color:#000;">Internet Penetration</h3>
-                                  <p class="p" style="color:#000;">
-                                    The penetration of internet in Kosovo is one of the good news stories in Kosovo. As recently as 2004, it is estimated that 6% of households had access to the internet. By 2014, it was estimated that 84% of households had access to the internet.
-                                  </p>
-                                  <br>
-                               </div>
                              </div>
                             </div>
                           </div>
