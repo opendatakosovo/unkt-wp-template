@@ -8922,7 +8922,8 @@ input#es_txt_button_pg {
     width: 100%;
     display: block;
     margin-right: auto;
-    margin-left: auto;
+    margin-top: 12px;
+    margin-left: 14px;
 }
 .sdg-img:hover {
     width: 100%;
