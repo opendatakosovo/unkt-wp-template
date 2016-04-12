@@ -10,10 +10,17 @@
           <div class="col-md-10">
    							<h1><?php the_title(); ?></h1>
                 <?php
-                if ( is_user_logged_in() ) {?>
-                    <a href="<?php echo get_permalink( get_page_by_path( 'internal-calendar' )->ID );?>"> Click here to go to the Internal Calendar.</a>
-                <?php }
-                ?>
+                if ( is_user_logged_in() ) {
+                  if (is_page('internal-calendar')){ ?>
+                    <a href="<?php echo get_permalink( get_page_by_path( 'events' )->ID );?>"> Click here to go to the Public Calendar.</a>
+
+              <?php } else { ?>
+                <a href="<?php echo get_permalink( get_page_by_path( 'internal-calendar' )->ID );?>"> Click here to go to the Internal Calendar.</a>
+
+              <?php } ?>
+
+          <?php }?>
+
    							<?php the_content(); ?>
           </div>
           <div class="col-md-1"></div>
