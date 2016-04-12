@@ -8880,3 +8880,6 @@ input#es_txt_button_pg {
 @media screen and (min-width: 720px) {
 
 }
+.calendar-page {
+    margin-top: 100px;
+}

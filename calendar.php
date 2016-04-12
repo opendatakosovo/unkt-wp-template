@@ -3,14 +3,11 @@
 
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-   	<div class="content content-article">
+   	<div class="content ">
    		<div class="container-fluid">
-   			<div class="row">
-   				<div class="article-wrapper">
-   					<div class="article-inner">
-   						<div class="article-sidebar">
-   						</div>
-   						<div class="article-content">
+   			<div class="row calendar-page">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
    							<h1><?php the_title(); ?></h1>
                 <?php
                 if ( is_user_logged_in() ) {?>
@@ -18,12 +15,9 @@
                 <?php }
                 ?>
    							<?php the_content(); ?>
-   						</div>
-   					</div>
-
-            <?php get_sidebar(); ?>
           </div>
-   			</div>
+          <div class="col-md-1"></div>
+      	</div>
    		</div>
    	</div>
 
