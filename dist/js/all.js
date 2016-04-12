@@ -1555,7 +1555,7 @@ $(document).ready(function() {
 	sr.reveal('.footer');
 	sr.reveal('.banner');
 	// sr.reveal('.article-content');
-	sr.reveal('.sidebar');
+	// sr.reveal('.sidebar');
 	sr.reveal('.read-next');
 	sr.reveal('.content-gallery .row > div', {
 		duration: 1000,
