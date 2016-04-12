@@ -6691,7 +6691,7 @@ body.overflow {
   color: #d21c55;
 }
 .menu li:first-child {
-  margin-left: 0;
+  /*margin-left: 0;*/
 }
 .menu li:last-child {
   margin-right: 0;
@@ -8887,4 +8887,7 @@ input#es_txt_button_pg {
 
 .calendar-page {
     margin-top: 100px;
+}
+.sub-menu .item{
+  padding-left:10px;
 }
