@@ -628,7 +628,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-promote-gender-equality-and-empower-women">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:103%; height:760px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
+                                <embed style="width:100%; height:760px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
                               </div>
                             </div>
                           </div>
