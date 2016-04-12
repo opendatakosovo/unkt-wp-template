@@ -8338,7 +8338,7 @@ body.overflow {
 .sidebar {
   display: none;
   float: right;
-  width: 26.5%;
+  width: 24.5%;
   padding-bottom: 50px;
   background-color: #efefef;
 }
@@ -8917,4 +8917,14 @@ input#es_txt_button_pg {
 }
 .sub-menu .item{
   /*padding-left:10px;*/
+}
+.sdg-img {
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sdg-img:hover {
+    width: 100%;
+    opacity:0.5;
 }
