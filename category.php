@@ -1,13 +1,38 @@
 <?php get_header(); ?>
   <div class="container">
+    <?php
+    $this_category = get_category($cat);
+    $query_by_cats = $this_category->term_id;
+    $thisCat = get_category($query_by_cats)->slug;
+    ?>
+    <?php
+    if($thisCat=="work-with-us"){?>
+      <div class="row">
+         <div class="filter media-filter">
+           <ul>
+             <li>Sort View:</li>
+             <li>
+               <a href="#" data-filter="*">Latest</a>
+             </li>
+             <li>
+               <a href="#" data-filter=".jobs">Jobs</a>
+             </li>
+             <li>
+               <a href="#" data-filter=".tenders">Tenders</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+
+    <?php }?>
     <div class="row">
      <div class="article-container filterize">
        <?php
            //get terms (e.g. categories or post tags), then display all posts in each retrieved term
            $taxonomy = 'category';//  e.g. post_tag, category
            $param_type = 'category__in'; //  e.g. tag__in, category__in
-           $this_category = get_category($cat);
-           $query_by_cats = $this_category->term_id;
+
+
            $postsPerPage = 9;
 
            $args = array(
@@ -17,6 +42,9 @@
            );
 
            $loop = new WP_Query($args);
+        ?>
+
+        <?php
            while ($loop->have_posts()) : $loop->the_post();
            $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
            $outside_link =get_field('external_source_link');
