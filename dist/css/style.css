@@ -8338,7 +8338,7 @@ body.overflow {
 .sidebar {
   display: none;
   float: right;
-  width: 24.5%;
+  width: 26.5%;
   padding-bottom: 50px;
   background-color: #efefef;
 }
@@ -8923,7 +8923,6 @@ input#es_txt_button_pg {
     display: block;
     margin-right: auto;
     margin-top: 12px;
-    margin-left: 14px;
 }
 .sdg-img:hover {
     width: 100%;
