@@ -400,7 +400,7 @@ a:focus {
 }
 @media (hover: hover) {
   a:hover {
-    color: #014c8c;
+    /*color: #014c8c;*/
     text-decoration: none;
   }
 }
@@ -6678,6 +6678,7 @@ body.overflow {
   display: inline-block;
   width: 100%;
   margin-bottom: 5px;
+  margin-left: 0;
 }
 .menu li a {
   position: relative;
@@ -8889,5 +8890,5 @@ input#es_txt_button_pg {
     margin-top: 100px;
 }
 .sub-menu .item{
-  padding-left:10px;
+  /*padding-left:10px;*/
 }
