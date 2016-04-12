@@ -18,7 +18,7 @@
               $gallery_images = get_field('gallery_pictures');
                 ?>
                 <li class="gallery-header">
-                  <img style="max-height:622px; overflow:hidden;" src="<?php echo $featured_image_url; ?>"/>
+                  <img style="max-height:579px; overflow:hidden;" src="<?php echo $featured_image_url; ?>"/>
                   <a href="<?php  the_permalink(); ?>"><h2 class='caption'><?php the_title(); ?></h2></a>
                   <div class="gallery-bar">
 
