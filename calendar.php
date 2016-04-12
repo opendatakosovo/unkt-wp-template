@@ -3,27 +3,28 @@
 
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-   	<div class="content content-article">
+   	<div class="content ">
    		<div class="container-fluid">
-   			<div class="row">
-   				<div class="article-wrapper">
-   					<div class="article-inner">
-   						<div class="article-sidebar">
-   						</div>
-   						<div class="article-content">
+   			<div class="row calendar-page">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
    							<h1><?php the_title(); ?></h1>
                 <?php
-                if ( is_user_logged_in() ) {?>
-                    <a href="<?php echo get_permalink( get_page_by_path( 'internal-calendar' )->ID );?>"> Click here to go to the Internal Calendar.</a>
-                <?php }
-                ?>
-   							<?php the_content(); ?>
-   						</div>
-   					</div>
+                if ( is_user_logged_in() ) {
+                  if (is_page('internal-calendar')){ ?>
+                    <a href="<?php echo get_permalink( get_page_by_path( 'events-calendar' )->ID );?>"> Click here to go to the Public Calendar.</a>
 
-            <?php get_sidebar(); ?>
+              <?php } else { ?>
+                <a href="<?php echo get_permalink( get_page_by_path( 'internal-calendar' )->ID );?>"> Click here to go to the Internal Calendar.</a>
+
+              <?php } ?>
+
+          <?php }?>
+
+   							<?php the_content(); ?>
           </div>
-   			</div>
+          <div class="col-md-1"></div>
+      	</div>
    		</div>
    	</div>
 

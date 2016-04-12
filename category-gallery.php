@@ -1,16 +1,5 @@
 <?php /* Template Name: Gallery */ ?>
 <?php get_header(); ?>
-<style>
-.sidebar-nav {
-    width: 20.5% !important;
-    padding-bottom: 0px !important;
-}
-.sidebar.sidebar-nav ul li a {
-     width: 100%;
-    padding: 36px 30px;
-    font-size: 18px;
-}
-</style>
 
       <div class="gallery-slider">
         <ul>
@@ -24,38 +13,35 @@
             );
             $loop = new WP_Query($args);
             while ($loop->have_posts()) : $loop->the_post();
-            $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-            ?>
+              $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+              $photo_by = get_field('photo_by');
+              $gallery_images = get_field('gallery_pictures');
+                ?>
+                <li class="gallery-header">
+                  <img style="max-height:579px; overflow:hidden;" src="<?php echo $featured_image_url; ?>"/>
+                  <div class="gallery-bar">
 
-          <?php
-          $photo_by = get_field('photo_by');
-          $gallery_images = get_field('gallery_pictures');
-            ?>
-            <li style="max-height:622px; overflow:hidden;">
-              <img style="" src="<?php echo $featured_image_url; ?>"/>
-              <a href="<?php  the_permalink(); ?>"><h2 class='caption'><?php the_title(); ?></h2></a>
-            </li>
-          <?php endwhile; // end of the loop. ?>
+                    <ul>
+                      <li class="slider-pager">
+                        <span class="pager-active">01</span> –
+                        <span class="pager-total">02</span>
+                      </li>
+                      <li class="info">Info</li>
+                      <li class="date"><?php the_time('d M Y') ?></li>
+                      <li class="photo-by">Photos by: <?php echo $photo_by ?></li>
+                      <li class="gallery-title">Gallery : <a href="<?php  the_permalink(); ?>"><?php the_title() ?></a></li>
+                      <li class="back"></li>
+                    </ul>
+                  </div>
+                </li>
+
+            <?php endwhile; // end of the loop.
           wp_reset_postdata();
+          ?>
         </ul>
 
 
-        <div class="gallery-bar">
 
-          <ul>
-            <li class="slider-pager">
-              <span class="pager-active">01</span> –
-              <span class="pager-total">02</span>
-            </li>
-            <li class="info">Info</li>
-            <li class="date"><?php the_time('d M Y') ?></li>
-            <li class="photo-by">Photos by: <?php echo $photo_by ?></li>
-            <li class="gallery-title">Gallery : <?php the_title() ?></li>
-            <li class="back">
-
-            </li>
-          </ul>
-        </div>
 
       </div>
 

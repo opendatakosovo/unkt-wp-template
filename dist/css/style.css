@@ -400,7 +400,7 @@ a:focus {
 }
 @media (hover: hover) {
   a:hover {
-    color: #014c8c;
+    /*color: #014c8c;*/
     text-decoration: none;
   }
 }
@@ -6678,6 +6678,7 @@ body.overflow {
   display: inline-block;
   width: 100%;
   margin-bottom: 5px;
+  margin-left: 0;
 }
 .menu li a {
   position: relative;
@@ -6691,7 +6692,7 @@ body.overflow {
   color: #d21c55;
 }
 .menu li:first-child {
-  margin-left: 0;
+  /*margin-left: 0;*/
 }
 .menu li:last-child {
   margin-right: 0;
@@ -8037,7 +8038,7 @@ body.overflow {
 }
 .article-content img {
   width: 80%;
-  max-width: 100%;
+  max-width: 61%;
   height: auto;
   margin-bottom: 60px;
 }
@@ -8071,6 +8072,7 @@ body.overflow {
   position: relative;
   -webkit-transition: all .25s;
           transition: all .25s;
+  color: #00ACEE;
 }
 .article-content a:after {
   position: absolute;
@@ -8087,7 +8089,26 @@ body.overflow {
   color: #d21c55;
 }
 .article-content a:hover:after {
-  width: 100%;
+  width: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.gallery-title a:hover {
+  color: #d21c55;
+}
+.gallery-title a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  content: "";
+  background-color: #d21c55;
+  -webkit-transition: all .25s;
+          transition: all .25s;
+}
+.gallery-title a:hover:after{
+  width: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -8770,7 +8791,8 @@ body.overflow {
   padding: 10px;
 }
 .my-gallery img {
-  width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
   height: auto;
   border: 5px solid white;
   padding: 0px;
@@ -8781,6 +8803,11 @@ body.overflow {
   float: left;
   margin: 0 5px 5px 0;
   width: 150px;
+}
+.my-gallery a:hover:after{
+  outline:0;
+  width: 0px;
+  color:white !important;
 }
 .my-gallery figcaption {
   display: none;
@@ -8874,9 +8901,20 @@ input#es_txt_button_pg {
     display:none !important;
      width: 100% !important;
     padding-bottom: 0px !important;
-}
+  }
+  .gallery-header{
+    min-height:auto;
+  }
 
 }
-@media screen and (min-width: 720px) {
+.gallery-header{
+  max-height:580px;
+  min-height:580px;
+}
 
+.calendar-page {
+    margin-top: 100px;
+}
+.sub-menu .item{
+  /*padding-left:10px;*/
 }
