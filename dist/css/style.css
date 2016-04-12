@@ -8783,6 +8783,11 @@ body.overflow {
   margin: 0 5px 5px 0;
   width: 150px;
 }
+.my-gallery a:hover:after{
+  outline:0;
+  width: 0px;
+  color:white !important;
+}
 .my-gallery figcaption {
   display: none;
 }
