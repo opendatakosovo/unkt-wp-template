@@ -8089,7 +8089,7 @@ body.overflow {
   color: #d21c55;
 }
 .article-content a:hover:after {
-  width: 100%;
+  width: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
