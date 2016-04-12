@@ -19,7 +19,6 @@
                 ?>
                 <li class="gallery-header">
                   <img style="max-height:579px; overflow:hidden;" src="<?php echo $featured_image_url; ?>"/>
-                  <a href="<?php  the_permalink(); ?>"><h2 class='caption'><?php the_title(); ?></h2></a>
                   <div class="gallery-bar">
 
                     <ul>
@@ -30,7 +29,7 @@
                       <li class="info">Info</li>
                       <li class="date"><?php the_time('d M Y') ?></li>
                       <li class="photo-by">Photos by: <?php echo $photo_by ?></li>
-                      <li class="gallery-title">Gallery : <?php the_title() ?></li>
+                      <li class="gallery-title">Gallery : <a href="<?php  the_permalink(); ?>"><?php the_title() ?></a></li>
                       <li class="back"></li>
                     </ul>
                   </div>
