@@ -8072,6 +8072,7 @@ body.overflow {
   position: relative;
   -webkit-transition: all .25s;
           transition: all .25s;
+  color: #00ACEE;
 }
 .article-content a:after {
   position: absolute;
@@ -8771,7 +8772,8 @@ body.overflow {
   padding: 10px;
 }
 .my-gallery img {
-  width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
   height: auto;
   border: 5px solid white;
   padding: 0px;
