@@ -7899,10 +7899,10 @@ body.overflow {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-.article.article-red {
+.article-red {
   background-color: #a5194c;
 }
-.article.article-blue-light {
+.article-blue-light {
   background-color: #00acee;
 }
 
