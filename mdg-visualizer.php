@@ -151,8 +151,6 @@ background-color: white;
     height: 100%;
     background-color:white;
     padding: 15px;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .p {
@@ -164,8 +162,6 @@ background-color: white;
 .mdg-viz-container{
   float:left;
   width:79%;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 @media (max-width: 480px) {
@@ -202,8 +198,6 @@ background-color: white;
 
   .sidebar{
     display: none !important;
-    text-align: justify !important;
-    text-justify: inter-word !important;
   }
 }
 
@@ -240,8 +234,6 @@ background-color: white;
 
   .sidebar{
     display: none !important;
-    text-align: justify !important;
-    text-justify: inter-word !important;
   }
 }
 
