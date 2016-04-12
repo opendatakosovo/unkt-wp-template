@@ -8093,6 +8093,25 @@ body.overflow {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+.gallery-title a:hover {
+  color: #d21c55;
+}
+.gallery-title a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  content: "";
+  background-color: #d21c55;
+  -webkit-transition: all .25s;
+          transition: all .25s;
+}
+.gallery-title a:hover:after{
+  width: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 .article-content .video-container {
   position: relative;
   width: 100%;
