@@ -151,8 +151,6 @@ background-color: white;
     height: 100%;
     background-color:white;
     padding: 15px;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .p {
@@ -164,8 +162,6 @@ background-color: white;
 .mdg-viz-container{
   float:left;
   width:79%;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 @media (max-width: 480px) {
@@ -202,8 +198,6 @@ background-color: white;
 
   .sidebar{
     display: none !important;
-    text-align: justify !important;
-    text-justify: inter-word !important;
   }
 }
 
@@ -240,8 +234,6 @@ background-color: white;
 
   .sidebar{
     display: none !important;
-    text-align: justify !important;
-    text-justify: inter-word !important;
   }
 }
 
@@ -636,7 +628,7 @@ iframe{
                               <div class="mdg-animation" id="mdg-promote-gender-equality-and-empower-women">
                               <div class="mdg-slide-content" id="slide-content">
                                 <br>
-                                <embed style="width:103%; height:760px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
+                                <embed style="width:100%; height:760px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
                               </div>
                             </div>
                           </div>
