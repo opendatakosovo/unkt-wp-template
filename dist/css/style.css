@@ -8590,14 +8590,14 @@ body.overflow {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  background-color: rgba(0, 15, 61, .9);
+  /*background-color: rgba(0, 15, 61, .9);*/
 }
 
 .search-header {
   float: left;
   width: 50%;
   visibility: hidden;
-  background-color: #fff;
+  background-color: #D21C55;
   opacity: 0;
 }
 .search-header form {
@@ -8605,8 +8605,8 @@ body.overflow {
   width: 100%;
   min-height: 77px;
   padding: 25px 0;
-  visibility: hidden;
-  opacity: 0;
+  /*visibility: hidden;*/
+  /*opacity: 0;*/
 }
 .search-header .logo {
   display: none;
@@ -8621,8 +8621,16 @@ body.overflow {
   border: 0;
 }
 .search-header input {
-  width: 90%;
+  width: 43%;
+  color:white;
   font-size: 18px;
+  text-transform: none;
+  letter-spacing: .06px;
+}
+.search-header label {
+  /*width: 90%;*/
+  font-size: 18px;
+  color:white;
   text-transform: none;
   letter-spacing: .06px;
 }

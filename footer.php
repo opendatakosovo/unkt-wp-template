@@ -134,106 +134,11 @@
 			</ul>
 		</div>
 	</div>
-<script>
-	jQuery( function( $ ) {
-	    // search filed
-	    var $s = $( '#s' );
-	    // the search form
-	    var $sForm = $s.closest( 'form' );
-	    console.log( $sForm );
-	    $sForm.on( 'submit', function( event) {
-	        event.preventDefault();
-	        $.post(
-	            T5Ajax.ajaxurl,
-	            {
-	                action:     T5Ajax.action,
-	                search_term: $s.val()
-	            },
-	            function( response ) {
-	                // just append the result to the search form.
-	                $sForm.append( response );
-	            }
-	        );
-	    });
-	});
-</script>
 	<div class="search">
 		<div class="search-header">
-			<a href="#" class="logo">
-				<img src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo.svg" alt="UNKT Logo" />
-			</a>
-			<form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
-			    <input type="text" value="" name="s" placeholder="Search for News, Un Agencies, Publications, Jobs, Tenders, FAQ"  />
-			    <input class="icon-search" type="submit" id="searchsubmit" value="Search" />
-			</form>
 
-		</div>
-		<div class="search-content">
-			<ul>
-				<li>
-					<div class="category">News</div>
-					<div class="date">28 Oct</div>
-					<a href="#">
-						<h2>Looking in 2 business processes<br /> re-engineering @ UN common<br /> premises</h2>
-					</a>
-				</li>
-				<li>
-					<div class="category">Publication</div>
-					<div class="date">28 Oct</div>
-					<a href="#">
-						<h2>Codesign pilot 3rd visit<br /> from KDAK</h2>
-					</a>
-				</li>
-				<li>
-					<div class="category">Jobs</div>
-					<div class="date">28 Oct</div>
-					<a href="#">
-						<h2>Project Officer - UNDP Ferm safer<br /> communities</h2>
-					</a>
-				</li>
-				<li>
-					<div class="category">News</div>
-					<div class="date">28 Oct</div>
-					<a href="#">
-						<h2>Looking in 2 business processes<br /> re-engineering @ UN common<br /> premises</h2>
-					</a>
-				</li>
-				<li>
-					<div class="category">Publication</div>
-					<div class="date">28 Oct</div>
-					<a href="#">
-						<h2>Codesign pilot 3rd visit<br /> from KDAK</h2>
-					</a>
-				</li>
-				<li>
-					<div class="category">Jobs</div>
-					<div class="date">28 Oct</div>
-					<a href="#">
-						<h2>Project Officer - UNDP Ferm safer<br /> communities</h2>
-					</a>
-				</li>
-				<li>
-					<div class="category">News</div>
-					<div class="date">28 Oct</div>
-					<a href="#">
-						<h2>Looking in 2 business processes<br /> re-engineering @ UN common<br /> premises</h2>
-					</a>
-				</li>
-				<li>
-					<div class="category">Publication</div>
-					<div class="date">28 Oct</div>
-					<a href="#">
-						<h2>Codesign pilot 3rd visit<br /> from KDAK</h2>
-					</a>
-				</li>
-				<li>
-					<div class="category">Jobs</div>
-					<div class="date">28 Oct</div>
-					<a href="#">
-						<h2>Project Officer - UNDP Ferm safer<br /> communities</h2>
-					</a>
-				</li>
-			</ul>
+			<?php get_search_form(); ?>
+
 		</div>
 	</div>
 </body>

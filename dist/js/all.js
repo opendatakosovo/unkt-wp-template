@@ -1500,7 +1500,7 @@ $(document).ready(function() {
 				autoAlpha: 1,
 				width: "100%",
 				onComplete: function() {
-					TweenMax.to([$(".search-header .logo"), $(".search-header form")], 1, {
+					TweenMax.to([$(".search-header form")], 1, {
 						autoAlpha: 1,
 						y: 0
 					});
