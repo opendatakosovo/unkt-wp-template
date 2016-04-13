@@ -139,6 +139,9 @@
 
 			<?php get_search_form(); ?>
 
+		</div	>
+		<div class="search-content">
+
 		</div>
 	</div>
 </body>
