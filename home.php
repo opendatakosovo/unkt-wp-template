@@ -131,7 +131,7 @@ input.vq-css-checkbox + label.vq-css-label {
                 <?php
                     $postsPerPage = 6;
                     $args = array(
-                            'post_type' => array('post','Gallery'),
+                            'post_type' => array('post','ecwd_event'),
                             'posts_per_page' => $postsPerPage,
                             'meta_query' => array(
                               array(
