@@ -7024,6 +7024,7 @@ body.overflow {
   letter-spacing: .04px;
   font-size:1.9em;
   text-transform: uppercase;
+  text-align: center;
 }
 @media (min-width: 62em) {
   .agencies-top {

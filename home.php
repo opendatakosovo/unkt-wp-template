@@ -125,9 +125,7 @@ input.vq-css-checkbox + label.vq-css-label {
   			</div>
 
         <div class="row">
-          <div id="ajax-more-posts" class="article-container container filterize">
-            <div class="row ">
-              <div class="col-xs-12 col-lg-9 posts">
+          <div class="article-container filterize">
                 <?php
                     $postsPerPage = 6;
                     $args = array(
@@ -147,13 +145,29 @@ input.vq-css-checkbox + label.vq-css-label {
 
                     while ($loop->have_posts()) : $loop->the_post();
                     $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-                    $outside_link =get_field('external_source_link'); ?>
+                    $outside_link =get_field('external_source_link');
+
+                    $the_category_slug = "";
+                    $the_category = "";
+                    foreach(get_the_category() as $category) {
+                      if(!empty(get_the_category())){
+                        $the_category_slug = $category->slug . '';
+                        $the_category = $category->cat_name . '';
+                      }
+                      else {
+                        $the_category_slug = 'events';
+                         $the_category = 'Events';
+                         echo var_dump(get_the_category());
+                      }
+
+                    }
+                    ?>
                     <?php if($outside_link == ""){ ?>
-                    <div class="col-xs-12 col-lg-4 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
+                    <div class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
                       <a href="<?php  the_permalink(); ?>" class="article-full-img">
                         <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
                         <div class="article">
-                          <div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
+                          <div class="category"><?php echo $the_category; ?></div>
                           <div class="date"><?php echo get_the_date('j M Y');?></div>
                           <h3><?php the_title(); ?></h3>
                           <div class="read-more" >Read More <span class="icon-arrow-right"></span></div>
@@ -161,11 +175,11 @@ input.vq-css-checkbox + label.vq-css-label {
                       </a>
                     </div>
                     <?php }else{ ?>
-                      <div class="col-xs-12 col-lg-4 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
+                      <div class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
                         <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img">
                           <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
                           <div class="article">
-                            <div class="category"><?php foreach(get_the_category() as $category) { echo $category->cat_name;} ?></div>
+                            <div class="category"><?php echo $the_category; ?></div>
                             <div class="date"><?php echo get_the_date('j M Y');?></div>
                             <h3><?php the_title(); ?></h3>
                             <div class="read-more" >Read More <span class="icon-arrow-right"></span></div>
@@ -178,16 +192,6 @@ input.vq-css-checkbox + label.vq-css-label {
                       <?php endwhile;
               wp_reset_postdata();
                ?>
-             </div>
-             <div class="filtering-sidebar col-xs-12 col-lg-3">
-               <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-                	<div class="row">
-                		<?php dynamic_sidebar( 'sidebar-1' ); ?>
-                	</div>
-                <?php endif; ?>
-
-             </div>
-           </div>
           </div>
 
           <div class="load-more col-xs-12 btn" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load more content</div>
