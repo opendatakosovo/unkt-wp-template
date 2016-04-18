@@ -88,7 +88,7 @@
 			</form>
 		</div>
 	</div>
-	
+
 
 	<div class="header">
 		<a href="#" class="search-box">
@@ -96,16 +96,12 @@
 			Search
 		</a>
 		<ul class="language">
-			<li class="active">
-				<?php get_bloginfo();?>
-				<a href="<?php get_bloginfo();?>/unkt/en">EN</a>
-			</li>
-			<!-- <li>
-				<a href="<?php get_bloginfo();?>/unkt/sq">AL</a>
+			<li>
+				<a target="_blank" href="http://www.youtube.com/channel/UCxaw3b7cL_8fE2I4XwQvUgA" class="icon-youtube"></a>
 			</li>
 			<li>
-				<a href="<?php get_bloginfo();?>/unkt/sr">SRB</a>
-			</li> -->
+				<a target="_blank" href="http://www.facebook.com/UNKosovoTeam" class="icon-facebook"></a>
+			</li>
 		</ul>
 		<a href="<?php get_bloginfo();?>" class="logo">
 			<img src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo.svg" alt="UNKT Logo" />
