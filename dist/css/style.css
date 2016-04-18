@@ -6840,6 +6840,7 @@ body.overflow {
 .slider .caption p {
   line-height: 28px;
   letter-spacing: .06px;
+      font-size: 1.5em;
 }
 .slider .read-more {
   position: relative;
@@ -6993,22 +6994,24 @@ body.overflow {
 
 .agencies-top {
   color: #fff;
+  height: 200px;
 }
 .agencies-top > div {
   float: left;
 }
 .agencies-top .un {
   width: 100%;
-  padding: 46px;
+  padding: 28px;
   text-align: center;
   background-color: #00acee;
 }
 .agencies-top .un img {
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 }
 .agencies-top .un h3 {
   line-height: 32px;
   letter-spacing: .04px;
+  font-size: 1.7em;
 }
 .agencies-top .un-text {
   width: 100%;
@@ -7020,6 +7023,8 @@ body.overflow {
   font-family: "UniversLTStd-Light";
   line-height: 40px;
   letter-spacing: .04px;
+  font-size:1.9em;
+  text-transform: uppercase;
 }
 @media (min-width: 62em) {
   .agencies-top {
@@ -7266,7 +7271,7 @@ body.overflow {
     width: 26%;
   }
   .footer-left .unkt {
-    text-align: left;
+    /*text-align: left;*/
   }
 
   .footer-right {
@@ -7968,7 +7973,7 @@ body.overflow {
 .article-container {
   float: left;
   width: 100%;
-  margin-top: 73px;
+  margin-top: 100px;
   height:auto;
 }
 
@@ -8709,6 +8714,7 @@ body.overflow {
 
   .search-content {
     padding: 50px 50px 50px 20.5%;
+    height: 100%;
   }
   .search-content .category {
     width: 15%;
@@ -8935,4 +8941,17 @@ input#es_txt_button_pg {
 .sdg-img:hover {
     width: 100%;
     opacity:0.5;
+}
+#subscribe-header .subscribe-label p {
+    margin-top: -15px;
+}
+#subscribe-header .subscribe-form {
+    margin-top: -13px;
+}
+.agencies-top .un img {
+    /* height: 44px; */
+    width: 120px;
+}
+.agencies-top .un h3 {
+    /* height: 44px; */
 }

@@ -77,17 +77,18 @@
 			<img class="logo-loader logo-2" src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo_text.svg" alt="" />
 		</div>
 	</div>
-
-	<div style="display:none;" id="subscribe-header" class="subscribe subscribe-small">
+	<div style="display:none;" id="subscribe-header" class="subscribe subscribe-big">
 		<div class="subscribe-label">
 			<p>Subscribe for the latest news and updates:</p>
 		</div>
 		<div class="subscribe-form">
-			<form name="subscribe-small" method="post" action="">
+
 				<?php es_subbox( $namefield = "NO", $desc = "", $group = "Public" ); ?>
+
 			</form>
 		</div>
 	</div>
+	
 
 	<div class="header">
 		<a href="#" class="search-box">

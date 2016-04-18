@@ -9,7 +9,7 @@
    					<div class="article-inner">
    						<div class="article-sidebar">
    						</div>
-   						<div class="article-content">
+   						<div class="article-content section">
    							<h1><?php the_title(); ?></h1>
    							<?php the_content(); ?>
    						</div>
