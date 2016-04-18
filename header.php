@@ -102,6 +102,10 @@
 			<li>
 				<a target="_blank" href="http://www.facebook.com/UNKosovoTeam" class="icon-facebook"></a>
 			</li>
+			<li>
+				<a target="_blank" href="https://twitter.com/unkosovoteam" class="icon-twitter"></a>
+			</li>
+
 		</ul>
 		<a href="<?php get_bloginfo();?>" class="logo">
 			<img src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo.svg" alt="UNKT Logo" />

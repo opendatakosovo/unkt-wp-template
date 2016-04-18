@@ -129,6 +129,9 @@
 						<li>
 							<a target="_blank" href="http://www.facebook.com/UNKosovoTeam" class="icon-facebook"></a>
 						</li>
+						<li>
+							<a target="_blank" href="https://twitter.com/unkosovoteam" class="icon-twitter"></a>
+						</li>
 					</ul>
 				</li>
 			</ul>
