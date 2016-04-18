@@ -7796,8 +7796,9 @@ body.overflow {
   /*padding-bottom: 65px;*/
   text-align: center;
 }
-.media-filter{
-   padding-top:140px;
+.media-filter {
+    padding-top: 108px;
+    margin-bottom: -100px;
 }
 .filter ul li {
   display: inline-block;
