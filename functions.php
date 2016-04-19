@@ -213,13 +213,25 @@ function more_post_ajax(){
       $category = get_the_category();
       $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
       $outside_link =get_field('external_source_link');
+			$the_category_slug = "";
+			$the_category = "";
 
+				if(get_post_type()=="post"){
+					foreach(get_the_category() as $category) {
+						$the_category_slug = $category->slug . '';
+						$the_category = $category->cat_name . '';
+					}
+				}
+				else {
+					$the_category_slug = 'events';
+					$the_category = 'Events';
+				}
       if($outside_link == ""){
-        $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$category[0]->slug.'">
+        $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
                 <a href="'.get_permalink().'" class="article-full-img">
                 <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
                   <div class="article">
-                    <div class="category">'.$category[0]->cat_name.'</div>
+                    <div class="category">'.$the_category.'</div>
                     <div class="date">'.get_the_date().'</div>
                     <h3>'.get_the_title().'</h3>
                     <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
@@ -227,11 +239,11 @@ function more_post_ajax(){
                 </a>
          </div>';
       }else{
-        $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$category[0]->slug.'">
+        $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
                 <a href="'.$outside_link.'" target="_blank" class="article-full-img">
                 <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
                   <div class="article">
-                    <div class="category">'.$category[0]->cat_name.'</div>
+                    <div class="category">'.$the_category.'</div>
                     <div class="date">'.get_the_date().'</div>
                     <h3>'.get_the_title().'</h3>
                     <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
@@ -260,7 +272,7 @@ function build_load_more_query($ppp, $page, $categories, $excluded_categories, $
 
   $args = array(
       'suppress_filters' => true,
-      'post_type' => 'post',
+      'post_type' => array('post','ecwd_event'),
       'posts_per_page' => $ppp,
       'paged'    => $page,
       'cat' => $categories,
