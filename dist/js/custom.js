@@ -1,9 +1,6 @@
 
 $(document).ready(function() {
-  $(".category-media-posts-container").isotope({
-    itemSelector: '.item',
-    layoutMode : 'fitRows'
-  });
+
   var pageNumber = 1;
   // Load more on click
 	$(document).on("click",".load-more",function(){ // When btn is pressed.
@@ -83,10 +80,11 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
 
             }
             if($posts.length!==0){
-                var inserted_posts = $(".article-container").isotope('insert',$posts);
+                var inserted_posts = $(".article-container").append($posts);
                 if(inserted_posts.length==0){
                   $(".load-more").text("No more posts available");
                 }
+                $(".load-more").attr("disabled",true);
 
             } else{
                 $(".load-more").text("No more content available");

@@ -24,14 +24,15 @@
          </div>
        </div>
 
-    <?php }?>
+    <?php }else if($thisCat=="publications"){
+      ?>
+  <?php  }?>
     <div class="row">
      <div class="article-container filterize">
        <?php
            //get terms (e.g. categories or post tags), then display all posts in each retrieved term
            $taxonomy = 'category';//  e.g. post_tag, category
            $param_type = 'category__in'; //  e.g. tag__in, category__in
-
 
            $postsPerPage = 9;
 
@@ -92,7 +93,7 @@
        ?>
     </div>
     </div>
-    <div class="load-more col-xs-12 btn" data-category="<?php echo $query_by_cats; ?>" data-grid="3" data-post-type="post" data-posts-per-page="<?php echo $postsPerPage ?>">Load more content</div>
+    <div class="load-more col-xs-12 btn" data-category="<?php echo $query_by_cats; ?>" data-filter="" data-grid="3" data-post-type="post" data-posts-per-page="<?php echo $postsPerPage ?>">Load more content</div>
   </div>
 
 <?php get_footer(); ?>
