@@ -11,7 +11,11 @@
    						</div>
    						<div class="article-content section">
    							<h1><?php the_title(); ?></h1>
-   							<?php the_content(); ?>
+                        <div class="section">
+                           <?php the_content(); ?>
+
+                        </div>
+
    						</div>
    					</div>
 
