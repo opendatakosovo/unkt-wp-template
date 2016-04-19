@@ -132,7 +132,7 @@
 		        $parent_id = $item->ID;
 		    ?>
 
-		    <li class="item">
+		    <li class="item active <?php echo slugify($title); ?>">
 		        <a href="<?php echo $link; ?>" class="title">
 		            <?php echo $title; ?>
 		        </a>
@@ -163,3 +163,25 @@
 		</ul>
 
 	</div>
+	<script>
+	$( document ).ready(function() {
+		$('.item').removeClass('active');
+
+		var lastClicked = (window.location.href).split('/');
+
+		var lastClickedMenuItem = lastClicked[(lastClicked.length-2)];
+
+		$('.'+lastClickedMenuItem+'').addClass("active");
+
+	});
+
+	function slugify(text){
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')           // Replace spaces with -
+    .replace(/[^\u0100-\uFFFF\w\-]/g,'-') // Remove all non-word chars ( fix for UTF-8 chars )
+    .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+    .replace(/^-+/, '')             // Trim - from start of text
+    .replace(/-+$/, '');            // Trim - from end of text
+}
+
+	</script>
