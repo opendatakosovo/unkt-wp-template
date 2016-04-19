@@ -8041,12 +8041,12 @@ body.overflow {
   line-height: 30px;
   letter-spacing: .04px;
 }
-.article-content img {
+/*.article-content img {
   width: 80%;
   max-width: 61%;
   height: auto;
   margin-bottom: 60px;
-}
+}*/
 .article-content ul,
 .article-content ol {
   margin-bottom: 20px;
