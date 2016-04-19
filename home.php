@@ -44,7 +44,7 @@ input.vq-css-checkbox + label.vq-css-label {
 }
 </style>
 <?php
-    $options = get_option('unkt_theme_options');
+   $options = get_option('unkt_theme_options');
 
    $filteringCategoriesCounter = 5;
    $args = array(
@@ -120,6 +120,9 @@ input.vq-css-checkbox + label.vq-css-label {
   						<li>
   							<a href="#" data-filter=".tender">Tenders</a>
   						</li>
+              <li>
+  							<a href="#" data-filter=".events">Events</a>
+  						</li>
   					</ul>
   				</div>
   			</div>
@@ -138,7 +141,6 @@ input.vq-css-checkbox + label.vq-css-label {
                                   'compare' => 'LIKE'
                               )
                             )
-
                     );
 
                     $loop = new WP_Query($args);
@@ -149,18 +151,21 @@ input.vq-css-checkbox + label.vq-css-label {
 
                     $the_category_slug = "";
                     $the_category = "";
-                    foreach(get_the_category() as $category) {
-                      if(!empty(get_the_category())){
-                        $the_category_slug = $category->slug . '';
-                        $the_category = $category->cat_name . '';
+
+                      if(get_post_type()=="post"){
+                        foreach(get_the_category() as $category) {
+                          $the_category_slug = $category->slug . '';
+                          $the_category = $category->cat_name . '';
+                        }
                       }
                       else {
                         $the_category_slug = 'events';
-                         $the_category = 'Events';
-                         echo var_dump(get_the_category());
+                        $the_category = 'Events';
+                        $terms = get_the_terms(strval( $post->ID ),'ecwd_event_category');
+                        $event_categories = wp_get_post_terms($post->ID, 'ecwd_event_category','');
                       }
 
-                    }
+
                     ?>
                     <?php if($outside_link == ""){ ?>
                     <div class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
