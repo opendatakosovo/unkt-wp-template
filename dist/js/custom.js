@@ -12,10 +12,11 @@ $(document).ready(function() {
     var cat = $(".load-more").data('category');
     var grid = $(".load-more").data('grid');
     var post_type = $(".load-more").data('post-type');
-    if($(".load-more").data('filter') != undefined){
-      var filter = $(".load-more").data('filter');
+    var filter = "";
+    if($(".load-more").data('filter') !== undefined){
+      filter = $(".load-more").data('filter');
     }else{
-      var filter = "";
+      filter = "";
     }
     pageNumber++;
     load_posts(ppp, cat, pageNumber, grid, post_type, filter);
@@ -52,7 +53,7 @@ function getCookie(name)
   {
     var re = new RegExp(name + "=([^;]+)");
     var value = re.exec(document.cookie);
-    return (value != null) ? unescape(value[1]) : null;
+    return (value !== null) ? unescape(value[1]) : null;
   }
 
 function buildSubscribeForm(){
@@ -81,20 +82,19 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
               }
 
             }
-            if($posts.length){
-              if($(".article-container").hasClass('filterize')){
-                $(".article-container").isotope('insert',$posts);
-              }else{
-                $(".article-container").append($posts);
-              }
+            if($posts.length!==0){
+                var inserted_posts = $(".article-container").isotope('insert',$posts);
+                if(inserted_posts.length==0){
+                  $(".load-more").text("No more posts available");
+                }
 
-                  // $(".load-more").text("No more posts available");
             } else{
-                $(".load-more").text("No more posts available");
+                $(".load-more").text("No more content available");
             }
         },
         error : function(jqXHR, textStatus, errorThrown) {
             $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+            $(".load-more").text("No more content available");
         }
 
     });
