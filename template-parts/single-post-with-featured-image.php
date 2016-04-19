@@ -26,7 +26,9 @@ setup_postdata( $post );
 					<div class="article-inner">
 
 						<div class="article-content">
-							<p><?php the_content(); ?></p>
+              <div class="section">
+                 <?php the_content(); ?>
+              </div>
 						</div>
 					</div>
 
