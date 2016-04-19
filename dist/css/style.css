@@ -8194,7 +8194,7 @@ body.overflow {
   }
   .article-content .section h3 {
     position: absolute;
-    top: 5px;
+    /*top: 5px;*/
     left: -48%;
     width: 48.2%;
     padding: 0 10.25%;
