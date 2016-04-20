@@ -128,6 +128,9 @@ input.vq-css-checkbox + label.vq-css-label {
   						<li>
   							<a href="#" data-filter=".jobs">Jobs</a>
   						</li>
+              <li>
+  							<a href="#" data-filter=".tenders">Tenders</a>
+  						</li>
   					</ul>
   				</div>
   			</div>
