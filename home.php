@@ -110,18 +110,23 @@ input.vq-css-checkbox + label.vq-css-label {
   						<li>
   							<a href="#" data-filter=".news">News</a>
   						</li>
-
+              <li>
+  							<a href="#" data-filter=".events">Events</a>
+  						</li>
+              <li>
+  							<a href="#" data-filter=".blogs">Blogs</a>
+  						</li>
+  						<li>
+  							<a href="#" data-filter=".gallery">Galleries</a>
+  						</li>
+  						<li>
+  							<a href="#" data-filter=".community-contributions">Community Contributions</a>
+  						</li>
   						<li>
   							<a href="#" data-filter=".publications">Publications</a>
   						</li>
   						<li>
   							<a href="#" data-filter=".jobs">Jobs</a>
-  						</li>
-  						<li>
-  							<a href="#" data-filter=".tender">Tenders</a>
-  						</li>
-              <li>
-  							<a href="#" data-filter=".events">Events</a>
   						</li>
   					</ul>
   				</div>
