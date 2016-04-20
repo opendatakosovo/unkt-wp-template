@@ -80,11 +80,12 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
 
             }
             if($posts.length!==0){
-                var inserted_posts = $(".article-container").append($posts);
-                if(inserted_posts.length==0){
-                  $(".load-more").text("No more posts available");
-                }
-                $(".load-more").attr("disabled",true);
+
+                $(".article-container").isotope()
+                .append( $posts )
+                .isotope( 'appended', $posts )
+                .isotope('layout');
+
 
             } else{
                 $(".load-more").text("No more posts available");
