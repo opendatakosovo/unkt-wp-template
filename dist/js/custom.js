@@ -81,10 +81,8 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
             }
             if($posts.length!==0){
 
-                $(".article-container").isotope()
-                .append( $posts )
-                .isotope( 'appended', $posts )
-                .isotope('layout');
+                $(".article-container").append( $posts )
+                .isotope( 'appended', $posts );
 
 
             } else{
