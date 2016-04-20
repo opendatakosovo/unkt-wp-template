@@ -11,7 +11,7 @@ get_header(); ?>
 global $query_string;
 
 $query_args = explode("&", $query_string);
-$search_query = array();
+$search_query = array('post_type' => 'post');
 
 if( strlen($query_string) > 0 ) {
 	foreach($query_args as $key => $string) {
@@ -28,7 +28,7 @@ $search = new WP_Query($search_query);
         <?php
             while ($search->have_posts()) : $search->the_post();
             $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-            $outside_link =get_field('external_source_link');
+            $outside_link = get_field('external_source_link');
 
             $the_category_slug = "";
             $the_category = "";
