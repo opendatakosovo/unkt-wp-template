@@ -11,7 +11,7 @@ get_header(); ?>
 global $query_string;
 
 $query_args = explode("&", $query_string);
-$search_query = array('post_type' => 'post');
+$search_query = array('post_type' => array('post','ecwd_event'));
 
 if( strlen($query_string) > 0 ) {
 	foreach($query_args as $key => $string) {
