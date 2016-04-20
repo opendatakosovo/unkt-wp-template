@@ -8958,7 +8958,7 @@ input#es_txt_button_pg {
     /* height: 44px; */
 }
 [id^=attachment] img {
-    max-width: 70% !important;
+    max-width: 600px !important;
 }
 
 .publications .article-full-img .article{
