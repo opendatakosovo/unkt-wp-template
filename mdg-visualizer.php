@@ -266,7 +266,7 @@ iframe{
 <script type="text/javascript"><!--//--><![CDATA[//><!--
   $(document).ready(function(){
     $(".mdg-btn").click(function(){
-      $(".mdg-show-more-btn").html("View stats");
+      $(".mdg-show-more-btn").html("View more stats");
       $(".mdg-btn").removeClass('active');
       var id = this.id;
       $(".mdg-description, .mdg-description-responsive").each(function(){
@@ -286,14 +286,14 @@ iframe{
 
     $(".mdg-show-more-btn").click(function(){
       var id = $(".mdg-btn.active")[0]['id'];
-      if($(".mdg-show-more-btn").html().trim()=="View stats"){
+      if($(".mdg-show-more-btn").html().trim()=="View more stats"){
         showMore(id);
         $("#mdg-" + id).css("display","none");
         $(".mdg-show-more-btn").text("View the visuals");
       }else{
         $("#"+id+"-more").toggle("blind",{},500);
         $("#mdg-" + id).css("display","block");
-        $(".mdg-show-more-btn").html("View stats");
+        $(".mdg-show-more-btn").html("View more stats");
       }
     });
   });
@@ -612,7 +612,7 @@ iframe{
 
                             <div class="mdg-anim col-xs-12" style="background-color: #FFDD00;">
                               <button type="button" style="float:right; margin:-18px 5px 0 0; background-color: #f4f4f4; color: #000" class="mdg-show-more-btn btn btn-default">
-                                View stats
+                                View more stats
                               </button>
 
                               <h1 class="mdg-slider-title"></h1>
@@ -629,7 +629,7 @@ iframe{
                           <div class="mdg-anime achieve-universal-primary-education">
                             <div class="mdg-anim col-xs-12" style="background-color: #D8DF20;" >
                               <button type="button" style="float:right; margin:-18px 5px 0 0; background-color: #f4f4f4; color: #000" class="mdg-show-more-btn btn btn-default">
-                                View stats
+                                View more stats
                               </button>
                               <div class="mdg-animation" id="mdg-achieve-universal-primary-education">
                               <div class="mdg-slide-content">
@@ -644,7 +644,7 @@ iframe{
                           <div class="mdg-anime promote-gender-equality-and-empower-women">
                             <div class="mdg-anim col-xs-12" style="background-color: #F7941D;">
                               <button type="button" style="float:right; margin:-18px 5px 0 0; background-color: #f4f4f4; color: #000" class="mdg-show-more-btn btn btn-default">
-                                View stats
+                                View more stats
                               </button>
 
                               <div class="mdg-animation" id="mdg-promote-gender-equality-and-empower-women">
@@ -658,7 +658,7 @@ iframe{
                           <div class="mdg-anime reduce-child-mortality">
                             <div class="mdg-anim col-xs-12" style="background-color: #C7EAFD; height: auto;">
                               <button type="button" style="float:right; margin:-18px 5px 0 0; background-color: #f4f4f4; color: #000" class="mdg-show-more-btn btn btn-default">
-                                View stats
+                                View more stats
                               </button>
                               <div class="mdg-animation" id="mdg-reduce-child-mortality">
                               <div class="mdg-slide-content">
@@ -673,7 +673,7 @@ iframe{
                           <div class="mdg-anime improve-maternal-health">
                             <div class="mdg-anim col-xs-12" style="background-color: #F8C0D9;">
                               <button type="button" style="float:right; margin:-18px 5px 0 0; background-color: #f4f4f4; color: #000" class="mdg-show-more-btn btn btn-default">
-                                View stats
+                                View more stats
                               </button>
                               <div class="mdg-animation" id="mdg-improve-maternal-health">
                               <div class="mdg-slide-content">
@@ -686,7 +686,7 @@ iframe{
                           <div class="mdg-anime combat-hiv-aids-malria-and-other-desease" style="margin-top:-10px;">
                             <div class="mdg-anim col-xs-12" style="background-color: #F15A3F;">
                               <button type="button" style="float:right; margin:-18px 5px 0 0; background-color: #f4f4f4; color: #000" class="mdg-show-more-btn btn btn-default">
-                                View stats
+                                View more stats
                               </button>
 
                               <div class="mdg-animation" id="mdg-combat-hiv-aids-malria-and-other-desease">
@@ -701,7 +701,7 @@ iframe{
                           <div class="mdg-anime ensure-environmental-sustainability">
                             <div class="mdg-anim col-xs-12" style="background-color: #8CC63E;">
                               <button type="button" style="float:right; margin:-18px 5px 0 0; background-color: #f4f4f4; color: #000" class="mdg-show-more-btn btn btn-default">
-                                View stats
+                                View more stats
                               </button>
                               <div class="mdg-animation" id="mdg-ensure-environmental-sustainability">
                               <div class="mdg-slide-content">
@@ -714,7 +714,7 @@ iframe{
                           <div class="mdg-anime internet-penetration">
                             <div class="mdg-anim col-xs-12" style="background-color: #1BB0E8;">
                               <button type="button" style="float:right; margin:-18px 5px 0 0; background-color: #f4f4f4; color: #000" class="mdg-show-more-btn btn btn-default">
-                                View stats
+                                View more stats
                               </button>
                               <div class="mdg-animation" id="mdg-internet-penetration">
                                 <div class="mdg-slide-content">
