@@ -7966,9 +7966,9 @@ body.overflow {
   content: "";
   background-color: rgba(0, 15, 61, .42);
 }
-/*.article-full-img .article {
+.article-full-img .article {
   background: none;
-}*/
+}
 
 .article-container {
   float: left;
