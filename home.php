@@ -130,7 +130,7 @@ input.vq-css-checkbox + label.vq-css-label {
         <div class="row">
           <div class="article-container filterize">
                 <?php
-                    $postsPerPage = 6;
+                    $postsPerPage = 8;
                     $args = array(
                             'post_type' => array('post','ecwd_event'),
                             'posts_per_page' => $postsPerPage,

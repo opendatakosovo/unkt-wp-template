@@ -7964,11 +7964,11 @@ body.overflow {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: rgba(0, 15, 61, .55);
+  background-color: rgba(0, 15, 61, .42);
 }
-.article-full-img .article {
+/*.article-full-img .article {
   background: none;
-}
+}*/
 
 .article-container {
   float: left;
@@ -8959,4 +8959,28 @@ input#es_txt_button_pg {
 }
 [id^=attachment] img {
     max-width: 70% !important;
+}
+
+.publications .article-full-img .article{
+  background-color: #00ACEE ;
+  background: inherit;
+}
+.tenders .article-full-img .article{
+  background-color: #00ACEE ;
+  background: inherit;
+}
+
+.events .article-full-img .article {
+  background-color: #00ACEE ;
+  background: inherit;
+}
+
+.gallery .article-full-img .article{
+    background-color: #d21c55;
+    background: inherit;
+}
+.news .article-full-img .article{
+    background-color: #d21c55;
+    background: inherit;
+
 }

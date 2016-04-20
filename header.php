@@ -171,7 +171,7 @@
 
 		var lastClickedMenuItem = lastClicked[(lastClicked.length-2)];
 
-		$('.'+lastClickedMenuItem+'').addClass("active");
+		$('.menu .'+lastClickedMenuItem+'').addClass("active");
 
 	});
 
