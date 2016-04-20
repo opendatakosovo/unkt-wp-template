@@ -87,12 +87,12 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
                 $(".load-more").attr("disabled",true);
 
             } else{
-                $(".load-more").text("No more content available");
+                $(".load-more").text("No more posts available");
             }
         },
         error : function(jqXHR, textStatus, errorThrown) {
             $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
-            $(".load-more").text("No more content available");
+            $(".load-more").text("No more posts available");
         }
 
     });

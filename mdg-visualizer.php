@@ -51,9 +51,9 @@ hr.hr-style:after {
   height:650px;
 }
 
-.mdg-animation{
+/*.mdg-animation{
   min-height: 735px;
-}
+}*/
 
 .mdg-anim{
   /*border: solid 2px black;*/
@@ -122,9 +122,6 @@ background-color: white;
   text-align: center;
 }
 
-.mdg-slide-content embed {
-  width: 100%;
-}
 
 .mdg-container-responsive p,
 .mdg-container-responsive h1,
@@ -239,6 +236,31 @@ background-color: white;
 
 iframe{
     overflow:hidden;
+    height:1000px;
+}
+/*embed{
+    overflow:hidden;
+    height:auto;
+}*/
+.mdg-slide-content {
+  height: 1000px;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+
+.mdg-slide-content embed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.description-container {
+    margin-top: -15%;
+    padding: 8px 100px 5px 174px !important;
+    text-align: justify;
 }
 </style>
 <script type="text/javascript"><!--//--><![CDATA[//><!--
@@ -597,8 +619,8 @@ iframe{
                               <div class="mdg-animation" id="mdg-eradicate-extreme-poverty-and-hunger">
                               <div class="row">
                                 <br>
-                                <div class="mdg-slide-content" id="slide-content">
-                                  <embed style="width: 100%; height:780px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
+                                <div class="mdg-slide-content">
+                                  <embed src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/poverty-headcount-ratio-at-national-poverty-lines/index.html">
                                 </div>
                               </div>
                             </div>
@@ -610,9 +632,9 @@ iframe{
                                 View stats
                               </button>
                               <div class="mdg-animation" id="mdg-achieve-universal-primary-education">
-                              <div class="mdg-slide-content" id="slide-content">
+                              <div class="mdg-slide-content">
                                 <br>
-                                <embed style="width: 100%; height:940px; overflow: hidden;" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/total-primary-and-lower-secondary-enrollments/index.html">
+                                <embed src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/total-primary-and-lower-secondary-enrollments/index.html">
                               </div>
 
                               <div class="mdg-sliders" id="achieve-universal-primary-education-slider"></div>
@@ -626,9 +648,9 @@ iframe{
                               </button>
 
                               <div class="mdg-animation" id="mdg-promote-gender-equality-and-empower-women">
-                              <div class="mdg-slide-content" id="slide-content">
+                              <div class="mdg-slide-content">
                                 <br>
-                                <embed style="width:100%; height:760px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
+                                <embed src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/gender-enrollment-ratios/index.html">
                               </div>
                             </div>
                           </div>
@@ -639,9 +661,9 @@ iframe{
                                 View stats
                               </button>
                               <div class="mdg-animation" id="mdg-reduce-child-mortality">
-                              <div class="mdg-slide-content" id="slide-content">
+                              <div class="mdg-slide-content">
                                 <br>
-                                <embed style="width: 100%; height:950px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
+                                <embed src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/infant-mortality-rate/index.html">
 
                                 <br><br><br><br>
                               </div>
@@ -654,9 +676,9 @@ iframe{
                                 View stats
                               </button>
                               <div class="mdg-animation" id="mdg-improve-maternal-health">
-                              <div class="mdg-slide-content" id="slide-content">
+                              <div class="mdg-slide-content">
                                 <br>
-                                <embed style="width: 100%; height:800px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
+                                <embed src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/maternal-mortality/index.html">
                               </div>
                             </div>
                           </div>
@@ -668,9 +690,9 @@ iframe{
                               </button>
 
                               <div class="mdg-animation" id="mdg-combat-hiv-aids-malria-and-other-desease">
-                              <div class="mdg-slide-content" id="slide-content">
+                              <div class="mdg-slide-content">
                                 <br>
-                                <embed style="width: 100%; height:550px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
+                                <embed src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/number-of-cases-of-hiv-aids/index.html">
                               </div>
                             </div>
                           </div>
@@ -682,9 +704,9 @@ iframe{
                                 View stats
                               </button>
                               <div class="mdg-animation" id="mdg-ensure-environmental-sustainability">
-                              <div class="mdg-slide-content" id="slide-content">
+                              <div class="mdg-slide-content">
                                 <br>
-                                <embed style="width:100%; height:750px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/afforested-areas/index.html">
+                                <embed src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/afforested-areas/index.html">
                               </div>
                               </div>
                             </div>
@@ -695,9 +717,9 @@ iframe{
                                 View stats
                               </button>
                               <div class="mdg-animation" id="mdg-internet-penetration">
-                                <div class="mdg-slide-content" id="slide-content">
+                                <div class="mdg-slide-content">
                                   <br>
-                                  <embed style="width:100%; height:600px" src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/internet-penetration/index.html">
+                                  <embed src="http://opendatakosovo.github.io/millenium-development-goals-kosovo/internet-penetration/index.html">
                                 </div>
                              </div>
                             </div>
