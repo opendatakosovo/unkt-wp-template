@@ -18,10 +18,7 @@
    					</div>
 
             <div style="background-color: #F5F5F5;" class="sidebar">
-                <div class="col-md-12">
-                    <a target="_blank" href="http://www.un.org/sustainabledevelopment/sustainable-development-goals/"><img class="sdg-img " src="<?php bloginfo('template_url'); ?>/dist/img/sdg/E_SDG_Icons-18.jpg"/></a>
 
-                </div>
                 <div class="col-md-6">
                   <a target="_blank" href="http://www.un.org/sustainabledevelopment/poverty/"><img class="sdg-img " src="<?php bloginfo('template_url'); ?>/dist/img/sdg/E_SDG_Icons-01.jpg"/></a>
                 </div>
@@ -73,7 +70,9 @@
                 <div class="col-md-6">
                   <a target="_blank" href="http://www.un.org/sustainabledevelopment/globalpartnerships/"><img class="sdg-img " src="<?php bloginfo('template_url'); ?>/dist/img/sdg/E_SDG_Icons-17.jpg"/></a>
                 </div>
-
+                <div class="col-md-6">
+                    <a target="_blank" href="http://www.un.org/sustainabledevelopment/sustainable-development-goals/"><img class="sdg-img " src="<?php bloginfo('template_url'); ?>/dist/img/sdg/E_SDG_Icons-18.jpg"/></a>
+                </div>
             </div>
           </div>
    			</div>
