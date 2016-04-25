@@ -9089,3 +9089,9 @@ img.wpvq-question-img{
   		background-color: #000f3d;
   	}
 .posterboard_fixed_height { max-height: none !important; }
+.ecwd_calendar .filter-container li {
+    position: relative;
+    left: 0;
+    width: 7%!important;
+    margin: 0 !important;
+}
