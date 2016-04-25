@@ -9094,7 +9094,13 @@ img.wpvq-question-img{
     left: 0;
     width: 7%!important;
     margin: 0 !important;
+    display: block;
+    float: left;
+    width: 7%!important;
 }
 #ecwd_back_link{
   display:none;
 }
+.ecwd_calendar .filter-container {
+    width: 100% !important;
+  }
