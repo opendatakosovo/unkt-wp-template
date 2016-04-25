@@ -40,7 +40,6 @@ input.vq-css-checkbox + label.vq-css-label {
   object-fit: cover;
   max-height:623px;
   overflow: hidden;
-
 }
 </style>
 <?php

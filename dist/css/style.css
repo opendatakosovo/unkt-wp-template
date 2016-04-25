@@ -8955,7 +8955,7 @@ input#es_txt_button_pg {
     margin-top: 100px;
 }
 .sub-menu .item{
-  padding: 15px 10px;
+  padding: 0px 10px;
 	transform: translateX(-15px);
 	-moz-transform: translateX(-15px);
 	-webkit-transform: translateX(-15px);
