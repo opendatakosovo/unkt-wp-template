@@ -107,28 +107,28 @@ input.vq-css-checkbox + label.vq-css-label {
   							<a href="#" data-filter="*">Latest</a>
   						</li>
   						<li>
-  							<a href="#" data-filter=".news">News</a>
+  							<a class="filter-posts" href="#" data-filter=".news">News</a>
   						</li>
               <li>
-  							<a href="#" data-filter=".events">Events</a>
+  							<a class="filter-posts" data-category="<?php get_category_by_slug('.events');?>" data-filter=".events">Events</a>
   						</li>
               <li>
-  							<a href="#" data-filter=".blogs">Blogs</a>
+  							<a class="filter-posts" data-category="<?php get_category_by_slug('.blogs');?>" href="#" data-filter=".blogs">Blogs</a>
   						</li>
   						<li>
-  							<a href="#" data-filter=".gallery">Galleries</a>
+  							<a class="filter-posts" data-category="<?php get_category_by_slug('.gallery');?>" href="#" data-filter=".gallery">Galleries</a>
   						</li>
   						<li>
-  							<a href="#" data-filter=".community-contributions">Community Contributions</a>
+  							<a class="filter-posts" data-category="<?php get_category_by_slug('.community-contributions');?>" href="#" data-filter=".community-contributions">Community Contributions</a>
   						</li>
   						<li>
-  							<a href="#" data-filter=".publications">Publications</a>
+  							<a class="filter-posts" data-category="<?php get_category_by_slug('.publications');?>" href="#" data-filter=".publications">Publications</a>
   						</li>
   						<li>
-  							<a href="#" data-filter=".jobs">Jobs</a>
+  							<a class="filter-posts" data-category="<?php get_category_by_slug('.jobs');?>" href="#" data-filter=".jobs">Jobs</a>
   						</li>
               <li>
-  							<a href="#" data-filter=".tenders">Tenders</a>
+  							<a class="filter-posts" data-category="<?php get_category_by_slug('.tenders');?>" href="#" data-filter=".tenders">Tenders</a>
   						</li>
   					</ul>
   				</div>

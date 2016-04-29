@@ -18,6 +18,24 @@ $(document).ready(function() {
     pageNumber++;
     load_posts(ppp, cat, pageNumber, grid, post_type, filter);
 	});
+
+  $(document).on("click",".filter-posts",function(){ // When btn is pressed.
+    $(".filter-posts").attr("disabled",true); // Disable the button, temp.
+    var ppp = 8;
+    var cat = $(".filter-posts").data('category');
+    var grid = 3;
+    var post_type = $(".filter-posts").data('post-type');
+    var filter = "";
+    if($(".filter-posts").data('filter') !== undefined){
+      filter = $(".filter-posts").data('filter');
+    }else{
+      filter = "";
+    }
+    pageNumber++;
+    load_posts(ppp, cat, pageNumber, grid, post_type, filter);
+	});
+
+
   // execute above function
   initPhotoSwipeFromDOM('.my-gallery');
 

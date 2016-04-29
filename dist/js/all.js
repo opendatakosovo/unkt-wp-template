@@ -1399,12 +1399,11 @@ $(document).ready(function() {
 	if ($(".slider").length > 0) {
 		$(".slider ul").bxSlider({
 			mode: "fade",
-			speed: 800,
+			speed: 500,
 			nextText: "",
 			prevText: "",
 			auto: true,
 			autoHover: true,
-			pause: 8000,
 			controls: true,
 			onSliderLoad: function(currentIndex) {
 				var element = $(".slider li").eq(currentIndex).find(".caption");
@@ -1455,12 +1454,11 @@ $(document).ready(function() {
 	if ($(".gallery-slider").length > 0) {
 		$(".gallery-slider > ul").bxSlider({
 			mode: "fade",
-			speed: 800,
+			speed: 500,
 			nextText: "",
 			prevText: "",
 			auto: true,
 			autoHover: true,
-			pause: 8000,
 			pager: false,
 			controls: true,
 			onSliderLoad: function(currentIndex) {
