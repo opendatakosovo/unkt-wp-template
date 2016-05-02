@@ -107,7 +107,7 @@
 			</li>
 
 		</ul>
-		<a href="<?php get_bloginfo();?>" class="logo">
+		<a href="<?php echo get_home_url(); ?>" class="logo">
 			<img src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo.svg" alt="UNKT Logo" />
 		</a>
 		<a href="#" class="menu-bar">Menu</a>

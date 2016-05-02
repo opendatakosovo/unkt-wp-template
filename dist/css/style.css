@@ -639,13 +639,13 @@ h2 {
 @media (min-width: 62em) {
   h2 {
     font-size: 2.145714285714286rem;
-    line-height: 40px;
+    /*line-height: 40px;*/
   }
 }
 @media (min-width: 75em) {
   h2 {
     font-size: 2.285714285714286rem;
-    line-height: 54px;
+    /*line-height: 54px;*/
   }
 }
 
@@ -7032,7 +7032,7 @@ body.overflow {
   background-color: #000f3d;
 }
 .agencies-top .un-text h2 {
-  font-family: "UniversLTStd-Light";
+  font-family: inherit;
   line-height: 40px;
   letter-spacing: .04px;
   font-size:1.6em;
@@ -7696,6 +7696,7 @@ body.overflow {
   }
   .subscribe.subscribe-big .subscribe-label {
     width: 62.5%;
+    height: 107px
   }
   .subscribe.subscribe-big .subscribe-form {
     width: 37.5%;
@@ -8242,7 +8243,7 @@ body.overflow {
     margin-bottom: 30px;
   }
   .article-content p {
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
   }
   .article-content ul,
   .article-content ol {
@@ -8874,11 +8875,11 @@ input#es_txt_button_pg {
 }
 #subscribe-header {
     display: inline-block;
-    height: 70px !important;
+    height: 107px !important;
 }
 .subscribe.subscribe-small .subscribe-label {
     width: 27.5%;
-    height: 70px;
+    height: 107px;
 }
 .subscribe.subscribe-small .subscribe-label p {
     margin-top: 13px;
@@ -8974,10 +8975,10 @@ input#es_txt_button_pg {
     opacity:0.5;
 }
 #subscribe-header .subscribe-label p {
-    margin-top: -15px;
+    /*margin-top: -15px;*/
 }
 #subscribe-header .subscribe-form {
-    margin-top: -13px;
+    /*margin-top: -13px;*/
 }
 .agencies-top .un img {
     /* height: 44px; */

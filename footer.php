@@ -121,7 +121,7 @@
 					</ul>
 				</li>
 				<li>
-					<h5>Social Media</h5>
+					<h5>Socialize</h5>
 					<ul class="social-media">
 						<li>
 							<a target="_blank" href="http://www.youtube.com/channel/UCxaw3b7cL_8fE2I4XwQvUgA" class="icon-youtube"></a>
