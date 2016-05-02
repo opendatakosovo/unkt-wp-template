@@ -182,7 +182,7 @@ input.vq-css-checkbox + label.vq-css-label {
                     ?>
                     <?php if($outside_link == ""){ ?>
                     <div class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
-                      <a href="<?php  the_permalink(); ?>" class="article-full-img article-blue-light">
+                      <a href="<?php  the_permalink(); ?>" class="article-full-img <?php if($the_category=="Jobs"){ echo 'article-red'; }else{ echo 'article-blue-light'; } ?>">
                         <?php echo $article_img_div; ?>
                         <div class="article">
                           <div class="category"><?php echo $the_category; ?></div>
@@ -194,7 +194,7 @@ input.vq-css-checkbox + label.vq-css-label {
                     </div>
                     <?php }else{ ?>
                       <div class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
-                        <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img article-blue-light">
+                        <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img <?php if($the_category=="Jobs"){ echo 'article-red'; }else{ echo 'article-blue-light'; } ?>">
                           <?php echo $article_img_div; ?>
                           <div class="article">
                             <div class="category"><?php echo $the_category; ?></div>

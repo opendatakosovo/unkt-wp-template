@@ -19,21 +19,14 @@ $(document).ready(function() {
     load_posts(ppp, cat, pageNumber, grid, post_type, filter);
 	});
 
-  $(document).on("click",".filter-posts",function(){ // When btn is pressed.
+  $(".filter-posts").click(function(){ // When btn is pressed.
     $(".filter-posts").attr("disabled",true); // Disable the button, temp.
     // $("#ajax-more-posts").empty();
     var ppp = 8;
-    var cat = $(".filter-posts").data('category');
+    var cat = $(this).data('category');
     var grid = 3;
     var post_type = $(".filter-posts").data('post-type');
-    var filter = "";
-    if($(".filter-posts").data('filter') !== undefined){
-      filter = $(".filter-posts").data('filter');
-    }else{
-      filter = "";
-    }
-
-
+    var filter = "feed";
 
     pageNumber++;
     load_posts(ppp, cat, pageNumber, grid, post_type, filter);
