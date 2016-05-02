@@ -160,7 +160,7 @@ function more_post_ajax(){
 		$cat = (isset($_POST['cat'])) ? $_POST['cat'] : '';
     $grid = (isset($_POST['grid'])) ? $_POST['grid'] : '';
     $filterTag = (isset($_POST['filter'])) ? $_POST['filter'] : '';
-    $post_type = (isset($_POST['page_name'])) ? $_POST['post_type'] : 'post';
+    $post_type = (isset($_POST['post_type'])) ? $_POST['post_type'] : 'post';
 		$slider_id = get_category_by_slug( "slider" );
     $is_first_load = 0;
     $excluded_categories = array(0, $slider_id->cat_ID);
@@ -202,7 +202,7 @@ function more_post_ajax(){
 					$article_bck_color = 'article-red';
 				}else{
 					$article_bck_color = 'article-blue-light';
-					bm_ignorePost($post->ID);
+					// bm_ignorePost($post->ID);
 				}
       if($outside_link == ""){
         $out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
@@ -246,12 +246,16 @@ function build_load_more_query($ppp, $page, $categories, $excluded_categories, $
       )
     );
   }
-
+	if($post_type!=""){
+	 $post_type_array =	array('post','ecwd_event');
+	}else{
+	 $post_type_array =	array('post');
+	}
   $args = array(
       'suppress_filters' => true,
-      'post_type' => array('post','ecwd_event'),
+      'post_type' => $post_type_array,
       'posts_per_page' => $ppp,
-			'offset'=>$posts_per_page,
+			// 'offset'=>$posts_per_page,
       'paged'    => $page,
       'cat' => $categories,
       'category__not_in' => $excluded_categories,

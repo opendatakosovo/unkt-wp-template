@@ -9104,3 +9104,28 @@ img.wpvq-question-img{
 .ecwd_calendar .filter-container {
     width: 100% !important;
   }
+  .tabs-menu {
+      padding-top: 65px;
+      /* padding-bottom: 65px; */
+      text-align: center;
+  }
+  .tabs-menu ul li a {
+    position: relative;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+}
+.tabs-menu ul li {
+    display: inline-block;
+    margin: 0 9px;
+    font-size: 18px;
+    line-height: 44px;
+    letter-spacing: .06px;
+}
+.load-more-home {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: .06px;
+}

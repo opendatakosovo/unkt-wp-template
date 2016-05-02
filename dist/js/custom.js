@@ -4,6 +4,7 @@ $(document).ready(function() {
   var pageNumber = 1;
   // Load more on click
 	$(document).on("click",".load-more",function(){ // When btn is pressed.
+
     $(".load-more").attr("disabled",true); // Disable the button, temp.
     var ppp = $(".load-more").data('posts-per-page');
     var cat = $(".load-more").data('category');
@@ -15,30 +16,28 @@ $(document).ready(function() {
     }else{
       filter = "";
     }
+    container_name = "";
     pageNumber++;
-    load_posts(ppp, cat, pageNumber, grid, post_type, filter);
+    load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_name);
 	});
 
-  $(".filter-posts").click(function(){ // When btn is pressed.
-    $(".filter-posts").attr("disabled",true); // Disable the button, temp.
-    $("#ajax-more-posts").empty();
-
-
-    // $('.article-container').empty();
-    var ppp = 8;
+  $(".load-more-home").click(function(){ // When btn is pressed.
+    $(this).attr("disabled",true); // Disable the button, temp.
+    var container_name = $(this).parent().children().attr("id");
+    var ppp = $(this).data('posts-per-page');
     var cat = $(this).data('category');
-    var grid = 3;
+    var grid = $(this).data('grid');;
     var post_type = $(".filter-posts").data('post-type');
     var filter = "feed";
-
+    console.log("Loading home filtered articles...")
     pageNumber++;
-    load_posts(ppp, cat, pageNumber, grid, post_type, filter);
+    load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_name);
 	});
-  $(".filter-posts").click(function(){
-    console.log($(this).data('category'));
-      $(".load-more").data("category",$(this).data('category'));
-      $(".load-more").attr('data-category',$(this).data('category'));
-  })
+  // $(".filter-posts").click(function(){
+  //   console.log($(this).data('category'));
+  //     $(".load-more").data("category",$(this).data('category'));
+  //     $(".load-more").attr('data-category',$(this).data('category'));
+  // })
 
   // execute above function
   initPhotoSwipeFromDOM('.my-gallery');
@@ -85,7 +84,7 @@ function buildSubscribeForm(){
 
 
 }
-function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
+function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_name){
     var str = '&cat=' + cat + '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax'+'&grid=' + grid+'&post_type=' + post_type +'&filter=' + filter;
     $.ajax({
         type: "POST",
@@ -102,18 +101,24 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter){
 
             }
             if($posts.length!==0){
-
+              if(container_name==undefined && container_name == ""){
                 $(".article-container").append( $posts )
                 .isotope( 'appended', $posts );
-
+              }else{
+                console.log(container_name);
+                $("#"+container_name).append( $posts );
+              }
 
             } else{
+                console.log("No more posts in this filter.")
                 $(".load-more").text("No more posts available");
+                $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
             }
         },
         error : function(jqXHR, textStatus, errorThrown) {
             $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
             $(".load-more").text("No more posts available");
+              $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
         }
 
     });
