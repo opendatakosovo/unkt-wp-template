@@ -101,12 +101,11 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
 
             }
             if($posts.length!==0){
-              if(container_name==undefined && container_name == ""){
+              if(container_name!==undefined && container_name != ""){
+                $("#"+container_name).append( $posts );
+              }else{
                 $(".article-container").append( $posts )
                 .isotope( 'appended', $posts );
-              }else{
-                console.log(container_name);
-                $("#"+container_name).append( $posts );
               }
 
             } else{
