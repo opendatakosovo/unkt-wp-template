@@ -174,13 +174,16 @@ input.vq-css-checkbox + label.vq-css-label {
                         $terms = get_the_terms(strval( $post->ID ),'ecwd_event_category');
                         $event_categories = wp_get_post_terms($post->ID, 'ecwd_event_category','');
                       }
-
+                      $article_img_div = "";
+                      if($featured_image_url!=""){
+              				 $article_img_div='	<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>';
+              				}
 
                     ?>
                     <?php if($outside_link == ""){ ?>
                     <div class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
-                      <a href="<?php  the_permalink(); ?>" class="article-full-img">
-                        <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
+                      <a href="<?php  the_permalink(); ?>" class="article-full-img article-blue-light">
+                        <?php echo $article_img_div; ?>
                         <div class="article">
                           <div class="category"><?php echo $the_category; ?></div>
                           <div class="date"><?php echo get_the_date('j M Y');?></div>
@@ -191,8 +194,8 @@ input.vq-css-checkbox + label.vq-css-label {
                     </div>
                     <?php }else{ ?>
                       <div class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
-                        <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img">
-                          <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
+                        <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img article-blue-light">
+                          <?php echo $article_img_div; ?>
                           <div class="article">
                             <div class="category"><?php echo $the_category; ?></div>
                             <div class="date"><?php echo get_the_date('j M Y');?></div>
