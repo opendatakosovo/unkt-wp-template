@@ -9,7 +9,10 @@
             $args = array(
                   'post_type' => 'post',
                   'posts_per_page' => 5,
-                  'cat'=>$cat_id
+                  'cat'=>$cat_id,
+                  'post_status' => 'publish',
+                  'orderby' => 'date',
+                  'order' => 'DESC'
             );
             $loop = new WP_Query($args);
             while ($loop->have_posts()) : $loop->the_post();
@@ -52,7 +55,7 @@
                 <?php
                     $categories = get_category_by_slug('gallery');
                     $cat_id = $categories->term_id;
-                    $postsPerPage = 4;
+                    $postsPerPage = 8;
                     $args = array(
                             'post_type' => 'post',
                             'posts_per_page' => $postsPerPage,

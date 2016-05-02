@@ -243,7 +243,10 @@ function build_load_more_query($ppp, $page, $categories, $excluded_categories, $
       'paged'    => $page,
       'cat' => $categories,
       'category__not_in' => $excluded_categories,
-      'meta_query' => $metaQuery
+      'meta_query' => $metaQuery,
+			'post_status' => 'publish',
+			'orderby' => 'date',
+			'order' => 'ASC'
   );
   // echo var_dump($category_in);
   return $args;

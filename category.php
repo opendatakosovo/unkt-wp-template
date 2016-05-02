@@ -32,12 +32,15 @@
              $taxonomy = 'category';//  e.g. post_tag, category
              $param_type = 'category__in'; //  e.g. tag__in, category__in
 
-             $postsPerPage = 9;
+             $postsPerPage = 8;
 
              $args = array(
                      'post_type' => 'post',
                      'posts_per_page' => $postsPerPage,
-                     'cat'=>$query_by_cats
+                     'cat'=>$query_by_cats,
+                     'post_status' => 'publish',
+                     'orderby' => 'date',
+                     'order' => 'DESC'
              );
 
              $loop = new WP_Query($args);

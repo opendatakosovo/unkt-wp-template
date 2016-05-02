@@ -110,25 +110,25 @@ input.vq-css-checkbox + label.vq-css-label {
   							<a class="filter-posts" href="#" data-filter=".news">News</a>
   						</li>
               <li>
-  							<a class="filter-posts" data-category="<?php get_category_by_slug('.events');?>" data-filter=".events">Events</a>
+  							<a class="filter-posts" data-category="<?php echo get_category_by_slug('ecwd_event');?>" href="#" data-filter=".events">Events</a>
   						</li>
               <li>
-  							<a class="filter-posts" data-category="<?php get_category_by_slug('.blogs');?>" href="#" data-filter=".blogs">Blogs</a>
+  							<a class="filter-posts" data-category="<?php echo get_category_by_slug('blogs')->term_id;?>" href="#" data-filter=".blogs">Blogs</a>
   						</li>
   						<li>
-  							<a class="filter-posts" data-category="<?php get_category_by_slug('.gallery');?>" href="#" data-filter=".gallery">Galleries</a>
+  							<a class="filter-posts" data-category="<?php echo get_category_by_slug('gallery')->term_id;?>" href="#" data-filter=".gallery">Galleries</a>
   						</li>
   						<li>
-  							<a class="filter-posts" data-category="<?php get_category_by_slug('.community-contributions');?>" href="#" data-filter=".community-contributions">Community Contributions</a>
+  							<a class="filter-posts" data-category="<?php echo get_category_by_slug('community-contributions')->term_id;?>" href="#" data-filter=".community-contributions">Community Contributions</a>
   						</li>
   						<li>
-  							<a class="filter-posts" data-category="<?php get_category_by_slug('.publications');?>" href="#" data-filter=".publications">Publications</a>
+  							<a class="filter-posts" data-category="<?php echo get_category_by_slug('publications')->term_id;?>" href="#" data-filter=".publications">Publications</a>
   						</li>
   						<li>
-  							<a class="filter-posts" data-category="<?php get_category_by_slug('.jobs');?>" href="#" data-filter=".jobs">Jobs</a>
+  							<a class="filter-posts" data-category="<?php echo get_category_by_slug('jobs')->term_id;?>" href="#" data-filter=".jobs">Jobs</a>
   						</li>
               <li>
-  							<a class="filter-posts" data-category="<?php get_category_by_slug('.tenders');?>" href="#" data-filter=".tenders">Tenders</a>
+  							<a class="filter-posts" data-category="<?php echo get_category_by_slug('tenders')->term_id;?>" href="#" data-filter=".tenders">Tenders</a>
   						</li>
   					</ul>
   				</div>
@@ -141,6 +141,9 @@ input.vq-css-checkbox + label.vq-css-label {
                     $args = array(
                             'post_type' => array('post','ecwd_event'),
                             'posts_per_page' => $postsPerPage,
+                            'post_status' => 'publish',
+                            'orderby' => 'date',
+                            'order' => 'DESC',
                             'meta_query' => array(
                               array(
                                   'key' => 'post_visibility_value', // name of custom field
@@ -203,11 +206,11 @@ input.vq-css-checkbox + label.vq-css-label {
 
                 <?php endwhile;?>
           </div>
-          <?php if ( $loop->found_posts <= $postsPerPage ) : ?>
-            <div class="load-more col-xs-12 btn" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts avaliable</div>
+          <?php if ( $loop->found_posts < $postsPerPage ) : ?>
+            <div class="load-more col-xs-12 btn" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts avaliable</div>
 
            <?php else: ?>
-             <div class="load-more col-xs-12 btn" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
+             <div class="load-more col-xs-12 btn" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load <?php echo $loop->found_posts ?> more posts</div>
            <?php endif;
              wp_reset_postdata(); ?>
         </div>

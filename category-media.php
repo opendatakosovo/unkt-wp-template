@@ -44,7 +44,10 @@
         $term_args=array(
           'orderby' => 'name',
           'order' => 'ASC',
-          'child_of' => $cat_id
+          'child_of' => $cat_id,
+          'post_status' => 'publish',
+         'orderby' => 'date',
+         'order' => 'ASC'
         );
         $terms = get_terms($taxonomy,$term_args);
 
@@ -57,7 +60,7 @@
       <div class="article-container filterize">
 
         <?php
-        $postsPerPage = 9;
+        $postsPerPage = 8;
 
         $news_term = get_category_by_slug('news');
         $news_id = $news_term->term_id;
@@ -85,7 +88,10 @@
                 'post_type' => array('post'),
                 'posts_per_page' => $postsPerPage,
                 'cat'=>$cat_id,
-                'category__in'=>$in_category
+                'category__in'=>$in_category,
+                'post_status' => 'publish',
+                'orderby' => 'date',
+                'order' => 'DESC'
         );
 
         $loop = new WP_Query($args);
