@@ -213,7 +213,7 @@ input.vq-css-checkbox + label.vq-css-label {
             <div class="load-more col-xs-12 btn" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts avaliable</div>
 
            <?php else: ?>
-             <div class="load-more col-xs-12 btn" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load <?php echo $loop->found_posts ?> more posts</div>
+             <div class="load-more col-xs-12 btn" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
            <?php endif;
              wp_reset_postdata(); ?>
         </div>
