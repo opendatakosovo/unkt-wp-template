@@ -240,13 +240,14 @@ function build_load_more_query($ppp, $page, $categories, $excluded_categories, $
       'suppress_filters' => true,
       'post_type' => array('post','ecwd_event'),
       'posts_per_page' => $ppp,
+			'offset'=>$posts_per_page,
       'paged'    => $page,
       'cat' => $categories,
       'category__not_in' => $excluded_categories,
       'meta_query' => $metaQuery,
 			'post_status' => 'publish',
 			'orderby' => 'date',
-			'order' => 'ASC'
+			'order' => 'DESC'
   );
   // echo var_dump($category_in);
   return $args;
