@@ -9091,13 +9091,8 @@ img.wpvq-question-img{
   	}
 .posterboard_fixed_height { max-height: none !important; }
 .ecwd_calendar .filter-container li {
-    position: relative;
-    left: 0;
-    width: 7%!important;
-    margin: 0 !important;
-    display: block;
-    float: left;
-    width: 7%!important;
+
+    width: 6.433333%!important;
 }
 #ecwd_back_link{
   display:none;
