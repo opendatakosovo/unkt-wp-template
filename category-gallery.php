@@ -82,7 +82,7 @@
 
            </div>
          </div>
-          <div class="load-more col-xs-12  btn" data-grid="3" data-category="<?php echo $cat_id; ?>">Load more content</div>
+          <div class="load-more col-xs-12  btn" data-posts-per-page="<?php echo $postsPerPage; ?>" data-grid="3" data-category="<?php echo $cat_id; ?>">Load more content</div>
   	</div>
 	</div>
 

@@ -192,10 +192,14 @@ function more_post_ajax(){
 					$the_category_slug = 'events';
 					$the_category = 'Events';
 				}
+				$article_img_div = "";
+				if($featured_image_url!=""){
+				 $article_img_div='	<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>';
+				}
+
       if($outside_link == ""){
         $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
-                <a href="'.get_permalink().'" class="article-full-img">
-                <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
+                <a href="'.get_permalink().'" class="article-full-img article-blue-light">'.$article_img_div.'
                   <div class="article">
                     <div class="category">'.$the_category.'</div>
                     <div class="date">'.get_the_date().'</div>
@@ -206,7 +210,7 @@ function more_post_ajax(){
          </div>';
       }else{
         $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
-                <a href="'.$outside_link.'" target="_blank" class="article-full-img">
+                <a href="'.$outside_link.'" target="_blank" class="article-full-img article-blue-light">
                 <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
                   <div class="article">
                     <div class="category">'.$the_category.'</div>
