@@ -65,7 +65,7 @@
                     while ($loop->have_posts()) : $loop->the_post();
                     $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
                 ?>
-                <div class="col-xs-12 col-lg-3 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
+                <div id="<?php echo $post->ID ?>" class="col-xs-12 col-lg-3 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
                   <a href="<?php  the_permalink(); ?>" class="article-full-img">
                     <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
                     <div class="article">

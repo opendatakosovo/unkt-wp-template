@@ -21,7 +21,10 @@ $(document).ready(function() {
 
   $(".filter-posts").click(function(){ // When btn is pressed.
     $(".filter-posts").attr("disabled",true); // Disable the button, temp.
-    // $("#ajax-more-posts").empty();
+    $("#ajax-more-posts").empty();
+
+
+    // $('.article-container').empty();
     var ppp = 8;
     var cat = $(this).data('category');
     var grid = 3;

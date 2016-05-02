@@ -110,7 +110,7 @@ input.vq-css-checkbox + label.vq-css-label {
   							<a class="filter-posts" href="#" data-filter=".news">News</a>
   						</li>
               <li>
-  							<a class="filter-posts" data-category="<?php echo get_category_by_slug('ecwd_event');?>" href="#" data-filter=".events">Events</a>
+  							<a class="filter-posts" data-category="<?php echo get_category_by_slug('ecwd_event')->term_id;;?>" href="#" data-filter=".events">Events</a>
   						</li>
               <li>
   							<a class="filter-posts" data-category="<?php echo get_category_by_slug('blogs')->term_id;?>" href="#" data-filter=".blogs">Blogs</a>
@@ -178,10 +178,10 @@ input.vq-css-checkbox + label.vq-css-label {
                       if($featured_image_url!=""){
               				 $article_img_div='	<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>';
               				}
-
+                      bm_ignorePost($post->ID);
                     ?>
                     <?php if($outside_link == ""){ ?>
-                    <div class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
+                    <div id="<?php echo $post->ID ?>" class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
                       <a href="<?php  the_permalink(); ?>" class="article-full-img <?php if($the_category=="Jobs"){ echo 'article-red'; }else{ echo 'article-blue-light'; } ?>">
                         <?php echo $article_img_div; ?>
                         <div class="article">
@@ -193,7 +193,7 @@ input.vq-css-checkbox + label.vq-css-label {
                       </a>
                     </div>
                     <?php }else{ ?>
-                      <div class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
+                      <div id="<?php echo $post->ID ?>" class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
                         <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img <?php if($the_category=="Jobs"){ echo 'article-red'; }else{ echo 'article-blue-light'; } ?>">
                           <?php echo $article_img_div; ?>
                           <div class="article">
@@ -210,10 +210,10 @@ input.vq-css-checkbox + label.vq-css-label {
                 <?php endwhile;?>
           </div>
           <?php if ( $loop->found_posts < $postsPerPage ) : ?>
-            <div class="load-more col-xs-12 btn" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts avaliable</div>
+            <div class="load-more col-xs-12 btn" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts avaliable</div>
 
            <?php else: ?>
-             <div class="load-more col-xs-12 btn" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
+             <div class="load-more col-xs-12 btn" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
            <?php endif;
              wp_reset_postdata(); ?>
         </div>

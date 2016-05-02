@@ -99,7 +99,7 @@
         $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
         $outside_link =get_field('external_source_link'); ?>
         <?php if($outside_link == ""){ ?>
-        <div class="col-xs-12 col-lg-3 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
+        <div id="<?php echo $post->ID ?>" class="col-xs-12 col-lg-3 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
           <a href="<?php  the_permalink(); ?>" class="article-full-img">
             <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
             <div class="article">
@@ -111,7 +111,7 @@
           </a>
         </div>
         <?php }else{ ?>
-          <div class="col-xs-12 col-lg-3 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
+          <div id="<?php echo $post->ID ?>" class="col-xs-12 col-lg-3 item <?php foreach(get_the_category() as $category) { echo $category->slug . '';} ?>">
             <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img">
               <div class="article-img" style="background-image: url('<?php echo $featured_image_url ?>')"></div>
               <div class="article">

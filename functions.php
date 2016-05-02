@@ -202,9 +202,10 @@ function more_post_ajax(){
 					$article_bck_color = 'article-red';
 				}else{
 					$article_bck_color = 'article-blue-light';
+					bm_ignorePost($post->ID);
 				}
       if($outside_link == ""){
-        $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
+        $out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
                 <a href="'.get_permalink().'" class="article-full-img '.$article_bck_color.'">'.$article_img_div.'
                   <div class="article">
                     <div class="category">'.$the_category.'</div>
@@ -215,7 +216,7 @@ function more_post_ajax(){
                 </a>
          </div>';
       }else{
-        $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
+        $out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
                 <a href="'.$outside_link.'" target="_blank" class="article-full-img'.$article_bck_color.'">
                 <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
                   <div class="article">
@@ -284,3 +285,36 @@ add_image_size( 'admin-list-thumb', 80, 80, true); //admin thumbnail preview
 add_image_size( 'album-grid', 450, 450, true );
 
 flush_rewrite_rules();
+
+$bmIgnorePosts = array();
+
+/**
+ * add a post id to the ignore list for future query_posts
+ */
+function bm_ignorePost ($id) {
+	if (!is_page()) {
+		global $bmIgnorePosts;
+		$bmIgnorePosts[] = $id;
+	}
+}
+
+/**
+ * reset the ignore list
+ */
+function bm_ignorePostReset () {
+	global $bmIgnorePosts;
+	$bmIgnorePosts = array();
+}
+
+/**
+ * remove the posts from query_posts
+ */
+function bm_postStrip ($where) {
+	global $bmIgnorePosts, $wpdb;
+	if (count($bmIgnorePosts) > 0) {
+		$where .= ' AND ' . $wpdb->posts . '.ID NOT IN(' . implode (',', $bmIgnorePosts) . ') ';
+	}
+	return $where;
+}
+
+add_filter ('posts_where', 'bm_postStrip');
