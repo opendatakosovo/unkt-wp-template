@@ -26,7 +26,7 @@ $(document).ready(function() {
     var container_name = $(this).parent().children().attr("id");
     var ppp = $(this).data('posts-per-page');
     var cat = $(this).data('category');
-    var grid = $(this).data('grid');;
+    var grid = $(this).data('grid');
     var post_type = $(".filter-posts").data('post-type');
     var filter = "feed";
     console.log("Loading home filtered articles...")

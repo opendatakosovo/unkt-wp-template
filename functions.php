@@ -246,8 +246,8 @@ function build_load_more_query($ppp, $page, $categories, $excluded_categories, $
       )
     );
   }
-	if($post_type!=""){
-	 $post_type_array =	array('post','ecwd_event');
+	if($post_type=="ecwd_event"){
+	 $post_type_array =	array('ecwd_event');
 	}else{
 	 $post_type_array =	array('post');
 	}
