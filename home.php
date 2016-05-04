@@ -156,7 +156,7 @@ input.vq-css-checkbox + label.vq-css-label {
       <div class="container">
         <div class="row">
           <div class="tabs-menu" id="tabs">
-            <ul>
+            <ul style="text-align: center;">
               <li>
                 SORT VIEW:
               </li>

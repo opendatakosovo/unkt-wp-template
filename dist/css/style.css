@@ -9103,7 +9103,8 @@ img.wpvq-question-img{
   .tabs-menu {
       padding-top: 65px;
       /* padding-bottom: 65px; */
-      text-align: center;
+      /*text-align: center;*/
+      margin-left:30px;
   }
   .tabs-menu ul li a {
     position: relative;
