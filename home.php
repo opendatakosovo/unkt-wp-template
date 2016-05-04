@@ -413,10 +413,10 @@ input.vq-css-checkbox + label.vq-css-label {
                     <?php endwhile; ?>
                   </div>
                   <?php if ( $loop->found_posts <= $postsPerPage  && $loop->found_posts == 0) : ?>
-                      <div class="load-more-home col-xs-12 btn" data-category="<?php echo $blogs_category; ?>" data-grid="3" data-post-type="ecwd_event" data-posts-per-page="8">No more posts avaliable</div>
+                      <div class="load-more-home col-xs-12 btn" data-category="" data-grid="3" data-post-type="ecwd_event" data-posts-per-page="8">No more posts avaliable</div>
 
                       <?php else: ?>
-                      <div class="load-more-home col-xs-12 col-lg-12 btn" data-category="<?php echo $blogs_category; ?>" data-grid="3" data-post-type="ecwd_event"  data-page-name="home" data-posts-per-page="8">Load more posts</div>
+                      <div class="load-more-home col-xs-12 col-lg-12 btn" data-category="" data-grid="3" data-post-type="ecwd_event"  data-page-name="home" data-posts-per-page="8">Load more posts</div>
                    <?php endif;
                   wp_reset_postdata(); ?>
               </div>

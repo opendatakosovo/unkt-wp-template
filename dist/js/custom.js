@@ -27,7 +27,7 @@ $(document).ready(function() {
     var ppp = $(this).data('posts-per-page');
     var cat = $(this).data('category');
     var grid = $(this).data('grid');
-    var post_type = $(".filter-posts").data('post-type');
+    var post_type = $(this).data('post-type');
     var filter = "feed";
     console.log("Loading home filtered articles...")
     pageNumber++;
