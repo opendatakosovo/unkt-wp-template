@@ -9126,3 +9126,9 @@ img.wpvq-question-img{
     text-align: center;
     letter-spacing: .06px;
 }
+[disabled="disabled"] {
+    pointer-events: none;
+}
+[disabled="disabled"]:after {
+  content: 'NO MORE POSTS AVALIABLE;
+}

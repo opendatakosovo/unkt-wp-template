@@ -5,7 +5,7 @@ $(document).ready(function() {
   // Load more on click
 	$(document).on("click",".load-more",function(){ // When btn is pressed.
 
-    $(".load-more").attr("disabled",true); // Disable the button, temp.
+
     var ppp = $(".load-more").data('posts-per-page');
     var cat = $(".load-more").data('category');
     var grid = $(".load-more").data('grid');
@@ -22,18 +22,32 @@ $(document).ready(function() {
 	});
 
   $(".load-more-home").click(function(){ // When btn is pressed.
-    $(this).attr("disabled",true); // Disable the button, temp.
+    // $(this).attr("disabled",true); // Disable the button, temp.
     var container_name = $(this).parent().children().attr("id");
     var ppp = $(this).data('posts-per-page');
     var cat = $(this).data('category');
     var grid = $(this).data('grid');
     var post_type = $(this).data('post-type');
     var filter = "feed";
-    console.log("Loading home filtered articles...");
+    // console.log("Loading home filtered articles...");
     var page_name = $(this).data('page-name');
     pageNumber++;
     load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_name, page_name);
 	});
+  // $(".tabs-menu").click(function(){
+  //   // document.cookie = 'visited=1;expires=' + expiration + ';path=/';
+  //   var xmlhttp = getXmlHttp();
+  //   var xmlhttp = new XMLHttpRequest();
+  //   xmlhttp.open('GET','./wp-content/themes/unkt-wp-template/destroy_session.php', true);
+  //   xmlhttp.onreadystatechange=function(){
+  //      if (xmlhttp.readyState == 4){
+  //         if(xmlhttp.status == 200){
+  //           //  alert(xmlhttp.responseText);
+  //        }
+  //      }
+  //   };
+  //   xmlhttp.send(null);
+  // });
   // $(".filter-posts").click(function(){
   //   console.log($(this).data('category'));
   //     $(".load-more").data("category",$(this).data('category'));
@@ -113,10 +127,17 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
                   $(".article-container").append( $posts )
                   .isotope( 'appended', $posts );
                 }
+                if($posts.length<=ppp){
+                  $(".load-more").text("No more posts available");
+                  $(".load-more").attr("disabled",true); // Disable the button, temp.
+                  $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
+
+                }
 
               } else{
                   console.log("No more posts in this filter.")
                   $(".load-more").text("No more posts available");
+                  $(".load-more").attr("disabled",true); // Disable the button, temp.
                   $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
               }
             }
@@ -125,7 +146,8 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
         error : function(jqXHR, textStatus, errorThrown) {
             $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
             $(".load-more").text("No more posts available");
-              $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
+            $(".load-more").attr("disabled",true); // Disable the button, temp.
+            $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
         }
 
     });
@@ -334,3 +356,40 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
     }
 };
+function getXmlHttp() {
+           var x = false;
+           try {
+              x = new XMLHttpRequest();
+           }catch(e) {
+             try {
+                x = new ActiveXObject("Microsoft.XMLHTTP");
+             }catch(ex) {
+                try {
+                    req = new ActiveXObject("Msxml2.XMLHTTP");
+                }
+                catch(e1) {
+                    x = false;
+                }
+             }
+          }
+          return x;
+        }
+
+        function getState(countryId){
+          var strURL="findState.php?country="+countryId;
+          var req = getXMLHTTP();
+
+          if (req){
+            req.onreadystatechange = function(){
+              if (req.readyState == 4){
+                if (req.status == 200){
+                  document.getElementById('statediv').innerHTML=req.responseText;
+                } else {
+                  alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+                }
+              }
+            }
+            req.open("GET", strURL, true);
+            req.send(null);
+           }
+        }
