@@ -375,7 +375,7 @@ function build_load_more_query($ppp, $page, $categories, $excluded_categories, $
       'suppress_filters' => true,
       'post_type' => $post_type_array,
       'posts_per_page' => $ppp,
-			'offset'=>$offset,
+			// 'offset'=>$offset,
       'paged'    => $page,
       'cat' => $categories,
       'category__not_in' => $excluded_categories,
