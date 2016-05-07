@@ -728,10 +728,10 @@ input.vq-css-checkbox + label.vq-css-label {
                   <?php endif; ?>
                   </div>
                   <?php if ( $loop->found_posts <= $postsPerPage ) : ?>
-                      <div class="load-more-home col-xs-12 btn" data-category="<?php echo $publications_category; ?>" data-grid="3" data-page-name="publications" data-posts-per-page="8">No more posts avaliable</div>
+                      <div class="load-more-home col-xs-12 btn" data-category="<?php echo $publications_category; ?>" data-grid="3" data-page-name="home" data-posts-per-page="8">No more posts avaliable</div>
 
                       <?php else: ?>
-                      <div class="load-more-home col-xs-12 col-lg-12 btn" data-category="<?php echo $publications_category; ?>" data-grid="3" data-page-name="publications" data-posts-per-page="8">Load more posts</div>
+                      <div class="load-more-home col-xs-12 col-lg-12 btn" data-category="<?php echo $publications_category; ?>" data-grid="3" data-page-name="home" data-posts-per-page="8">Load more posts</div>
                    <?php endif;
                   wp_reset_postdata(); ?>
               </div>
