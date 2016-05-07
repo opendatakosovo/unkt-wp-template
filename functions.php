@@ -247,7 +247,7 @@ function return_ajax_posts($ppp,$page,$cat,$grid,$filterTag,$post_type,$slider_i
 											<a href="'.$outside_link.'" target="_blank" class="article-full-img'.$article_bck_color.'">
 											<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
 												<div class="article">
-													<div class="category">'. $_SESSION['offset'].'</div>
+													<div class="category">'.$the_category.'</div>
 													<div class="date">'.get_the_date().'</div>
 													<h3>'.get_the_title().'</h3>
 													<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
@@ -272,54 +272,75 @@ function return_ajax_posts_categories($ppp,$page,$cat,$grid,$filterTag,$post_typ
     $offset = 0;
     header("Content-Type: text/html");
     $args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, $offset, $filterTag);
-    $loop = new WP_Query($args);
-    $numberOfPosts = $loop->post_count;
-    $out = '';
-    if ($loop -> have_posts()) :  while ($loop -> have_posts()) : $loop -> the_post();
-      $category = get_the_category();
-      $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-      $outside_link =get_field('external_source_link');
-			$the_category_slug = "";
-			$the_category = "";
-				if(get_post_type()=="post"){
-					foreach(get_the_category() as $category) {
-						$the_category_slug = $category->slug . '';
-						$the_category = $category->cat_name . '';
-					}
-				}
-				else {
-					$the_category_slug = 'events';
-					$the_category = 'Events';
-				}
-      if($outside_link == ""){
-        $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
-                <a href="'.get_permalink().'" class="article-full-img">
-                <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
-                  <div class="article">
-                    <div class="category">'.$the_category.'</div>
-                    <div class="date">'.get_the_date().'</div>
-                    <h3>'.get_the_title().'</h3>
-                    <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
-                  </div>
-                </a>
-         </div>';
-      }else{
-        $out .= '<div class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
-                <a href="'.$outside_link.'" target="_blank" class="article-full-img">
-                <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
-                  <div class="article">
-                    <div class="category">'.$the_category.'</div>
-                    <div class="date">'.get_the_date().'</div>
-                    <h3>'.get_the_title().'</h3>
-                    <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
-                  </div>
-                </a>
-         </div>';
-      }
-    endwhile;
-    endif;
-    wp_reset_postdata();
-    die($out);
+    $the_query = new WP_Query($args);
+
+		$out = '';
+
+		if ( $the_query->have_posts()) :
+
+					while ( $the_query->have_posts() ) : $the_query->the_post();
+
+							$category = get_the_category();
+							$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+							$outside_link =get_field('external_source_link');
+							$the_category_slug = "";
+							$the_category = "";
+
+								if(get_post_type()=="post"){
+									foreach(get_the_category() as $category) {
+										$the_category_slug = $category->slug . '';
+										$the_category = $category->cat_name . '';
+									}
+								}
+								else {
+									$the_category_slug = 'events';
+									$the_category = 'Events';
+								}
+								$article_img_div = "";
+								if($featured_image_url!=""){
+								 $article_img_div='	<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>';
+								}
+
+								$article_bck_color="";
+								if($the_category=="Jobs"){
+									$article_bck_color = 'article-red';
+								}else{
+									$article_bck_color = 'article-blue-light';
+									// bm_ignorePost($post->ID);
+								}
+							if($outside_link == ""){
+								$out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
+												<a href="'.get_permalink().'" class="article-full-img '.$article_bck_color.'">'.$article_img_div.'
+													<div class="article">
+														<div class="category">'.$the_category.'</div>
+														<div class="date">'.get_the_date().'</div>
+														<h3>'.get_the_title().'</h3>
+														<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+													</div>
+												</a>
+								 </div>';
+							}else{
+								$out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
+												<a href="'.$outside_link.'" target="_blank" class="article-full-img'.$article_bck_color.'">
+												<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
+													<div class="article">
+														<div class="category">'.$the_category.'</div>
+														<div class="date">'.get_the_date().'</div>
+														<h3>'.get_the_title().'</h3>
+														<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+													</div>
+												</a>
+								 </div>';
+							}
+							$do_not_duplicate[] = $post->ID;
+			     endwhile;
+					 wp_reset_postdata();
+			 else:
+				 unset($_SESSION['offset']);
+			   die("NULL");
+
+			 endif;
+		die($out);
 }
 
 // Returns the array of properties to query for posts when we click Load More
