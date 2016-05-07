@@ -152,88 +152,196 @@ function wpbeginner_numeric_posts_nav() {
 
 }
 
+$load_more_category = array();
+
 // LOAD MORE postsPerPage
 function more_post_ajax(){
 
-    $ppp = (isset($_POST["ppp"])) ? $_POST["ppp"] : 6;
-    $page = (isset($_POST['pageNumber'])) ? $_POST['pageNumber'] : 0;
+
+		$page_name = (isset($_POST['page_name'])) ? $_POST['page_name'] : 'page';
+		$ppp = (isset($_POST["ppp"])) ? $_POST["ppp"] : 8;
+		$page = (isset($_POST['pageNumber'])) ? $_POST['pageNumber'] : 0;
 		$cat = (isset($_POST['cat'])) ? $_POST['cat'] : '';
-    $grid = (isset($_POST['grid'])) ? $_POST['grid'] : '';
-    $filterTag = (isset($_POST['filter'])) ? $_POST['filter'] : '';
-    $post_type = (isset($_POST['post_type'])) ? $_POST['post_type'] : 'post';
+		$grid = (isset($_POST['grid'])) ? $_POST['grid'] : '';
+		$filterTag = (isset($_POST['filter'])) ? $_POST['filter'] : '';
+		$post_type = (isset($_POST['post_type'])) ? $_POST['post_type'] : 'post';
+		$page_name = (isset($_POST['page_name'])) ? $_POST['page_name'] : 'page';
 		$slider_id = get_category_by_slug( "slider" );
-    $is_first_load = 0;
-    $excluded_categories = array(0, $slider_id->cat_ID);
-    $offset = 0;
 
-    header("Content-Type: text/html");
-
-    $args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, $offset, $filterTag);
-
+		if($page_name=="publications"){
+			get_publications_home($page_name,$ppp,$page,$cat,$grid,$filterTag,$post_type,$page_name,$slider_id);
+		}else{
+			return_ajax_posts($page_name,$ppp,$page,$cat,$grid,$filterTag,$post_type,$page_name,$slider_id);
+		}
 
 
-    $loop = new WP_Query($args);
-    $numberOfPosts = $loop->post_count;
-    $out = '';
-    if ($loop -> have_posts()) :  while ($loop -> have_posts()) : $loop -> the_post();
-      $category = get_the_category();
-      $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-      $outside_link =get_field('external_source_link');
-			$the_category_slug = "";
-			$the_category = "";
+}
+$numberOfFoundPosts = 0;
+function get_publications_home($page_name,$ppp,$page,$cat,$grid,$filterTag,$post_type,$page_name,$slider_id){
+	header("Content-Type: text/html");
+	session_start();
 
-				if(get_post_type()=="post"){
-					foreach(get_the_category() as $category) {
-						$the_category_slug = $category->slug . '';
-						$the_category = $category->cat_name . '';
-					}
+	$_SESSION['offset'] = ((isset($_SESSION['offset'])) ? $_SESSION['offset'] : 0);
+
+
+	if($_SESSION['offset'] == 0){
+		$_SESSION['offset'] = $ppp;
+		$args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, $_SESSION['offset'], $filterTag);
+		$the_query = new WP_Query($args);
+		$numberOfFoundPosts = $the_query ->found_posts;
+	}
+	else{
+		$_SESSION['offset'] = $_SESSION['offset'] + $ppp;
+		$args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, $_SESSION['offset'], $filterTag);
+		$the_query = new WP_Query($args);
+	}
+
+	// $offset = $numberOfFoundPosts;
+
+	$out = '';
+
+	if ( $the_query->have_posts()) :
+
+				while ( $the_query->have_posts() ) : $the_query->the_post();
+
+						$category = get_the_category();
+						$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+						$outside_link =get_field('external_source_link');
+						$the_category_slug = "";
+						$the_category = "";
+
+							if(get_post_type()=="post"){
+								foreach(get_the_category() as $category) {
+									$the_category_slug = $category->slug . '';
+									$the_category = $category->cat_name . '';
+								}
+							}
+							else {
+								$the_category_slug = 'events';
+								$the_category = 'Events';
+							}
+							$article_img_div = "";
+							if($featured_image_url!=""){
+							 $article_img_div='	<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>';
+							}
+
+							$article_bck_color="";
+							if($the_category=="Jobs"){
+								$article_bck_color = 'article-red';
+							}else{
+								$article_bck_color = 'article-blue-light';
+								// bm_ignorePost($post->ID);
+							}
+						if($outside_link == ""){
+							$out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
+											<a href="'.get_permalink().'" class="article-full-img '.$article_bck_color.'">'.$article_img_div.'
+												<div class="article">
+													<div class="category">'.$the_category.'</div>
+													<div class="date">'.get_the_date().'</div>
+													<h3>'.get_the_title().'</h3>
+													<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+												</div>
+											</a>
+							 </div>';
+						}else{
+							$out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
+											<a href="'.$outside_link.'" target="_blank" class="article-full-img'.$article_bck_color.'">
+											<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
+												<div class="article">
+													<div class="category">'. $_SESSION['offset'].'</div>
+													<div class="date">'.get_the_date().'</div>
+													<h3>'.get_the_title().'</h3>
+													<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+												</div>
+											</a>
+							 </div>';
+						}
+						$do_not_duplicate[] = $post->ID;
+		     endwhile;
+				 wp_reset_postdata();
+		 else:
+			 unset($_SESSION['offset']);
+		   die("NULL");
+
+		 endif;
+	die($out);
+}
+
+function return_ajax_posts($page_name,$ppp,$page,$cat,$grid,$filterTag,$post_type,$page_name,$slider_id){
+
+	if($is_first_load){
+		 $offset = $ppp;
+		 $is_first_load = 1;
+	 }else{
+		 $offset = $offset + $ppp;
+ 	}
+	header("Content-Type: text/html");
+
+	$args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, $offset, $filterTag);
+	$loop = new WP_Query($args);
+	$numberOfPosts = $loop->post_count;
+	$out = '';
+	if ($loop -> have_posts()) :  while ($loop -> have_posts()) : $loop -> the_post();
+		$category = get_the_category();
+		$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		$outside_link =get_field('external_source_link');
+		$the_category_slug = "";
+		$the_category = "";
+
+			if(get_post_type()=="post"){
+				foreach(get_the_category() as $category) {
+					$the_category_slug = $category->slug . '';
+					$the_category = $category->cat_name . '';
 				}
-				else {
-					$the_category_slug = 'events';
-					$the_category = 'Events';
-				}
-				$article_img_div = "";
-				if($featured_image_url!=""){
-				 $article_img_div='	<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>';
-				}
+			}
+			else {
+				$the_category_slug = 'events';
+				$the_category = 'Events';
+			}
+			$article_img_div = "";
+			if($featured_image_url!=""){
+			 $article_img_div='	<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>';
+			}
 
-				$article_bck_color="";
-				if($the_category=="Jobs"){
-					$article_bck_color = 'article-red';
-				}else{
-					$article_bck_color = 'article-blue-light';
-					// bm_ignorePost($post->ID);
-				}
-      if($outside_link == ""){
-        $out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
-                <a href="'.get_permalink().'" class="article-full-img '.$article_bck_color.'">'.$article_img_div.'
-                  <div class="article">
-                    <div class="category">'.$the_category.'</div>
-                    <div class="date">'.get_the_date().'</div>
-                    <h3>'.get_the_title().'</h3>
-                    <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
-                  </div>
-                </a>
-         </div>';
-      }else{
-        $out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
-                <a href="'.$outside_link.'" target="_blank" class="article-full-img'.$article_bck_color.'">
-                <div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
-                  <div class="article">
-                    <div class="category">'.$the_category.'</div>
-                    <div class="date">'.get_the_date().'</div>
-                    <h3>'.get_the_title().'</h3>
-                    <div class="read-more">Read More <span class="icon-arrow-right"></span></div>
-                  </div>
-                </a>
-         </div>';
-      }
-    endwhile;
-    endif;
-    wp_reset_postdata();
-    die($out);
+			$article_bck_color="";
+			if($the_category=="Jobs"){
+				$article_bck_color = 'article-red';
+			}else{
+				$article_bck_color = 'article-blue-light';
+				// bm_ignorePost($post->ID);
+			}
+		if($outside_link == ""){
+			$out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
+							<a href="'.get_permalink().'" class="article-full-img '.$article_bck_color.'">'.$article_img_div.'
+								<div class="article">
+									<div class="category">'.$the_category.'</div>
+									<div class="date">'.get_the_date().'</div>
+									<h3>'.get_the_title().'</h3>
+									<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+								</div>
+							</a>
+			 </div>';
+		}else{
+			$out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
+							<a href="'.$outside_link.'" target="_blank" class="article-full-img'.$article_bck_color.'">
+							<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
+								<div class="article">
+									<div class="category">'.$the_category.'</div>
+									<div class="date">'.get_the_date().'</div>
+									<h3>'.get_the_title().'</h3>
+									<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
+								</div>
+							</a>
+			 </div>';
+		}
+	endwhile;
 
+	else:
+		echo "else";
+		endif;
+		wp_reset_postdata();
 
+		die($out);
 }
 // Returns the array of properties to query for posts when we click Load More
 function build_load_more_query($ppp, $page, $categories, $excluded_categories, $post_type, $offset, $filterTag){
@@ -254,9 +362,9 @@ function build_load_more_query($ppp, $page, $categories, $excluded_categories, $
   $args = array(
       'suppress_filters' => true,
       'post_type' => $post_type_array,
-      'posts_per_page' => $ppp,
-			// 'offset'=>$posts_per_page,
-      'paged'    => $page,
+      // 'posts_per_page' => $ppp,
+			'offset'=>$offset,
+      // 'paged'    => $page,
       'cat' => $categories,
       'category__not_in' => $excluded_categories,
       'meta_query' => $metaQuery,
@@ -266,6 +374,7 @@ function build_load_more_query($ppp, $page, $categories, $excluded_categories, $
   );
   // echo var_dump($category_in);
   return $args;
+	wp_reset_postdata();
 }
 
 add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax');

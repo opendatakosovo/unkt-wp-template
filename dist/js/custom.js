@@ -29,9 +29,10 @@ $(document).ready(function() {
     var grid = $(this).data('grid');
     var post_type = $(this).data('post-type');
     var filter = "feed";
-    console.log("Loading home filtered articles...")
+    console.log("Loading home filtered articles...");
+    var page_name = $(this).data('page-name');
     pageNumber++;
-    load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_name);
+    load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_name, page_name);
 	});
   // $(".filter-posts").click(function(){
   //   console.log($(this).data('category'));
@@ -84,8 +85,8 @@ function buildSubscribeForm(){
 
 
 }
-function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_name){
-    var str = '&cat=' + cat + '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax'+'&grid=' + grid+'&post_type=' + post_type +'&filter=' + filter;
+function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_name, page_name){
+    var str = '&cat=' + cat + '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax'+'&grid=' + grid+'&post_type=' + post_type +'&filter=' + filter+'&page_name=' + page_name;
     $.ajax({
         type: "POST",
         dataType: "html",
@@ -93,26 +94,33 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
         data: str,
         success: function(data){
             var $data = $(data);
-            var $posts = $([]);
-            for (i = 0; i < $data.length; i++) {
-              if($data[i].className!="post-categories"&&$data[i].nodeName!="#text"){
-                $posts.push($data[i]);
-              }
+            if($data == "NULL"){
+              $(".load-more").text("No more posts available");
+              $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
 
-            }
-            if($posts.length!==0){
-              if(container_name!==undefined && container_name != ""){
-                $("#"+container_name).append( $posts );
-              }else{
-                $(".article-container").append( $posts )
-                .isotope( 'appended', $posts );
-              }
+            }else{
+              var $posts = $([]);
+              for (i = 0; i < $data.length; i++) {
+                if($data[i].className!="post-categories"&&$data[i].nodeName!="#text"){
+                  $posts.push($data[i]);
+                }
 
-            } else{
-                console.log("No more posts in this filter.")
-                $(".load-more").text("No more posts available");
-                $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
+              }
+              if($posts.length!==0){
+                if(container_name!==undefined && container_name != ""){
+                  $("#"+container_name).append( $posts );
+                }else{
+                  $(".article-container").append( $posts )
+                  .isotope( 'appended', $posts );
+                }
+
+              } else{
+                  console.log("No more posts in this filter.")
+                  $(".load-more").text("No more posts available");
+                  $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
+              }
             }
+
         },
         error : function(jqXHR, textStatus, errorThrown) {
             $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
