@@ -1012,14 +1012,14 @@ iframe{
                             <div class="row" id="bar-chart-div5" style="margin: auto;"></div>
 
                             <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
-                                      href="http://www.unkt.org/development-goals/progress-by-goal-for-kosovo/">
-                                  United Nations Kosovo Team</a> and <a href="http://data.worldbank.org/data-catalog/world-development-indicators">World Bank World Development Indicators</a>
+                                      href="http://www.euro.who.int/__data/assets/pdf_file/0009/251793/NTP-review_Kos_2013_April_FINAL.pdf?ua=1">
+                                  World Health Organization - Review of the Tuberculosis Programme in Kosovo</a>
                             </p>
                             <br><br>
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Rate of Tuberculosis</h3>
                               <p class="p" style="color:#000;">
-                                On the other hand, the prevalence of tuberculosis (TB) is much more widespread in Kosovo when compared to other countries in the region and the EU. While in Albania the incidence of TB is 16 per 100,000 people, in Macedonia 18, and 8 in the EU, in Kosovo the incidence of TB is 53 per 100,000 people.
+                                The prevalence of Tuberculosis (TB) in Kosovo has been on the decline since 2001 when there were 1,678 cases to 968 cases in 2012. However, even after this fall, tuberculosis is much more widespread in Kosovo than in other countries in the region and the EU. While in Albania the incidence of TB is 16 per 100,000 people, 18 in Macedonia, and 8 in the EU, in Kosovo the 968 cases in 2012 translates to approximately 53 per 100,000 people.
                               </p><br>
                             </div>
                           </div>
