@@ -1022,6 +1022,23 @@ iframe{
                                 The prevalence of Tuberculosis (TB) in Kosovo has been on the decline since 2001 when there were 1,678 cases to 968 cases in 2012. However, even after this fall, tuberculosis is much more widespread in Kosovo than in other countries in the region and the EU. While in Albania the incidence of TB is 16 per 100,000 people, 18 in Macedonia, and 8 in the EU, in Kosovo the 968 cases in 2012 translates to approximately 53 per 100,000 people.
                               </p><br>
                             </div>
+                            <br>
+                            <hr class="hr-style">
+                            <br>
+                            <div class="row" id="bar-chart-div8" style="margin: auto;"></div>
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                      href="https://mics-surveys-prod.s3.amazonaws.com/MICS5/Central%20and%20Eastern%20Europe%20and%20the%20Commonwealth%20of%20Independent%20States/Kosovo%20under%20UNSC%20res.%201244/2013-2014/Final/Kosovo%20%28UNSCR%201244%29%202013-14%20MICS_English.pdf">
+                                  UNICEF Multiple Indicator Cluster Survey 2013-14</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
+                              <h3 style="color:#000;">Measles Vaccinations</h3>
+                              <p class="p" style="color:#000;">
+                                The overall rate of vaccination in Kosovo, as reported by health facility
+records and/or vaccination cards, is high with almost 90% of children aged 24 to 35 months being vaccinated against measles. However, disadvantaged communities within Kosovo continue to display high rates of unvaccinated children, with less than 45% of children aged 24 to 35 months in Roma, Ashkali and Egyptian communities being vaccinated against measles.
+                                </p><br>
+                            </div>
                           </div>
 
                           <div class="chart-div" style="background-color: #8CC63E;" id="ensure-environmental-sustainability-more" >
