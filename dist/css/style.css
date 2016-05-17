@@ -9130,5 +9130,48 @@ img.wpvq-question-img{
     pointer-events: none;
 }
 [disabled="disabled"]:after {
-  content: 'NO MORE POSTS AVALIABLE;
+  content: 'NO MORE POSTS AVALIABLE';
+}
+
+/* media fix for category filter  home page*/
+@media only screen
+and (min-device-width : 880px)
+and (max-device-width : 990px) {
+  #tabs{
+    padding-top: 350px;
+  }
+}
+@media only screen
+and (min-device-width : 780px)
+and (max-device-width : 880px) {
+  #tabs{
+    padding-top: 310px;
+  }
+}
+@media only screen
+and (min-device-width : 680px)
+and (max-device-width : 780px) {
+  #tabs{
+    padding-top: 240px;
+  }
+}
+@media only screen
+and (min-device-width : 480px)
+and (max-device-width : 680px) {
+  #tabs{
+    padding-top: 180px;
+  }
+}
+/*Smartphones (portrait and landscape) */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  #tabs{
+    padding-top: 300px;
+  }
+}
+@media (max-device-width : 319px){
+  #tabs{
+    padding-top: 400px;
+  }
 }
