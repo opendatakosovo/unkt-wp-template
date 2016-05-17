@@ -9182,3 +9182,9 @@ and (max-device-width : 480px) {
       padding-left: 40px;
   }
 }
+/* media fix for publications and blog tiles */
+@media(max-device-width : 990px) {
+  .publications , .blogs {
+      padding-right: 2rem;
+  }
+}
