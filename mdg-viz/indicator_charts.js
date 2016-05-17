@@ -316,5 +316,5 @@ $(document).ready(function () {
     drawBarChart('bar-chart4', '7_3', true);
     drawBarChart('bar-chart7', '7_4', true);
     drawLineChart('line-chart14', '8_1');
-    drawBarChart('bar-chart8', '6_3', true);
+    drawBarChart('bar-chart8', '6_3', false);
 })
