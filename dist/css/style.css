@@ -9188,3 +9188,23 @@ and (max-device-width : 480px) {
       padding-right: 2rem;
   }
 }
+/* media fix for large blank box on galleries page*/
+@media(max-device-width : 450px) {
+  .gallery-slider {
+      max-height: 350px;
+  }
+}
+@media only screen
+and (min-device-width : 450px)
+and (max-device-width : 580px) {
+  .gallery-slider {
+      max-height: 400px;
+  }
+}
+@media only screen
+and (min-device-width : 580px)
+and (max-device-width : 680px) {
+  .gallery-slider {
+      max-height: 480px;
+  }
+}
