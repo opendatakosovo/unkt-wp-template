@@ -9187,9 +9187,6 @@ and (max-device-width : 480px) {
       padding-right: 2rem;
   }
   /* media fix for search form */
-  .search-header form{
-    padding-top: 20px;
-  }
   .search-header .screen-reader-text{
     padding-left: 10px;
   }
