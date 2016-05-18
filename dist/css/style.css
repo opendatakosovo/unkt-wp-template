@@ -9130,7 +9130,7 @@ img.wpvq-question-img{
     pointer-events: none;
 }
 [disabled="disabled"]:after {
-  content: 'NO MORE POSTS AVALIABLE';
+  content: 'NO MORE POSTS AVAILABLE';
 }
 
 /* media fix for category filter  home page*/
