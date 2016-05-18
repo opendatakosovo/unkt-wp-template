@@ -9175,17 +9175,28 @@ and (max-device-width : 480px) {
     padding-top: 400px;
   }
 }
-
 /* media fix for main menu */
 @media(max-device-width : 850px) {
   .menu li.item {
       padding-left: 40px;
   }
 }
-/* media fix for publications and blog tiles */
 @media(max-device-width : 990px) {
+  /* media fix for publications and blog tiles */
   .publications , .blogs {
       padding-right: 2rem;
+  }
+  /* media fix for search form */
+  .search-header form{
+    padding-top: 20px;
+  }
+  .search-header .screen-reader-text{
+    padding-left: 10px;
+  }
+}
+@media(max-device-width : 690px) {
+  input#searchsubmit{
+    width: 100%;
   }
 }
 /* media fix for large blank box on galleries page*/
