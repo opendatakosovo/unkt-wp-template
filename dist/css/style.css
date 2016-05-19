@@ -8875,7 +8875,7 @@ input#es_txt_button_pg {
 }
 #subscribe-header {
     display: inline-block;
-    height: 107px !important;
+    /*height: 107px !important;*/
 }
 .subscribe.subscribe-small .subscribe-label {
     width: 27.5%;
