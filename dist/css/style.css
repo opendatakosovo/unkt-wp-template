@@ -9180,6 +9180,9 @@ and (max-device-width : 480px) {
   .menu li.item {
       padding-left: 40px;
   }
+  .menu{
+    padding-right: 60px;
+  }
 }
 @media(max-device-width : 990px) {
   /* media fix for publications and blog tiles */
