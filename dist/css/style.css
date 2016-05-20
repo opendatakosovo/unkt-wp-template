@@ -9230,3 +9230,13 @@ and (max-device-width : 530px) {
     width: 250px;
     }
 }
+
+/*Disable "No more posts available" button*/
+.disable-button-no-more-posts-available{
+  pointer-events:none;
+}
+
+
+
+
+
