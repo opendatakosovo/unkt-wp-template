@@ -121,7 +121,7 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
             var $data = $(data);
             if($data == "NULL"){
               $(".load-more").text("No more posts available");
-              $(".load-more").attr("disabled",true); // Disable the button
+              $(".load-more").prop("disabled",true); // Disable the button
               $("#"+container_name).parent().find(".load-more-home").addClass("disable-button-no-more-posts-available");
               $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
 
@@ -142,7 +142,7 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
                 }
                 if($posts.length<=ppp){
                   $(".load-more").text("No more posts available");
-                  $(".load-more").attr("disabled",true); // Disable the button, temp.
+                  $(".load-more").prop("disabled",true); // Disable the button, temp.
                   $("#"+container_name).parent().find(".load-more-home").addClass("disable-button-no-more-posts-available");
                   $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
 
@@ -151,7 +151,7 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
               } else{
                   console.log("No more posts in this filter.")
                   $(".load-more").text("No more posts available");
-                  $(".load-more").attr("disabled",true); // Disable the button, temp.
+                  $(".load-more").prop("disabled",true); // Disable the button, temp.
                   $("#"+container_name).parent().find(".load-more-home").addClass("disable-button-no-more-posts-available");
                   $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
               }
@@ -161,7 +161,7 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
         error : function(jqXHR, textStatus, errorThrown) {
             $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
             $(".load-more").text("No more posts available");
-            $(".load-more").attr("disabled",true); // Disable the button, temp.
+            $(".load-more").prop("disabled",true); // Disable the button, temp.
             $("#"+container_name).parent().find(".load-more-home").addClass("disable-button-no-more-posts-available");
             $("#"+container_name).parent().find(".load-more-home")[0].innerHTML = "No more posts available";
         }
