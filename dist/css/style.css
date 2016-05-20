@@ -9185,8 +9185,8 @@ and (max-device-width : 480px) {
   }
 }
 @media(max-device-width : 990px) {
-  /* media fix for publications and blog tiles */
-  .publications , .blogs {
+  /* media fix for publications, blogs, news, gallery, community-contributions tiles */
+  .publications, .blogs, .news , .gallery, .community-contributions {
       padding-right: 2rem;
   }
   /* media fix for search form */
