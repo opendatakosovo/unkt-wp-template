@@ -140,7 +140,7 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
                   $(".article-container").append( $posts )
                   .isotope( 'appended', $posts );
                 }
-                if($posts.length<=ppp){
+                if($posts.length<ppp){
                   $(".load-more").text("No more posts available");
                   $(".load-more").prop("disabled",true); // Disable the button, temp.
                   $("#"+container_name).parent().find(".load-more-home").addClass("disable-button-no-more-posts-available");
