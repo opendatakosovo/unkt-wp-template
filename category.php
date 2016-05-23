@@ -96,7 +96,7 @@
         <div class="load-more disable-button-no-more-posts col-xs-12 btn" data-category="<?php echo $query_by_cats; ?>" data-grid="3" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts available</div>
 
         <?php else: ?>
-        <div class="load-more col-xs-12 col-lg-12 btn" data-category="<?php echo $query_by_cats; ?>" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
+        <div class="load-more col-xs-12 col-lg-12 btn" data-category="<?php echo $query_by_cats; ?>" data-grid="3" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
      <?php endif;
     wp_reset_postdata(); ?>
 </div>
