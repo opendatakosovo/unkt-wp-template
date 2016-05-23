@@ -180,18 +180,18 @@ function more_post_ajax(){
 function return_ajax_posts($ppp,$page,$cat,$grid,$filterTag,$post_type,$slider_id){
 	session_start();
 	header("Content-Type: text/html");
+	$offset_category = 'offset_'.$cat;
 
+	$_SESSION[$offset_category] = ((isset($_SESSION[$offset_category])) ? $_SESSION[$offset_category] : 0);
 
-	$_SESSION['offset'] = ((isset($_SESSION['offset'])) ? $_SESSION['offset'] : 0);
-
-	if($_SESSION['offset'] == 0){
-		$_SESSION['offset'] = $ppp;
-		$args =  build_load_more_query_home($ppp, $page, $cat, $excluded_categories, $post_type, $_SESSION['offset'], $filterTag);
+	if($_SESSION[$offset_category] == 0){
+		$_SESSION[$offset_category] = $ppp;
+		$args =  build_load_more_query_home($ppp, $page, $cat, $excluded_categories, $post_type, $_SESSION[$offset_category], $filterTag);
 		$the_query = new WP_Query($args);
 	}
 	else{
-		$_SESSION['offset'] = $_SESSION['offset'] + $ppp;
-		$args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, $_SESSION['offset'], $filterTag);
+		$_SESSION[$offset_category] = $_SESSION[$offset_category] + $ppp;
+		$args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, $_SESSION[$offset_category], $filterTag);
 		$the_query = new WP_Query($args);
 	}
 
@@ -259,7 +259,7 @@ function return_ajax_posts($ppp,$page,$cat,$grid,$filterTag,$post_type,$slider_i
 		     endwhile;
 				 wp_reset_postdata();
 		 else:
-			 unset($_SESSION['offset']);
+			 unset($_SESSION[$offset_category]);
 		   die("NULL");
 
 		 endif;
@@ -336,7 +336,7 @@ function return_ajax_posts_categories($ppp,$page,$cat,$grid,$filterTag,$post_typ
 			     endwhile;
 					 wp_reset_postdata();
 			 else:
-				 unset($_SESSION['offset']);
+				 unset($_SESSION[$offset_category]);
 			   die("NULL");
 
 			 endif;
