@@ -160,7 +160,7 @@ function more_post_ajax(){
 
 		$page_name = (isset($_POST['page_name'])) ? $_POST['page_name'] : 'page';
 		$ppp = (isset($_POST["ppp"])) ? $_POST["ppp"] : 8;
-		$page = (isset($_POST['pageNumber'])) ? $_POST['pageNumber'] : 0;
+		$page = (isset($_POST['pageNumber'])) ? $_POST['pageNumber'] : 1;
 		$cat = (isset($_POST['cat'])) ? $_POST['cat'] : '';
 		$grid = (isset($_POST['grid'])) ? $_POST['grid'] : '';
 		$filterTag = (isset($_POST['filter'])) ? $_POST['filter'] : '';
