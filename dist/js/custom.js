@@ -35,7 +35,7 @@ $(document).ready(function() {
     load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_name, page_name);
 	});
   $(".tabs-menu ul li").click(function(){
-    pageNumber = 0;
+    pageNumber = 1;
     // document.cookie = 'visited=1;expires=' + expiration + ';path=/';
     var xmlhttp = getXmlHttp();
     var xmlhttp = new XMLHttpRequest();
