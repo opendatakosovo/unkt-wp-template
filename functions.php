@@ -180,20 +180,21 @@ function more_post_ajax(){
 function return_ajax_posts($ppp,$page,$cat,$grid,$filterTag,$post_type,$slider_id){
 	session_start();
 	header("Content-Type: text/html");
-	$offset_category = 'offset_'.$cat;
-
-	$_SESSION[$offset_category] = ((isset($_SESSION[$offset_category])) ? $_SESSION[$offset_category] : 0);
-
-	if($_SESSION[$offset_category] == 0){
-		$_SESSION[$offset_category] = $ppp;
-		$args =  build_load_more_query_home($ppp, $page, $cat, $excluded_categories, $post_type, $_SESSION[$offset_category], $filterTag);
-		$the_query = new WP_Query($args);
+	if($cat==""){
+		$offset_category = 'offset_home';
+	}else{
+		$offset_category = 'offset_'.$cat;
 	}
-	else{
-		$_SESSION[$offset_category] = $_SESSION[$offset_category] + $ppp;
-		$args =  build_load_more_query($ppp, $page, $cat, $excluded_categories, $post_type, $_SESSION[$offset_category], $filterTag);
-		$the_query = new WP_Query($args);
-	}
+
+
+	$offset = ( $page ) * $ppp;
+	// $_SESSION[$offset_category] = ((isset($_SESSION[$offset_category])) ? $_SESSION[$offset_category] : 0);
+
+
+	$_SESSION[$offset_category] = ( $page - 1 ) * $ppp;
+	$args =  build_load_more_query_home($ppp, $page, $cat, $excluded_categories, $post_type, $_SESSION[$offset_category], $filterTag);
+	$the_query = new WP_Query($args);
+
 
 	// $offset = $numberOfFoundPosts;
 
@@ -235,7 +236,7 @@ function return_ajax_posts($ppp,$page,$cat,$grid,$filterTag,$post_type,$slider_i
 							$out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
 											<a href="'.get_permalink().'" class="article-full-img '.$article_bck_color.'">'.$article_img_div.'
 												<div class="article">
-													<div class="category">'.$the_category.'</div>
+													<div class="category">'.$offset_category.' '.$_SESSION[$offset_category].'</div>
 													<div class="date">'.get_the_date().'</div>
 													<h3>'.get_the_title().'</h3>
 													<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
@@ -247,7 +248,7 @@ function return_ajax_posts($ppp,$page,$cat,$grid,$filterTag,$post_type,$slider_i
 											<a href="'.$outside_link.'" target="_blank" class="article-full-img'.$article_bck_color.'">
 											<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
 												<div class="article">
-													<div class="category">'.$the_category.'</div>
+													<div class="category">'.$offset_category.' '.$_SESSION[$offset_category].'</div>
 													<div class="date">'.get_the_date().'</div>
 													<h3>'.get_the_title().'</h3>
 													<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
@@ -259,7 +260,7 @@ function return_ajax_posts($ppp,$page,$cat,$grid,$filterTag,$post_type,$slider_i
 		     endwhile;
 				 wp_reset_postdata();
 		 else:
-			 unset($_SESSION[$offset_category]);
+			//  unset($_SESSION[$offset_category]);
 		   die("NULL");
 
 		 endif;
@@ -362,9 +363,10 @@ function build_load_more_query_home($ppp, $page, $categories, $excluded_categori
   $args = array(
       'suppress_filters' => true,
       'post_type' => $post_type_array,
-      'posts_per_page' => $ppp,
-			'offset'=>$offset,
-      // 'paged'    => $page,
+      'showposts' => $ppp,
+			// 'page'       =>  $page,
+  		'offset'     =>  $offset,
+      // 'page'    => $page,
       'cat' => $categories,
       'category__not_in' => $excluded_categories,
       'meta_query' => $metaQuery,
