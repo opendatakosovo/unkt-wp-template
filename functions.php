@@ -236,7 +236,7 @@ function return_ajax_posts($ppp,$page,$cat,$grid,$filterTag,$post_type,$slider_i
 							$out .= '<div id="'.$post['ID'].'" class="col-xs-12 col-lg-'.$grid[0].' item '.$the_category_slug.'">
 											<a href="'.get_permalink().'" class="article-full-img '.$article_bck_color.'">'.$article_img_div.'
 												<div class="article">
-													<div class="category">'.$offset_category.' '.$_SESSION[$offset_category].'</div>
+													<div class="category">'.$the_category.'</div>
 													<div class="date">'.get_the_date().'</div>
 													<h3>'.get_the_title().'</h3>
 													<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
@@ -248,7 +248,7 @@ function return_ajax_posts($ppp,$page,$cat,$grid,$filterTag,$post_type,$slider_i
 											<a href="'.$outside_link.'" target="_blank" class="article-full-img'.$article_bck_color.'">
 											<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>
 												<div class="article">
-													<div class="category">'.$offset_category.' '.$_SESSION[$offset_category].'</div>
+													<div class="category">'.$the_category.'</div>
 													<div class="date">'.get_the_date().'</div>
 													<h3>'.get_the_title().'</h3>
 													<div class="read-more">Read More <span class="icon-arrow-right"></span></div>
