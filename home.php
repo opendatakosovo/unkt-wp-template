@@ -77,7 +77,7 @@ input.vq-css-checkbox + label.vq-css-label {
     					<div class="container">
     						<div class="row">
     							<div class="date col-lg-1 col-xs-12">
-    								<?php the_date('j M Y'); ?>
+    								<?php the_date('j M'); ?>
     							</div>
     							<div class="col-lg-10 col-xs-12">
     								<h2 class="slider-tittle"><?php the_title(); ?></h2>

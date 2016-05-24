@@ -6620,7 +6620,7 @@ body.overflow {
 }
 
 .date {
-  font-size: 16px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: .06px;
 }
@@ -6852,7 +6852,7 @@ body.overflow {
 .slider .caption p {
   line-height: 28px;
   letter-spacing: .06px;
-      font-size: 1.5em;
+      font-size: 1.2em;
 }
 .slider .read-more {
   position: relative;
@@ -9235,8 +9235,3 @@ and (max-device-width : 530px) {
 .disable-button-no-more-posts-available{
   pointer-events:none;
 }
-
-
-
-
-
