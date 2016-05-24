@@ -49,8 +49,11 @@ $(function() {
 
                      $in_category = array($jobs_id, $tenders_id);
 
+                     $work_with_us_id = get_category_by_slug('work-with-us')->term_id;
+                     $cat_id = $work_with_us_id;
                      $loop = new WP_Query(array(
                               'posts_per_page' => 8,
+                              'cat'=>$cat_id,
                               'category__in'=>$in_category,
                               'post_status' => 'publish',
                               'orderby' => 'date',
