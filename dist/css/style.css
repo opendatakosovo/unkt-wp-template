@@ -6620,7 +6620,7 @@ body.overflow {
 }
 
 .date {
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: .06px;
 }
@@ -6906,7 +6906,7 @@ body.overflow {
     left: 50%;
     width: 62.5%;
     max-width: 900px;
-    min-height: 270px;
+    min-height: 200px;
     padding: 30px 15px;
     -webkit-transform: translate3d(-50%, 0, 0) scale(.8);
             transform: translate3d(-50%, 0, 0) scale(.8);
