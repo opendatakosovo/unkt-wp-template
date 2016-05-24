@@ -38,91 +38,100 @@ $(function() {
             <a href="#tenders">Tenders</a>
           </li>
         </ul>
-        <div id="latest">
-          <div class="row">
+
+         <div id="latest">
+           <div class="row">
             <div id="latest-container" class="article-container filterize">
-                  <?php
-                     $postsPerPage = 8;
+                   <?php
+                       $postsPerPage = 8;
 
-                     $tenders_id = get_category_by_slug('tenders')->term_id;
-                     $jobs_id = get_category_by_slug('jobs')->term_id;
+                       $jobs_term = get_category_by_slug('jobs');
+                       $jobs_id = $jobs_term->term_id;
 
-                     $in_category = array($jobs_id, $tenders_id);
+                       $tenders_term = get_category_by_slug('tenders');
+                       $tenders_id = $tenders_term->term_id;
 
-                     $work_with_us_id = get_category_by_slug('work-with-us')->term_id;
-                     $cat_id = $work_with_us_id;
-                     $loop = new WP_Query(array(
-                              'posts_per_page' => 8,
+                       $wws_term = get_category_by_slug('work-with-us');
+                       $wws_id = $media_term->term_id;
+
+                       $in_category = array($jobs_id, $tenders_id);
+
+                       $cat_id = $wws_id;
+                       $args = array(
+                              'post_type' => array('post'),
+                              'posts_per_page' => $postsPerPage,
                               'cat'=>$cat_id,
                               'category__in'=>$in_category,
                               'post_status' => 'publish',
                               'orderby' => 'date',
                               'order' => 'DESC'
-                      ));
+                       );
 
-                      while ($loop->have_posts()) : $loop->the_post();
-                      $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-                      $outside_link =get_field('external_source_link');
+                       $loop = new WP_Query($args);
 
-                      $the_category_slug = "";
-                      $the_category = "";
+                       while ($loop->have_posts()) : $loop->the_post();
+                       $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                       $outside_link =get_field('external_source_link');
 
-                        if(get_post_type()=="post"){
-                          foreach(get_the_category() as $category) {
-                            $the_category_slug = $category->slug . '';
-                            $the_category = $category->cat_name . '';
-                          }
-                        }
-                        else {
-                          $the_category_slug = 'events';
-                          $the_category = 'Events';
-                          $terms = get_the_terms(strval( $post->ID ),'ecwd_event_category');
-                          $event_categories = wp_get_post_terms($post->ID, 'ecwd_event_category','');
-                        }
-                        $article_img_div = "";
-                        if($featured_image_url!=""){
-                         $article_img_div='	<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>';
-                        }
-                        // bm_ignorePost($post->ID);
-                      ?>
-                      <?php if($outside_link == ""){ ?>
-                      <div id="<?php echo $post->ID ?>" class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
-                        <a href="<?php  the_permalink(); ?>" class="article-full-img <?php if($the_category=="Jobs"){ echo 'article-red'; }else{ echo 'article-blue-light'; } ?>">
-                          <?php echo $article_img_div; ?>
-                          <div class="article">
-                            <div class="category"><?php echo $the_category; ?></div>
-                            <div class="date"><?php echo get_the_date('j M Y');?></div>
-                            <h3><?php the_title(); ?></h3>
-                            <div class="read-more" >Read More <span class="icon-arrow-right"></span></div>
-                          </div>
-                        </a>
-                      </div>
-                      <?php }else{ ?>
-                        <div id="<?php echo $post->ID ?>" class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
-                          <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img <?php if($the_category=="Jobs"){ echo 'article-red'; }else{ echo 'article-blue-light'; } ?>">
-                            <?php echo $article_img_div; ?>
-                            <div class="article">
-                              <div class="category"><?php echo $the_category; ?></div>
-                              <div class="date"><?php echo get_the_date('j M Y');?></div>
-                              <h3><?php the_title(); ?></h3>
-                              <div class="read-more" >Read More <span class="icon-arrow-right"></span></div>
-                            </div>
-                          </a>
-                        </div>
+                       $the_category_slug = "";
+                       $the_category = "";
 
-                       <?php } ?>
+                         if(get_post_type()=="post"){
+                           foreach(get_the_category() as $category) {
+                             $the_category_slug = $category->slug . '';
+                             $the_category = $category->cat_name . '';
+                           }
+                         }
+                         else {
+                           $the_category_slug = 'events';
+                           $the_category = 'Events';
+                           $terms = get_the_terms(strval( $post->ID ),'ecwd_event_category');
+                           $event_categories = wp_get_post_terms($post->ID, 'ecwd_event_category','');
+                         }
+                         $article_img_div = "";
+                         if($featured_image_url!=""){
+                          $article_img_div='	<div class="article-img" style="background-image: url('.$featured_image_url.');"></div>';
+                         }
+                         // bm_ignorePost($post->ID);
+                       ?>
+                       <?php if($outside_link == ""){ ?>
+                       <div id="<?php echo $post->ID ?>" class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
+                         <a href="<?php  the_permalink(); ?>" class="article-full-img <?php if($the_category=="Jobs"){ echo 'article-red'; }else{ echo 'article-blue-light'; } ?>">
+                           <?php echo $article_img_div; ?>
+                           <div class="article">
+                             <div class="category"><?php echo $the_category; ?></div>
+                             <div class="date"><?php echo get_the_date('j M Y');?></div>
+                             <h3><?php the_title(); ?></h3>
+                             <div class="read-more" >Read More <span class="icon-arrow-right"></span></div>
+                           </div>
+                         </a>
+                       </div>
+                       <?php }else{ ?>
+                         <div id="<?php echo $post->ID ?>" class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
+                           <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img <?php if($the_category=="Jobs"){ echo 'article-red'; }else{ echo 'article-blue-light'; } ?>">
+                             <?php echo $article_img_div; ?>
+                             <div class="article">
+                               <div class="category"><?php echo $the_category; ?></div>
+                               <div class="date"><?php echo get_the_date('j M Y');?></div>
+                               <h3><?php the_title(); ?></h3>
+                               <div class="read-more" >Read More <span class="icon-arrow-right"></span></div>
+                             </div>
+                           </a>
+                         </div>
 
-                  <?php endwhile;
-                  wp_reset_postdata();  ?>
+                        <?php } ?>
+
+                   <?php endwhile;
+                   wp_reset_postdata();  ?>
             </div>
             <?php if ( $loop->found_posts < $postsPerPage ) : ?>
-                 <div class="load-more-home disable-button-no-more-posts-available col-xs-12 btn" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts available</div>
+               <div class="load-more-home disable-button-no-more-posts-available col-xs-12 btn" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-category="" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts available</div>
 
-                <?php else: ?>
-                  <div class="load-more-home col-xs-12 btn" data-category="<?php echo $cat_id ?>" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
-                <?php endif; ?>
-          </div>
-        </div>
+              <?php else: ?>
+                <div class="load-more-home col-xs-12 btn" data-category="<?php echo implode(', ', $in_category); ?>" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
+              <?php endif; ?>
+           </div>
+         </div>
 
         <!-- jobs -->
         <div id="jobs">
