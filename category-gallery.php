@@ -82,7 +82,13 @@
 
            </div>
          </div>
+         <?php if ( $loop->found_posts <= $postsPerPage ) : ?>
+           <div class="load-more col-xs-12  btn" data-posts-per-page="<?php echo $postsPerPage; ?>" data-grid="3" data-category="<?php echo $cat_id; ?>">No more posts available</div>
+
+           <?php else: ?>
           <div class="load-more col-xs-12  btn" data-posts-per-page="<?php echo $postsPerPage; ?>" data-grid="3" data-category="<?php echo $cat_id; ?>">Load more content</div>
+        <?php endif;
+        wp_reset_postdata(); ?>
   	</div>
 	</div>
 
