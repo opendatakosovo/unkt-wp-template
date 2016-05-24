@@ -44,17 +44,14 @@ $(function() {
                   <?php
                      $postsPerPage = 8;
 
-                     $jobs_term = get_category_by_slug('jobs');
-                     $jobs_id = $jobs_term->term_id;
-
-                     $tenders_term = get_category_by_slug('tenders');
-                     $tenders_id = $tenders_term->term_id;
+                     $tenders_id = get_category_by_slug('tenders')->term_id;
+                     $jobs_id = get_category_by_slug('jobs')->term_id;
 
                      $in_category = array($jobs_id, $tenders_id);
+
                      $loop = new WP_Query(array(
-                              'post_type' => array('post','ecwd_event'),
                               'posts_per_page' => 8,
-                              'cat'=>$in_category,
+                              'category__in'=>$in_category,
                               'post_status' => 'publish',
                               'orderby' => 'date',
                               'order' => 'DESC'
@@ -116,10 +113,10 @@ $(function() {
                   wp_reset_postdata();  ?>
             </div>
             <?php if ( $loop->found_posts < $postsPerPage ) : ?>
-              <div class="load-more-home disable-button-no-more-posts-available col-xs-12 btn" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts available</div>
+              <div class="load-more-home disable-button-no-more-posts-available col-xs-12 btn" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts available</div>
 
              <?php else: ?>
-               <div class="load-more-home col-xs-12 btn" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-category="<?php echo implode(', ', $in_category); ?>" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
+               <div class="load-more-home col-xs-12 btn" data-category="<?php echo implode(', ', $in_category); ?>" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
              <?php endif; ?>
           </div>
         </div>
