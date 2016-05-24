@@ -37,18 +37,18 @@ $(document).ready(function() {
   $(".tabs-menu ul li").click(function(){
     pageNumber = 1;
     // document.cookie = 'visited=1;expires=' + expiration + ';path=/';
-    var xmlhttp = getXmlHttp();
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open('GET','./wp-content/themes/unkt-wp-template/destroy_session.php', true);
-    xmlhttp.onreadystatechange=function(){
-       if (xmlhttp.readyState == 4){
-          if(xmlhttp.status == 200){
-            //  alert(xmlhttp.responseText);
-         }
-       }
-    };
-    xmlhttp.send(null);
-    removeCookie("PHPSESSID");
+    // var xmlhttp = getXmlHttp();
+    // var xmlhttp = new XMLHttpRequest();
+    // xmlhttp.open('GET','./wp-content/themes/unkt-wp-template/destroy_session.php', true);
+    // xmlhttp.onreadystatechange=function(){
+    //    if (xmlhttp.readyState == 4){
+    //       if(xmlhttp.status == 200){
+    //         //  alert(xmlhttp.responseText);
+    //      }
+    //    }
+    // };
+    // xmlhttp.send(null);
+    // removeCookie("PHPSESSID");
   });
   $(".item").click(function(){
     removeCookie("PHPSESSID");
