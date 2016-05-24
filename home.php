@@ -412,7 +412,7 @@ input.vq-css-checkbox + label.vq-css-label {
 
                     <?php endwhile; ?>
                   </div>
-                  <?php if ( $loop->found_posts <= $postsPerPage  && $loop->found_posts == 0) : ?>
+                  <?php if ( $loop->found_posts <= $postsPerPage ) : ?>
                       <div class="load-more-home disable-button-no-more-posts-available col-xs-12 btn" data-category="" data-grid="3" data-post-type="ecwd_event" data-posts-per-page="8">No more posts available</div>
 
                       <?php else: ?>
