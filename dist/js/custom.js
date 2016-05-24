@@ -136,7 +136,7 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
 
               }
               if($posts.length!==0){
-                if(container_name!==undefined && container_name != ""){
+                if(container_name!==undefined && container_name !== ""){
                   $("#"+container_name).append( $posts );
                 }else{
                   $(".article-container").append( $posts )
@@ -152,7 +152,7 @@ function load_posts(ppp, cat, pageNumber, grid, post_type, filter, container_nam
                 }
 
               } else{
-                  console.log("No more posts in this filter.")
+                  console.log("No more posts in this filter.");
                   $(".load-more").text("No more posts available");
                   $('.load-more').css( 'cursor', 'none' );
                   $(".load-more").prop("disabled",true); // Disable the button, temp.
@@ -408,7 +408,7 @@ function getXmlHttp() {
                   alert("There was a problem while using XMLHTTP:\n" + req.statusText);
                 }
               }
-            }
+            };
             req.open("GET", strURL, true);
             req.send(null);
            }
