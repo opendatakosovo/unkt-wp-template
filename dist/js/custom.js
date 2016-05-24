@@ -28,7 +28,7 @@ $(document).ready(function() {
     var cat = $(this).data('category');
     var grid = $(this).data('grid');
     var post_type = $(this).data('post-type');
-    var filter = "feed";
+    var filter = $(this).data('filter');
     // console.log("Loading home filtered articles...");
     var page_name = $(this).data('page-name');
     pageNumber++;
