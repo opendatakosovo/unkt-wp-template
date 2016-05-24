@@ -116,10 +116,10 @@ $(function() {
                   wp_reset_postdata();  ?>
             </div>
             <?php if ( $loop->found_posts < $postsPerPage ) : ?>
-              <div class="load-more-home disable-button-no-more-posts-available col-xs-12 btn" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts available</div>
+              <div class="load-more-home disable-button-no-more-posts-available col-xs-12 btn" data-category="" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts available</div>
 
              <?php else: ?>
-               <div class="load-more-home col-xs-12 btn" data-category="<?php echo implode(', ', $in_category); ?>" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
+               <div class="load-more-home col-xs-12 btn" data-category="<?php echo implode(', ', $in_category); ?>" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
              <?php endif; ?>
           </div>
         </div>

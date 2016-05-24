@@ -47,7 +47,6 @@ tabs.find( ".ui-tabs-nav" ).sortable({
       <div id="latest-container" class="article-container filterize">
              <?php
                  $postsPerPage = 8;
-                 $postsPerPage = 8;
 
                  $news_term = get_category_by_slug('news');
                  $news_id = $news_term->term_id;
@@ -139,10 +138,10 @@ tabs.find( ".ui-tabs-nav" ).sortable({
              wp_reset_postdata();  ?>
       </div>
       <?php if ( $loop->found_posts < $postsPerPage ) : ?>
-         <div class="load-more-home disable-button-no-more-posts-available col-xs-12 btn" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts available</div>
+         <div class="load-more-home disable-button-no-more-posts-available col-xs-12 btn" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-category="" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">No more posts available</div>
 
         <?php else: ?>
-          <div class="load-more-home col-xs-12 btn" data-category="<?php echo implode(', ', $in_category); ?>" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-category="" data-grid="3" data-page-name="home" data-filter="feed" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
+          <div class="load-more-home col-xs-12 btn" data-category="<?php echo implode(', ', $in_category); ?>" data-exclude-posts="<?php echo implode(', ', $excluded_posts); ?>" data-category="" data-grid="3" data-page-name="home" data-posts-per-page="<?php echo $postsPerPage ?>">Load more posts</div>
         <?php endif; ?>
      </div>
    </div>
@@ -158,14 +157,7 @@ tabs.find( ".ui-tabs-nav" ).sortable({
                       'cat'=> $news_category,
                       'post_status' => 'publish',
                       'orderby' => 'date',
-                      'order' => 'DESC',
-                      'meta_query' => array(
-                        array(
-                            'key' => 'post_visibility_value', // name of custom field
-                            'value' => '"feed"', // matches exactly "feed"
-                            'compare' => 'LIKE'
-                        )
-                      )
+                      'order' => 'DESC'
               ));
 
              while ($loop->have_posts()) : $loop->the_post();
@@ -235,14 +227,7 @@ tabs.find( ".ui-tabs-nav" ).sortable({
                     'cat' => $blogs_category,
                     'post_status' => 'publish',
                     'orderby' => 'date',
-                    'order' => 'DESC',
-                    'meta_query' => array(
-                      array(
-                          'key' => 'post_visibility_value', // name of custom field
-                          'value' => '"feed"', // matches exactly "feed"
-                          'compare' => 'LIKE'
-                      )
-                    )
+                    'order' => 'DESC'
             ));
 
            while ($loop->have_posts()) : $loop->the_post();
@@ -313,14 +298,7 @@ tabs.find( ".ui-tabs-nav" ).sortable({
                     'cat' => $gallery_category,
                     'post_status' => 'publish',
                     'orderby' => 'date',
-                    'order' => 'DESC',
-                    'meta_query' => array(
-                      array(
-                          'key' => 'post_visibility_value', // name of custom field
-                          'value' => '"feed"', // matches exactly "feed"
-                          'compare' => 'LIKE'
-                      )
-                    )
+                    'order' => 'DESC'
             ));
 
            while ($loop->have_posts()) : $loop->the_post();
@@ -391,14 +369,7 @@ tabs.find( ".ui-tabs-nav" ).sortable({
                     'cat' => $community_category,
                     'post_status' => 'publish',
                     'orderby' => 'date',
-                    'order' => 'DESC',
-                    'meta_query' => array(
-                      array(
-                          'key' => 'post_visibility_value', // name of custom field
-                          'value' => '"feed"', // matches exactly "feed"
-                          'compare' => 'LIKE'
-                      )
-                    )
+                    'order' => 'DESC'
             ));
 
            while ($loop->have_posts()) : $loop->the_post();
