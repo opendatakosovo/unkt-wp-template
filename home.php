@@ -42,6 +42,20 @@ input.vq-css-checkbox + label.vq-css-label {
   overflow: hidden;
 }
 </style>
+<script>
+$(".menu li").mouseenter(function(e) {
+  console.log($(this).find(".sub-menu"));
+  if ($(e.ralatedTraget).prop('id') != 'menu') {
+   $(this).find(".sub-menu").stop().fadeIn(500);
+   }
+});
+$(".menu li").mouseleave(function(e) {
+   if ($(e.ralatedTraget).prop('id') != 'menu') {
+     $(this).find(".sub-menu").stop().fadeOut(500);
+    }
+});
+
+</script>
 <?php
    $options = get_option('unkt_theme_options');
 

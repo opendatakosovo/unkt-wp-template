@@ -8961,7 +8961,8 @@ input#es_txt_button_pg {
 	-moz-transform: translateX(-15px);
 	-webkit-transform: translateX(-15px);
 }
-.sub-menu li { padding-top: 4px; }
+.sub-menu li { padding-top: 4px;
+}
 
 .sub-menu li:first-child { padding-top: 0; }
 .sdg-img {
@@ -9234,4 +9235,127 @@ and (max-device-width : 530px) {
 /*Disable "No more posts available" button*/
 .disable-button-no-more-posts-available{
   pointer-events:none;
+}
+@media (min-width: 62em){
+
+  /*.sub-menu li {
+    padding-top:8px;
+  background-color: #D21C55;
+  width:110%;
+  height:35px;
+  padding-bottom:12px !important;
+  font-size:12px;
+  border-bottom: thick solid gray;
+
+  }
+
+  .sub-menu {
+      margin-top: 30px !important;
+      background-color:none !important;
+  }
+  .sub-menu li a{
+    padding-top:12px !important;
+  padding-bottom:12px !important;
+  font-size:12px;
+  /*border-style: solid;*/
+
+  }*/
+  /*.sub-menu li:first-child {
+      padding-top: 12px;
+      padding-bottom: 5px;
+  }*/
+  .menu .media { margin-top: 0; }
+
+.sub-menu .item {
+	margin: 0;
+	-webkit-transform: translateX(0);
+	border-top: 1px solid #a5194c;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #d21c55;
+}
+
+.sub-menu .item a {
+	padding: 5px !important;
+}
+
+.sub-menu .item:first-child {
+    border-top: 2px solid #a5194c;
+}
+
+.sub-menu .item:hover {
+	background-color: #fff;
+	color: #d21c55;
+}
+
+.sub-menu .item:hover a{
+	color: #d21c55;
+}
+
+@media (min-width: 992px) {
+
+	.sub-menu {
+		padding: 30px 0 0 0;
+		-webkit-transform: translateX(-15px);
+	}
+
+	.sub-menu .item a {
+		padding: 20px 22px !important;
+	}
+
+}
+
+@media screen and (max-width: 850px) {
+	.menu li ul {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+}
+.menu .media { margin-top: 0; }
+
+.sub-menu .item {
+	margin: 0;
+	-webkit-transform: translateX(0);
+	border-top: 1px solid #a5194c;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #d21c55;
+}
+
+.sub-menu .item a {
+	padding: 5px !important;
+}
+
+.sub-menu .item:first-child {
+    border-top: 2px solid #a5194c;
+}
+
+.sub-menu .item:hover {
+	background-color: #fff;
+	color: #d21c55;
+}
+
+.sub-menu .item:hover a{
+	color: #d21c55;
+}
+
+@media (min-width: 992px) {
+
+	.sub-menu {
+		padding: 30px 0 0 0;
+		-webkit-transform: translateX(-15px);
+	}
+
+	.sub-menu .item a {
+		padding: 20px 22px !important;
+	}
+
+}
+
+@media screen and (max-width: 850px) {
+	.menu li ul {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
