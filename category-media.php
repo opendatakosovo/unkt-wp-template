@@ -47,20 +47,41 @@ tabs.find( ".ui-tabs-nav" ).sortable({
       <div id="latest-container" class="article-container filterize">
              <?php
                  $postsPerPage = 8;
-                 $loop = new WP_Query(array(
-                         'post_type' => array('post','ecwd_event'),
-                         'posts_per_page' => 8,
-                         'post_status' => 'publish',
-                         'orderby' => 'date',
-                         'order' => 'DESC',
-                         'meta_query' => array(
-                           array(
-                               'key' => 'post_visibility_value', // name of custom field
-                               'value' => '"feed"', // matches exactly "feed"
-                               'compare' => 'LIKE'
-                           )
-                         )
-                 ));
+                 $postsPerPage = 8;
+
+                 $news_term = get_category_by_slug('news');
+                 $news_id = $news_term->term_id;
+
+                 $blogs_term = get_category_by_slug('blogs');
+                 $blogs_id = $blogs_term->term_id;
+
+                 $user_content_term = get_category_by_slug('community-contributions');
+                 $user_content_id = $user_content_term->term_id;
+
+                 $visualizations_term = get_category_by_slug('visualizations');
+                 $visualizations_id = $visualizations_term->term_id;
+
+                 $media_term = get_category_by_slug('media');
+                 $media_id = $media_term->term_id;
+
+                 $gallery_term = get_category_by_slug('gallery');
+                 $gallery_id = $gallery_term->term_id;
+
+                 $in_category = array($news_id,$blogs_id, $user_content_id, $visualizations_id, $gallery_id);
+
+                 $categories = get_the_category();
+                 $cat_id = $media_id;
+                 $args = array(
+                        'post_type' => array('post'),
+                        'posts_per_page' => $postsPerPage,
+                        'cat'=>$cat_id,
+                        'category__in'=>$in_category,
+                        'post_status' => 'publish',
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                 );
+
+                 $loop = new WP_Query($args);
 
                  while ($loop->have_posts()) : $loop->the_post();
                  $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
