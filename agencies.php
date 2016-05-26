@@ -6,7 +6,7 @@
 				<h3>UN Agencies</h3>
 			</div>
 			<div class="un-text">
-				<h2>The United Nations Kosovo Team (UNKT) entails of 19 United Nations agencies, funds and programs active in Kosovo.</h2>
+				<h2>The United Nations Kosovo Team (UNKT) is composed of 19 United Nations agencies, funds and programs active in Kosovo.</h2>
 			</div>
 		</div>
 		<div class="agencies-bottom">
