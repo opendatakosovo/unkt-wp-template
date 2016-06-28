@@ -812,7 +812,7 @@ iframe{
                             <div class="row" id="line-chart-div5" style="margin: auto;"></div>
 
                             <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
-                                    href="http://masht.rks-gov.net/en/statistikat">
+                                href="http://masht.rks-gov.net/en/statistikat">
                                 Ministry of Education, Science and Technology</a>
                             </p><br><br>
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
