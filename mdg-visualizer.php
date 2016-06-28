@@ -738,12 +738,11 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Poverty Headcount</h3>
                               <p class="p" style="color:#000;">
-                                As of 2015, poverty remains a persistent and widespread issue in Kosovo. A report produced by the Kosovo Agency of Statistics (KAS) on Consumption Poverty found that, in 2011, 29.7% of the population of Kosovo was unable to meet human needs and 10.2% of the population was unable to meet even basic survival needs. These poverty rates are very high compared to neighbouring countries and, though decreasing, have remained persistently high over the past 10 years. Reports from the World Bank and UNDP also identify that poverty and vulnerability levels would be much higher had the safety net of migration and remittances not been provided.
-                              </p>
+                                 As of 2015, poverty remains a persistent and widespread issue in Kosovo. A report produced by the Kosovo Agency of Statistics (KAS) on Consumption Poverty found that, in 2011, 29.7% of the population of Kosovo was unable to meet human needs and 10.2% of the population was unable to meet even basic survival needs. These poverty rates are very high compared to neighbouring countries and, though decreasing, have remained persistently high over the past 10 years. Reports from the World Bank and UNDP also identify that poverty and vulnerability levels would be much higher had the safety net of migration and remittances not been provided.  </p>
                                <br>
                               <p class="p" style="color:#000;">
                                  The poverty gap, another measure of poverty that calculates the "depth" of poverty, taking into account both the percentage of the population below the poverty line and how far these individuals are below the poverty line, has also slightly decreased. From 2009 to 2011, the depth of poverty based on the Full Poverty Line declined from 9.6% to 7.8%. Similar falls have been seen in the Extreme Poverty Gap measure, declining from 3.0% to 2.1% over the same period.
-                              </p>
+                               </p>
                               <br>
                             </div>
                             <hr class="hr-style">
@@ -798,14 +797,14 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Gross Primary School enrolments</h3>
                               <p class="p" style="color:#000;">
-                               Primary and lower secondary school enrolments in Kosovo have been high since at least 2009-10. As of 2013-14, no less than 95.5% of eligible students were enrolled in any given year. This suggests that very few children in Kosovo are missing out on this basic education and helps ensure basic literacy, mathematics and English tuition for young people.
-                               </p><br>
+                                Primary and lower secondary school enrolments in Kosovo have been high since at least 2009-10. As of 2013-14, no less than 95.5% of eligible students were enrolled in any given year. This suggests that very few children in Kosovo are missing out on this basic education and helps ensure basic literacy, mathematics and English tuition for young people.
+                              </p><br>
                               <p class="p" style="color:#000;">
                                 There has also been steady growth in the total number of students attending upper secondary and tertiary education. The gross enrolment rate in upper secondary education (general and VET) in 2011-12 was 92.1% - 5.2% points higher than in 2009-10. Additionally, the gross enrolment rate in Kosovo was significantly higher than other countries in the region, such as Croatia (87%), Bosnia & Herzegovina (86%), Serbia (86%) and Macedonia (78%). The percentage of students dropping out of upper secondary education has also decreased. By the end of the 2011-12 year, the dropout rate from upper secondary schools was 2.5%, compared to 3.1% for 2009-2010.
-                                </p><br>
+                              </p><br>
                               <p class="p" style="color:#000;">
-                                Similarly, there was steady growth in the total number of students attending tertiary education in Kosovo. This was mainly due to the increasing number of private and public higher education institutions and the limited number of employment opportunities. The enrolment rate in tertiary education in 2010-2011 was estimated to be around 57% of the eligible population based on age, where 67% of those who graduated from upper secondary schools were able to pursue tertiary education.
-                              </p>
+                              Similarly, there was steady growth in the total number of students attending tertiary education in Kosovo. This was mainly due to the increasing number of private and public higher education institutions and the limited number of employment opportunities. The enrolment rate in tertiary education in 2010-2011 was estimated to be around 57% of the eligible population based on age, where 67% of those who graduated from upper secondary schools were able to pursue tertiary education.
+                            </p>
                             <br><br>
                             </div>
                             <hr class="hr-style">
@@ -837,7 +836,7 @@ iframe{
                               <h3 style="color:#000;">Gender Enrolment Ratios</h3>
                               <p class="p" style="color:#000;">
                               Ensuring access to education for both sexes plays an important role in providing women with economic, health, and social opportunities to help their own lives, the lives of their families, and the positions of their communities currently and for the future. In Kosovo, the enrolment ratios for women (the number of women enrolled as a percentage of the number of men enrolled in school) increased across the board, but had been relatively high for all years with available data. The biggest improvement was seen in the enrolment ratio for high secondary school. In 2005-06, there were 75 women for every 100 men in high secondary school whereas there were 89 women for every 100 men in 2014-15.
-                              </p>
+                            </p>
                             </div>
                             <br>
                             <hr class="hr-style">
@@ -906,11 +905,11 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Infant mortality rate</h3>
                               <p class="p" style="color:#000;">
-                              The infant mortality rate in Kosovo is relatively low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012.
+                                The infant mortality rate in Kosovo is relatively low by the standards of developing nations, with 11.4 infant deaths per 100,000 live births in 2012. This rate showed significant variation between 2002 and 2012, ranging between 15.1 and 8.8, but has generally exhibited a downward trend.
                               </p><br>
                               <p class="p" style="color:#000;">
-                                This rate showed significant variation between 2002 and 2012, ranging between 15.1 and 8.8, but has generally exhibited a downward trend. However, the infant mortality rate in Kosovo is significantly higher than most western countries, and many of the ex-Yugoslav nations. For example, most countries in the EU have infant mortality rates below 5, while Serbia, Macedonia and Montenegro all have infant mortality rates around or just over 5. On the other hand, Albania also has a slightly higher infant mortality rate, estimated to be 13.8 in 2012.
-                              </p><br>
+                                However, the infant mortality rate in Kosovo is significantly higher than most western countries, and many of the ex-Yugoslav nations. For example, most countries in the EU have infant mortality rates below 5, while Serbia, Macedonia and Montenegro all have infant mortality rates around or just over 5. On the other hand, Albania also has a slightly higher infant mortality rate, estimated to be 13.8 in 2012.
+                            </p><br>
                             </div>
                             <br>
                             <hr class="hr-style">
@@ -949,8 +948,8 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Maternal Mortality</h3>
                               <p class="p" style="color:#000;">
-                              The maternal mortality rate in Kosovo has varied significantly over the past 10-15 years – from a high of 43.3 deaths per 100,000 live births in 2009 to 0 deaths in 2013 and 2014.
-                            </p><br>
+                                The maternal mortality rate in Kosovo has varied significantly over the past 10-15 years – from a high of 43.3 deaths per 100,000 live births in 2009 to 0 deaths in 2013 and 2014.
+                              </p><br>
                               <p class="p" style="color:#000;">
                                 Setting aside the spike in deaths in 2008 and 2009, there has been a clear downwards trend throughout the past 15 years. In more recent years, the data shows Kosovo also compares well with most countries in the region. For example, Macedonia had an estimated average maternal mortality rate of 8 deaths per 100,000 live births between 2010 and 2015. Meanwhile, Serbia and Albania averaged 17 and 29 deaths per 100,000 live births respectively for the same period. The average for the EU currently stands at approximately 8 deaths per 100,000 live births.
                               </p><br>
@@ -1012,15 +1011,32 @@ iframe{
                             <div class="row" id="bar-chart-div5" style="margin: auto;"></div>
 
                             <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
-                                      href="http://www.unkt.org/development-goals/progress-by-goal-for-kosovo/">
-                                  United Nations Kosovo Team</a> and <a href="http://data.worldbank.org/data-catalog/world-development-indicators">World Bank World Development Indicators</a>
+                                      href="http://www.euro.who.int/__data/assets/pdf_file/0009/251793/NTP-review_Kos_2013_April_FINAL.pdf?ua=1">
+                                  World Health Organization - Review of the Tuberculosis Programme in Kosovo</a>
                             </p>
                             <br><br>
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Rate of Tuberculosis</h3>
                               <p class="p" style="color:#000;">
-                                On the other hand, the prevalence of tuberculosis (TB) is much more widespread in Kosovo when compared to other countries in the region and the EU. While in Albania the incidence of TB is 16 per 100,000 people, in Macedonia 18, and 8 in the EU, in Kosovo the incidence of TB is 53 per 100,000 people.
+                                The prevalence of Tuberculosis (TB) in Kosovo has been on the decline since 2001 when there were 1,678 cases to 968 cases in 2012. However, even after this fall, tuberculosis is much more widespread in Kosovo than in other countries in the region and the EU. While in Albania the incidence of TB is 16 per 100,000 people, 18 in Macedonia, and 8 in the EU, in Kosovo the 968 cases in 2012 translates to approximately 53 per 100,000 people.
                               </p><br>
+                            </div>
+                            <br>
+                            <hr class="hr-style">
+                            <br>
+                            <div class="row" id="bar-chart-div8" style="margin: auto;"></div>
+
+                            <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
+                                      href="https://mics-surveys-prod.s3.amazonaws.com/MICS5/Central%20and%20Eastern%20Europe%20and%20the%20Commonwealth%20of%20Independent%20States/Kosovo%20under%20UNSC%20res.%201244/2013-2014/Final/Kosovo%20%28UNSCR%201244%29%202013-14%20MICS_English.pdf">
+                                  UNICEF Multiple Indicator Cluster Survey 2013-14</a>
+                            </p>
+                            <br><br>
+                            <div class="row" style="padding: 0 13.2% 10px 16.2%;">
+                              <h3 style="color:#000;">Measles Vaccinations</h3>
+                              <p class="p" style="color:#000;">
+                                The overall rate of vaccination in Kosovo, as reported by health facility
+records and/or vaccination cards, is high with almost 90% of children aged 24 to 35 months being vaccinated against measles. However, disadvantaged communities within Kosovo continue to display high rates of unvaccinated children, with less than 45% of children aged 24 to 35 months in Roma, Ashkali and Egyptian communities being vaccinated against measles.
+                                </p><br>
                             </div>
                           </div>
 
@@ -1036,9 +1052,9 @@ iframe{
                               <h3 style="color:#000;">Greening Kosovo</h3>
                               <p class="p" style="color:#000;">
                                 Kosovo has made some progress in afforesting (planting forests). Between 2004 and 2010, 2,253 hectares of forest were planted. However, when considering the total land area of Kosovo (1,090,800 hectares), this only represents 0.2%. Furthermore, many sections of forest, covering roughly 44% of Kosovo’s territory, are in poor condition due to inadequate management and illegal logging. This is causing increased soil erosion and landslides, with the costs of forest degradation estimated to be around 0.4% of GDP.
-                                </p><br>
+                              </p><br>
                               <p class="p" style="color:#000;">
-                                Kosovo also struggles with land degradation from unplanned extension of settlements, industrial and sanitary landfills, and erosion. According to estimates from the Ministry of Agriculture, Forestry and Rural Development (MAFRD), around 400 hectares of agricultural land is converted into construction land every year.
+                                Kosovo has made some progress in afforesting (planting forests). Between 2004 and 2010, 2,253 hectares of forest were planted. However, when considering the total land area of Kosovo (1,090,800 hectares), this only represents 0.2%. Furthermore, many sections of forest, covering roughly 44% of Kosovo’s territory, are in poor condition due to inadequate management and illegal logging. This is causing increased soil erosion and landslides, with the costs of forest degradation estimated to be around 0.4% of GDP.
                               </p><br>
                             </div>
                             <br>
@@ -1134,7 +1150,8 @@ iframe{
          <div class="sidebar">
 
            <h3>The Millennium Development Goals</h3>
-           <p class="p">At the Millennium Summit in September 2000, 189 member states of the United Nations (UN) and over 23 international organizations came together to adopt the Millennium Declaration. This Declaration included commitments to poverty eradication, social and economic development, and environmental protection. Many of these commitments drew from agreements and resolutions of world conferences and summits organized by the UN during the previous decade. One year later, the UN Secretary General’s Road Map for implementing the Millennium Declaration formally unveiled eight goals, supported by 18 quantified and time-bound targets and 48 indicators. These goals became known as the Millennium Development Goals (MDGs). The MDGs focused the efforts of the global community on achieving significant, measurable and multi-dimensional improvements in individuals’ lives by 2015. World leaders established targets and yardsticks for measuring results – not only for developing countries, but for developed countries to help fund development programs and for multilateral institutions to help countries implement them.</p>
+           <p class="p">At the Millennium Summit in September 2000, 189 member states of the United Nations (UN) and over 23 international organizations came together to adopt the Millennium Declaration. This Declaration included commitments to poverty eradication, social and economic development, and environmental protection. Many of these commitments drew from agreements and resolutions of world conferences and summits organized by the UN during the previous decade. One year later, the UN Secretary General’s Road Map for implementing the Millennium Declaration formally unveiled eight goals, supported by 18 quantified and time-bound targets and 48 indicators. These goals became known as the Millennium Development Goals (MDGs). The MDGs focused the efforts of the global community on achieving significant, measurable and multi-dimensional improvements in individuals’ lives by 2015. World leaders established targets and yardsticks for measuring results – not only for developing countries, but for developed countries to help fund development programs and for multilateral institutions to help countries implement them.
+           </p>
          </div>
        </div>
      </div>
