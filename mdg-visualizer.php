@@ -1054,8 +1054,8 @@ records and/or vaccination cards, is high with almost 90% of children aged 24 to
                                 Kosovo has made some progress in afforesting (planting forests). Between 2004 and 2010, 2,253 hectares of forest were planted. However, when considering the total land area of Kosovo (1,090,800 hectares), this only represents 0.2%. Furthermore, many sections of forest, covering roughly 44% of Kosovo’s territory, are in poor condition due to inadequate management and illegal logging. This is causing increased soil erosion and landslides, with the costs of forest degradation estimated to be around 0.4% of GDP.
                               </p><br>
                               <p class="p" style="color:#000;">
-                                Kosovo has made some progress in afforesting (planting forests). Between 2004 and 2010, 2,253 hectares of forest were planted. However, when considering the total land area of Kosovo (1,090,800 hectares), this only represents 0.2%. Furthermore, many sections of forest, covering roughly 44% of Kosovo’s territory, are in poor condition due to inadequate management and illegal logging. This is causing increased soil erosion and landslides, with the costs of forest degradation estimated to be around 0.4% of GDP.
-                              </p><br>
+                                Kosovo also struggles with land degradation from unplanned extension of settlements, industrial and sanitary landfills, and erosion. According to estimates from the Ministry of Agriculture, Forestry and Rural Development (MAFRD), around 400 hectares of agricultural land is converted into construction land every year.
+                                </p><br>
                             </div>
                             <br>
                             <hr class="hr-style">
