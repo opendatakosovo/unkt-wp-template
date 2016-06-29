@@ -757,11 +757,11 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Employment to population ratio</h3>
                               <p class="p" style="color:#000;">
-                                One of the keys to alleviating poverty is employment. Unfortunately, in Kosovo, the rates of labour force participation remain low and the unemployment rate remains high – particularly for women. In 2013, only 28.4% of the working age population was employed. This measure, and the labour force participation rate (40.6%) are the lowest in the Western Balkan region and far lower than the average for the EU. For women in particular these measures are extremely low, with the employment rate in 2013 standing at 12.9% and labour force participation at 21.1%.
-                              </p>
+                                Employment is key to alleviating poverty. Unfortunately, labour force participation remains low and unemployment remains high in Kosovo, particularly for women.
+                               </p>
                               <br>
                               <p class="p" style="color:#000;">
-                                That said, there has been some improvement in the rate of employment in Kosovo since 2002, albeit from a very low base. In 2002 the percentage of the working age population employed was just 23.8% and the same figure for women was just 8.8%.
+                              Albeit starting from a low base, some improvements have been made towards increasing employment in Kosovo. In 2002, 23.8% of the total working age population were employed, while only 8.8% of working age women were employed. By 2013, 28.4% of the total working age population were employed, while 12.9% of working age women were employed. However, despite the improvements, this measure, coupled with the total labour force participation rate of 40.6% in the same year, are the lowest in the Western Balkan region and far lower than the EU average. The female labour participation rate is also one of the lowest in the world at only 21.1%.
                               </p>
                             <br><br>
                             </div>
@@ -776,11 +776,11 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">GDP per Capita</h3>
                               <p class="p" style="color:#000;">
-                                Economic growth is also a powerful instrument for reducing poverty and improving standards of living. The Kosovo economy grew at a very high average rate of 6.3 percent per annum between 2006 and 2008, but it has not been able to sustain this high growth rate in the wake of the economic downturn in 2008-09. During the 2009-2013 period, the Kosovo economy grew at a much lower pace - averaging 3.3% per annum. The main contributors to this economic growth also changed after the 2009 period. Previously, the main contributor of this growth was the private sector (consumption and investment), in the period after the economic downturn, the economic growth rate was driven primarily by growing government expenditures.
+                              Economic growth is also a powerful instrument for reducing poverty and improving standards of living. Kosovo’s economy grew at a very high average rate of 6.3% per annum between 2006 and 2008, but it has not been able to sustain this high growth in the wake of the economic downturn in 2008-09. During the 2009-2013 period, the Kosovo economy grew at a much lower pace - averaging 3.3% per annum. The main contributors to this economic growth also changed after the 2009 period. Previously, the main contributor was the private sector (consumption and investment); however, growing government expenditures was the main contributor in the period after the economic downturn.
                               </p>
                               <br>
                               <p class="p" style="color:#000;">
-                                In countries with growing populations, increases in human welfare and standards of living are often better measured with growth in real GDP per capita, which shows the expansion in output not due simply to the growth in the population. When economic growth is measured with real GDP per capita, economic growth rates in Kosovo further decline. Growth in real GDP per capita averaged 4.8 percent per annum during the period 2006-2008 and 1.8 percent per annum from 2009 to 2013. To put this in perspective, if real GDP per capita in Kosovo continued to grow at 1.8 percent per annum, it would take the citizens of Kosovo 39 years to reach the same level as the average citizen of Montenegro.
+                              In countries with growing populations, changes in real GDP per capita, changes in output not explained by changes in the population, are often better for showing increases in human welfare and standards of living. When economic growth is measured with real GDP per capita, economic growth rates in Kosovo further decline. Growth in real GDP per capita averaged 4.8% per annum during the period 2006-2008 and 1.8% per annum from 2009 to 2013. To put this in perspective, if real GDP per capita in Kosovo continued to grow at 1.8% per annum, it would take the citizens of Kosovo 39 years to reach the same level as the average citizen of Montenegro.
                               </p>
                             <br><br>
                             </div>
@@ -818,7 +818,7 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Total Primary School enrolments</h3>
                               <p class="p" style="color:#000;">
-                                The absolute number of children enrolled has been falling since 2007-08, with over 50,000 less children enrolled in primary and lower secondary school in 2014-15 than in 2007-08. However, as reflected in the gross enrolments rates, this does not represent parents pulling children out of school, but simply the changing demographics in Kosovo.
+                              The absolute number of children enrolled has been falling since 2007-08, with over 50,000 less children enrolled in primary and lower secondary school in 2014-15 than in 2007-08. However, as reflected in the gross enrolments rates, this does not represent parents pulling children out of school, but simply the changing demographics in Kosovo.
                               </p>
                             <br><br>
                             </div>
@@ -851,13 +851,13 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Labour Force Participation</h3>
                               <p class="p" style="color:#000;">
-                                One of the main hurdles that must be overcome if Kosovo is to have gender equality is the very low labour participation rate for females. This rate, representing the number of women who are either currently employed or unemployed but actively looking for work as a percentage of all working age women, stood at 21.1% in 2013. That corresponds to about 2 out of every 10 women in Kosovo. By comparison, around 6 of every 10 men are either working or looking for work. This low rate of female labour participation is also extremely low for the region. Macedonia, Serbia and Albania all have female labour participation rates over 40%.
+                              One of the main hurdles Kosovo must overcome in order to achieve gender equality is the very low labour participation rate for females. This rate, representing the number of women who are either currently employed or unemployed but actively seeking work as a percentage of all working age women, stood at 21.1% in 2013. That corresponds to about 2 out of every 10 women in Kosovo, compared to about 6 out of every 10 men, either working or looking for work. This rate of female labour participation is also extremely low for the region; Macedonia, Serbia and Albania all have female labour participation rates over 40%.
                               </p><br>
                             <p class="p" style="color:#000;">
-                              Unfortunately, the female labour participation has also been on a downwards trend in recent years. As recently as 2002, the female labour participation rate in Kosovo was 34.5% - the highest recorded level in the post-war period. Although the 2013 figure of 21.1% is a slight improvement from 2012 (17.8%), it is hard to say whether this is the start of a new upward trend, or simply an anomaly.
+                            Unfortunately, the female labour participation has also been on a downwards trend in recent years. As recently as 2002, the female labour participation rate in Kosovo was 34.5% - the highest recorded level in the post-war period. Although the 2013 figure (21.1%) is a slight improvement on the 2012 figure (17.9%), it is hard to determine whether this is the beginning of an upward trend, or simply an anomaly.
                             </p><br>
                             <p class="p" style="color:#000;">
-                              Finally, despite lower activity rates, unemployment rates for women are also higher. Even though only 2 in 20 women are active in the labour force, the unemployment rate for women stands at 40%, as compared to 28% for men. Less than 10% of businesses are women-led or women-owned, and female-led businesses are smaller (women have on average 3.07 employees, compared to 5.27 among men-led businesses). Additionally, these business often have difficulty accessing credit and loans because they lack collateral. As a result, men hold about 92% of collateral properties in Kosovo.
+                            Finally, despite lower activity rates, unemployment rates for women are also higher. Even though only 2 in 20 women are active in the labour force, the unemployment rate for women stood at 40%, compared to 28.1% for men in 2012. Less than 10% of businesses are female-led or female-owned, and female-led businesses are smaller (females have on average 3.07 employees, compared to 5.27 among male-led businesses). Additionally, these businesses often have difficulty accessing credit and loans due to their limited collateral. Males currently hold about 92% of collateral properties in Kosovo.
                             </p>
                             </div>
                             <br>
@@ -872,10 +872,10 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Representation in Parliament</h3>
                               <p class="p" style="color:#000;">
-                                Women remain underrepresented both quantitatively and qualitatively in decision-making processes at all levels. The target defined by the law on gender equality of 40% representation for all levels of decision-making has not yet been achieved with women currently holding only 33.3% of the seats in the Kosovo Assembly (40 of 120 seats). On the other hand, only 14 of these women were elected, while 24 received their positions due to a quota. Women also remain underrepresented among ministers, deputy ministers, and chairs of assembly committees.
-                              </p><br>
+                                Women remain underrepresented both quantitatively and qualitatively in decision-making processes at all levels in parliament. The Law on Gender Equality states 40% representation for all levels of decision-making; however this has yet to be achieved. In 2014, women held only 33.3% of the seats in the Kosovo Assembly (40 of 120 seats). On the other hand, only 14 of these women were elected, while 24 received their positions due to a quota. Women also remain underrepresented among ministers, deputy ministers, and chairs of assembly committees.
+                                </p><br>
                               <p class="p" style="color:#000;">
-                                Similarly, women are severely underrepresented in decision-making positions within municipalities; leading only 14 directorates in all of Kosovo (4.4%) and with only one municipality having a female mayor - Gjakova/Djakovica. Finally, among Kosovo’s public employees only 38% are women – however it should be noted that due to the low participation rate of women in Kosovo, this actually means women are being overrepresented when the relative availability of men and women is taken into account.
+                              Similarly, women are severely underrepresented in decision-making positions within municipalities; women only lead 14 directorates in all of Kosovo (4.4%) and only the municipality of Gjakova/Djakovica has a female mayor. Finally, among Kosovo’s public employees only 38% are women – however it should be noted that due to the low participation rate of women in Kosovo, this actually means women are being overrepresented when the relative availability of men and women is taken into account.
                               </p><br>
                             </div>
                             <hr class="hr-style">
@@ -888,7 +888,7 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Life Expectancy at Birth</h3>
                               <p class="p" style="color:#000;">
-                                Like many countries, female life expectancy at birth (73.0 years) is higher than male life expectancy (68.7 years) in Kosovo. Additionally, the life expectancy for both males and females in increasing in Kosovo, with both sexes adding approximately 3 years since 2001. However, the life expectancy in Kosovo is significantly lower than other countries in the region. In Kosovo the life expectancy at birth is 9 years lower than Albania, 5 years lower then Macedonia and Serbia, and 11 years lower than the EU average.
+                              Like many countries, female life expectancy at birth is higher than male life expectancy in Kosovo. In 2013, female life expectancy at birth was 73.0 years meanwhile the male life expectancy at birth was 68.7 years. Additionally, the life expectancy for both males and females is increasing in Kosovo, with both sexes adding approximately 3 years since 2001. However, the life expectancy in Kosovo is significantly lower than other countries in the region. In Kosovo in 2013, the life expectancy at birth is 9 years lower than Albania, 5 years lower then Macedonia and Serbia, and 11 years lower than the EU average.
                               </p><br>
                             </div>
                             <br>
@@ -921,8 +921,8 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Early neonatal mortality rate</h3>
                               <p class="p" style="color:#000;">
-                                A subset of infant mortality, the early neonatal mortality rate represents the deaths of children within 6 days of birth, whereas the infant mortality rate represents deaths of children less than one year old. What this data reveals better than the infant mortality rate is the strong improvements being made in postnatal care. From an early neonatal mortality rate of 14.8 in 2000, this rate had fallen to 3.7 in 2014.
-                              </p><br>
+                                Early neonatal mortality rate is a subset of infant mortality and represents the deaths of children within 6 days of birth. Whereas infant mortality rate represents deaths of children less than one-year old, neonatal mortality data can better reveal the strong improvements being made in postnatal care. From an early neonatal mortality rate of 14.8 in 2000, this rate had fallen to 3.7 in 2014.
+                                </p><br>
                             </div>
                             <br>
                             <hr class="hr-style">
@@ -934,7 +934,7 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Stillbirth rate</h3>
                               <p class="p" style="color:#000;">
-                                The positive downtrend in the early neonatal mortality rate can also be seen in the decreased number of stillbirths. Typically taken to mean late fetal death (death between 22 weeks gestation and birth), the rate has almost halved between 2000 and 2014, falling from a high of 15.9 in 2003 to 8.4 in 2014. Combined with the improvement in the early neonatal mortality rate, this data would seem to suggest improvements continue be made in both pre and postnatal care in Kosovo.
+                              The positive downtrend in the early neonatal mortality rate can also be seen in the decreased number of stillbirths. Typically taken to mean late foetal death (death between 22 weeks’ gestation and birth), the rate has almost halved between 2000 and 2014, falling from a high of 15.9 in 2003 to 8.4 in 2014. Combined with the improvement in the early neonatal mortality rate, this data suggest that improvements should continue to be made in both pre- and post-natal care in Kosovo.
                               </p><br>
                             </div>
                           </div>
@@ -968,7 +968,7 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Aware of Modern Contraception</h3>
                               <p class="p" style="color:#000;">
-                                Awareness of modern contraception in Kosovo decreased between 2003 and 2009, but still remains generally high. This awareness also varies with age, with women aged between 25 and 45 having the highest levels of awareness.
+                              Awareness of modern contraception in Kosovo decreased between 2003 and 2009, but still remains generally high. This awareness also varies with age, with women aged between 25 and 45 having the highest levels of awareness.
                               </p><br>
                             </div>
                             <br>
@@ -985,7 +985,7 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Using Modern Contraception</h3>
                               <p class="p" style="color:#000;">
-                                The usage of contraception remains at fairly low rates, particularly amongst women aged 25 or younger. This is likely to be at least partially explainable by the relatively young age of marriage for many women in Kosovo, but could also be evidence that a cultural stigma around the use of contraception still exists.
+                              The usage of contraception remains fairly low, particularly amongst women aged 25 and younger. This is may be partially explainable by the relatively young age of marriage for many women in Kosovo, but could also be evidence of the cultural stigma that still exists around the use of contraception.
                               </p><br>
                             </div>
                           </div>
@@ -1018,7 +1018,7 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Rate of Tuberculosis</h3>
                               <p class="p" style="color:#000;">
-                                The prevalence of Tuberculosis (TB) in Kosovo has been on the decline since 2001 when there were 1,678 cases to 968 cases in 2012. However, even after this fall, tuberculosis is much more widespread in Kosovo than in other countries in the region and the EU. While in Albania the incidence of TB is 16 per 100,000 people, 18 in Macedonia, and 8 in the EU, in Kosovo the 968 cases in 2012 translates to approximately 53 per 100,000 people.
+                              The prevalence of Tuberculosis (TB) in Kosovo has been on the decline; there were 1,678 cases in 2001 and 968 cases in 2012. However, even after this fall, tuberculosis is much more widespread in Kosovo than in other countries in the region and the EU. While the incidence of TB is 18 per 100,000 people in Albania, 17 in Macedonia, and 8 in the EU, the 968 cases in Kosovo during 2012 translates to approximately 53 per 100,000 people.
                               </p><br>
                             </div>
                             <br>
@@ -1034,9 +1034,8 @@ iframe{
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Measles Vaccinations</h3>
                               <p class="p" style="color:#000;">
-                                The overall rate of vaccination in Kosovo, as reported by health facility
-records and/or vaccination cards, is high with almost 90% of children aged 24 to 35 months being vaccinated against measles. However, disadvantaged communities within Kosovo continue to display high rates of unvaccinated children, with less than 45% of children aged 24 to 35 months in Roma, Ashkali and Egyptian communities being vaccinated against measles.
-                                </p><br>
+                              The overall rate of vaccination in Kosovo, as reported by health facility records and/or vaccination cards, is high; almost 90% of children between 24 and 35 months are vaccinated against measles. However, disadvantaged communities within Kosovo continue to display high rates of unvaccinated children, with less than 45% of children between 24 and 35 months in Roma, Ashkali and Egyptian communities being vaccinated against measles.
+                              </p><br>
                             </div>
                           </div>
 
@@ -1070,26 +1069,26 @@ records and/or vaccination cards, is high with almost 90% of children aged 24 to
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Renewable Energy Output/Usage</h3>
                               <p class="p" style="color:#000;">
-                                Kosovo has a very low rate of renewable energy output. Between 2001 and 2012, the output of renewable energy averaged just 2% of total energy output. While renewable energy consumption was significantly higher, averaging 22.1% over the same period, the lack of growth in output suggests little investment is being made into renewable energy in Kosovo. What is more, emissions of all greenhouse gases in Kosovo are increasing annually by approximately about 10 percent.
+                              Kosovo has a very low output rate of renewable energy. Between 2001 and 2012, the output of renewable energy averaged just 2% of total energy output. While renewable energy consumption was significantly higher, averaging 22.1% over the same period, the lack of growth in output suggests little investment into renewable energy in Kosovo. Moreover, greenhouse gas emissions in Kosovo are increasing annually by approximately about 10%.
                               </p><br>
                               <p class="p" style="color:#000;">
-                                The lack of investment in renewables is concerning as air pollution is a critical environmental problem in urban areas in Kosovo. Ambient air quality is particularly poor in Prishtine/Pristina, the Obiliq/Obilic area, the Drenas area, and Mitrovice/a. The principal contaminants are sulfur dioxide (SO2), nitrogen oxides NO and NO2 (NOx), ozone (O3), lead (Pb), carbon dioxide (CO2), particulate matter (PM or dust), and dioxin. The main sources of air pollution in Kosovo are:
-                              </p>
+                                The lack of investment in renewables is concerning since air pollution is a critical environmental problem in urban areas in Kosovo. Ambient air quality is particularly poor in Prishtine/Pristina, the Obiliq/Obilic area, the Drenas area, and Mitrovice/a. The principal contaminants are sulphur dioxide (SO2), nitrogen oxides NO and NO2 (NOx), ozone (O3), lead (Pb), carbon dioxide (CO2), particulate matter (PM or dust), and dioxin. The main sources of air pollution in Kosovo are:
+                                </p>
                               <ul class="ul" style="color: #000;">
                                 <li class="p">
-                                  the relatively old two coal-fired power plants of the Kosovo Energy Corporation (KEK) and its coal-mining area
+                                  the two relatively old coal-fired power plants of the Kosovo Energy Corporation (KEK) and its coal-mining area
                                 </li>
                                 <li class="p">
                                   the burning of wood and lignite for household heating industrial complexes such as the Mitrovica Industrial Park (Trepca), nickel mining and production in Drenas/Gllogovc (Ferronikeli) and the cement factory in Hani Elexi (Sharrcem), and
-                                </li>
+                                  </li>
                                 <li class="p">
                                   fossil fuels from increased traffic and old vehicles.
                                 </li>
                               </ul>
                               <br>
                               <p class="p" style="color:#000;">
-                                Overall, compared on per capita terms, Kosovo has relatively low emissions in comparison with other countries in Europe, (5.7t CO2 equivalent per capita per annum in 2008). However, the compared per unit of GDP (0.84 kg CO2 equivalent per EUR in 2008) greenhouse gas emissions in Kosovo are almost double those in the EU (average 0.4 kg/EUR).
-                              </p><br>
+                               Kosovo has relatively low per capita emissions in comparison to other countries in Europe (5.7t CO2 equivalent per capita per annum in 2008). However, the compared per unit of GDP (0.84 kg CO2 equivalent per EUR in 2008) greenhouse gas emissions in Kosovo are almost double those in the EU (average 0.4 kg/EUR).
+                                </p><br>
                             </div>
                             <br>
                             <hr class="hr-style">
@@ -1103,8 +1102,8 @@ records and/or vaccination cards, is high with almost 90% of children aged 24 to
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Biodiversity</h3>
                               <p class="p" style="color:#000;">
-                                Kosovo has about 1,800 species of flora classified into 139 kingdoms, 63 phyla, 35 orders and 20 classes. More recent data shows there could be as many as 2,500 species. What makes Kosovo flora and fauna important and attractive is the large number (over 200) of endemic, endemic-relict and sub-endemic species. Especially important is a local endemic group of 13 plant species, found only on the mountains. There are also about 250 species of wild vertebrates. Although data is sparse for invertebrate species, about 200 species of butterflies and 500 species of aquatic macrobentos have been recorded. The richest areas with fauna are in Malet e Sharrit and Bjeshkët e Nemuna where it is estimated that there are 8 fish species, 13 terraqueos, 12 species of elusory, 180 bird species, 37 species of mammals and 147 butterfly species.
-                              </p><br>
+                                Kosovo has about 1,800 species of flora classified into 139 kingdoms, 63 phyla, 35 orders and 20 classes. More recent data shows there could be as many as 2,500 species. What makes Kosovo flora and fauna important and attractive is the large number (over 200) of endemic, endemic-relict and sub-endemic species. Especially important is a local endemic group of 13 plant species, found only on the mountains. There are also about 250 species of wild vertebrates. Although data is sparse for invertebrate species, about 200 species of butterflies and 500 species of aquatic macrobentos have been recorded. The richest areas with fauna are in Malet e Sharrit and Bjeshkët e Nemuna, where it is estimated that there are 8 fish species, 13 endemic plant species, 12 species of elusory, 180 bird species, 37 species of mammals and 147 butterfly species.
+                                </p><br>
                             </div>
                             <br>
                             <hr class="hr-style">
@@ -1120,7 +1119,7 @@ records and/or vaccination cards, is high with almost 90% of children aged 24 to
                             <div class="row" style="padding: 0 13.2% 10px 16.2%;">
                               <h3 style="color:#000;">Land Use By Municipality</h3>
                               <p class="p" style="color:#000;">
-                                As can be seen from the data, most land in Kosovo is split between agricultural land and forested land. The municipalities with largest amounts of forested land are Prishtinë/Priština, Leposaviç/Leposavić and Gjakovë/Đakovica. At the other end of the spectrum, the smaller (geographically) municipalities of Obiliq/Obilić and Fushë Kosovë/Kosovo Polje have little forested land and mainly consist of agricultural land.
+                                Most land in Kosovo is split between agricultural land and forested land. The municipalities with the largest amounts of forested land are Prishtinë/Priština, Leposaviç/Leposavić and Gjakovë/Đakovica. At the other end of the spectrum, the smaller (geographically) municipalities of Obiliq/Obilić and Fushë Kosovë/Kosovo Polje have little forested land and mainly consist of agricultural land.
                               </p><br>
                             </div>
                           </div>
