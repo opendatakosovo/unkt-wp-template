@@ -8020,7 +8020,7 @@ body.overflow {
 .article-content .section {
   position: relative;
 }
-.article-content .section h3 {
+.article-content h3 {
   position: relative;
   width: 100%;
   margin-bottom: 25px;
@@ -8216,8 +8216,8 @@ body.overflow {
   .article-content .section {
     position: relative;
   }
-  .article-content .section h3 {
-    position: absolute;
+  .article-content h3 {
+    /*position: absolute;*/
     /*top: 5px;*/
     left: -48%;
     width: 48.2%;
