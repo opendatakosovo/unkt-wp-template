@@ -14,8 +14,8 @@
   filter: "";
 }
 .image-grayscale {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 170px;
+    max-width: 170px;
     overflow: hidden;
 }
 .li-second-row{
