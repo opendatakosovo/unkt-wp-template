@@ -7106,19 +7106,25 @@ body.overflow {
 }
 @media (min-width: 48em) {
   .agencies-bottom .agencies-logos ul li {
-    width: calc(100% / 3);
+    width: calc(100% / 2);
   }
 }
 @media (min-width: 62em) {
   .agencies-bottom .agencies-logos ul li {
-    width: calc(100% / 4);
+    width: calc(100% / 2);
   }
 }
 @media (min-width: 75em) {
   .agencies-bottom .agencies-logos ul li {
-    width: calc(100% / 5);
+    width: calc(100% / 4);
   }
 }
+/*
+@media (min-width: 75em) {
+  .agencies-bottom .agencies-logos ul li.not-first-row {
+    width: calc(100% / 3);
+  }
+}*/
 @media (min-width: 62em) {
   .agencies-bottom {
     display: -webkit-box;
