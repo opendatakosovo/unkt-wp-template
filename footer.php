@@ -92,7 +92,10 @@
 					<h5>Contact Information</h5>
 					<p>UN Development Coordination Office<br />
 					United Nations Kosovo Team<br />
-					Tel: Tel: +381 38 249 066 ext 415, 416, 418 & 423</p>
+					Tel: +381 38 249 066 </p>
+					<p>
+					Ext 415, 416, 418 & 423
+					</p>
 					<p><a href="mailto:unkt.ks@one.un.org" target="_blank">unkt.ks@one.un.org</a>
 				</li>
 				<li>
