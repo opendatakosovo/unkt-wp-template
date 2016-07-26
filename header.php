@@ -97,7 +97,7 @@
 		</a>
 		<ul class="language">
 			<li>
-				<a target="_blank" href="http://www.youtube.com/channel/UCxaw3b7cL_8fE2I4XwQvUgA" class="icon-youtube"></a>
+				<a target="_blank" href="https://www.youtube.com/channel/UCOlwsaODkx5ux4ho6sQnvFw" class="icon-youtube"></a>
 			</li>
 			<li>
 				<a target="_blank" href="http://www.facebook.com/UNKosovoTeam" class="icon-facebook"></a>

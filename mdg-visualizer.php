@@ -1043,7 +1043,7 @@ iframe{
                             <div class="row" id="line-chart-div12" style="margin: auto;"></div>
 
                             <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
-                                      href="https://ask.rks-gov.net/ENG/enviroment/publications/doc_download/1295-some-facts-on-the-environment-2015">Some
+                                      href="<?php bloginfo('template_url'); ?>/dist/pdf/some-facts-on-the-environment-2015.pdf">Some
                                   Facts on the Environment 2015</a>
                             </p>
                             <br><br>
@@ -1062,7 +1062,7 @@ iframe{
                             <div class="row" id="line-chart-div13" style="margin: auto;"></div>
 
                             <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
-                                      href="http://data.worldbank.org/data-catalog/world-development-indicators">Some
+                                      href="http://data.worldbank.org/data-catalog/world-development-indicators">
                                   World Bank World Development Indicators</a>
                             </p>
                             <br><br>
@@ -1095,7 +1095,7 @@ iframe{
                             <br>
                             <div class="row" id="bar-chart-div4" style="margin: auto;"></div>
                             <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
-                                      href="http://www.kryeministri-ks.net/repository/docs/REVISING_and_UPDATING_the_KOSOVO_ENVIRONMENTAL_STRATEGY_(KES).pdf">Some
+                                      href="http://www.kryeministri-ks.net/repository/docs/REVISING_and_UPDATING_the_KOSOVO_ENVIRONMENTAL_STRATEGY_(KES).pdf">
                                   Kosovo Environmental Strategy and National Environmental Action Plan</a>
                             </p>
                             <br><br>
@@ -1111,7 +1111,7 @@ iframe{
                             <div class="row" id="bar-chart-div7" style="margin: auto;"></div>
 
                             <p class="p" style="font-size:13px; display:inline-block; margin-left:15%;">Source: <a
-                                      href="https://ask.rks-gov.net/ENG/enviroment/publications/doc_download/990-some-facts-on-environment-2011">Some
+                                      href="<?php bloginfo('template_url'); ?>/dist/pdf/some-facts-on-environment-2011.pdf">
                                       Some Facts on the Environment 2011</a>
                             </p>
                             <br><br>
