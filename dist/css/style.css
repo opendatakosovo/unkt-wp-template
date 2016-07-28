@@ -8222,8 +8222,8 @@ body.overflow {
   .article-content .section {
     position: relative;
   }
-  .article-content h3 {
-    /*position: absolute;*/
+  .article-content .section h3 {
+    position: absolute;
     /*top: 5px;*/
     left: -48%;
     width: 48.2%;
