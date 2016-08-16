@@ -82,7 +82,6 @@
 				<img src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo_small.svg" alt="UNKT Logo" />
 			</div>
 			<div class="copyright">
-				<p>* References to Kosovo on this website shall be understood to be in the context of Security Council Resolution 1244 (1999).</p>
 				<p>Copyright @ 2016 UNKT<br />All rights reserved ©</p>
 			</div>
 		</div>
@@ -137,6 +136,8 @@
 					</ul>
 				</li>
 			</ul>
+			<p style="margin-top: 18em;"> *References to Kosovo on this website shall be understood to be in the context of Security Council Resolution 1244 (1999).<p>
+
 		</div>
 	</div>
 	<div class="search">
