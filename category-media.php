@@ -38,9 +38,6 @@ tabs.find( ".ui-tabs-nav" ).sortable({
      <li>
       <a href="#gallery">Galleries</a>
      </li>
-     <li>
-      <a href="#community-contributions">Community Contributions</a>
-     </li>
    </ul>
    <div id="latest">
      <div class="row">
@@ -357,7 +354,7 @@ tabs.find( ".ui-tabs-nav" ).sortable({
    </div>
    <!-- End of gallery div -->
    <!-- Community contributions -->
-   <div id="community-contributions">
+  <!-- <div id="community-contributions">
      <div class="row">
          <div id="community-contributions-container" class="article-container filterize">
 
@@ -425,7 +422,7 @@ tabs.find( ".ui-tabs-nav" ).sortable({
          wp_reset_postdata(); ?>
      </div>
 
-   </div>
+   </div> -->
    <!-- // End of community-contributions div -->
  </div>
 </div>

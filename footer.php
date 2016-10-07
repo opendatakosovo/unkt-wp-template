@@ -82,7 +82,7 @@
 				<img src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo_small.svg" alt="UNKT Logo" />
 			</div>
 			<div class="copyright">
-				<p>* References to Kosovo on this website shall be understood to be in the context of Security Council Resolution 1244 (1999).</p>
+			    <p> References to Kosovo on this website shall be understood to be in the context of Security Council Resolution 1244 (1999).<p>
 				<p>Copyright @ 2016 UNKT<br />All rights reserved ©</p>
 			</div>
 		</div>
@@ -90,7 +90,7 @@
 			<ul>
 				<li>
 					<h5>Contact Information</h5>
-					<p>UN Development Coordination Office<br />
+					<p>Office of UN Development Coordinator<br />
 					United Nations Kosovo Team<br />
 					Tel: +381 38 249 066 <br />
 					Ext: 415, 416, 418 & 423
@@ -137,6 +137,7 @@
 					</ul>
 				</li>
 			</ul>
+
 		</div>
 	</div>
 	<div class="search">

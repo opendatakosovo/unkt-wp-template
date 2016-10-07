@@ -63,10 +63,13 @@
 	?>" />
 <meta property="og:site_name" content="<?php bloginfo('name') ?>" />
 <meta property="fb:admins" content="Facebook numeric ID" />
-<script src="http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js"></script>
-<script src="http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe-ui-default.min.js"></script>
-<link rel="stylesheet" type="text/css" href="http://photoswipe.s3.amazonaws.com/pswp/dist/photoswipe.css">
-<link rel="stylesheet" type="text/css" href="http://photoswipe.s3.amazonaws.com/pswp/dist/default-skin/default-skin.css">
+
+
+<script src="<?php bloginfo('template_url'); ?>/dist/photoswipe/photoswipe.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/dist/photoswipe/photoswipe-ui-default.min.js"></script>
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/dist/photoswipe/photoswipe.min.js">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/dist/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/dist/photoswipe/default-skin/default-skin.css">
   <?php wp_enqueue_script("jquery"); ?>
   <?php wp_head(); ?>
 </head>

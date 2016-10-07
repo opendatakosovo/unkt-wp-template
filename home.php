@@ -133,9 +133,6 @@ $(".menu li").mouseleave(function(e) {
   							<a class="filter-posts" data-category="<?php echo get_category_by_slug('gallery')->term_id;?>" href="#" data-filter=".gallery">Galleries</a>
   						</li>
   						<li>
-  							<a class="filter-posts" data-category="<?php echo get_category_by_slug('community-contributions')->term_id;?>" href="#" data-filter=".community-contributions">Community Contributions</a>
-  						</li>
-  						<li>
   							<a class="filter-posts" data-category="<?php echo get_category_by_slug('publications')->term_id;?>" href="#" data-filter=".publications">Publications</a>
   						</li>
   						<li>
@@ -153,7 +150,6 @@ $(".menu li").mouseleave(function(e) {
   	</div> -->
     <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
     <script>
     $(function() {
       var tabs = $( "#tabs" ).tabs();
@@ -188,9 +184,6 @@ $(".menu li").mouseleave(function(e) {
               </li>
               <li>
                 <a href="#gallery">Galleries</a>
-              </li>
-              <li>
-                <a href="#community-contributions">Community Contributions</a>
               </li>
               <li>
                 <a href="#publications">Publications</a>
@@ -594,7 +587,7 @@ $(".menu li").mouseleave(function(e) {
             </div>
             <!-- End of gallery div -->
             <!-- Community contributions -->
-            <div id="community-contributions">
+            <!--<div id="community-contributions">
               <div class="row">
                   <div id="community-contributions-container" class="article-container filterize">
 
@@ -669,7 +662,7 @@ $(".menu li").mouseleave(function(e) {
                   wp_reset_postdata(); ?>
               </div>
 
-            </div>
+            </div>-->
             <!-- // End of community-contributions div -->
             <!-- publications -->
             <div id="publications">
