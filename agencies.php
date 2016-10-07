@@ -97,11 +97,12 @@
 							<img src="<?php bloginfo('template_url'); ?>/dist/img/unicef.png" alt="" class="image-grayscale  not-first-row"   />
 						</a>
 					</li>
-                    <li>
-						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/ilo' ) );?>">
-							<img src="<?php bloginfo('template_url'); ?>/dist/img/ilo.png" alt="" class="image-grayscale  not-first-row"   />
+					<li>
+						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/fao' )->ID );?>">
+							<img src="<?php bloginfo('template_url'); ?>/dist/img/fao.png" alt="" class="image-grayscale  not-first-row"   />
 						</a>
 					</li>
+                  
         </div>
 					<li>
 						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/ohchr' )->ID );?>">
@@ -123,26 +124,7 @@
 							<img src="<?php bloginfo('template_url'); ?>/dist/img/world-bank.png" alt="" class="image-grayscale  not-first-row"   />
 						</a>
 					</li>
-					<li>
-						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/unodc' )->ID );?>">
-							<img src="<?php bloginfo('template_url'); ?>/dist/img/unodc.png" alt="" class="image-grayscale  not-first-row"   />
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/un-women' )->ID );?>">
-							<img src="<?php bloginfo('template_url'); ?>/dist/img/un-women.png" alt="" class="image-grayscale  not-first-row"   />
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo get_permalink( get_page_by_path( 'fao' )->ID );?>">
-							<img src="<?php bloginfo('template_url'); ?>/dist/img/fao.png" alt="" class="image-grayscale  not-first-row"   />
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/unfpa' )->ID );?>">
-							<img src="<?php bloginfo('template_url'); ?>/dist/img/unfpa.png" alt="" class="image-grayscale  not-first-row"   />
-						</a>
-					</li>
+					
 					<li>
 						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/undp' )->ID );?>">
 							<img src="<?php bloginfo('template_url'); ?>/dist/img/undp.png" alt="" class="image-grayscale  not-first-row"   />
@@ -156,6 +138,27 @@
 					<li>
 						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/unesco' )->ID );?>">
 							<img src="<?php bloginfo('template_url'); ?>/dist/img/unesco.png" alt="" class="image-grayscale  not-first-row"   />
+						</a>
+					</li>
+					  <li>
+						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/ilo' ) );?>">
+							<img src="<?php bloginfo('template_url'); ?>/dist/img/ilo1.png" alt="" class="image-grayscale  not-first-row"   />
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/unodc' )->ID );?>">
+							<img src="<?php bloginfo('template_url'); ?>/dist/img/unodc.png" alt="" class="image-grayscale  not-first-row"   />
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/un-women' )->ID );?>">
+							<img src="<?php bloginfo('template_url'); ?>/dist/img/un-women.png" alt="" class="image-grayscale  not-first-row"   />
+						</a>
+					</li>
+					
+					<li>
+						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/unfpa' )->ID );?>">
+							<img src="<?php bloginfo('template_url'); ?>/dist/img/unfpa.png" alt="" class="image-grayscale  not-first-row"   />
 						</a>
 					</li>
 				</ul>
