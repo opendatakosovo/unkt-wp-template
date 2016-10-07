@@ -7036,7 +7036,7 @@ body.overflow {
   line-height: 40px;
   letter-spacing: .04px;
   font-size:1.6em;
-  text-transform: uppercase;
+  
 }
 @media (min-width: 62em) {
   .agencies-top {
@@ -9372,4 +9372,6 @@ img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 .alignright {float:right; }
 .alignleft {float:left; }
 .aligncenter {display: block; margin-left: auto; margin-right: auto}
-
+.footer-left .copyright{
+  text-transform: none;
+}
