@@ -74,6 +74,11 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
+		<!-- do shortcode here -->
+
 	</div>
+	<?php echo do_shortcode('[RPPostNav]'); ?>
+
 <?php get_footer();?>
