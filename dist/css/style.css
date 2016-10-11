@@ -9189,6 +9189,7 @@ and (max-device-width : 480px) {
   }
   .menu{
     padding-right: 60px;
+    text-align: left;
   }
 }
 @media(max-device-width : 990px) {
