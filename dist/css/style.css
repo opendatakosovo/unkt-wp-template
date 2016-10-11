@@ -7893,7 +7893,7 @@ body.overflow {
 .article h3 {
   float: left;
   padding-top: 40px;
-  font-family: "UniversLTStd-Bold";
+  font-family: "Roboto-Bold";
   font-size: 18px;
   line-height: 24px;
   letter-spacing: .04px;
@@ -8051,7 +8051,7 @@ body.overflow {
 }
 .article-content h5 {
   margin-bottom: 40px;
-  font-family: "UniversLTStd-Bold";
+  font-family: "Roboto-Bold";
   font-size: 18px;
   line-height: 30px;
   letter-spacing: .04px;
