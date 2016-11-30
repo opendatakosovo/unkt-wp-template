@@ -9379,3 +9379,6 @@ img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 .prev-next-post-link{
   text-align: center;
 }
+span[itemprop="name"]{
+  color:black;
+}
