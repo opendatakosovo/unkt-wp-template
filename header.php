@@ -75,12 +75,12 @@
   <?php wp_head(); ?>
 </head>
 <body>
-	<div style="display:none;" id="loader" class="loader">
+<!-- 	<div style="display:none;" id="loader" class="loader">
 		<div class="loader-inner">
 			<img class="logo-loader logo-1" src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo1.svg" alt="" />
 			<img class="logo-loader logo-2" src="<?php bloginfo('template_url'); ?>/dist/img/unkt_logo_text.svg" alt="" />
 		</div>
-	</div>
+	</div> -->
 	<div style="display:none;" id="subscribe-header" class="subscribe subscribe-big">
 		<div class="subscribe-label">
 			<p>Subscribe for the latest news and updates:</p>
