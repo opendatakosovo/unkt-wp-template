@@ -216,7 +216,8 @@ $(".menu li").mouseleave(function(e) {
                           ));
 
                           while ($loop->have_posts()) : $loop->the_post();
-                          $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                          $featured_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
+
                           $outside_link =get_field('external_source_link');
 
                           $the_category_slug = "";
@@ -252,7 +253,7 @@ $(".menu li").mouseleave(function(e) {
                               </div>
                             </a>
                           </div>
-                          <?php }else{ ?>
+                          <?php }else{  ?>
                             <div id="<?php echo $post->ID ?>" class="col-xs-12 col-lg-3 item <?php echo $the_category_slug; ?>">
                               <a href="<?php  echo $outside_link; ?>" target="_blank" class="article-full-img <?php if($the_category=="Jobs"){ echo 'article-red'; }else{ echo 'article-blue-light'; } ?>">
                                 <?php echo $article_img_div; ?>
@@ -301,7 +302,7 @@ $(".menu li").mouseleave(function(e) {
                        ));
 
                       while ($loop->have_posts()) : $loop->the_post();
-                             $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                             $featured_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
                              $outside_link =get_field('external_source_link');
                              $the_category = "";
                              foreach(get_the_category() as $category) {
@@ -376,7 +377,7 @@ $(".menu li").mouseleave(function(e) {
                      ));
 
                     while ($loop->have_posts()) : $loop->the_post();
-                           $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                           $featured_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
                            $outside_link =get_field('external_source_link');
                            $the_category = "";
                            foreach(get_the_category() as $category) {
@@ -454,7 +455,7 @@ $(".menu li").mouseleave(function(e) {
                      ));
 
                     while ($loop->have_posts()) : $loop->the_post();
-                           $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                           $featured_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
                            $outside_link =get_field('external_source_link');
                            $the_category = "";
                            foreach(get_the_category() as $category) {
@@ -532,7 +533,7 @@ $(".menu li").mouseleave(function(e) {
                      ));
 
                     while ($loop->have_posts()) : $loop->the_post();
-                           $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                           $featured_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
                            $outside_link =get_field('external_source_link');
                            $the_category = "";
                            foreach(get_the_category() as $category) {
@@ -688,7 +689,7 @@ $(".menu li").mouseleave(function(e) {
                      ));
                      if ($loop-> have_posts() ) :
                     while ($loop->have_posts()) : $loop->the_post();
-                           $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                           $featured_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
                            $outside_link =get_field('external_source_link');
                            $the_category = "";
                            foreach(get_the_category() as $category) {
@@ -769,7 +770,7 @@ $(".menu li").mouseleave(function(e) {
                      ));
 
                     while ($loop->have_posts()) : $loop->the_post();
-                           $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                           $featured_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
                            $outside_link =get_field('external_source_link');
                            $the_category = "";
                            foreach(get_the_category() as $category) {
@@ -847,7 +848,7 @@ $(".menu li").mouseleave(function(e) {
                      ));
 
                     while ($loop->have_posts()) : $loop->the_post();
-                           $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                           $featured_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
                            $outside_link =get_field('external_source_link');
                            $the_category = "";
                            foreach(get_the_category() as $category) {

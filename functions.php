@@ -205,7 +205,7 @@ function return_ajax_posts($ppp,$page,$cat,$grid,$filterTag,$post_type,$slider_i
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 
 						$category = get_the_category();
-						$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+						$featured_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
 						$outside_link =get_field('external_source_link');
 						$the_category_slug = "";
 						$the_category = "";
@@ -282,7 +282,7 @@ function return_ajax_posts_categories($ppp,$page,$cat,$grid,$filterTag,$post_typ
 					while ( $the_query->have_posts() ) : $the_query->the_post();
 
 							$category = get_the_category();
-							$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+							$featured_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
 							$outside_link =get_field('external_source_link');
 							$the_category_slug = "";
 							$the_category = "";
