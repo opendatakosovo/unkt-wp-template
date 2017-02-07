@@ -4893,7 +4893,7 @@ a.label:focus {
 }
 
 .media {
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 .media:first-child {
   margin-top: 0;
