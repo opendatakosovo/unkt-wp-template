@@ -19,9 +19,6 @@
     }
     ?>" />
 		<!-- Place this data between the <head> tags of your website -->
-<title>Page Title. Maximum length 60-70 characters</title>
-<meta name="description" content="Page description. No longer than 155 characters." />
-
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@publisher_handle">
