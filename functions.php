@@ -76,6 +76,7 @@ function wpb_widgets_init() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
+    
     register_sidebar( array(
         'name' =>__( 'UN Agencies Page Sidebar', 'agencies-page-sidebar'),
         'id' => 'agencies-list',
@@ -83,6 +84,24 @@ function wpb_widgets_init() {
         'before_widget' => '<div class="sidebar">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => __( 'Homepage widgets', 'home-page-widgets' ),
+        'id' => 'sidebar-3',
+        'description' => __( 'Homepage widgets', 'home-page-widgets' ),
+        'before_widget' => '<div class="col-md-12">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => __( 'Post aisde widgets', 'post-aside-widgets' ),
+        'id' => 'sidebar-4',
+        'description' => __( 'Post aisde widgets', 'post-aside-widgets' ),
+        'before_widget' => '<div class="article article-poll">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
     }

@@ -161,8 +161,9 @@ $(".menu li").mouseleave(function(e) {
       });
     });
     </script>
-    <div class="content">
 
+    <div class="content">
+      <?php dynamic_sidebar( 'sidebar-3' ); ?>
       <div class="container">
         <div class="row">
           <div class="tabs-menu" id="tabs">

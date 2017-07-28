@@ -33,6 +33,7 @@ setup_postdata( $post );
 					</div>
 
 					<div class="sidebar sidebar-articles">
+          <?php dynamic_sidebar( 'sidebar-4' ); ?>
 						<?php $category = get_the_category( $post );
 								$category_id = get_cat_ID($category[0]->cat_name); ?>
 						<?php $args = array(
