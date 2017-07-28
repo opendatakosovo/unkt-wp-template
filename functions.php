@@ -99,8 +99,8 @@ function wpb_widgets_init() {
         'name' => __( 'Post aisde widgets', 'post-aside-widgets' ),
         'id' => 'sidebar-4',
         'description' => __( 'Post aisde widgets', 'post-aside-widgets' ),
-        'before_widget' => '<a class="article article-poll">',
-        'after_widget' => '</a>',
+        'before_widget' => '<div class="article article-poll">',
+        'after_widget' => '</div>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
