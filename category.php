@@ -10,7 +10,7 @@
     <div class="row">
      <div class="filter media-filter">
        <ul>
-         <li>Sort View:</li>
+         <li>Sort:</li>
          <li>
            <a href="#" data-filter="*">Latest</a>
          </li>

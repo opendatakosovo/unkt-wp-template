@@ -84,7 +84,7 @@
           <div class="li-second-row">
 					<li>
 						<a href="<?php echo get_permalink( get_page_by_path( 'un-agencies/unops' )->ID );?>">
-							<img src="<?php bloginfo('template_url'); ?>/dist/img/unops.png" alt="" class="image-grayscale  not-first-row"   />
+							<img src="<?php bloginfo('template_url'); ?>/dist/img/new_unops.png" alt="" class="image-grayscale  not-first-row"   />
 						</a>
 					</li>
 					<li>

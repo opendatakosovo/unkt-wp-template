@@ -24,7 +24,7 @@ tabs.find( ".ui-tabs-nav" ).sortable({
  <div class="tabs-menu" id="tabs">
    <ul style="text-align: center;">
      <li>
-      SORT VIEW:
+      VIEW:
      </li>
      <li>
       <a href="#latest">Latest</a>

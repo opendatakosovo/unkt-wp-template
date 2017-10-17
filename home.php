@@ -116,7 +116,7 @@ $(".menu li").mouseleave(function(e) {
   			<div class="row">
   				<div class="filter">
   					<ul>
-  						<li>Sort View:</li>
+  						<li>View:</li>
   						<li>
   							<a href="#" data-filter="*">Latest</a>
   						</li>
@@ -169,7 +169,7 @@ $(".menu li").mouseleave(function(e) {
           <div class="tabs-menu" id="tabs">
             <ul style="text-align: center;">
               <li>
-                SORT VIEW:
+                VIEW:
               </li>
               <li>
                 <a href="#latest">Latest</a>
