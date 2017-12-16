@@ -16,3 +16,6 @@ body {
 #site-title a {
 	color: pink;
 }
+#wpfooter p {
+	display: none;
+}
