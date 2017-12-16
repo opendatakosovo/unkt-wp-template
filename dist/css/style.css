@@ -7036,7 +7036,7 @@ body.overflow {
   line-height: 40px;
   letter-spacing: .04px;
   font-size:1.6em;
-  
+
 }
 @media (min-width: 62em) {
   .agencies-top {
@@ -8216,8 +8216,8 @@ body.overflow {
   }
 
   .article-content {
-    width: 75.5%;
-    padding: 0 6% 20px 6%;
+    width: 74.5%;
+    /* padding: 0 6% 20px 6%; */
   }
   .article-content .section {
     position: relative;
