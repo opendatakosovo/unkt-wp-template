@@ -458,26 +458,26 @@ e=n.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&
 		 * Returns the number of pages (one full viewport of slides is one "page")
 		 */
 		var getPagerQty = function(){
-			var pagerQty = 0;
+			var pagerQty = 4;
 			// if moveSlides is specified by the user
-			if(slider.settings.moveSlides > 0){
-				if(slider.settings.infiniteLoop){
-					pagerQty = Math.ceil(slider.children.length / getMoveBy());
-				}else{
-					// use a while loop to determine pages
-					var breakPoint = 0;
-					var counter = 0
-					// when breakpoint goes above children length, counter is the number of pages
-					while (breakPoint < slider.children.length){
-						++pagerQty;
-						breakPoint = counter + getNumberSlidesShowing();
-						counter += slider.settings.moveSlides <= getNumberSlidesShowing() ? slider.settings.moveSlides : getNumberSlidesShowing();
-					}
-				}
+			//if(slider.settings.moveSlides > 0){
+			//	if(slider.settings.infiniteLoop){
+			//		pagerQty = Math.ceil(slider.children.length / getMoveBy());
+			//		}else{
+			//		// use a while loop to determine pages
+			//		var breakPoint = 0;
+			//		var counter = 0
+			//		// when breakpoint goes above children length, counter is the number of pages
+			//		while (breakPoint < slider.children.length){
+			//			++pagerQty;
+			//			breakPoint = counter + getNumberSlidesShowing();
+			//			counter += slider.settings.moveSlides <= getNumberSlidesShowing() ? slider.settings.moveSlides : getNumberSlidesShowing();
+			//		}
+			//	}
 			// if moveSlides is 0 (auto) divide children length by sides showing, then round up
-			}else{
-				pagerQty = Math.ceil(slider.children.length / getNumberSlidesShowing());
-			}
+			//}else{
+			//	pagerQty = Math.ceil(slider.children.length / getNumberSlidesShowing());
+			//}
 			return pagerQty;
 		}
 
@@ -601,7 +601,7 @@ e=n.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&
 			var pagerHtml = '';
 			var pagerQty = getPagerQty();
 			// loop through each pager item
-			for(var i=0; i < pagerQty; i++){
+			for(var i=0; i < pagerQty ; i++){
 				var linkContent = '';
 				// if a buildPager function is supplied, use it to get pager link value, else use index + 1
 				if(slider.settings.buildPager && $.isFunction(slider.settings.buildPager)){

@@ -74,7 +74,7 @@ $(".menu li").mouseleave(function(e) {
    $the_query = new WP_Query($args);
 
 	 $recentFilteredPosts = new WP_Query();
-	 $recentFilteredPosts->query('showposts=10');
+	 $recentFilteredPosts->query('showposts=4');
   ?>
   	<div class="slider">
       <?php if( $the_query->have_posts() ): ?>
